@@ -1,0 +1,2027 @@
+@inproceedings{su-etal-2026-truth,
+    title = "Truth or Dare: Analyzing {LLM} Susceptibility to External Evidence of Varying Factuality",
+    author = "Su, Han-Yu  and
+      Chu, Kuan-Yu  and
+      Li, Yung-Hui  and
+      Ku, Lun-Wei",
+    editor = "Chang, Kai-Wei  and
+      Mehrabi, Ninareh  and
+      Krishna, Satyapriya  and
+      Das, Anubrata  and
+      Dhamala, Jwala  and
+      Cao, Yang Trista  and
+      Kumarage, Tharindu  and
+      Ramakrishna, Anil  and
+      Christodoulopoulos, Christos  and
+      Wan, Yixin  and
+      Galystan, Aram  and
+      Kumar, Anoop  and
+      Gupta, Rahul",
+    booktitle = "Proceedings of the 6th Workshop on Trustworthy {NLP} ({T}rust{NLP} 2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.trustnlp-main.39/",
+    doi = "10.18653/v1/2026.trustnlp-main.39",
+    pages = "528--538",
+    ISBN = "979-8-89176-418-7",
+    abstract = "Modern Large Language Models (LLMs) often rely on Retrieval-Augmented Generation (RAG) to access up-to-date information; however, retrieved corpora may contain misleading, outdated, or incorrect content, raising concerns about how such evidence affects model reliability. In this work, we investigate the susceptibility of LLMs to false external evidence. Existing studies have shown that poisoned external corpora can mislead LLM responses; yet, there is still a lack of studies on the effects of different evidence properties. To bridge this gap, we design comprehensive experiments along three dimensions: styles of evidence, quantity of evidence, and the semantic similarity between external messages and the model{'}s internal belief. We find that instructive-style evidence demonstrates the most severe performance degradation. On the other hand, we observe a steady decline in model response quality as the amount of false evidence accumulates. Finally, we show that LLMs are more susceptible to factually incorrect evidence when their semantic similarity is close to the model{'}s parametric knowledge."
+}
+@inproceedings{ferraz-etal-2026-retrieval,
+    title = "Retrieval-Augmented Generation with Small Language Models for Fake News Detection",
+    author = "Ferraz, Lucca Baptista Silva  and
+      Leal, Jh{\'u}lia de Souza  and
+      Avila, Anderson Raymundo  and
+      Pardo, Thiago Alexandre Salgueiro  and
+      Batista, Fernando  and
+      Silva, Renato Moraes",
+    editor = "Souza, Marlo  and
+      de-Dios-Flores, Iria  and
+      Santos, Diana  and
+      Freitas, Larissa  and
+      Souza, Jackson Wilke da Cruz  and
+      Ribeiro, Eug{\'e}nio",
+    booktitle = "Proceedings of the 17th International Conference on Computational Processing of {P}ortuguese ({PROPOR} 2026) - Vol. 1",
+    month = apr,
+    year = "2026",
+    address = "Salvador, Brazil",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.propor-1.12/",
+    pages = "120--130",
+    ISBN = "979-8-89176-387-6",
+    abstract = "The spread of online misinformation has made fake news detection an essential tool for mitigating its negative impact, but many studies often disregard the temporal information, and existing datasets become outdated as news evolve. Some modern solutions using Retrieval-Augmented Generation (RAG) can solve the problem of unseen news events by providing context to the models. However, there are no studies evaluating the feasibility of web searches to attain context to decide whether a news article is true or not. This work aims to address this gap by conducting a comparative study between RAG-based solutions, traditional fake news classification methods, and deep learning-based methods. The results show that although RAG is a modern and promising technique, it cannot outperform techniques already adopted in the literature."
+}
+@inproceedings{mohan-etal-2026-retrieval,
+    title = "When Retrieval Hurts: Evidence Utilization, Script Fidelity, and Knowledge Conflicts in Multilingual {RAG}",
+    author = "Mohan, Varalekshmy M  and
+      Jayakumar, Swathi  and
+      Menon, Gadha Saji  and
+      Kurup, Sachin  and
+      G, Veena  and
+      Kanjirangat, Vani",
+    editor = "Huang, Kaiyu  and
+      Mo, Fengran  and
+      Chen, Pinzhen  and
+      Jiang, Meng",
+    booktitle = "Proceedings of the 1st Workshop on Multilinguality in the Era of Large Language Models ({M}e{LLM} 2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.mellm-1.9/",
+    doi = "10.18653/v1/2026.mellm-1.9",
+    pages = "92--107",
+    ISBN = "979-8-89176-430-9",
+    abstract = "The problem of extractive multilingual QA with LLMs is characterized by complex interactions among retrieval mechanisms, knowledge source configurations, prompting techniques, and scripting biases. Despite high retrieval quality, multilingual RAG often degrades performance, revealing a gap between retrieved evidence and its effective utilization. To address this issue, this paper offers an extensive empirical study that examines these components by comparing retrieval-augmented generation (RAG) with a non-RAG baseline across 21 typologically diverse languages and 5 leading LLMs. Our analysis includes five prompting strategies and multiple retrieval configurations, which enable a unified evaluation across diverse linguistic settings. We have also observed an evidence utilization gap in RAG settings, where RAG underperforms despite high retrieval hit rates due to models' inefficiency in leveraging the retrieved evidence. We also introduce lightweight inference-time metrics to better characterize retrieval usage and conflict patterns.We also highlight script fidelity as a crucial factor in our experiments, as non-Latin-script languages experience significant performance drops and increased hallucinations without proper grounding. Further, we analyzed generator language preferences, systematically examined conflicts, and identified mechanisms for the effective detection and resolution of conflicts. The study further details how prompting strategies affect language families and script types, offering a detailed analysis for optimizing future multilingual RAG settings."
+}
+@inproceedings{gross-etal-2026-ragability,
+    title = "Ragability Benchmark: A Dataset and Library to Test {LLM}s on Inter-context Conflicts",
+    author = "Gross, Stephanie  and
+      Petrak, Johann  and
+      Krenn, Brigitte",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.182/",
+    doi = "10.63317/2ty3hnn3bgb9",
+    pages = "2323--2333",
+    abstract = "Knowledge conflicts are a challenging issue when applying retrieval augmented generation (RAG) systems. In this paper, we propose a benchmark to test LLMs on how they deal with inter-context knowledge conflicts where implicit reasoning is required to solve the conflict. Based on actual empirical examples, real entities are replaced by fantasy entities to make sure the model{'}s internal knowledge does not influence how the model deals with external conflicting information. The proposed benchmark can be used to assess current up-to-date LLMs, but it can also flexibly be adapted for in-depth evaluation of a specific RAG system on selected aspects of conflict identification. We also present an experiment where we apply the benchmark to test 7 current LLMs from different model families. The results show that LLMs are able to identify conflicting contexts ({'}Is there a contradiction, yes or no?'), while they struggle with answering content related queries. Adding a hint that there might be a contradiction in the provided contexts increases the performance of conflict identification for contradictory context, while it significantly decreases the performance for non-contradictory contexts."
+}
+@inproceedings{bian-etal-2026-efficiently-explore,
+    title = "How to Efficiently Explore Noisy Historical Data? Leveraging Corpus Pre-Targeting to Enhance Graph-based {RAG}",
+    author = "Bian, Donghan  and
+      Puren, Marie  and
+      Cafiero, Florian",
+    editor = "Alves, Diego  and
+      Bizzoni, Yuri  and
+      Degaetano-Ortlieb, Stefania  and
+      Kazantseva, Anna  and
+      Pagel, Janis  and
+      Szpakowicz, Stan",
+    booktitle = "Proceedings of the 10th Joint {SIGHUM} Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.latechclfl-1.23/",
+    doi = "10.18653/v1/2026.latechclfl-1.23",
+    pages = "241--250",
+    ISBN = "979-8-89176-373-9",
+    abstract = "Graph-based Retrieval-Augmented Generation (RAG) is increasingly used to explore long, heterogeneous, and weakly structured corpora, including historical archives. However, in such settings, naive full-corpus indexing is often computationally costly and sensitive to OCR noise, document redundancy, and topical dispersion. In this paper, we investigate corpus pre-targeting strategies as an intermediate layer to improve the efficiency and effectiveness of graph-based RAG for historical research.We evaluate a set of pre-targeting heuristics tailored to single-hop and multi-hop of historical questions on HistoriQA-ThirdRepublic, a French question-answering dataset derived from parliamentary debates and contemporary newspapers. Our results show that appropriate pre-targeting strategies can improve retrieval recall by 3{--}5{\%} while reducing token consumption by 32{--}37{\%} compared to full-corpus indexing, without degrading coverage of relevant documents.Beyond performance gains, this work highlights the importance of corpus-level optimization for applying RAG to large-scale historical collections, and provides practical insights for adapting graph-based RAG pipelines to the specific constraints of digitized archives."
+}
+@inproceedings{luu-etal-2026-higraagent,
+    title = "{H}i{G}ra{A}gent: Dual-Agent Adaptive Reasoning over Hierarchical Knowledge Graph for Open Domain Multi-hop Question Answering",
+    author = "Luu, Hung  and
+      Nguyen, Long S. T.  and
+      Pham, Trung  and
+      Pham, Hieu  and
+      Quan, Tho",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-eacl.62/",
+    doi = "10.18653/v1/2026.findings-eacl.62",
+    pages = "1193--1217",
+    ISBN = "979-8-89176-386-9",
+    abstract = "Open Domain Multi-hop Question Answering faces a dual compositionality challenge: reasoning over complex query structures and integrating evidence scattered across contexts. Despite recent advancements in Graph-based Retrieval-Augmented Generation (GraphRAG), persistent limitations in complex reasoning and retrieval inaccuracies continue to constrain the efficacy of multi-hop QA systems. We introduce HiGraAgent, a framework that unifies graph-based retrieval with adaptive reasoning. It constructs a Hierarchical Knowledge Graph (HiGra) with entity alignment, reducing redundancy by 34.5{\%} while preserving expressiveness; employs HiGraRetriever, a hybrid graph-semantic retriever that consistently outperforms the strongest graph-based method across benchmarks; and integrates a dual-agent adaptive reasoning protocol where a Seeker and a Librarian dynamically coordinate retrieval and reasoning. Together, these innovations enable HiGraAgent to achieve 85.3{\%} average accuracy on HotpotQA, 2WikiMultihopQA, and MuSiQue, surpassing the strongest prior system by 11.7{\%}. Our results highlight the importance of reframing multi-hop QA as a problem of adaptive reasoning, offering a more robust and flexible paradigm for complex information seeking."
+}
+@inproceedings{li-etal-2026-token,
+    title = "Token-Level Precise Attack on {RAG}: Searching for the Best Alternatives to Mislead Generation",
+    author = "Li, Zizhong  and
+      Zhang, Haopeng  and
+      Zhang, Jiawei",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-eacl.167/",
+    doi = "10.18653/v1/2026.findings-eacl.167",
+    pages = "3193--3206",
+    ISBN = "979-8-89176-386-9",
+    abstract = "While large language models (LLMs) have achieved remarkable success in providing trustworthy responses for knowledge-intensive tasks, they still face critical limitations such as hallucinations and outdated knowledge. To address these issues, the retrieval-augmented generation (RAG) framework enhances LLMs with access to external knowledge via a retriever, enabling more accurate and real-time outputs about the latest events. However, this integration brings new security vulnerabilities: the risk that malicious content in the external database can be retrieved and used to manipulate model outputs. Although prior work has explored attacks on RAG systems, existing approaches either rely heavily on access to the retriever or fail to jointly consider both retrieval and generation stages, limiting their effectiveness, particularly in black-box scenarios. To overcome these limitations, we propose Token-level Precise Attack on the RAG (TPARAG), a novel framework that targets both white-box and black-box RAG systems. TPARAG leverages a lightweight white-box LLM as an attacker to generate and iteratively optimize malicious passages at the token level, ensuring both retrievability and high attack success in generation. Extensive experiments on open-domain QA datasets demonstrate that TPARAG consistently outperforms previous approaches in retrieval-stage and end-to-end attack effectiveness. These results further reveal critical vulnerabilities in RAG pipelines and offer new insights into improving their robustness."
+}
+@inproceedings{deng-etal-2026-data,
+    title = "Data-Centric Perspectives on Agentic Retrieval-Augmented Generation: A Survey",
+    author = "Deng, Jingwen  and
+      Huang, Jihao  and
+      Wong, Zhen Hao  and
+      Liang, Hao  and
+      Xu, Quanqing  and
+      Cui, Bin  and
+      Zhang, Wentao",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.78/",
+    doi = "10.18653/v1/2026.findings-acl.78",
+    pages = "1570--1588",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Large Language Models (LLMs) excel at natural language understanding and generation, yet their reliance on static pre-training corpora may lead to outdated knowledge, hallucinations, and limited adaptability. Retrieval-Augmented Generation (RAG) mitigates these issues by grounding model outputs with external retrieval, but conventional RAG remains constrained by a fixed retrieve-then-generate routine and struggles with multi-step reasoning and tool calls. \textbf{Agentic RAG} addresses these limitations by enabling LLM agents to actively decompose tasks, issue exploratory queries, and refine evidence through iterative retrieval. Despite growing interest, the development of Agentic RAG is impeded by \textit{data scarcity}: unlike traditional RAG, it requires challenging tasks that require planning, retrieval, and multiple reasoning decisions, and corresponding rich, interactive agent trajectories. This survey presents the first data-centric overview of Agentic RAG, framing its data lifecycle{---}data collecting, data preprocessing and task formulation, task construction, data for evaluation, and data enhancement for training{---}and cataloging representative training datasets and benchmarks in different domains (e.g. question answering, web, software engineering). From data perspectives, we aim to guide the creation of scalable, high-quality datasets for the next generation of adaptive, knowledge-seeking LLM agents. The project page is at \url{https://github.com/fatty-belly/Awesome-AgenticRAG-Data/}."
+}
+@inproceedings{wallat-etal-2026-facts,
+    title = "When Facts Change: Temporal Knowledge Conflict Resolution in {LLM}s",
+    author = "Wallat, Jonas  and
+      Nejdl, Wolfgang  and
+      Sikdar, Sandipan",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.103/",
+    doi = "10.18653/v1/2026.findings-acl.103",
+    pages = "2154--2184",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-augmented generation (RAG) systems require large language models (LLMs) to reconcile discrepancies between their parametric memory{---}knowledge encoded during training{---}and contextual inputs provided at inference. When these sources conflict, models often exhibit unstable reasoning and inconsistent factual behavior. We investigate how LLMs resolve such conflicts when the discrepancy arises from temporal misalignment{---}facts that have changed since the model{'}s knowledge cutoff{---}and whether mutability, the changeability of facts, can serve as a mediating signal in this process. To do so, we provide WIKIRECENTCHANGES, a temporally grounded benchmark with stable and recently updated facts derived from Wikidata.Our results show that while models spontaneously produce temporal reasoning for facts that actually changed {---} but almost never for stable ones {---} this differentiation rarely propagates to their final predictions. Explicitly prompting them to consider mutability increases references to temporal change but does not improve factual accuracy, revealing a disconnect between verbalized reasoning and prediction behavior. We further show that the failure point is scale-dependent: smaller models rarely detect the underlying conflict, while larger models detect it but fail to act on their mutability judgments."
+}
+@inproceedings{liu-etal-2026-rag,
+    title = "{RAG} or Learning? Understanding the Limits of {LLM} Adaptation under Continuous Knowledge Drift in the Real World",
+    author = "Liu, Hanbing  and
+      Cao, Lang  and
+      Li, Yang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.546/",
+    doi = "10.18653/v1/2026.findings-acl.546",
+    pages = "11234--11252",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Large language models (LLMs) acquire most of their knowledge during pretraining, which ties them to a fixed snapshot of the world and makes adaptation to continuously evolving knowledge challenging. As facts, entities, and events change over time, models may experience continuous knowledge drift, resulting not only in outdated predictions but also in temporally inconsistent reasoning. Although existing approaches, such as continual finetuning, knowledge editing, and retrieval-augmented generation (RAG), aim to update or supplement model knowledge, they are rarely evaluated in settings that reflect chronological, evolving, and real-world knowledge evolution. In this work, we introduce a new benchmark of real-world dynamic events, constructed from time-stamped evidence that captures how knowledge evolves over time, which enables systematic evaluation of model adaptation under continuous knowledge drift. The benchmark reveals that most existing methods, including vanilla RAG and several learning-based approaches, struggle under this setting, exposing critical limitations such as catastrophic forgetting and temporal inconsistency. To mitigate these limitations, we propose a time-aware retrieval baseline, Chronos, which progressively organizes retrieved evidence into an Event Evolution Graph to enable more temporally consistent understanding in LLMs without additional training. Overall, this work provides a foundation for analyzing and advancing LLM adaptation to continuous knowledge drift in realistic settings."
+}
+@inproceedings{qi-etal-2026-language,
+    title = "Language-Coupled Reinforcement Learning for Multilingual Retrieval-Augmented Generation",
+    author = "Qi, Rui  and
+      Mo, Fengran  and
+      Chen, Yufeng  and
+      Zhang, Xue  and
+      Wang, Shuo  and
+      Li, Hongliang  and
+      Jinan, Xu  and
+      Jiang, Meng  and
+      Nie, Jian-Yun  and
+      Huang, Kaiyu",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.700/",
+    doi = "10.18653/v1/2026.findings-acl.700",
+    pages = "14291--14310",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Multilingual retrieval-augmented generation (MRAG) requires models to effectively acquire and integrate beneficial external knowledge from multilingual collections. However, most existing studies employ a unitive process where queries of equivalent semantics across different languages are processed through a single-turn retrieval and subsequent optimization. Such a ``one-size-fits-all'' strategy is often suboptimal in multilingual settings, as the models occur to knowledge bias and conflict during the interaction with the search engine. To alleviate the issues, we propose LcRL, a multilingual search-augmented reinforcement learning framework that integrates a language-coupled Group Relative Policy Optimization into the policy and reward models. We adopt the language-coupled group sampling in the rollout module to reduce knowledge bias, and regularize an auxiliary anti-consistency penalty in the reward models to mitigate the knowledge conflict. Experimental results demonstrate that {~}not only achieves competitive performance but is also appropriate for various practical scenarios such as constrained training data and retrieval over collections encompassing a large number of languages. Our code is available at \url{https://anonymous.4open.science/r/LcRL-B4EF}."
+}
+@inproceedings{cheng-etal-2026-prism,
+    title = "{PRISM}-{MCTS}: Learning from Reasoning Trajectories with Metacognitive Reflection",
+    author = "Cheng, Siyuan  and
+      Tian, Bozhong  and
+      Hao, Yanchao  and
+      Wei, Zheng",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.807/",
+    doi = "10.18653/v1/2026.findings-acl.807",
+    pages = "16392--16402",
+    ISBN = "979-8-89176-395-1",
+    abstract = "The emergence of reasoning models, exemplified by OpenAI o1, signifies a transition from intuitive to deliberative cognition, effectively reorienting the scaling laws from pre-training paradigms toward test-time computation. While Monte Carlo Tree Search (MCTS) has shown promise in this domain, existing approaches typically treat each rollout as an isolated trajectory. This lack of information sharing leads to severe inefficiency and substantial computational redundancy, as the search process fails to leverage insights from prior explorations. To address these limitations, we propose PRISM-MCTS, a novel reasoning framework that draws inspiration from human parallel thinking and reflective processes. PRISM-MCTS integrates a Process Reward Model (PRM) with a dynamic shared memory, capturing both ``Heuristics'' and ``Fallacies''. By reinforcing successful strategies and pruning error-prone branches, PRISM-MCTS effectively achieves refinement. Furthermore, we develop a data-efficient training strategy for the PRM, achieving high-fidelity evaluation under a few-shot regime. Empirical evaluations across diverse reasoning benchmarks substantiate the efficacy of PRISM-MCTS. Notably, it halves the trajectory requirements on GPQA while surpassing MCTS-RAG and Search-o1, demonstrating that it scales inference by reasoning judiciously rather than exhaustively."
+}
+@inproceedings{xu-etal-2026-self,
+    title = "Self-Correcting {RAG}: Enhancing Faithfulness via {MMKP} Context Selection and {NLI}-Guided {MCTS}",
+    author = "Xu, Shijia  and
+      Wu, Zhou  and
+      Jia, Xiaolong  and
+      Wang, Yu  and
+      Liu, Kai  and
+      Dong, April Xiaowen",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1052/",
+    doi = "10.18653/v1/2026.findings-acl.1052",
+    pages = "20953--20976",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-augmented generation (RAG) substantially extends the knowledge boundary of large language models. However, it still faces two major challenges when handling complex reasoning tasks: low context utilization and frequent hallucinations. To address these issues, we propose Self-Correcting RAG, a unified framework that reformulates retrieval and generation as constrained optimization and path planning. On the input side, we move beyond traditional greedy retrieval and, for the first time, formalize context selection as a multi-dimensional multiple-choice knapsack problem (MMKP), thereby maximizing information density and removing redundancy under a strict token budget. On the output side, we introduce a natural language inference (NLI)-guided Monte Carlo Tree Search (MCTS) mechanism, which leverages test-time compute to dynamically explore reasoning trajectories and validate the faithfulness of generated answers. Experiments on six open-domain and multi-hop QA datasets demonstrate that our method significantly improves reasoning accuracy on complex queries while effectively reducing hallucinations, outperforming strong existing baselines. Our code is available at \url{https://github.com/xjiacs/Self-Correcting-RAG} ."
+}
+@inproceedings{sui-etal-2026-think,
+    title = "Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning",
+    author = "Sui, Yi  and
+      Li, Chaozhuo  and
+      Song, Dawei",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1128/",
+    doi = "10.18653/v1/2026.findings-acl.1128",
+    pages = "22470--22491",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Large Reasoning Models (LRMs) achieve strong performance on complex tasks by leveraging long Chain-of-Thought (CoT), but often suffer from overthinking, leading to excessive reasoning steps and high inference latency. Existing CoT compression methods struggle to balance accuracy and efficiency, and lack fine-grained, step-level adaptation to redundancy and reasoning bias. Therefore, we propose State-Aware Reasoning Compression with Knowledge Guidance (STACK), a framework that performs step-wise CoT compression by explicitly modeling stage-specific redundancy sources and integrating with a retrieval-augmented guidance. STACK constructs online long{--}short contrastive samples and dynamically switches between knowledge-guided compression for uncertain or biased reasoning state and self-prompted compression for overly long but confident state, complemented by an answer-convergence-based early stopping mechanism to suppress redundant verification. We further propose a reward-difference-driven training strategy by combining Proximal Policy Optimization (PPO) and Direct Preference Optimization (DPO), enabling models to learn state-conditioned compression strategies. Experiments on three mathematical reasoning benchmarks show that STACK achieves a superior accuracy{--}efficiency balance, reducing average response length by 59.9{\%} while improving accuracy by 4.8 points over existing methods."
+}
+@inproceedings{li-etal-2026-large,
+    title = "How Large Language Models Balance Internal Knowledge with User and Document Assertions",
+    author = "Li, Shuowei  and
+      Li, Haoxin  and
+      Chu, Wenda  and
+      Fang, Yi",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1267/",
+    doi = "10.18653/v1/2026.findings-acl.1267",
+    pages = "25323--25346",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Large language models (LLMs) often need to balance their internal parametric knowledge with external information, such as user beliefs and content from retrieved documents, in real-world scenarios like RAG or chat-based systems. A model{'}s ability to reliably process these sources is key to system safety. Previous studies on knowledge conflict and sycophancy are limited to a binary conflict paradigm, primarily exploring conflicts between parametric knowledge and either a document or a user, but ignoring the interactive environment where all three sources exist simultaneously. To fill this gap, we propose a three-source interaction framework and systematically evaluate 27 LLMs from 3 families on 2 datasets. Our findings reveal general patterns: most models rely more on document assertions than user assertions, and this preference is reinforced by post-training. Furthermore, our behavioral analysis shows that most models are impressionable, unable to effectively discriminate between helpful and harmful external information. To address this, we demonstrate that fine-tuning on diverse source interaction data can significantly increase a model{'}s discrimination abilities. In short, our work paves the way for developing trustworthy LLMs that can effectively and reliably integrate multiple sources of information. Code is available at \url{https://github.com/shuowl/llm-source-balancing}."
+}
+@inproceedings{gong-etal-2026-beyond,
+    title = "Beyond Chunks and Graphs: Retrieval-Augmented Generation through Triplet-Driven Thinking",
+    author = "Gong, Shengbo  and
+      Tang, Xianfeng  and
+      He, Qi  and
+      Yang, Carl  and
+      Jin, Wei",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1310/",
+    doi = "10.18653/v1/2026.findings-acl.1310",
+    pages = "26282--26308",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-augmented generation (RAG) is critical for reducing hallucinations and incorporating external knowledge into Large Language Models (LLMs). However, advanced RAG systems face a trade-off between performance and efficiency. Multi-round RAG approaches achieve strong reasoning but incur excessive LLM calls and token costs, while Graph RAG methods suffer from computationally expensive, error-prone graph construction and retrieval redundancy. To address these challenges, we propose T$^2$RAG, a novel framework that operates on a simple, graph-free knowledge base of atomic triplets. T$^2$RAG leverages an LLM to decompose questions into searchable triplets with placeholders, which it then iteratively resolves by retrieving evidence from the triplet database. Empirical results show that T$^2$RAG significantly outperforms state-of-the-art multi-round and Graph RAG methods, achieving an average performance gain of up to 11{\%} across six datasets while reducing retrieval costs by up to 45{\%}."
+}
+@inproceedings{jia-etal-2026-evidence,
+    title = "Evidence-Aligned Entity Verification for Hallucination Detection in Retrieval-Augmented Generation",
+    author = "Jia, Runsong  and
+      Fang, Zhen  and
+      Wu, Mengjia  and
+      Lu, Jie  and
+      Zhang, Yi",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1477/",
+    doi = "10.18653/v1/2026.findings-acl.1477",
+    pages = "29538--29554",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Hallucination detection is crucial for large language models (LLMs), as hallucinated content creates significant barriers in applications requiring factual accuracy. Current detection methods mainly depend on internal signals like uncertainty and self-consistency checks, using the model{'}s pre-trained knowledge to identify unreliable outputs. However, pre-trained knowledge may become outdated and has coverage limitations, especially for specialized or recent information. To address these limitations, retrieval-augmented generation (RAG) has emerged as a promising solution by retrieving relevant evidence at inference time, grounding outputs beyond the model{'}s parametric knowledge. In this paper, we target a critical and practical learning problem RAG-based hallucination detection (RHD), where RAG is employed to enhance hallucination detection by addressing information updating challenges. To address RHD, we propose a novel method Evidence-Aligned Entity Verification (EAEV), which detects entity-level hallucinations by leveraging RAG to align generated entities with retrieved evidence contexts. Specifically, EAEV evaluates entity-evidence alignment through three complementary dimensions and introduces counterfactual stability analysis to ensure robust alignments under evidence perturbations. Experiments across multiple RAG benchmarks demonstrate that EAEV achieves consistent improvements over existing methods with strong generalization capabilities."
+}
+@inproceedings{wu-luo-2026-toporag,
+    title = "{T}opo{RAG}: Graph-based {RAG} via Topology-aware Approximate Nearest Neighbor Search",
+    author = "Wu, Tianhao  and
+      Luo, Siqiang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1703/",
+    doi = "10.18653/v1/2026.findings-acl.1703",
+    pages = "34097--34108",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-augmented generation (RAG) has become a core technique for improving the factuality and reasoning ability of large language models. Recent efforts extend RAG with graph-structured knowledge, enhancing retrieval to capture relational context beyond isolated text chunks. However, many graph-based RAG systems rely on a two-stage pipeline: (i) classical approximate nearest neighbor (ANN) search to identify top-$k$ entities in the embedding space, (ii) heuristic neighbor expansion which augments the retrieved set by traversing immediate neighbors. This design underutilizes graph topology during retrieval and often introduces noisy or high-degree neighbors, leading to suboptimal evidence selection. In this paper, we propose TopoRAG, a retrieval framework that directly integrates structural constraints into ANN search via a diameter-constrained formulation. By selecting entities whose induced subgraph satisfies a diameter bound, TopoRAG enables topology-aware and noise-controlled graph retrieval. Experiments show that our approach consistently improves precision and significantly reduces context redundancy compared to existing methods."
+}
+@inproceedings{gao-etal-2026-citations,
+    title = "Not All Citations Are Equal:Entropy-Guided Citation Selection for Noise-Resistant Medical {LLM}",
+    author = "Gao, Minyu  and
+      Xiao, Hanlin  and
+      Wang, Ruoyu  and
+      Yang, Shuai  and
+      Zhang, YeXuan  and
+      Wu, Xin  and
+      Liu, Xingyu",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1727/",
+    doi = "10.18653/v1/2026.findings-acl.1727",
+    pages = "34599--34615",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-Augmented Generation (RAG) provides external knowledge support for large language models (LLMs) in medical applications, but retrieved contexts often contain noisy or conflicting evidence that can degrade reasoning. We observe that when internal and external knowledge disagree, models systematically prefer external citations, inadvertently injecting retrieval noise. Our analyses further show that only a subset of retrieved citations consistently improves outcomes; these effective citations exhibit markedly lower token-level entropy, linking citation entropy to model accuracy. Building on these findings, we propose a complete pipeline consisting of a training-free multi-turn reasoning framework and a post-training methodology. The training-free framework elicits internal thought, external thought, and fusion thought, and applies conflict detection and explicit denoising for complex queries. For post-training, we distill structured supervised fine-tuning (SFT) data and apply GRPO with an entropy-based citation reward that encourages selective citation of beneficial external knowledge while penalizing noisy citations. Experiments across diverse benchmarks demonstrate consistent gains in noise-resistant medical reasoning, with larger improvements on harder cases."
+}
+@inproceedings{sun-etal-2026-q2ei,
+    title = "{Q}2{EI}: Query-to-Entity Inference for Semantic Condensation in Domain-Specific Retrieval",
+    author = "Sun, Yixuan  and
+      Xu, Zhenqin  and
+      Zhai, HanFeng  and
+      Yu, Zishu  and
+      Peng, Xiaohui",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1791/",
+    doi = "10.18653/v1/2026.findings-acl.1791",
+    pages = "35943--35958",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-Augmented Generation (RAG) remains unreliable in specialized domains due to semantic and lexical mismatch between lay queries and professional terminology, and existing generative expansion often introduces redundancy or hallucinations that cause semantic drift. We propose Generative Query Condensation (GQC), a query rewriting strategy that reframes rewriting as semantic condensation rather than expansion. To operationalize GQC, we introduce Query-to-Entity Inference (Q2EI), an entity-centric rewriting method that realizes semantic condensation through explicit inference of the underlying target entity. By moving semantic alignment from retrieval-time vector matching to the rewriting stage, Q2EI produces information-dense query representations. Experimental results on medical and legal benchmarks show that Q2EI consistently outperforms strong baselines across retrievers, improving retrieval effectiveness while substantially reducing rewriting token consumption compared to generative expansion methods. Further analysis confirms that these gains primarily arise from accurate entity inference, and that Q2EI{'}s semantic condensation design limits error amplification when inference is imperfect, leading to more stable and interpretable retrieval behavior."
+}
+@inproceedings{goel-etal-2026-chronocept,
+    title = "Chronocept: Instilling a Sense of Time in Machines",
+    author = "Goel, Krish  and
+      Pandey, Sanskar  and
+      Mahadevan, KS  and
+      Kumar, Harsh  and
+      Khadaria, Vishesh",
+    editor = "Baez Santamaria, Selene  and
+      Somayajula, Sai Ashish  and
+      Yamaguchi, Atsuki",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 4: Student Research Workshop)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-srw.32/",
+    doi = "10.18653/v1/2026.eacl-srw.32",
+    pages = "437--456",
+    ISBN = "979-8-89176-383-8",
+    abstract = "Human cognition is deeply intertwined with a sense of time, known as \textit{Chronoception}. This sense allows us to judge how long facts remain valid and when knowledge becomes outdated. Despite progress in vision, language, and motor control, AI still struggles to reason about temporal validity. We introduce Chronocept, the first benchmark to model temporal validity as a continuous probability distribution over time. Using skew-normal curves fitted along semantically decomposed temporal axes, Chronocept captures nuanced patterns of emergence, decay, and peak relevance. It includes two datasets: Benchmark I (atomic facts) and Benchmark II (multi-sentence passages). Annotations show strong inter-annotator agreement (84{\%} and 89{\%}). Our baselines predict curve parameters - location, scale, and skewness - enabling interpretable, generalizable learning and outperforming classification-based approaches. Chronocept fills a foundational gap in AI{'}s temporal reasoning, supporting applications in knowledge grounding, fact-checking, retrieval-augmented generation (RAG), and proactive agents. Code and data are publicly available."
+}
+@inproceedings{verma-etal-2026-reflectiverag,
+    title = "{R}eflective{RAG}: Rethinking Adaptivity in Retrieval-Augmented Generation",
+    author = "Verma, Akshay  and
+      Gupta, Swapnil  and
+      Pillai, Siddharth  and
+      Sircar, Prateek  and
+      Gupta, Deepak",
+    editor = {Matusevych, Yevgen  and
+      Eryi{\u{g}}it, G{\"u}l{\c{s}}en  and
+      Aletras, Nikolaos},
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 5: Industry Track)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-industry.27/",
+    doi = "10.18653/v1/2026.eacl-industry.27",
+    pages = "377--384",
+    ISBN = "979-8-89176-384-5",
+    abstract = "Retrieval-Augmented Generation (RAG) systems degrade sharply under extreme noise,where irrelevant or redundant passages dominate. Current methods-fixed top-k retrieval, cross-encoder reranking, or policy based iteration-depend on static heuristics orcostly reinforcement learning, failing to assess evidence sufficiency, detect subtle mismatches, or reduce redundancy, leading to hallucinations and poor grounding. We introduce ReflectiveRAG, a lightweight yet reasoning-driven architecture that enhances factual grounding through two complementary mechanisms: Self-Reflective Retrieval (SRR) and Contrastive Noise Removal (NR). SRR employs small language model as a decision controller that iteratively evaluates evidence sufficiency, enabling adaptive query reformulation withoutfixed schedules or policy training. NR further refines retrieved content via embedding-based contrastive filtering, enforcing semanticsparsity and removing redundant or tangential passages. Evaluated on WebQuestions, HotpotQA (distractor setting) and InternalQAwith 50M Common Crawl distractors, ReflectiveRAG achieves substantial gains over strong baselines-including DeepRAG-improving EMby +2.7 pp and F1 by +2.5 pp, while reducing evidence redundancy by 30.88{\%} with only 18 ms additional latency. Ablation studies con-firm that SRR and NR jointly drive both factual accuracy and efficiency, validating our central claim that retrieval reasoning and contrastivefiltering can outperform large-scale policy optimization in RAG."
+}
+@inproceedings{han-etal-2026-evidence,
+    title = "When Evidence Conflicts: Uncertainty and Order Effects in Retrieval-Augmented Biomedical Question Answering",
+    author = "Han, Yikun  and
+      Lan, Mengfei  and
+      Kilicoglu, Halil",
+    editor = "Demner-Fushman, Dina  and
+      Ananiadou, Sophia  and
+      Roberts, Kirk  and
+      Tsujii, Junichi",
+    booktitle = "{B}io{NLP} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.bionlp-1.50/",
+    doi = "10.18653/v1/2026.bionlp-1.50",
+    pages = "630--643",
+    ISBN = "979-8-89176-434-7",
+    abstract = "Biomedical retrieval-augmented LLMs are often evaluated under helpful retrieved context, but in practice the evidence can also be misleading or internally conflicting. This paper studies uncertainty under those harder settings using the HealthContradict benchmark and six open-weight models. We evaluate five controlled evidence conditions: no context, correct-only context, incorrect-only context, and two mixed conditions that contain the same correct and contradictory documents in opposite orders. Correct evidence improves both accuracy and calibration, while incorrect evidence substantially degrades both. Under conflicting evidence, document order also matters: reversing the order of the same two documents changes 11.4{\%}{--}25.2{\%} of predictions and consistently reduces performance when the incorrect document appears first. We further evaluate a conflict-aware abstention score that combines model confidence with a detector of evidence conflict. In the two hardest conditions, incorrect-only and incorrect-first conflict, this score improves selective accuracy over confidence-only abstention, with mean gains of 7.2{--}33.4 and 3.6{--}14.4 points across 75{\%}, 50{\%}, and 25{\%} coverage. These results show that biomedical RAG systems should be evaluated not only under helpful retrieval, but also under misleading and conflicting evidence."
+}
+@inproceedings{ngoufo-etal-2026-building,
+    title = "Building a Conversational {AI} Assistant for {A}frican Travel Services with {LLM}s and {RAG}",
+    author = "Ngoufo, Grace Kevine  and
+      Muhammad, Shamsuddeen Hassan  and
+      Fokoa, Kevin Jeff Fogang",
+    editor = "Chimoto, Everlyn Asiko  and
+      Lignos, Constantine  and
+      Muhammad, Shamsuddeen  and
+      Abdulmumin, Idris  and
+      Siro, Clemencia  and
+      Adelani, David Ifeoluwa",
+    booktitle = "Proceedings of the 7th Workshop on {A}frican Natural Language Processing ({A}frica{NLP} 2026)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.africanlp-main.16/",
+    doi = "10.18653/v1/2026.africanlp-main.16",
+    pages = "171--178",
+    ISBN = "979-8-89176-364-7",
+    abstract = "Travel agencies in many African countries face increasing pressure to handle large volumes of customer inquiries with limited staff or, either non-existent or outdated rule-based chat-bots. To address this challenge, we develop a conversational virtual assistant powered by a Large Language Model (LLM) and enhanced with a Retrieval-Augmented Generation (RAG) pipeline. The system combines LLM reasoning, company-specific knowledge retrieval, and real-time API (Application Programming Interface) integration to deliver accurate, context-aware responses through WhatsApp, the region{'}s most widely used communication platform. A dedicated web interface enables staff to upload and update internal documents, ensuring that the assistant remains aligned with changing service information. Demonstrations show that the proposed solution improves response speed, enhances user experience, and reduces operational burden."
+}
+@inproceedings{zhang-etal-2026-pubmed,
+    title = "{P}ub{M}ed Reasoner: Dynamic Reasoning-based Retrieval for Evidence-Grounded Biomedical Question Answering",
+    author = "Zhang, Yiqing  and
+      Liu, Xiaozhong  and
+      Murai, Fabricio",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.763/",
+    doi = "10.18653/v1/2026.acl-long.763",
+    pages = "16753--16763",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Trustworthy biomedical question answering (QA) systems must not only provide accurate answers but also justify them with current, verifiable evidence. Retrieval-augmented approaches partially address this gap but lack mechanisms to iteratively refine poor queries, whereas self-reflection methods kick in only after full retrieval is completed. In this context, we introduce PubMed Reasoner, a biomedical QA agent composed of three stages: \textbf{self-critic query refinement} evaluates MeSH terms for coverage, alignment, and redundancy to enhance PubMed queries based on partial (metadata) retrieval; \textbf{reflective retrieval} processes articles in batches until sufficient evidence is gathered; and \textbf{evidence-grounded response generation} produces answers with explicit citations. PubMed Reasoner with a GPT-4o backbone achieves \textbf{78.32{\%}} accuracy on PubMedQA, slightly surpassing human experts, and showing consistent gains on MMLU Clinical Knowledge. Moreover, LLM-as-judge evaluations prefer our responses across: reasoning soundness, evidence grounding, clinical relevance, and trustworthiness. By orchestrating retrieval-first reasoning over authoritative sources, our approach provides practical assistance to clinicians and biomedical researchers while controlling compute and token costs."
+}
+@inproceedings{cho-lee-2026-rare,
+    title = "{RARE}: Redundancy-Aware Retrieval Evaluation Framework for High-Similarity Corpora",
+    author = "Cho, Hanjun  and
+      Lee, Jay-Yoon",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.923/",
+    doi = "10.18653/v1/2026.acl-long.923",
+    pages = "20160--20185",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Existing QA benchmarks typically assume distinct documents with minimal overlap, yet real-world retrieval-augmented generation (RAG) systems operate on corpora such as financial reports, legal codes, and patents, where information is highly redundant and documents exhibit strong inter-document similarity. This mismatch undermines evaluation validity: retrievers can be unfairly undervalued even when they retrieve documents that provide sufficient evidence, because redundancy across documents is not accounted for in evaluation. On the other hand, retrievers that perform well on standard benchmarks often generalize poorly to real-world corpora with highly similar and redundant documents. We present RARE (Redundancy-Aware Retrieval Evaluation), a framework for constructing realistic benchmarks by (i) decomposing documents into atomic facts to enable precise redundancy tracking and (ii) enhancing LLM-based data generation with CRRF. RAG benchmark data usually requires multiple quality criteria, but LLMs often yield trivial outputs. CRRF scores criteria separately and fuses decisions by rank, improving the reliability of generated data. Applying RARE to Finance, Legal, and Patent corpora, we introduce RedQA, where a strong retriever baseline drops from 66.4{\%} PerfRecall@10 on 4-hop General-Wiki to 5.0{--}27.9{\%} PerfRecall@10 at 4-hop depth, revealing robustness gaps that current benchmarks fail to capture. RARE enables practitioners to build domain-specific RAG evaluations that faithfully reflect real-world deployment conditions."
+}
+@inproceedings{yuan-etal-2026-efficient,
+    title = "Efficient Prior-Guided Reasoning for Robust Retrieval-Augmented Generation under Conflicts",
+    author = "Yuan, Xiaowei  and
+      Huang, Ziyang  and
+      Yang, Zhao  and
+      Wang, Yequan  and
+      Zhao, Jun  and
+      Liu, Kang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1013/",
+    doi = "10.18653/v1/2026.acl-long.1013",
+    pages = "22149--22164",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Retrieval-Augmented Generation (RAG) has become a standard paradigm for grounding Large Language Models (LLMs) with external knowledge. However, RAG performance often degrades substantially when faced with noisy, outdated, or conflicting retrieved information. In this work, we empirically demonstrate that Prior-Guided Reasoning{---}a strategy that explicitly elicits the model{'}s parametric knowledge as prior information to guide reasoning on retrieved documents{---}effectively mitigates the impact of external conflicts. Building on this, we propose BrPr (Bernoulli-gated reinforcement learning for Prior-Guided reasoning), a framework that achieves robust performance across varying degrees of external inconsistency. Furthermore, by employing a Bernoulli-gated dropout mechanism during training, BrPr distills the prior-driven reasoning capability into the model parameters, enabling efficient latent reasoning without explicit prior generation. The experimental results demonstrate that BrPr consistently exhibits superior robustness to external conflicts and noise."
+}
+@inproceedings{fu-etal-2026-learning,
+    title = "Learning to Edit Knowledge via Instruction-based Chain-of-Thought Prompting",
+    author = "Fu, Jinhu  and
+      Bai, Yan  and
+      He, Longzhu  and
+      Lou, Yihang  and
+      Zhao, Yanxiao  and
+      Sun, Li  and
+      Su, Sen",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1133/",
+    doi = "10.18653/v1/2026.acl-long.1133",
+    pages = "24694--24711",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Large language models (LLMs) can effectively handle outdated information through knowledge editing. However, current approaches face two key limitations: \textbf{(I) Poor generalization:} Most approaches rigidly inject new knowledge without ensuring that the model can use it effectively to solve practical problems. \textbf{(II) Narrow scope:} Current methods focus primarily on structured fact triples, overlooking the diverse unstructured forms of factual information (e.g., news, articles) prevalent in real-world contexts. To address these challenges, we propose a new paradigm: teaching LLMs to edit knowledge via \textbf{Chain of Thoughts} (CoTs) reasoning (CoT2Edit). We first leverage language model agents for both structured and unstructured edited data to generate CoTs, building high-quality instruction data. The model is then trained to reason over edited knowledge through supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO). At inference time, we integrate Retrieval-Augmented Generation (RAG) to dynamically retrieve relevant edited facts for real-time knowledge editing. Experimental results demonstrate that our method achieves strong generalization across six diverse knowledge editing scenarios with \textbf{just a single round of training} on three open-source language models."
+}
+@inproceedings{hagstrom-etal-2026-cub,
+    title = "{CUB}: Benchmarking Context Utilisation Techniques for Language Models",
+    author = {Hagstr{\"o}m, Lovisa  and
+      Kim, Youna  and
+      Yu, Haeun  and
+      Lee, Sang-goo  and
+      Johansson, Richard  and
+      Cho, Hyunsoo  and
+      Augenstein, Isabelle},
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1151/",
+    doi = "10.18653/v1/2026.acl-long.1151",
+    pages = "25101--25133",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Incorporating external knowledge is crucial for knowledge-intensive tasks, such as question answering and fact checking. However, language models (LMs) may ignore relevant information that contradicts outdated parametric memory or be distracted by irrelevant contexts. While many context utilisation manipulation techniques (CMTs) have recently been proposed to alleviate these issues, few have seen systematic comparison. In this paper, we develop CUB (Context Utilisation Benchmark) - the first comprehensive benchmark designed to help diagnose CMTs under diverse noisy context conditions within retrieval-augmented generation (RAG). With this benchmark, we conduct the most extensive evaluation to date of seven state-of-the-art methods, representative of the main categories of CMTs, across three diverse datasets and tasks, applied to 11 LMs. Our findings expose critical gaps in current CMT evaluation practices, demonstrating the need for holistic testing. We reveal that most existing CMTs struggle to handle the full spectrum of context types encountered in real-world RAG scenarios. We also find that many CMTs display inflated performance on simple synthesised datasets, compared to more realistic datasets with naturally occurring samples."
+}
+@inproceedings{cao-etal-2026-re3,
+    title = "Re$^3$: Relevance {\&} Recency Retrieval for Mitigating Temporal Hallucination",
+    author = "Cao, Jiawei  and
+      Ouyang, Jie  and
+      Cheng, Mingyue  and
+      Zhou, Zhaomeng  and
+      Liu, Chunli  and
+      Li, Yupeng  and
+      Liu, Zirui  and
+      Wang, Shijin",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1180/",
+    doi = "10.18653/v1/2026.acl-long.1180",
+    pages = "25735--25760",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Retrieval-Augmented Generation (RAG) is a mainstream approach to mitigating hallucinations in Large Language Models (LLMs), yet in dynamic real-world scenarios, such as weather forecasting or evolving news events, existing retrievers suffer from both temporal-semantic misalignment and outdated-document interference. To address this, we propose Relevance Recency Retrieval (Re$^3$), a novel framework that mitigates temporal hallucinations via two core components: a Time-Aware Dual Relevance Encoder that embeds heterogeneous temporal signals into the semantic space to ensure retrieval fidelity, and a Conflict-Aware Recency Filter that performs listwise arbitration to identify and suppress obsolete factual versions. To rigorously evaluate this setting, we introduce Re$^2$ Bench, a large-scale benchmark comprising over 1.3 million instances designed to assess system robustness in realistic environments where temporal constraints and conflicting factual versions coexist. Experiments on three public benchmarks and Re$^2$ Bench demonstrate that Re$^3$ consistently outperforms the strongest baselines by an average of 9.7{\%} in generation accuracy, with gains of up to 25.2{\%} on challenging dynamic tasks, while demonstrating robustness across diverse RAG settings."
+}
+@inproceedings{schuster-etal-2026-whose,
+    title = "Whose Facts Win? {LLM} Source Preferences under Knowledge Conflicts",
+    author = "Schuster, Jakob  and
+      Gautam, Vagrant  and
+      Markert, Katja",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1357/",
+    doi = "10.18653/v1/2026.acl-long.1357",
+    pages = "29430--29459",
+    ISBN = "979-8-89176-390-6",
+    abstract = "As large language models (LLMs) are more frequently used in retrieval-augmented generation pipelines, it is increasingly relevant to study their behavior under knowledge conflicts. Thus far, the role of the source of the retrieved information has gone unexamined. We address this gap with a novel framework to investigate how source preferences affect LLM resolution of inter-context knowledge conflicts in English, motivated by interdisciplinary research on credibility. By using synthetic sources, we study preferences for different types of sources without inheriting the biases of specific real-world sources. With a comprehensive, tightly-controlled evaluation of 13 open-weight LLMs, we find that LLMs prefer institutionally-corroborated information (e.g., government or newspaper sources) over information from people and social media. However, these source preferences can be reversed by simply repeating information from less credible sources. To mitigate repetition effects and maintain consistent preferences, we propose a novel method that reduces repetition bias by up to 79.2{\%}, while also maintaining at least 72.5{\%} of original preferences. We release all data and code to encourage future work on credibility and source preferences in knowledge-intensive NLP."
+}
+@inproceedings{du-etal-2026-optimizing,
+    title = "Optimizing User Profiles via Contextual Bandits for Retrieval-Augmented {LLM} Personalization",
+    author = "Du, Linfeng  and
+      Yuan, Ye  and
+      Zhao, Zichen  and
+      Lyu, Fuyuan  and
+      Penaloza, Emiliano  and
+      Chen, Xiuying  and
+      Sun, Zipeng  and
+      Kang, Jikun  and
+      Charlin, Laurent  and
+      Liu, Xue  and
+      Wu, Haolun",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1467/",
+    doi = "10.18653/v1/2026.acl-long.1467",
+    pages = "31803--31817",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Large language models (LLMs) excel at general-purpose tasks, yet adapting their responses to individual users remains challenging. Retrieval augmentation provides a lightweight alternative to fine-tuning by conditioning LLMs on user history records, and existing approaches typically select these records based on semantic relevance. We argue that relevance serves as an unreliable proxy for utility: a record may be semantically similar to a query yet fail to improve generation quality or even degrade it due to redundancy or conflicting information. To bridge this gap, we propose PURPLE, a contextual bandit framework that oPtimizes UseR Profiles for LLM pErsonalization. In contrast to a greedy selection of the most relevant records, PURPLE treats profile construction as an order-sensitive generation process and utilizes a Plackett-Luce ranking model to capture complex inter-record dependencies. By training with semantically rich feedback provided by the likelihood of the reference response, our method aligns retrieval directly with generation quality. Extensive experiments on nine personalization tasks demonstrate that PURPLE consistently outperforms strong heuristic and retrieval-augmented baselines in both effectiveness and efficiency, establishing a principled and scalable solution for optimizing user profiles."
+}
+@inproceedings{li-etal-2026-debate,
+    title = "Debate-of-Thoughts: Resolving Knowledge Conflicts in {LLM}s Through Internal Deliberation",
+    author = "Li, Guocong  and
+      Hu, Qirui  and
+      Wang, Ping  and
+      Zhang, Guofeng  and
+      Wu, Jian  and
+      Xu, Hongxia",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1651/",
+    doi = "10.18653/v1/2026.acl-long.1651",
+    pages = "35674--35696",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Large Language Models enhanced with Retrieval Augmented Generation show strong potential in knowledge intensive tasks. However, they often encounter knowledge conflicts, where retrieved information contradicts the model{'}s internal knowledge or exhibits internal inconsistencies. Existing methods treat this as a simplistic binary choice, forcing models to blindly trust external contexts or rigidly rely on memory, resulting in unreliable predictions that swing between sycophancy and stubbornness. We argue that a more principled approach is to embrace contradictions as opportunities for deeper reasoning. To this end, we introduce Debate-of-Thoughts (DoT), a framework that transforms conflict resolution into an active deliberation process. DoT guides a single model through three phases: 1) hypothesis generation, which forms competing perspectives; 2) internal debate, where the model acts as both a proponent and a critic to stress test each view; and 3) adjudication, where a judge module evaluates arguments based on evidence and logical consistency. We implement DoT via two complementary strategies: inference time prompt chaining and supervised fine tuning. Experiments across multiple conflict benchmarks show that DoT consistently outperforms state-of-the-art methods, while generating transparent debate transcripts that explain its decisions. By improving both accuracy and interpretability under knowledge conflicts, DoT establishes a more reliable paradigm for retrieval augmented generation systems."
+}
+@inproceedings{verma-etal-2026-nest,
+    title = "{NEST}: Nested Evidence Survival for Retrieval",
+    author = "Verma, Akshay  and
+      Pillai, Siddharth  and
+      Sircar, Prateek  and
+      Gupta, Deepak",
+    editor = "Li, Yunyao  and
+      Rehm, Georg  and
+      Tu, Mei",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-industry.35/",
+    doi = "10.18653/v1/2026.acl-industry.35",
+    pages = "507--516",
+    ISBN = "979-8-89176-394-4",
+    abstract = "Retrieval-Augmented Generation (RAG) systems degrade sharply under extreme noise, where relevant evidence is sparse and easily pruned by static retrieval decisions. Existing approaches fixed top-k retrieval, hierarchical chunking, cross-encoder reranking, or policy-based iterative control- either rely on rigid heuristics or incur substantial computational overhead, and often fail to recover context-dependent evidence without introducing redundancy or latency. We introduce NEST (Nested Evidence Survival for Retrieval), a lightweight, training-free RAG framework that improves factual grounding by explicitly separating recall amplification from precision selection. NEST first maximizes recall through Nested Evidence Survival, evaluating candidates under nested retrieval contexts to rescue evidence that would otherwise be pruned by static chunking. It then applies a survival-consistent Mean Reciprocal Rank (MRR) selection mechanism to retain evidence that remains salient across retrieval scopes, removing redundancy without harming recall. Evaluated on WebQuestions, HotpotQA (distractor setting), and a proprietary InternalQA benchmark with 50M Common Crawl distractors, NEST consistently outperforms strong adaptive RAG baselines, including DeepRAG, improving EM by up to +2.4 pp and F1 by +2.1 pp, while increasing retrieval recall by +6.8 pp. These gains are achieved with only 12{--}18 ms additional latency. Ablation studies confirm that Nested Evidence Survival drives recall improvements, while MRR-based selection converts these gains into precision, demonstrating that recall-first retrieval with principled pruning can outperform iterative control and model scaling in retrieval-augmented generation."
+}
+@inproceedings{wang-etal-2025-tricking,
+    title = "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    author = "Wang, Cheng  and
+      Wang, Yiwei  and
+      Cai, Yujun  and
+      Hooi, Bryan",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.210/",
+    doi = "10.18653/v1/2025.naacl-long.210",
+    pages = "4183--4194",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Retrieval-augmented generation (RAG) systems enhance large language models by incorporating external knowledge, addressing issues like outdated internal knowledge and hallucination. However, their reliance on external knowledge bases makes them vulnerable to corpus poisoning attacks, where adversarial passages can be injected to manipulate retrieval results. Existing methods for crafting such passages, such as random token replacement or training inversion models, are often slow and computationally expensive, requiring either access to retriever{'}s gradients or large computational resources. To address these limitations, we propose Dynamic Importance-Guided Genetic Algorithm (DIGA), an efficient black-box method that leverages two key properties of retrievers: insensitivity to token order and bias towards influential tokens. By focusing on these characteristics, DIGA dynamically adjusts its genetic operations to generate effective adversarial passages with significantly reduced time and memory usage. Our experimental evaluation shows that DIGA achieves superior efficiency and scalability compared to existing methods, while maintaining comparable or better attack success rates across multiple datasets."
+}
+@inproceedings{sharma-etal-2025-faux,
+    title = "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models",
+    author = "Sharma, Nikhil  and
+      Murray, Kenton  and
+      Xiao, Ziang",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.411/",
+    doi = "10.18653/v1/2025.naacl-long.411",
+    pages = "8090--8107",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Although the multilingual capability of LLMs offers new opportunities to overcome the language barrier, do these capabilities translate into real-life scenarios where linguistic divide and knowledge conflicts between multilingual sources are known occurrences? In this paper, we studied LLM{'}s linguistic preference in a cross-language RAG-based information search setting. We found that LLMs displayed systemic bias towards information in the same language as the query language in both document retrieval and answer generation. Furthermore, in scenarios where no information is in the language of the query, LLMs prefer documents in high-resource languages during generation, potentially reinforcing the dominant views. Such bias exists for both factual and opinion-based queries. Our results highlight the linguistic divide within multilingual LLMs in information search systems. The seemingly beneficial multilingual capability of LLMs may backfire on information parity by reinforcing language-specific filter bubbles further marginalizing low-resource views."
+}
+@inproceedings{wu-etal-2025-pa,
+    title = "{PA}-{RAG}: {RAG} Alignment via Multi-Perspective Preference Optimization",
+    author = "Wu, Jiayi  and
+      Cai, Hengyi  and
+      Yan, Lingyong  and
+      Sun, Hao  and
+      Li, Xiang  and
+      Wang, Shuaiqiang  and
+      Yin, Dawei  and
+      Gao, Ming",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.459/",
+    doi = "10.18653/v1/2025.naacl-long.459",
+    pages = "9091--9112",
+    ISBN = "979-8-89176-189-6",
+    abstract = "The emergence of Retrieval-augmented generation (RAG) has alleviated the issues of outdated and hallucinatory content in the generation of large language models (LLMs), yet it still reveals numerous limitations. When a general-purpose LLM serves as the RAG generator, it often suffers from inadequate response informativeness, response robustness, and citation quality. Past approaches to tackle these limitations, either by incorporating additional steps beyond generating responses or optimizing the generator through supervised fine-tuning (SFT), still failed to align with the RAG requirement thoroughly. Consequently, optimizing the RAG generator from multiple preference perspectives while maintaining its end-to-end LLM form remains a challenge. To bridge this gap, we propose Multiple Perspective Preference Alignment for Retrieval-Augmented Generation (PA-RAG), a method for optimizing the generator of RAG systems to align with RAG requirements comprehensively. Specifically, we construct high-quality instruction fine-tuning data and multi-perspective preference data by sampling varied quality responses from the generator across different prompt documents quality scenarios. Subsequently, we optimize the generator using SFT and Direct Preference Optimization (DPO). Extensive experiments conducted on four question-answer datasets across three LLMs demonstrate that PA-RAG can significantly enhance the performance of RAG generators. Our code and datasets are available at \url{https://github.com/wujwyi/PA-RAG}."
+}
+@inproceedings{sohn-etal-2025-rationale,
+    title = "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+    author = "Sohn, Jiwoong  and
+      Park, Yein  and
+      Yoon, Chanwoong  and
+      Park, Sihyeon  and
+      Hwang, Hyeon  and
+      Sung, Mujeen  and
+      Kim, Hyunjae  and
+      Kang, Jaewoo",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.635/",
+    doi = "10.18653/v1/2025.naacl-long.635",
+    pages = "12739--12753",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Large language models (LLM) hold significant potential for applications in biomedicine, but they struggle with hallucinations and outdated knowledge.While retrieval-augmented generation (RAG) is generally employed to address these issues, it also has its own set of challenges: (1) LLMs are vulnerable to irrelevant or unhelpful context, (2) medical queries are often not well-targeted for helpful information, and (3) retrievers are prone to bias toward the specific source corpus they were trained on. In this study, we present RAG$^2$ (RAtionale-Guided RAG), a new framework for enhancing the reliability of RAG in biomedical contexts. RAG$^2$ incorporates three key innovations: a small filtering model trained on perplexity-based labels of rationales, which selectively augments informative snippets of documents while filtering out distractors; LLM-generated rationales as queries to improve the utility of retrieved snippets; a structure designed to retrieve snippets evenly from a comprehensive set of four biomedical corpora, effectively mitigating retriever bias. Our experiments demonstrate that RAG$^2$ improves the state-of-the-art LLMs of varying sizes, with improvements of up to 6.1{\%}, and it outperforms the previous best medical RAG model by up to 5.6{\%} across three medical question-answering benchmarks. Our code is available at \url{https://github.com/dmis-lab/RAG2}"
+}
+@inproceedings{kalra-etal-2025-hypa,
+    title = "{H}y{PA}-{RAG}: A Hybrid Parameter Adaptive Retrieval-Augmented Generation System for {AI} Legal and Policy Applications",
+    author = "Kalra, Rishi  and
+      Wu, Zekun  and
+      Gulley, Ayesha  and
+      Hilliard, Airlie  and
+      Guan, Xin  and
+      Koshiyama, Adriano  and
+      Treleaven, Philip Colin",
+    editor = "Chen, Weizhu  and
+      Yang, Yi  and
+      Kachuee, Mohammad  and
+      Fu, Xue-Yong",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-industry.79/",
+    doi = "10.18653/v1/2025.naacl-industry.79",
+    pages = "1036--1054",
+    ISBN = "979-8-89176-194-0",
+    abstract = "Large Language Models (LLMs) face limitations in AI legal and policy applications due to outdated knowledge, hallucinations, and poor reasoning in complex contexts. Retrieval-Augmented Generation (RAG) systems address these issues by incorporating external knowledge, but suffer from retrieval errors, ineffective context integration, and high operational costs. This paper presents the Hybrid Parameter-Adaptive RAG (HyPA-RAG) system, designed for the AI legal domain, with NYC Local Law 144 (LL144) as the test case. HyPA-RAG integrates a query complexity classifier for adaptive parameter tuning, a hybrid retrieval approach combining dense, sparse, and knowledge graph methods, and a comprehensive evaluation framework with tailored question types and metrics. Testing on LL144 demonstrates that HyPA-RAG enhances retrieval accuracy, response fidelity, and contextual precision, offering a robust and adaptable solution for high-stakes legal and policy applications."
+}
+@inproceedings{kangur-etal-2025-multireflect,
+    title = "{M}ulti{R}eflect: Multimodal Self-Reflective {RAG}-based Automated Fact-Checking",
+    author = "Kangur, Uku  and
+      Agrawal, Krish  and
+      Singh, Yashashvi  and
+      Sabir, Ahmed  and
+      Sharma, Rajesh",
+    editor = "Kriz, Reno  and
+      Murray, Kenton",
+    booktitle = "Proceedings of the 1st Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2025)",
+    month = aug,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.magmar-1.1/",
+    doi = "10.18653/v1/2025.magmar-1.1",
+    pages = "1--17",
+    ISBN = "979-8-89176-280-0",
+    abstract = "In this work, we introduce MultiReflect, a novel multimodal self-reflective Retrieval Augmented Generation (RAG)-based automated fact-checking pipeline. MultiReflect is designed to address the challenges of rapidly outdated information, limitations in human query capabilities, and expert knowledge barriers in fact-checking. Our proposed pipeline leverages the latest advancements in Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) to enhance fact verification across text and images. Specifically, by integrating multimodal data processing with RAG-based evidence reflection, our system improves the accuracy of fact-checking by utilizing internet-sourced verification. We evaluate our results on the VERITE benchmarks and using several multimodal LLMs, outperforming baselines in binary classification."
+}
+@inproceedings{you-etal-2025-cross,
+    title = "Cross-modal Clustering-based Retrieval for Scalable and Robust Image Captioning",
+    author = "You, Jingyi  and
+      Sasaki, Hiroshi  and
+      Kadowaki, Kazuma",
+    editor = "Kriz, Reno  and
+      Murray, Kenton",
+    booktitle = "Proceedings of the 1st Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2025)",
+    month = aug,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.magmar-1.4/",
+    doi = "10.18653/v1/2025.magmar-1.4",
+    pages = "47--58",
+    ISBN = "979-8-89176-280-0",
+    abstract = "Recent advances in retrieval-augmented generative image captioning (RAG-IC) have significantly improved caption quality by incorporating external knowledge and similar examples into language model-driven caption generators. However, these methods still encounter challenges when applied to real-world scenarios. First, many existing approaches rely on bimodal retrieval datastores that require large amounts of labeled data and substantial manual effort to construct, making them costly and time-consuming. Moreover, they simply retrieve the nearest samples to the input query from datastores, which leads to high redundancy in the retrieved content and subsequently degrades the quality of the generated captions. In this paper, we introduce a novel RAG-IC approach named \textit{\textbf{C}r\textbf{o}ss-modal \textbf{Di}versity-promoting \textbf{Ret}rieval technique} (CoDiRet), which integrates a text-only unimodal retrieval module with our unique cluster-based retrieval mechanism. This proposal simultaneously enhances the scalability of the datastore, promotes diversity in retrieved content, and improves robustness against out-of-domain inputs, which eventually facilitates real-world applications. Experimental results demonstrate that our method, despite being exclusively trained on the COCO benchmark dataset, achieves competitive performance on the in-domain benchmark and generalizes robustly across different domains without additional training."
+}
+@inproceedings{schumacher-etal-2025-raster,
+    title = "{RAST}e{R}: Robust, Agentic, and Structured Temporal Reasoning",
+    author = "Schumacher, Dan  and
+      Haji, Fatemeh  and
+      Grey, Tara  and
+      Bandlamudi, Niharika  and
+      Karnik, Nupoor  and
+      Kumar, Gagana Uday  and
+      Chiang, Cho-Yu Jason  and
+      Najafirad, Peyman  and
+      Vishwamitra, Nishant  and
+      Rios, Anthony",
+    editor = "Inui, Kentaro  and
+      Sakti, Sakriani  and
+      Wang, Haofen  and
+      Wong, Derek F.  and
+      Bhattacharyya, Pushpak  and
+      Banerjee, Biplab  and
+      Ekbal, Asif  and
+      Chakraborty, Tanmoy  and
+      Singh, Dhirendra Pratap",
+    booktitle = "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    month = dec,
+    year = "2025",
+    address = "Mumbai, India",
+    publisher = "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.ijcnlp-long.166/",
+    doi = "10.18653/v1/2025.ijcnlp-long.166",
+    pages = "3098--3123",
+    ISBN = "979-8-89176-298-5",
+    abstract = "Temporal question answering (TQA) remains a persistent challenge for large language models (LLMs), particularly in retrieval-augmented generation (RAG) settings where retrieved content may be irrelevant, outdated, or temporally inconsistent. This is especially critical in applications like clinical event ordering, policy tracking, and real-time decision-making, which require reliable temporal reasoning even under noisy or misleading context. To address this challenge, we introduce RASTeR: Robust, Agentic, and Structured, Temporal Reasoning, an agentic prompting framework that separates context evaluation from answer generation. RASTeR first assesses the relevance and temporal coherence of retrieved context, then constructs a structured temporal knowledge graph (TKG) to better facilitate reasoning. When inconsistencies are detected, RASTeR selectively corrects or discards context before generating an answer. Across multiple datasets and LLMs, RASTeR consistently improves robustness: defined here as the model{'}s ability to generate correct predictions despite suboptimal context. We further validate our approach through a ``needle-in-the-haystack'' study, in which relevant context is buried among irrelevant distractors. Even with forty distractors, RASTeR achieves 75{\%} accuracy, compared to the runner-up model, which reaches only 62{\%}."
+}
+@inproceedings{bi-etal-2025-context,
+    title = "Context-{DPO}: Aligning Language Models for Context-Faithfulness",
+    author = "Bi, Baolong  and
+      Huang, Shaohan  and
+      Wang, Yiwei  and
+      Yang, Tianchi  and
+      Zhang, Zihan  and
+      Huang, Haizhen  and
+      Mei, Lingrui  and
+      Fang, Junfeng  and
+      Li, Zehao  and
+      Wei, Furu  and
+      Deng, Weiwei  and
+      Sun, Feng  and
+      Zhang, Qi  and
+      Liu, Shenghua",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.536/",
+    doi = "10.18653/v1/2025.findings-acl.536",
+    pages = "10280--10300",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Reliable responses from large language models (LLMs) require adherence to user instructions and retrieved information. While alignment techniques help LLMs align with human intentions and values, improving context-faithfulness through alignment remains underexplored. To address this, we propose Context-DPO, the first alignment method specifically designed to enhance LLMs' context-faithfulness. We introduce ConFiQA, a benchmark that simulates Retrieval-Augmented Generation (RAG) scenarios with knowledge conflicts to evaluate context-faithfulness. By leveraging faithful and stubborn responses to questions with provided context from ConFiQA, our Context-DPO aligns LLMs through direct preference optimization. Extensive experiments demonstrate that our Context-DPO significantly improves context-faithfulness, achieving 35{\%} to 280{\%} improvements on popular open-source models. Further analysis demonstrates that Context-DPO preserves LLMs' generative capabilities while providing interpretable insights into context utilization."
+}
+@inproceedings{zhang-etal-2025-neuro,
+    title = "Neuro-Symbolic Query Compiler",
+    author = "Zhang, Yuyao  and
+      Dou, Zhicheng  and
+      Li, Xiaoxi  and
+      Jin, Jiajie  and
+      Wu, Yongkang  and
+      Li, Zhonghua  and
+      Qi, Ye  and
+      Wen, Ji-Rong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.628/",
+    doi = "10.18653/v1/2025.findings-acl.628",
+    pages = "12138--12155",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Precise recognition of search intent in Retrieval-Augmented Generation (RAG) systems remains a challenging goal, especially under resource constraints and for complex queries with nested structures and dependencies. This paper presents \textbf{QCompiler}, a neuro-symbolic framework inspired by linguistic grammar rules and compiler design, to bridge this gap. It theoretically presents a minimal yet sufficient Backus-Naur Form (BNF) grammar $G[q]$ to formalize complex queries. Unlike previous methods, this grammar maintains completeness while minimizing redundancy. Based on this, QCompiler includes a query expression translator, a Lexical syntax parser, and a Recursive Descent Processor to compile queries into Abstract Syntax Trees (ASTs) for execution. The atomicity of the sub-queries in the leaf nodes ensures more precise document retrieval and response generation, significantly improving the RAG system{'}s ability to address complex queries."
+}
+@inproceedings{choe-etal-2025-hierarchical,
+    title = "Hierarchical Retrieval with Evidence Curation for Open-Domain Financial Question Answering on Standardized Documents",
+    author = "Choe, Jaeyoung  and
+      Kim, Jihoon  and
+      Jung, Woohwan",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.855/",
+    doi = "10.18653/v1/2025.findings-acl.855",
+    pages = "16663--16681",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Retrieval-augmented generation (RAG) based large language models (LLMs) are widely used in finance for their excellent performance on knowledge-intensive tasks. However, standardized documents (e.g., SEC filing) share similar formats such as repetitive boilerplate texts,and similar table structures. This similarity forces traditional RAG methods to misidentify near-duplicate text, leading to duplicate retrieval that undermines accuracy and completeness. To address these issues, we propose the Hierarchical Retrieval with Evidence Curation (HiREC) framework. Our approach first performs hierarchical retrieval to reduce confusion among similar texts. It first retrieve related documents and then selects the most relevant passages from the documents. The evidence curation process removes irrelevant passages. When necessary, it automatically generates complementary queries to collect missing information. To evaluate our approach, we construct and release a Large-scale Open-domain Financial (LOFin) question answering benchmark that includes 145,897 SEC documents and 1,595 question-answer pairs. Our code and data are available at \url{https://github.com/deep-over/LOFin-bench-HiREC}."
+}
+@inproceedings{abootorabi-etal-2025-ask,
+    title = "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+    author = "Abootorabi, Mohammad Mahdi  and
+      Zobeiri, Amirhosein  and
+      Dehghani, Mahdi  and
+      Mohammadkhani, Mohammadali  and
+      Mohammadi, Bardia  and
+      Ghahroodi, Omid  and
+      Baghshah, Mahdieh Soleymani  and
+      Asgari, Ehsaneddin",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.861/",
+    doi = "10.18653/v1/2025.findings-acl.861",
+    pages = "16776--16809",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Large Language Models (LLMs) suffer from hallucinations and outdated knowledge due to their reliance on static training data. Retrieval-Augmented Generation (RAG) mitigates these issues by integrating external dynamic information for improved factual grounding. With advances in multimodal learning, Multimodal RAG extends this approach by incorporating multiple modalities such as text, images, audio, and video to enhance the generated outputs. However, cross-modal alignment and reasoning introduce unique challenges beyond those in unimodal RAG. This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We review training strategies, robustness enhancements, loss functions, and agent-based approaches, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field. This survey lays the foundation for developing more capable and reliable AI systems that effectively leverage multimodal dynamic external knowledge bases. All resources are publicly available at \url{https://github.com/llm-lab-org/Multimodal-RAG-Survey}."
+}
+@inproceedings{li-etal-2025-generate,
+    title = "Generate, Discriminate, Evolve: Enhancing Context Faithfulness via Fine-Grained Sentence-Level Self-Evolution",
+    author = "Li, Kun  and
+      Zhang, Tianhua  and
+      Li, Yunxiang  and
+      Luo, Hongyin  and
+      Moustafa, Abdalla Mohamed Salama Sayed  and
+      Wu, Xixin  and
+      Glass, James R.  and
+      Meng, Helen M.",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.878/",
+    doi = "10.18653/v1/2025.findings-acl.878",
+    pages = "17091--17105",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Improving context faithfulness in large language models is essential for developing trustworthy retrieval augmented generation systems and mitigating hallucinations, especially in long-form question answering (LFQA) tasks or scenarios involving knowledge conflicts. Existing methods either intervene LLMs only at inference without addressing their inherent limitations or overlook the potential for self-improvement. In this paper, we introduce GenDiE(Generate, Discriminate, Evolve), a novel self-evolving framework that enhances context faithfulness through fine-grained sentence-level optimization. GenDiE combines both generative and discriminative training, equipping LLMs with self-generation and self-scoring capabilities to facilitate iterative self-evolution. This supports both data construction for model alignment and score-guided search during inference. Furthermore, by treating each sentence in a response as an independent optimization unit, GenDiE effectively addresses the limitations of previous approaches that optimize at the holistic answer level, which may miss unfaithful details. Experiments on ASQA (in-domain LFQA) and ConFiQA (out-of-domain counterfactual QA) datasets demonstrate that GenDiE surpasses various baselines in both faithfulness and correctness, and exhibits robust performance for domain adaptation."
+}
+@inproceedings{wu-etal-2025-assessing,
+    title = "Assessing and Mitigating Medical Knowledge Drift and Conflicts in Large Language Models",
+    author = "Wu, Weiyi  and
+      Xu, Xinwen  and
+      Gao, Chongyang  and
+      Diao, Xingjian  and
+      Li, Siting  and
+      Salas, Lucas A.  and
+      Gui, Jiang",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.38/",
+    doi = "10.18653/v1/2025.findings-emnlp.38",
+    pages = "707--730",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Large Language Models (LLMs) offer transformative potential across diverse fields, yet their safe and effective deployment is hindered by inherent knowledge conflicts{---}stemming from temporal evolution, divergent sources, and contradictory guidelines. This challenge is particularly acute in medicine, an interdisciplinary frontier for NLP. Rapid medical concept drift can lead LLMs to provide incorrect or outdated advice, impacting their utility and the broader societal benefits of NLP advances. This study introduces ConflictMedQA, a benchmark designed to systematically evaluate how LLMs manage varied knowledge conflicts in clinical guidelines. Our assessment of seven state-of-the-art models across 4,290 scenarios reveals significant difficulties in rejecting incorrect recommendations and frequent endorsement of conflicting advice, highlighting an important gap for NLP systems intended for real-world impact. We explore two fundamental mitigation approaches: retrieval-augmented generation and preference fine-tuning via direct preference optimization. While each offers improvements, their synergistic combination yields the best results. These findings emphasize the need for LLMs to discern subtle but critical guideline conflicts. This is a crucial step in advancing NLP{'}s capabilities and ensuring its dependable application in critical societal domains. The proposed dataset is available at \url{https://huggingface.co/datasets/RDBH/DriftMed}."
+}
+@inproceedings{chen-etal-2025-vlm,
+    title = "{VLM} Is a Strong Reranker: Advancing Multimodal Retrieval-augmented Generation via Knowledge-enhanced Reranking and Noise-injected Training",
+    author = "Chen, Zhanpeng  and
+      Xu, Chengjin  and
+      Qi, Yiyan  and
+      Jiang, Xuhui  and
+      Guo, Jian",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.432/",
+    doi = "10.18653/v1/2025.findings-emnlp.432",
+    pages = "8140--8158",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Vision-language Models (VLMs) have demonstrated remarkable capabilities in processing and generating content across multiple data modalities. However, a significant drawback of VLMs is their reliance on static training data, leading to outdated information and limited contextual awareness. This static nature hampers their ability to provide accurate and up-to-date responses, particularly in dynamic or rapidly evolving contexts. To address these limitations, we propose RagVL, a novel framework with knowledge-enhanced reranking and noise-injected training. We instruction-tune the VLM with a simple yet effective instruction template to induce its ranking ability and serve it as a reranker to precisely filter the top-k retrieved images. For generation, we inject visual noise during training at the data and token levels to enhance the generator{'}s robustness. Extensive experiments on four datasets verify the effectiveness of our method. Code and models are available at \url{https://anonymous.4open.science/r/RagVL-F694}."
+}
+@inproceedings{lee-etal-2025-magic,
+    title = "{MAGIC}: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation",
+    author = "Lee, Jungyeon  and
+      Kangmin, Lee  and
+      Kim, Taeuk",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.466/",
+    doi = "10.18653/v1/2025.findings-emnlp.466",
+    pages = "8783--8803",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Knowledge conflict often arises in retrieval-augmented generation (RAG) systems, where retrieved documents may be inconsistent with one another or contradict the model{'}s parametric knowledge.Existing benchmarks for investigating the phenomenon have notable limitations, including a narrow focus on the question answering setup, heavy reliance on entity substitution techniques, and a restricted range of conflict types. To address these issues, we propose a knowledge graph (KG)-based framework that generates varied and subtle conflicts between two similar yet distinct contexts, while ensuring interpretability through the explicit relational structure of KGs.Experimental results on our benchmark, MAGIC, provide intriguing insights into the inner workings of LLMs regarding knowledge conflict: both open-source and proprietary models struggle with conflict detection{---}especially when multi-hop reasoning is required{---}and often fail to pinpoint the exact source of contradictions.Finally, we present in-depth analyses that serve as a foundation for improving LLMs in integrating diverse, sometimes even conflicting, information."
+}
+@inproceedings{qu-etal-2025-uplift,
+    title = "Uplift-{RAG}: Uplift-Driven Knowledge Preference Alignment for Retrieval-Augmented Generation",
+    author = "Qu, Changle  and
+      Dai, Sunhao  and
+      Cai, Hengyi  and
+      Cheng, Yiyang  and
+      Xu, Jun  and
+      Wang, Shuaiqiang  and
+      Yin, Dawei",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.511/",
+    doi = "10.18653/v1/2025.findings-emnlp.511",
+    pages = "9632--9644",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Retrieval-augmented generation (RAG) has proven effective in enhancing the knowledge coverage of large language models (LLMs) and mitigating hallucinations by incorporating external retrieved documents. However, documents deemed relevant by the retriever are not necessarily helpful for answer generation, and including misleading information can even degrade performance. Existing efforts to estimate document utility often rely on the downstream generation performance, which conflates the influence of external documents with the intrinsic knowledge of the LLM, thereby obscuring the actual contribution of the retrieved content. To address this, this paper proposes Uplit-RAG, a uplift-driven knowledge preference alignment framework for RAG. Specifically, we first propose an uplift-based definition of document utility that quantifies each document{'}s marginal benefit over the LLM{'}s internal knowledge. We then optimize the reranker with three alignment objectives to identify and prioritize documents based on their uplift. This enables dynamic selection of documents that address the LLM{'}s knowledge gaps, going beyond fixed top-k selection, while reducing reference redundancy and the computational overhead of the LLM{'}s input. Extensive experiments demonstrate the effectiveness of Uplift-RAG."
+}
+@inproceedings{li-etal-2025-efficient-dynamic,
+    title = "Efficient Dynamic Clustering-Based Document Compression for Retrieval-Augmented-Generation",
+    author = "Li, Weitao  and
+      Zhang, Xiangyu  and
+      Liu, Kaiming  and
+      Lei, Xuanyu  and
+      Ma, Weizhi  and
+      Liu, Yang",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.522/",
+    doi = "10.18653/v1/2025.findings-emnlp.522",
+    pages = "9833--9849",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Retrieval-Augmented Generation (RAG) has emerged as a widely adopted approach for knowledge injection during large language model (LLM) inference in recent years. However, due to their limited ability to exploit fine-grained inter-document relationships, current RAG implementations face challenges in effectively addressing the retrieved noise and redundancy content, which may cause error in the generation results. To address these limitations, we propose an \textbf{E}fficient \textbf{D}ynamic \textbf{C}lustering-based document \textbf{C}ompression framework (\textbf{EDC$^2$-RAG}) that utilizes latent inter-document relationships while simultaneously removing irrelevant information and redundant content. We validate our approach, built upon GPT-3.5-Turbo and GPT-4o-mini, on widely used knowledge-QA and Hallucination-Detection datasets. Experimental results show that our method achieves consistent performance improvements across various scenarios and experimental settings, demonstrating strong robustness and applicability. Our code and datasets are available at \url{https://github.com/Tsinghua-dhy/EDC-2-RAG}."
+}
+@inproceedings{liu-etal-2025-avoiding,
+    title = "Avoiding Knowledge Edit Skipping in Multi-hop Question Answering with Guided Decomposition",
+    author = "Liu, Yi  and
+      Zhu, Xiangrong  and
+      Liu, Xiangyu  and
+      Wei, Wei  and
+      Hu, Wei",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.883/",
+    doi = "10.18653/v1/2025.findings-emnlp.883",
+    pages = "16256--16272",
+    ISBN = "979-8-89176-335-7",
+    abstract = "In a rapidly evolving world where information updates swiftly, knowledge in large language models (LLMs) becomes outdated quickly. Retraining LLMs is not a cost-effective option, making knowledge editing (KE) without modifying parameters particularly necessary. We find that although existing retrieval-augmented generation (RAG)-based KE methods excel at editing simple knowledge, they struggle with KE in multi-hop question answering due to the issue of ``edit skipping'', which refers to skipping the relevant edited fact in inference. In addition to the diversity of natural language expressions of knowledge, edit skipping also arises from the mismatch between the granularity of LLMs in problem-solving and the facts in the edited memory. To address this issue, we propose a novel Iterative Retrieval-Augmented Knowledge Editing method with guided decomposition (IRAKE) through the guidance from single edited facts and entire edited cases. Experimental results demonstrate that IRAKE mitigates the failure of editing caused by edit skipping and outperforms state-of-the-art methods for KE in multi-hop question answering."
+}
+@inproceedings{xi-etal-2025-omnithink,
+    title = "{O}mni{T}hink: Expanding Knowledge Boundaries in Machine Writing through Thinking",
+    author = "Xi, Zekun  and
+      Yin, Wenbiao  and
+      Fang, Jizhan  and
+      Wu, Jialong  and
+      Fang, Runnan  and
+      Jiang, Yong  and
+      Xie, Pengjun  and
+      Huang, Fei  and
+      Chen, Huajun  and
+      Zhang, Ningyu",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.50/",
+    doi = "10.18653/v1/2025.emnlp-main.50",
+    pages = "956--976",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Machine writing with large language models often relies on retrieval-augmented generation. However, these approaches remain confined within the boundaries of the model{'}s predefined scope, limiting the generation of content with rich information. Specifically, vanilla-retrieved information tends to lack depth, novelty, and suffers from redundancy, which negatively impacts the quality of generated articles, leading to shallow, unoriginal, and repetitive outputs. To address these issues, we propose OmniThink, a slow-thinking machine writing framework that emulates the human-like process of iterative expansion and reflection. The core idea behind OmniThink is to simulate the cognitive behavior of learners as they slowly deepen their knowledge of the topics. Experimental results demonstrate that OmniThink improves the knowledge density of generated articles without compromising metrics such as coherence and depth. Human evaluations and expert feedback further highlight the potential of OmniThink to address real-world challenges in the generation of long-form articles."
+}
+@inproceedings{wang-etal-2025-infogain,
+    title = "{I}nfo{G}ain-{RAG}: Boosting Retrieval-Augmented Generation through Document Information Gain-based Reranking and Filtering",
+    author = "Wang, Zihan  and
+      Liang, Zihan  and
+      Shao, Zhou  and
+      Ma, Yufei  and
+      Dai, Huangyu  and
+      Chen, Ben  and
+      Mao, Lingtao  and
+      Lei, Chenyi  and
+      Ding, Yuqing  and
+      Li, Han",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.365/",
+    doi = "10.18653/v1/2025.emnlp-main.365",
+    pages = "7190--7204",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Retrieval-Augmented Generation (RAG) has emerged as a promising approach to address key limitations of Large Language Models (LLMs), such as hallucination, outdated knowledge, and lacking reliable reference. However, current RAG frameworks often struggle with identifying whether retrieved documents meaningfully contribute to answer generation. This shortcoming makes it difficult to filter out irrelevant or even misleading content, which notably impacts the final performance. In this paper, we propose Document Information Gain (DIG), a novel metric designed to quantify the contribution of retrieved documents to correct answer generation. DIG measures a document{'}s value by computing the difference of LLM{'}s generation confidence with and without the document augmented. Further, we introduce InfoGain-RAG, a framework that leverages DIG scores to train a specialized reranker, which prioritizes each retrieved document from exact distinguishing and accurate sorting perspectives. This approach can effectively filter out irrelevant documents and select the most valuable ones for better answer generation. Extensive experiments across various models and benchmarks demonstrate that InfoGain-RAG can significantly outperform existing approaches, on both single and multiple retrieval paradigm. Specifically on NaturalQA, it achieves the improvements of 17.9{\%}, 4.5{\%}, 12.5{\%} in exact match accuracy against naive RAG, self-reflective RAG and modern ranking-based RAG respectively, and even an average of 15.3{\%} increment on advanced proprietary models GPT-4o across all datasets. These results demonstrate the feasibility of InfoGain-RAG as it can offer a reliable solution for RAG in multiple applications."
+}
+@inproceedings{zhang-etal-2025-pathwiserag,
+    title = "{P}athwise{RAG}: Multi-Dimensional Exploration and Integration Framework",
+    author = "Zhang, Hengrui  and
+      Huang, Pin-Siang  and
+      Zhang, Zhen  and
+      Lin, Peican  and
+      Yu, Yao-Ching  and
+      Hu, Bo  and
+      Du, Yulu",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1167/",
+    doi = "10.18653/v1/2025.emnlp-main.1167",
+    pages = "22904--22925",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Conventional retrieval-augmented generation(RAG) systems employ rigid retrieval strategies that create: (1) knowledge blind spots across domain boundaries, (2) reasoning fragmentation when processing interdependent concepts, and (3) contradictions from conflicting evidence sources. Motivated by these limitations, we introduce PathwiseRAG, which addresses these challenges through: intent-aware strategy selection to eliminate blind spots, dynamic reasoning networks that capture sub-problem interdependencies to overcome fragmentation, and parallel path exploration with adaptive refinement to resolve conflicts. The framework models query intent across semantic and reasoning dimensions, constructs a directed acyclic graph of interconnected sub-problems, and explores multiple reasoning trajectories while continuously adapting to emerging evidence. Evaluation across challenging benchmarks demonstrates significant improvements over state-of-the-art RAG systems, with average accuracy gains of 4.9{\%} and up to 6.9{\%} on complex queries, establishing a new paradigm for knowledge-intensive reasoning by transforming static retrieval into dynamic, multi-dimensional exploration."
+}
+@inproceedings{kirtania-etal-2025-stackfeed,
+    title = "{STACKFEED}: Structured Textual Actor-Critic Knowledge base editing with {FEED}back",
+    author = "Kirtania, Shashank  and
+      Gupta, Naman  and
+      Gupta, Priyanshu  and
+      Gulwani, Sumit  and
+      Iyer, Arun  and
+      Iyengar, Suresh Parthasarathy  and
+      Radhakrishna, Arjun  and
+      Rajamani, Sriram K.  and
+      Soares, Gustavo",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.176/",
+    doi = "10.18653/v1/2025.emnlp-industry.176",
+    pages = "2588--2606",
+    ISBN = "979-8-89176-333-3",
+    abstract = "Large Language Models (LLMs) often generate incorrect or outdated information, especially in low-resource settings or when dealing with private data. To address this, Retrieval-Augmented Generation (RAG) uses external knowledge bases (KBs), but these can also suffer from inaccuracies. We introduce STACKFEED, a novel Structured Textual Actor-Critic Knowledge base editing with Feedback approach that iteratively refines the KB based on expert feedback using a multi-actor, centralized critic reinforcement learning framework. STACKFEED defines a ReACT actor agent on each document to perform structured edits based on document-specific targeted instructions. Experimental results showcase that STACKFEED significantly improves KB quality and performance of the RAG system. We evaluate STACKFEED on low-resource programming problems, modified Python packages, and factual question-answering tasks."
+}
+@inproceedings{wang-etal-2025-llms,
+    title = "{LLM}s Know What They Need: Leveraging a Missing Information Guided Framework to Empower Retrieval-Augmented Generation",
+    author = "Wang, Keheng  and
+      Duan, Feiyu  and
+      Li, Peiguang  and
+      Wang, Sirui  and
+      Cai, Xunliang",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.163/",
+    pages = "2379--2400",
+    abstract = "Retrieval-Augmented Generation (RAG) demonstrates great value in alleviating outdated knowledge or hallucination by supplying LLMs with updated and relevant knowledge. However, RAG still faces several challenges in tackling complex multi-hop queries, which require LLMs to perform accurate reasoning and retrieval at each step. Inspired by the human reasoning process, where we progressively search for missing information after acquiring useful clues, it is natural to question whether LLMs have similar capabilities. In this work, we first experimentally verified the ability of LLMs to extract information from the retrieved knowledge as well as to know what is still missing. Based on the above discovery, we propose a Missing Information Guided Retrieve-Extraction-Solving paradigm (MIGRES), where we leverage the identification of missing information to generate a targeted query that steers the subsequent knowledge retrieval. Besides, we design a sentence-level re-ranking filtering approach to filter the irrelevant content from the document, along with the information extraction capability of LLMs to extract useful information from denoised documents. Extensive experiments conducted on multiple public datasets reveal the superiority of the proposed MIGRES method, and analytical experiments demonstrate the effectiveness of our proposed modules. Code and data are released in \url{https://github.com/AdelWang/MIGRES}."
+}
+@inproceedings{tang-etal-2025-evowiki,
+    title = "{E}vo{W}iki: Evaluating {LLM}s on Evolving Knowledge",
+    author = "Tang, Wei  and
+      Cao, Yixin  and
+      Deng, Yang  and
+      Ying, Jiahao  and
+      Wang, Bo  and
+      Yang, Yizhe  and
+      Zhao, Yuyue  and
+      Zhang, Qi  and
+      Huang, Xuanjing  and
+      Jiang, Yu-Gang  and
+      Liao, Yong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.47/",
+    doi = "10.18653/v1/2025.acl-long.47",
+    pages = "948--964",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Knowledge utilization is a critical aspect of LLMs, and understanding how they adapt to evolving knowledge is essential for their effective deployment. However, existing benchmarks are predominantly static, failing to capture the evolving nature of LLMs and knowledge, leading to inaccuracies and vulnerabilities such as contamination. In this paper, we introduce EvoWiki, an evolving dataset designed to reflect knowledge evolution by categorizing information into stable, evolved, and uncharted states. EvoWiki is fully auto-updatable, enabling precise evaluation of continuously changing knowledge and newly released LLMs. Through experiments with Retrieval-Augmented Generation (RAG) and Continual Learning (CL), we evaluate how effectively LLMs adapt to evolving knowledge. Our results indicate that current models often struggle with evolved knowledge, frequently providing outdated or incorrect responses. Moreover, the dataset highlights a synergistic effect between RAG and CL, demonstrating their potential to better adapt to evolving knowledge. EvoWiki provides a robust benchmark for advancing future research on the knowledge evolution capabilities of large language models."
+}
+@inproceedings{chang-etal-2025-main,
+    title = "{MAIN}-{RAG}: Multi-Agent Filtering Retrieval-Augmented Generation",
+    author = "Chang, Chia-Yuan  and
+      Jiang, Zhimeng  and
+      Rakesh, Vineeth  and
+      Pan, Menghai  and
+      Yeh, Chin-Chia Michael  and
+      Wang, Guanchu  and
+      Hu, Mingzhi  and
+      Xu, Zhichao  and
+      Zheng, Yan  and
+      Das, Mahashweta  and
+      Zou, Na",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.131/",
+    doi = "10.18653/v1/2025.acl-long.131",
+    pages = "2607--2622",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Large Language Models (LLMs) are becoming essential tools for various natural language processing tasks but often suffer from generating outdated or incorrect information. Retrieval-Augmented Generation (RAG) addresses this issue by incorporating external, real-time information retrieval to ground LLM responses. However, the existing RAG systems frequently struggle with the quality of retrieval documents, as irrelevant or noisy documents degrade performance, increase computational overhead, and undermine response reliability. To tackle this problem, we propose Multi-Agent Filtering Retrieval-Augmented Generation (MAIN-RAG), a training-free RAG framework that leverages multiple LLM agents to collaboratively filter and score retrieved documents. Specifically, MAIN-RAG introduces an adaptive filtering mechanism that dynamically adjusts the relevance filtering threshold based on score distributions, effectively minimizing noise while maintaining high recall of relevant documents. The proposed approach leverages inter-agent consensus to ensure robust document selection without requiring additional training data or fine-tuning. Experimental results across four QA benchmarks demonstrate that MAIN-RAG consistently outperforms traditional RAG approaches, achieving a 2{--}11{\%} improvement in answer accuracy while reducing the number of irrelevant retrieved documents. Quantitative analysis further reveals that our approach achieves superior response consistency and answer accuracy over baseline methods, offering a competitive and practical alternative to training-based solutions."
+}
+@inproceedings{yan-etal-2025-rpo,
+    title = "{RPO}: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+    author = "Yan, Shi-Qi  and
+      Liu, Quan  and
+      Ling, Zhen-Hua",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.261/",
+    doi = "10.18653/v1/2025.acl-long.261",
+    pages = "5228--5240",
+    ISBN = "979-8-89176-251-0",
+    abstract = "While Retrieval-Augmented Generation (RAG) has exhibited promise in utilizing external knowledge, its generation process heavily depends on the quality and accuracy of the retrieved context. Large language models (LLMs) struggle to evaluate the correctness of non-parametric knowledge retrieved externally when it differs from internal memorization, leading to knowledge conflicts during response generation. To this end, we introduce the \textbf{R}etrieval \textbf{P}reference \textbf{O}ptimization (RPO), a lightweight and effective alignment method to adaptively leverage multi-source knowledge based on retrieval relevance. An implicit representation of retrieval relevance is derived and incorporated into the reward model to integrate retrieval evaluation and response generation into a single model, solving the problem that previous methods necessitate the additional procedure to assess the retrieval quality. Notably, RPO is a RAG-dedicated alignment approach that quantifies the awareness of retrieval relevance in training, first overcoming mathematical obstacles. Experiments on four datasets demonstrate that RPO outperforms RAG by 4-10{\%} in accuracy without any extra component, exhibiting its robust generalization."
+}
+@inproceedings{ouyang-etal-2025-hoh,
+    title = "{H}o{H}: A Dynamic Benchmark for Evaluating the Impact of Outdated Information on Retrieval-Augmented Generation",
+    author = "Ouyang, Jie  and
+      Pan, Tingyue  and
+      Cheng, Mingyue  and
+      Yan, Ruiran  and
+      Luo, Yucong  and
+      Lin, Jiaying  and
+      Liu, Qi",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.301/",
+    doi = "10.18653/v1/2025.acl-long.301",
+    pages = "6036--6063",
+    ISBN = "979-8-89176-251-0",
+    abstract = "While Retrieval-Augmented Generation (RAG) has emerged as an effective approach for addressing the knowledge outdating problem in Large Language Models (LLMs), it still faces a critical challenge: the prevalence of outdated information in knowledge bases. Current research primarily focuses on incorporating up-to-date information, yet the impact of outdated information coexisting in retrieval sources remains inadequately addressed. To bridge this gap, we introduce HoH, the first benchmark specifically designed to evaluate the impact of outdated information on RAG. Our benchmark leverages token-level diff algorithms combined with LLM pipelines to efficiently create a large-scale QA dataset that accurately captures the evolution of temporal knowledge in real-world facts.Through comprehensive experiments, we reveal that outdated information significantly degrades RAG performance in two critical ways: (1) it substantially reduces response accuracy by distracting models from correct information, and (2) it can mislead models into generating potentially harmful outputs, even when current information is available. Current RAG approaches struggle with both retrieval and generation aspects when handling outdated information. These findings highlight the urgent need for innovative solutions to address the temporal challenges in RAG."
+}
+@inproceedings{wu-etal-2025-large,
+    title = "Large Language Models are Good Relational Learners",
+    author = "Wu, Fang  and
+      Dwivedi, Vijay Prakash  and
+      Leskovec, Jure",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.386/",
+    doi = "10.18653/v1/2025.acl-long.386",
+    pages = "7835--7854",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Large language models (LLMs) have demonstrated remarkable capabilities across various domains, yet their application to relational deep learning (RDL) remains underexplored. Existing approaches adapt LLMs by traversing relational links between entities in a database and converting the structured data into flat text documents, but this text-based serialization disregards critical relational structures, introduces redundancy, and often exceeds standard LLM context lengths. We introduce Rel-LLM, a novel architecture that employs a graph neural network (GNN) based encoder to create structured relational prompts for LLMs within a retrieval-augmented generation (RAG) framework. Unlike traditional text-based serialization approaches, our method preserves the inherent relational structure of databases while enabling LLMs to effectively process and reason over complex entity relationships. Specifically, the GNN encoder extracts a local subgraph around an entity to build feature representations that contain relevant entity relationships and temporal dependencies. These representations are transformed into structured prompts using a denormalization process, effectively allowing the LLM to reason over relational structures. Through extensive experiments, we demonstrate that Rel-LLM outperforms existing methods on key RDL tasks, offering a scalable and efficient approach to integrating LLMs with structured data sources. Code is available at \url{https://github.com/smiles724/Rel-LLM}."
+}
+@inproceedings{jiang-etal-2025-tc,
+    title = "{TC}{--}{RAG}: {T}uring{--}Complete {RAG}{'}s Case study on Medical {LLM} Systems",
+    author = "Jiang, Xinke  and
+      Fang, Yue  and
+      Qiu, Rihong  and
+      Zhang, Haoyu  and
+      Xu, Yongxin  and
+      Chen, Hao  and
+      Zhang, Wentao  and
+      Zhang, Ruizhe  and
+      Fang, Yuchen  and
+      Ma, Xinyu  and
+      Chu, Xu  and
+      Zhao, Junfeng  and
+      Wang, Yasha",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.558/",
+    doi = "10.18653/v1/2025.acl-long.558",
+    pages = "11400--11426",
+    ISBN = "979-8-89176-251-0",
+    abstract = "In the pursuit of enhancing domain-specific Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) emerges as a promising solution to mitigate issues such as hallucinations, outdated knowledge, and limited expertise in highly specialized queries. However, existing approaches to RAG fall short by neglecting system state variables, which are crucial for ensuring adaptive control, retrieval halting, and system convergence. In this paper, we introduce the Turing-Complete-RAG (TC-RAG) through rigorous proof, a novel framework that addresses these challenges by incorporating a Turing Complete System to manage state variables, thereby enabling more efficient and accurate knowledge retrieval. By leveraging a memory stack system with adaptive retrieval, reasoning, and planning capabilities, TC-RAG not only ensures the controlled halting of retrieval processes but also mitigates the accumulation of erroneous knowledge via Push and Pop actions. In the case study of the medical and general domain, our extensive experiments on seven real-world healthcare and general-domain datasets demonstrate the superiority of TC-RAG over existing methods in accuracy by over 7.20{\%}. Our code, datasets and RAG resources have been available at \url{https://github.com/Artessay/TC-RAG}."
+}
+@inproceedings{huo-etal-2025-micro,
+    title = "Micro-Act: Mitigate Knowledge Conflict in Question Answering via Actionable Self-Reasoning",
+    author = "Huo, Nan  and
+      Li, Jinyang  and
+      Qin, Bowen  and
+      Qu, Ge  and
+      Li, Xiaolong  and
+      Li, Xiaodong  and
+      Ma, Chenhao  and
+      Cheng, Reynold",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.909/",
+    doi = "10.18653/v1/2025.acl-long.909",
+    pages = "18550--18574",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Retrieval-Augmented Generation (RAG) systems commonly suffer from \textbf{Knowledge Conflicts}, where retrieved external knowledge contradicts the inherent, parametric knowledge of large language models (LLMs). It adversely affects performance on downstream tasks such as question answering (QA). Existing approaches often attempt to mitigate conflicts by directly comparing two knowledge sources in a side-by-side manner, but this can overwhelm LLMs with extraneous or lengthy contexts, ultimately hindering their ability to identify and mitigate inconsistencies. To address this issue, we propose \textbf{Micro-Act} a framework with a hierarchical action space that automatically perceives context complexity and adaptively decomposes each knowledge source into a sequence of fine-grained comparisons. These comparisons are represented as actionable steps, enabling reasoning beyond the superficial context. Through extensive experiments on five benchmark datasets, Micro-Act consistently achieves significant increase in QA accuracy over state-of-the-art baselines across all 5 datasets and 3 conflict types, especially in temporal and semantic types where all baselines fail significantly. More importantly, Micro-Act exhibits robust performance on non-conflict questions simultaneously, highlighting its practical value in real-world RAG applications."
+}
+@inproceedings{zhang-etal-2025-faithfulrag,
+    title = "{F}aithful{RAG}: Fact-Level Conflict Modeling for Context-Faithful Retrieval-Augmented Generation",
+    author = "Zhang, Qinggang  and
+      Xiang, Zhishang  and
+      Xiao, Yilin  and
+      Wang, Le  and
+      Li, Junhui  and
+      Wang, Xinrun  and
+      Su, Jinsong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1062/",
+    doi = "10.18653/v1/2025.acl-long.1062",
+    pages = "21863--21882",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Large language models (LLMs) augmented with retrieval systems have demonstrated significant potential in handling knowledge-intensive tasks. However, these models often struggle with unfaithfulness issues, generating outputs that either ignore the retrieved context or inconsistently blend it with the LLM{'}s parametric knowledge. This issue is particularly severe in cases of knowledge conflict, where the retrieved context conflicts with the model{'}s parametric knowledge. While existing faithful RAG approaches enforce strict context adherence through well-designed prompts or modified decoding strategies, our analysis reveals a critical limitation: they achieve faithfulness by forcibly suppressing the model{'}s parametric knowledge, which undermines the model{'}s internal knowledge structure and increases the risk of misinterpreting the context. To this end, this paper proposes FaithfulRAG, a novel framework that resolves knowledge conflicts by explicitly modeling discrepancies between the model{'}s parametric knowledge and retrieved context. Specifically, FaithfulRAG identifies conflicting knowledge at the fact level and designs a self-thinking process, allowing LLMs to reason about and integrate conflicting facts before generating responses. Extensive experiments demonstrate that our method outperforms state-of-the-art methods. The code is available at \url{https://github.com/DeepLearnXMU/Faithful-RAG}."
+}
+@inproceedings{pronesti-etal-2025-query,
+    title = "Query-driven Document-level Scientific Evidence Extraction from Biomedical Studies",
+    author = "Pronesti, Massimiliano  and
+      Bettencourt-Silva, Joao H  and
+      Flanagan, Paul  and
+      Pascale, Alessandra  and
+      Redmond, Ois{\'i}n  and
+      Belz, Anya  and
+      Hou, Yufang",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1359/",
+    doi = "10.18653/v1/2025.acl-long.1359",
+    pages = "28034--28051",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Extracting scientific evidence from biomedical studies for clinical research questions (e.g., Does stem cell transplantation improve quality of life in patients with medically refractory Crohn{'}s disease compared to placebo?) is a crucial step in synthesising biomedical evidence. In this paper, we focus on the task of document-level scientific evidence extraction for clinical questions with conflicting evidence. To support this task, we create a dataset called CochraneForest leveraging forest plots from Cochrane systematic reviews. It comprises 202 annotated forest plots, associated clinical research questions, full texts of studies, and study-specific conclusions. Building on CochraneForest, we propose URCA (Uniform Retrieval Clustered Augmentation), a retrieval-augmented generation framework designed to tackle the unique challenges of evidence extraction. Our experiments show that URCA outperforms the best existing methods by up to 10.3{\%} in F1 score on this task. However, the results also underscore the complexity of CochraneForest, establishing it as a challenging testbed for advancing automated evidence synthesis systems."
+}
+@inproceedings{wang-etal-2025-astute,
+    title = "Astute {RAG}: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models",
+    author = "Wang, Fei  and
+      Wan, Xingchen  and
+      Sun, Ruoxi  and
+      Chen, Jiefeng  and
+      Arik, Sercan O",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1476/",
+    doi = "10.18653/v1/2025.acl-long.1476",
+    pages = "30553--30571",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Retrieval augmented generation (RAG), while effectively integrating external knowledge to address the inherent limitations of large language models (LLMs), can be hindered by imperfect retrieval that contain irrelevant, misleading, or even malicious information. Previous studies have rarely connected the behavior of RAG through joint analysis, particularly regarding error propagation coming from imperfect retrieval and potential conflicts between LLMs' internal knowledge and external sources. Through comprehensive and controlled analyses under realistic conditions, we find that imperfect retrieval augmentation is inevitable, common, and harmful. We identify the knowledge conflicts between LLM-internal and external knowledge from retrieval as a bottleneck to overcome imperfect retrieval in the post-retrieval stage of RAG. To address this, we propose Astute RAG, a novel RAG approach designed to be resilient to imperfect retrieval augmentation. It adaptively elicits essential information from LLMs' internal knowledge, iteratively consolidates internal and external knowledge with source-awareness, and finalizes the answer according to information reliability. Our experiments with Gemini and Claude demonstrate the superior performance of Astute RAG compared to previous robustness-enhanced RAG approaches. Specifically, Astute RAG is the only RAG method that achieves performance comparable to or even surpassing conventional use of LLMs under the worst-case scenario. Further analysis reveals the effectiveness of Astute RAG in resolving knowledge conflicts, thereby improving the trustworthiness of RAG."
+}
+@inproceedings{kumar-nolbaria-2025-bridging,
+    title = "Bridging the Data Gap in Financial Sentiment: {LLM}-Driven Augmentation",
+    author = "Kumar, Rohit  and
+      Nolbaria, Chandan",
+    editor = "Zhao, Jin  and
+      Wang, Mingyang  and
+      Liu, Zhu",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-srw.98/",
+    doi = "10.18653/v1/2025.acl-srw.98",
+    pages = "1246--1254",
+    ISBN = "979-8-89176-254-1",
+    abstract = "Static and outdated datasets hinder the accuracy of Financial Sentiment Analysis (FSA) in capturing rapidly evolving market sentiment. We tackle this by proposing a novel data augmentation technique using Retrieval Augmented Generation (RAG). Our method leverages a generative LLM to infuse established benchmarks with up-to-date contextual information from contemporary financial news. This RAG-based augmentation significantly modernizes the data{'}s alignment with current financial language. Furthermore, a robust BERT-BiGRU judge model verifies that the sentiment of the original annotations is faithfully preserved, ensuring the generation of high-quality, temporally relevant, and sentiment-consistent data suitable for advancing FSA model development."
+}
+@inproceedings{jin-etal-2024-tug,
+    title = "Tug-of-War between Knowledge: Exploring and Resolving Knowledge Conflicts in Retrieval-Augmented Language Models",
+    author = "Jin, Zhuoran  and
+      Cao, Pengfei  and
+      Chen, Yubo  and
+      Liu, Kang  and
+      Jiang, Xiaojian  and
+      Xu, Jiexin  and
+      Qiuxia, Li  and
+      Zhao, Jun",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1466/",
+    pages = "16867--16878",
+    abstract = "Retrieval-augmented language models (RALMs) have demonstrated significant potential in refining and expanding their internal memory by retrieving evidence from external sources. However, RALMs will inevitably encounter \textbf{knowledge conflicts} when integrating their internal memory with external sources. Knowledge conflicts can ensnare RALMs in a tug-of-war between knowledge, limiting their practical applicability. In this paper, we focus on exploring and resolving knowledge conflicts in RALMs. First, we present an evaluation framework for assessing knowledge conflicts across various dimensions. Then, we investigate the behavior and preference of RALMs from the following two perspectives: (1) Conflicts between internal memory and external sources: We find that stronger RALMs emerge with the Dunning-Kruger effect, persistently favoring their faulty internal memory even when correct evidence is provided. Besides, RALMs exhibit an availability bias towards common knowledge; (2) Conflicts between truthful, irrelevant and misleading evidence: We reveal that RALMs follow the principle of majority rule, leaning towards placing trust in evidence that appears more frequently. Moreover, we find that RALMs exhibit confirmation bias, and are more willing to choose evidence that is consistent with their internal memory. To solve the challenge of knowledge conflicts, we propose a method called Conflict-Disentangle Contrastive Decoding (CD2) to better calibrate the model{'}s confidence. Experimental results demonstrate that our CD2 can effectively resolve knowledge conflicts in RALMs."
+}
+@inproceedings{mishra-etal-2024-correcting,
+    title = "Correcting Language Model Outputs by Editing Salient Layers",
+    author = "Mishra, Kshitij  and
+      Soliman, Tamer  and
+      Ramakrishna, Anil  and
+      Galstyan, Aram  and
+      Kumar, Anoop",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.86/",
+    doi = "10.18653/v1/2024.findings-eacl.86",
+    pages = "1295--1305",
+    abstract = "Large language models can accumulate incorrect or outdated knowledge as the real world evolves. Compared to typical solutions such as retraining, retrieval augmented generation, model editing offers an effective yet low cost solution to address this issue. However, existing model editing algorithms employ manual selection of edit layers, which requires prior domain knowledge or expensive architecture-specific empirical layer selection methods, such as causal tracing. In this work, we propose SaLEM (Salient Layers Editing Model), an efficient solution for data driven layer selection for the model editing task. Our solution utilizes layer-wise saliency maps for layer selection, and matches the accuracy of prior approaches but with only 1/3 of their edits, enabling efficient updates to the parametric knowledge in large language models."
+}
+@inproceedings{hong-etal-2024-gullible,
+    title = "Why So Gullible? Enhancing the Robustness of Retrieval-Augmented Models against Counterfactual Noise",
+    author = "Hong, Giwon  and
+      Kim, Jeonghwan  and
+      Kang, Junmo  and
+      Myaeng, Sung-Hyon  and
+      Whang, Joyce Jiyoung",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2024",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-naacl.159/",
+    doi = "10.18653/v1/2024.findings-naacl.159",
+    pages = "2474--2495",
+    abstract = "Most existing retrieval-augmented language models (LMs) assume a naive dichotomy within a retrieved document set: query-relevance and irrelevance. Our work investigates a more challenging scenario in which even the ``relevant'' documents may contain misleading or incorrect information, causing conflict among the retrieved documents and thereby negatively influencing model decisions as noise. We observe that existing LMs are highly brittle to the presence of conflicting information in both the fine-tuning and in-context few-shot learning scenarios. We propose approaches for handling knowledge conflicts among retrieved documents by explicitly fine-tuning a discriminator or prompting GPT-3.5 to elicit its discriminative capability. Our empirical results on open-domain QA show that these approaches significantly enhance model robustness. We also provide our findings on incorporating the fine-tuned discriminator{'}s decision into the in-context learning process, proposing a way to exploit the benefits of two disparate learning schemes. Alongside our findings, we provide MacNoise, a machine-generated, conflict-induced dataset to further encourage research in this direction."
+}
+@inproceedings{xiong-etal-2024-benchmarking,
+    title = "Benchmarking Retrieval-Augmented Generation for Medicine",
+    author = "Xiong, Guangzhi  and
+      Jin, Qiao  and
+      Lu, Zhiyong  and
+      Zhang, Aidong",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.372/",
+    doi = "10.18653/v1/2024.findings-acl.372",
+    pages = "6233--6251",
+    abstract = "While large language models (LLMs) have achieved state-of-the-art performance on a wide range of medical question answering (QA) tasks, they still face challenges with hallucinations and outdated knowledge. Retrieval-augmented generation (RAG) is a promising solution and has been widely adopted. However, a RAG system can involve multiple flexible components, and there is a lack of best practices regarding the optimal RAG setting for various medical purposes. To systematically evaluate such systems, we propose the Medical Information Retrieval-Augmented Generation Evaluation (MIRAGE), a first-of-its-kind benchmark including 7,663 questions from five medical QA datasets. Using MIRAGE, we conducted large-scale experiments with over 1.8 trillion prompt tokens on 41 combinations of different corpora, retrievers, and backbone LLMs through the MedRAG toolkit introduced in this work. Overall, MedRAG improves the accuracy of six different LLMs by up to 18{\%} over chain-of-thought prompting, elevating the performance of GPT-3.5 and Mixtral to GPT-4-level. Our results show that the combination of various medical corpora and retrievers achieves the best performance. In addition, we discovered a log-linear scaling property and the ``lost-in-the-middle'' effects in medical RAG. We believe our comprehensive evaluations can serve as practical guidelines for implementing RAG systems for medicine."
+}
+@inproceedings{meem-etal-2024-pat,
+    title = "{PAT}-Questions: A Self-Updating Benchmark for Present-Anchored Temporal Question-Answering",
+    author = "Meem, Jannat  and
+      Rashid, Muhammad  and
+      Dong, Yue  and
+      Hristidis, Vagelis",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.777/",
+    doi = "10.18653/v1/2024.findings-acl.777",
+    pages = "13129--13148",
+    abstract = "Existing work on Temporal Question Answering (TQA) has predominantly focused on questions anchored to specific timestamps or events (e.g. `Who was the US president in 1970?'). Little work has studied questions whose temporal context is relative to the present time (e.g. `Who was the previous US president?'). We refer to this problem as Present-Anchored Temporal QA (PATQA). PATQA poses unique challenges: (1) large language models (LLMs) may have outdated knowledge, (2) complex temporal relationships (e.g. `before', `previous') are hard to reason, (3) multi-hop reasoning may be required, and (4) the gold answers of benchmarks must be continuously updated. To address these challenges, we introduce the PAT-Questions benchmark, which includes single and multi-hop temporal questions. The answers in PAT-Questions can be automatically refreshed by re-running SPARQL queries on a knowledge graph, if available. We evaluate several state-of-the-art LLMs and a SOTA temporal reasoning model (TEMPREASON-T5) on PAT-Questions through direct prompting and retrieval-augmented generation (RAG). The results highlight the limitations of existing solutions in PATQA and motivate the need for new methods to improve PATQA reasoning capabilities."
+}
+@inproceedings{han-etal-2024-instructed,
+    title = "{I}nstruct{E}d: Soft-Instruction Tuning for Model Editing with Hops",
+    author = "Han, XiaoQi  and
+      Li, Ru  and
+      Li, Xiaoli  and
+      Liang, Jiye  and
+      Zhang, Zifang  and
+      Pan, Jeff",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.888/",
+    doi = "10.18653/v1/2024.findings-acl.888",
+    pages = "14953--14968",
+    abstract = "The task of model editing becomes popular for correcting inaccurate or outdated parametric knowledge in Large Language Models (LLMs). However, there are major limitations of state of the art (SOTA) model editing methods, including the excessive memorization issue caused by the direct editing methods, as well as the error propagation and knowledge conflict issues from the memory enhancement methods, resulting in hindering models' \textit{portability}, e.g., the ability to transfer the new knowledge to related one-hop or multi-hop content. To address these issues, we propose the InstructEd method, the idea of which is to insert soft instructions into the attention module so as to facilitate interactions between instructions and questions and to understand and utilize new facts. Our main findings are: (i) InstructEd has achieved SOTA performance on three datasets for one-hop/multi-hop evaluation with LLaMAs and GPT2, achieving 10{\%} (5{\%}) improvement in one-hop (multi-hop) model editing.(ii) Different from earlier methods on editing parameters in FFN, we show that editing attention can also help. (iii) Model editing is highly related to retrieval augmented methods, which can help improve the locality of model editing while slightly decrease the editing performance with hops."
+}
+@inproceedings{cao-etal-2024-tonggu,
+    title = "{T}ong{G}u: Mastering Classical {C}hinese Understanding with Knowledge-Grounded Large Language Models",
+    author = "Cao, Jiahuan  and
+      Peng, Dezhi  and
+      Zhang, Peirong  and
+      Shi, Yongxin  and
+      Liu, Yang  and
+      Ding, Kai  and
+      Jin, Lianwen",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.243/",
+    doi = "10.18653/v1/2024.findings-emnlp.243",
+    pages = "4196--4210",
+    abstract = "Classical Chinese is a gateway to the rich heritage and wisdom of ancient China, yet its complexities pose formidable comprehension barriers for most modern people without specialized knowledge. While Large Language Models (LLMs) have shown remarkable capabilities in Natural Language Processing (NLP), they struggle with Classical Chinese Understanding (CCU), especially in data-demanding and knowledge-intensive tasks. In response to this dilemma, we propose \textbf{TongGu} (mean understanding ancient and modern), the first CCU-specific LLM, underpinned by three core contributions. First, we construct a two-stage instruction-tuning dataset ACCN-INS derived from rich classical Chinese corpora, aiming to unlock the full CCU potential of LLMs. Second, we propose Redundancy-Aware Tuning (RAT) to prevent catastrophic forgetting, enabling TongGu to acquire new capabilities while preserving its foundational knowledge. Third, we present a CCU Retrieval-Augmented Generation (CCU-RAG) technique to reduce hallucinations based on knowledge-grounding. Extensive experiments across 24 diverse CCU tasks validate TongGu{'}s superior ability, underscoring the effectiveness of RAT and CCU-RAG. The model and dataset are available at \url{https://github.com/SCUT-DLVCLab/TongGu-LLM}."
+}
+@inproceedings{pham-etal-2024-whos,
+    title = "Who{'}s Who: Large Language Models Meet Knowledge Conflicts in Practice",
+    author = "Pham, Quang Hieu  and
+      Ngo, Hoang  and
+      Luu, Anh Tuan  and
+      Nguyen, Dat Quoc",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.593/",
+    doi = "10.18653/v1/2024.findings-emnlp.593",
+    pages = "10142--10151",
+    abstract = "Retrieval-augmented generation (RAG) methods are viable solutions for addressing the static memory limits of pre-trained language models. Nevertheless, encountering conflicting sources of information within the retrieval context is an inevitable practical challenge. In such situations, the language models are recommended to transparently inform users about the conflicts rather than autonomously deciding what to present based on their inherent biases. To analyze how current large language models (LLMs) align with our recommendation, we introduce WhoQA, a public benchmark dataset to examine model{'}s behavior in knowledge conflict situations. We induce conflicts by asking about a common property among entities having the same name, resulting in questions with up to 8 distinctive answers. WhoQA evaluation set includes 5K questions across 13 Wikidata property types and 150K Wikipedia entities. Our experiments show that despite the simplicity of WhoQA questions, knowledge conflicts significantly degrades LLMs' performance in RAG settings."
+}
+@inproceedings{yu-etal-2024-llms,
+    title = "{LLM}s as Collaborator: Demands-Guided Collaborative Retrieval-Augmented Generation for Commonsense Knowledge-Grounded Open-Domain Dialogue Systems",
+    author = "Yu, Jiong  and
+      Wu, Sixing  and
+      Chen, Jiahao  and
+      Zhou, Wei",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.794/",
+    doi = "10.18653/v1/2024.findings-emnlp.794",
+    pages = "13586--13612",
+    abstract = "Capturing the unique knowledge demands for each dialogue context plays a crucial role in commonsense knowledge-grounded response generation. However, current CoT-based and RAG-based methods are still unsatisfactory in the era of LLMs because 1) CoT often overestimates the capabilities of LLMs and treats them as isolated knowledge Producers; thus, CoT only uses the inherent knowledge of LLM itself and then suffers from the hallucination and outdated knowledge, and 2) RAG underestimates LLMs because LLMs are the passive Receivers that can only use the knowledge retrieved by external retrievers. In contrast, this work regards LLMs as interactive Collaborators and proposes a novel DCRAG (Demands-Guided Collaborative RAG) to leverage the knowledge from both LLMs and the external knowledge graph. Specifically, DCRAG designs three Thought-then-Generate stages to collaboratively investigate knowledge demands, followed by a Demands-Guided Knowledge Retrieval to retrieve external knowledge by interacting with LLMs. Extensive experiments and in-depth analyses on English DailyDialog and Chinese Diamante datasets proved DCRAG can effectively capture knowledge demands and bring higher-quality responses."
+}
+@inproceedings{marjanovic-etal-2024-dynamicqa,
+    title = "{DYNAMICQA}: Tracing Internal Knowledge Conflicts in Language Models",
+    author = "Marjanovic, Sara Vera  and
+      Yu, Haeun  and
+      Atanasova, Pepa  and
+      Maistro, Maria  and
+      Lioma, Christina  and
+      Augenstein, Isabelle",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.838/",
+    doi = "10.18653/v1/2024.findings-emnlp.838",
+    pages = "14346--14360",
+    abstract = "Knowledge-intensive language understanding tasks require Language Models (LMs) to integrate relevant context, mitigating their inherent weaknesses, such as incomplete or outdated knowledge. However, conflicting knowledge can be present in the LM{'}s parameters, termed intra-memory conflict, which can affect a model{'}s propensity to accept contextual knowledge. To study the effect of intra-memory conflict on LM{'}s ability to accept the relevant context, we utilise two knowledge conflict measures and a novel dataset containing inherently conflicting data, DYNAMICQA. This dataset includes facts with a temporal dynamic nature where facts can change over time and disputable dynamic facts, which can change depending on the viewpoint. DYNAMICQA is the first to include real-world knowledge conflicts and provide context to study the link between the different types of knowledge conflicts. We also evaluate several measures on their ability to reflect the presence of intra-memory conflict: semantic entropy and a novel coherent persuasion score. With our extensive experiments, we verify that LMs show a greater degree of intra-memory conflict with dynamic facts compared to facts that have a single truth value. Further, we reveal that facts with intra-memory conflict are harder to update with context, suggesting that retrieval-augmented generation will struggle with the most commonly adapted facts"
+}
+@inproceedings{chen-etal-2024-lifelong,
+    title = "Lifelong Knowledge Editing for {LLM}s with Retrieval-Augmented Continuous Prompt Learning",
+    author = "Chen, Qizhou  and
+      Zhang, Taolin  and
+      He, Xiaofeng  and
+      Li, Dongyang  and
+      Wang, Chengyu  and
+      Huang, Longtao  and
+      Xue{'}, Hui",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.751/",
+    doi = "10.18653/v1/2024.emnlp-main.751",
+    pages = "13565--13580",
+    abstract = "Model editing aims to correct outdated or erroneous knowledge in large language models (LLMs) without the need for costly retraining. Lifelong model editing is the most challenging task that caters to the continuous editing requirements of LLMs. Prior works primarily focus on single or batch editing; nevertheless, these methods fall short in lifelong editing scenarios due to catastrophic knowledge forgetting and the degradation of model performance. Although retrieval-based methods alleviate these issues, they are impeded by slow and cumbersome processes of integrating the retrieved knowledge into the model. In this work, we introduce RECIPE, a RetriEval-augmented ContInuous Prompt lEarning method, to boost editing efficacy and inference efficiency in lifelong learning. RECIPE first converts knowledge statements into short and informative continuous prompts, prefixed to the LLM{'}s input query embedding, to efficiently refine the response grounded on the knowledge. It further integrates the Knowledge Sentinel (KS) that acts as an intermediary to calculate a dynamic threshold, determining whether the retrieval repository contains relevant knowledge. Our retriever and prompt encoder are jointly trained to achieve editing properties, i.e., reliability, generality, and locality. In our experiments, RECIPE is assessed extensively across multiple LLMs and editing datasets, where it achieves superior editing performance. RECIPE also demonstrates its capability to maintain the overall performance of LLMs alongside showcasing fast editing and inference speed."
+}
+@inproceedings{kalra-etal-2024-hypa,
+    title = "{H}y{PA}-{RAG}: A Hybrid Parameter Adaptive Retrieval-Augmented Generation System for {AI} Legal and Policy Applications",
+    author = "Kalra, Rishi  and
+      Wu, Zekun  and
+      Gulley, Ayesha  and
+      Hilliard, Airlie  and
+      Guan, Xin  and
+      Koshiyama, Adriano  and
+      Treleaven, Philip Colin",
+    editor = "Kumar, Sachin  and
+      Balachandran, Vidhisha  and
+      Park, Chan Young  and
+      Shi, Weijia  and
+      Hayati, Shirley Anugrah  and
+      Tsvetkov, Yulia  and
+      Smith, Noah  and
+      Hajishirzi, Hannaneh  and
+      Kang, Dongyeop  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 1st Workshop on Customizable NLP: Progress and Challenges in Customizing NLP for a Domain, Application, Group, or Individual (CustomNLP4U)",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.customnlp4u-1.18/",
+    doi = "10.18653/v1/2024.customnlp4u-1.18",
+    pages = "237--256",
+    abstract = "While Large Language Models (LLMs) excel in text generation and question-answering, their effectiveness in AI legal and policy applications is limited by outdated knowledge, hallucinations, and inadequate reasoning in complex contexts. Retrieval-Augmented Generation (RAG) systems improve response accuracy by integrating external knowledge but struggle with retrieval errors, poor context integration, and high costs, particularly in interpreting AI legal texts. This paper introduces a Hybrid Parameter-Adaptive RAG (HyPA-RAG) system tailored for AI legal and policy, exemplified by NYC Local Law 144 (LL144). HyPA-RAG uses a query complexity classifier for adaptive parameter tuning, a hybrid retrieval strategy combining dense, sparse, and knowledge graph methods, and an evaluation framework with specific question types and metrics. By dynamically adjusting parameters, HyPA-RAG significantly improves retrieval accuracy and response fidelity. Testing on LL144 shows enhanced correctness, faithfulness, and contextual precision, addressing the need for adaptable NLP systems in complex, high-stakes AI legal and policy applications."
+}
+@inproceedings{chiang-lee-2024-metadata,
+    title = "Do Metadata and Appearance of the Retrieved Webpages Affect {LLM}{'}s Reasoning in Retrieval-Augmented Generation?",
+    author = "Chiang, Cheng-Han  and
+      Lee, Hung-yi",
+    editor = "Belinkov, Yonatan  and
+      Kim, Najoung  and
+      Jumelet, Jaap  and
+      Mohebbi, Hosein  and
+      Mueller, Aaron  and
+      Chen, Hanjie",
+    booktitle = "Proceedings of the 7th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, US",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.blackboxnlp-1.24/",
+    doi = "10.18653/v1/2024.blackboxnlp-1.24",
+    pages = "389--406",
+    abstract = "Large language models (LLMs) answering questions with retrieval-augmented generation (RAG) can face conflicting evidence in the retrieved documents. While prior works study how textual features like perplexity and readability influence the persuasiveness of evidence, humans consider more than textual content when evaluating conflicting information on the web. In this paper, we focus on the following question: When two webpages contain conflicting information to answer a question, does non-textual information affect the LLM{'}s reasoning and answer? We consider three types of non-textual information: (1) the webpage{'}s publication time, (2) the source where the webpage is from, and (3) the appearance of the webpage. We give the LLM a Yes/No question and two conflicting webpages that support yes and no, respectively. We exchange the non-textual information in the two webpages to see if the LLMs tend to use the information from a newer, more reliable, and more visually appealing webpage. We find that changing the publication time of the webpage can change the answer for most LLMs, but changing the webpage{'}s source merely affects the LLM{'}s answer. We also reveal that the webpage{'}s appearance has a strong causal effect on Claude-3{'}s answers.The codes and datasets used in the paper are available at \url{https://github.com/d223302/rag-metadata}."
+}
+@inproceedings{shlyk-etal-2024-real,
+    title = "{REAL}: A Retrieval-Augmented Entity Linking Approach for Biomedical Concept Recognition",
+    author = "Shlyk, Darya  and
+      Groza, Tudor  and
+      Mesiti, Marco  and
+      Montanelli, Stefano  and
+      Cavalleri, Emanuele",
+    editor = "Demner-Fushman, Dina  and
+      Ananiadou, Sophia  and
+      Miwa, Makoto  and
+      Roberts, Kirk  and
+      Tsujii, Junichi",
+    booktitle = "Proceedings of the 23rd Workshop on Biomedical Natural Language Processing",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.bionlp-1.29/",
+    doi = "10.18653/v1/2024.bionlp-1.29",
+    pages = "380--389",
+    abstract = "Large Language Models (LLMs) offer an appealing alternative to training dedicated models for many Natural Language Processing (NLP) tasks. However, outdated knowledge and hallucination issues can be major obstacles in their application in knowledge-intensive biomedical scenarios. In this study, we consider the task of biomedical concept recognition (CR) from unstructured scientific literature and explore the use of Retrieval Augmented Generation (RAG) to improve accuracy and reliability of the LLM-based biomedical CR. Our approach, named REAL (Retrieval Augmented Entity Linking), combines the generative capabilities of LLMs with curated knowledge bases to automatically annotate natural language texts with concepts from bio-ontologies. By applying REAL to benchmark corpora on phenotype concept recognition, we show its effectiveness in improving LLM-based CR performance. This research highlights the potential of combining LLMs with external knowledge sources to advance biomedical text processing."
+}
+@inproceedings{ko-etal-2024-growover,
+    title = "{G}row{OVER}: How Can {LLM}s Adapt to Growing Real-World Knowledge?",
+    author = "Ko, Dayoon  and
+      Kim, Jinyoung  and
+      Choi, Hahyeon  and
+      Kim, Gunhee",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.181/",
+    doi = "10.18653/v1/2024.acl-long.181",
+    pages = "3282--3308",
+    abstract = "In the real world, knowledge is constantly evolving, which can render existing knowledge-based datasets outdated. This unreliability highlights the critical need for continuous updates to ensure both accuracy and relevance in knowledge-intensive tasks. To address this, we propose GrowOVER-QA and GrowOVER-Dialogue, dynamic open-domain QA and dialogue benchmarks that undergo a continuous cycle of updates, keeping pace with the rapid evolution of knowledge. Our research indicates that retrieval-augmented language models (RaLMs) struggle with knowledge that has not been trained on or recently updated. Consequently, we introduce a novel retrieval-interactive language model framework, where the language model evaluates and reflects on its answers for further re-retrieval. Our exhaustive experiments demonstrate that our training-free framework significantly improves upon existing methods, performing comparably to or even surpassing continuously trained language models."
+}
+@inproceedings{tan-etal-2024-blinded,
+    title = "Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts When Knowledge Conflicts?",
+    author = "Tan, Hexiang  and
+      Sun, Fei  and
+      Yang, Wanli  and
+      Wang, Yuanzhuo  and
+      Cao, Qi  and
+      Cheng, Xueqi",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.337/",
+    doi = "10.18653/v1/2024.acl-long.337",
+    pages = "6207--6227",
+    abstract = "While auxiliary information has become a key to enhancing Large Language Models (LLMs), relatively little is known about how LLMs merge these contexts, specifically contexts generated by LLMs and those retrieved from external sources.To investigate this, we formulate a systematic framework to identify whether LLMs' responses are attributed to either generated or retrieved contexts.To easily trace the origin of the response, we construct datasets with conflicting contexts, i.e., each question is paired with both generated and retrieved contexts, yet only one of them contains the correct answer.Our experiments reveal a significant bias in several LLMs (GPT-4/3.5 and Llama2) to favor generated contexts, even when they provide incorrect information.We further identify two key factors contributing to this bias: i) contexts generated by LLMs typically show greater similarity to the questions, increasing their likelihood of being selected; ii) the segmentation process used in retrieved contexts disrupts their completeness, thereby hindering their full utilization in LLMs.Our analysis enhances the understanding of how LLMs merge diverse contexts, offers valuable insights for advancing current LLM augmentation methods, and highlights the risk of generated misinformation for retrieval-augmented LLMs."
+}
+@inproceedings{monea-etal-2024-glitch,
+    title = "A Glitch in the Matrix? Locating and Detecting Language Model Grounding with Fakepedia",
+    author = "Monea, Giovanni  and
+      Peyrard, Maxime  and
+      Josifoski, Martin  and
+      Chaudhary, Vishrav  and
+      Eisner, Jason  and
+      Kiciman, Emre  and
+      Palangi, Hamid  and
+      Patra, Barun  and
+      West, Robert",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.369/",
+    doi = "10.18653/v1/2024.acl-long.369",
+    pages = "6828--6844",
+    abstract = "Large language models (LLMs) have an impressive ability to draw on novel information supplied in their context. Yet the mechanisms underlying this contextual grounding remain unknown, especially in situations where contextual information contradicts factual knowledge stored in the parameters, which LLMs also excel at recalling. Favoring the contextual information is critical for retrieval-augmented generation methods, which enrich the context with up-to-date information, hoping that grounding can rectify outdated or noisy stored knowledge. We present a novel method to study grounding abilities using Fakepedia, a novel dataset of counterfactual texts constructed to clash with a model{'}s internal parametric knowledge. In this study, we introduce Fakepedia, a counterfactual dataset designed to evaluate grounding abilities when the internal parametric knowledge clashes with the contextual information. We benchmark various LLMs with Fakepedia and conduct a causal mediation analysis of LLM components when answering Fakepedia queries, based on our Masked Grouped Causal Tracing (MGCT) method. Through this analysis, we identify distinct computational patterns between grounded and ungrounded responses. We finally demonstrate that distinguishing grounded from ungrounded responses is achievable through computational analysis alone. Our results, together with existing findings about factual recall mechanisms, provide a coherent narrative of how grounding and factual recall mechanisms interact within LLMs."
+}
+@inproceedings{fang-etal-2024-enhancing,
+    title = "Enhancing Noise Robustness of Retrieval-Augmented Language Models with Adaptive Adversarial Training",
+    author = "Fang, Feiteng  and
+      Bai, Yuelin  and
+      Ni, Shiwen  and
+      Yang, Min  and
+      Chen, Xiaojun  and
+      Xu, Ruifeng",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.540/",
+    doi = "10.18653/v1/2024.acl-long.540",
+    pages = "10028--10039",
+    abstract = "Large Language Models (LLMs) exhibit substantial capabilities yet encounter challenges including hallucination, outdated knowledge, and untraceable reasoning processes. Retrieval-augmented generation (RAG) has emerged as a promising solution, integrating knowledge from external databases to mitigate these challenges. However, inappropriate retrieved passages can potentially hinder the LLMs' capacity to generate comprehensive and high-quality responses. Prior RAG studies on the robustness of retrieval noises often confine themselves to a limited set of noise types, deviating from real-world retrieval environments and limiting practical applicability. In this study, we initially investigate retrieval noises and categorize them into three distinct types, reflecting real-world environments. We analyze the impact of these various retrieval noises on the robustness of LLMs. Subsequently, we propose a novel RAG approach known as Retrieval-augmented Adaptive Adversarial Training (RAAT). RAAT leverages adaptive adversarial training to dynamically adjust the model{'}s training process in response to retrieval noises. Concurrently, it employs multi-task learning to ensure the model{'}s capacity to internally recognize noisy contexts. Extensive experiments demonstrate that the LLaMA-2 7B model trained using RAAT exhibits significant improvements in F1 and EM scores under diverse noise conditions. For reproducibility, we will release our code and data upon acceptance."
+}
+@inproceedings{deng-etal-2023-regavae,
+    title = "{R}ega{VAE}: A Retrieval-Augmented {G}aussian Mixture Variational Auto-Encoder for Language Modeling",
+    author = "Deng, Jingcheng  and
+      Pang, Liang  and
+      Shen, Huawei  and
+      Cheng, Xueqi",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.164/",
+    doi = "10.18653/v1/2023.findings-emnlp.164",
+    pages = "2500--2510",
+    abstract = "Retrieval-augmented language models show promise in addressing issues like outdated information and hallucinations in language models (LMs). However, current research faces two main problems: 1) determining what information to retrieve, and 2) effectively combining retrieved information during generation. We argue that valuable retrieved information should not only be related to the current source text but also consider the future target text, given the nature of LMs that model future tokens. Moreover, we propose that aggregation using latent variables derived from a compact latent space is more efficient than utilizing explicit raw text, which is limited by context length and susceptible to noise. Therefore, we introduce RegaVAE, a retrieval-augmented language model built upon the variational auto-encoder (VAE). It encodes the text corpus into a latent space, capturing current and future information from both source and target text. Additionally, we leverage the VAE to initialize the latent space and adopt the probabilistic form of the retrieval generation paradigm by expanding the Gaussian prior distribution into a Gaussian mixture distribution. Theoretical analysis provides an optimizable upper bound for RegaVAE. Experimental results on various datasets demonstrate significant improvements in text generation quality and hallucination removal."
+}
+@inproceedings{shao-etal-2023-enhancing,
+    title = "Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy",
+    author = "Shao, Zhihong  and
+      Gong, Yeyun  and
+      Shen, Yelong  and
+      Huang, Minlie  and
+      Duan, Nan  and
+      Chen, Weizhu",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.620/",
+    doi = "10.18653/v1/2023.findings-emnlp.620",
+    pages = "9248--9274",
+    abstract = "Retrieval-augmented generation has raise extensive attention as it is promising to address the limitations of large language models including outdated knowledge and hallucinations. However, retrievers struggle to capture relevance, especially for queries with complex information needs. Recent work has proposed to improve relevance modeling by having large language models actively involved in retrieval, i.e., to guide retrieval with generation. In this paper, we show that strong performance can be achieved by a method we call Iter-RetGen, which synergizes retrieval and generation in an iterative manner: a model{'}s response to a task input shows what might be needed to finish the task, and thus can serve as an informative context for retrieving more relevant knowledge which in turn helps generate a better response in another iteration. Compared with recent work which interleaves retrieval with generation when completing a single output, Iter-RetGen processes all retrieved knowledge as a whole and largely preserves the flexibility in generation without structural constraints. We evaluate Iter-RetGen on multi-hop question answering, fact verification, and commonsense reasoning, and show that it can flexibly leverage parametric knowledge and non-parametric knowledge, and is superior to or competitive with state-of-the-art retrieval-augmented baselines while causing fewer overheads of retrieval and generation. We can further improve performance via generation-augmented retrieval adaptation."
+}
+@inproceedings{cheng-etal-2022-neural,
+    title = "Neural Machine Translation with Contrastive Translation Memories",
+    author = "Cheng, Xin  and
+      Gao, Shen  and
+      Liu, Lemao  and
+      Zhao, Dongyan  and
+      Yan, Rui",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.235/",
+    doi = "10.18653/v1/2022.emnlp-main.235",
+    pages = "3591--3601",
+    abstract = "Retrieval-augmented Neural Machine Translation models have been successful in many translation scenarios. Different from previous works that make use of mutually similar but redundant translation memories (TMs), we propose a new retrieval-augmented NMT to model contrastively retrieved translation memories that are holistically similar to the source sentence while individually contrastive to each other providing maximal information gain in three phases. First, in TM retrieval phase, we adopt contrastive retrieval algorithm to avoid redundancy and uninformativeness of similar translation pieces. Second, in memory encoding stage, given a set of TMs we propose a novel Hierarchical Group Attention module to gather both local context of each TM and global context of the whole TM set. Finally, in training phase, a Multi-TM contrastive learning objective is introduced to learn salient feature of each TM with respect to target sentence. Experimental results show that our framework obtains substantial improvements over strong baselines in the benchmark dataset."
+}

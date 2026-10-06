@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/7hm5RfHeCHeReyxu/hFV10oo5Lk</id>
+  <title>arXiv Query: search_query=&amp;id_list=2005.11401,2502.08826,2506.23139,2605.05253,2507.12425,2406.16828,2107.06499,2504.13079,2103.00020,2407.01449,2410.10594,2412.02592,2511.16654,2510.03663,2309.15217,2604.04936,2604.19047,2605.09611,2408.12076,2210.11934,2505.00263&amp;start=0&amp;max_results=21</title>
+  <updated>2026-10-06T12:13:05Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=21&amp;id_list=2005.11401,2502.08826,2506.23139,2605.05253,2507.12425,2406.16828,2107.06499,2504.13079,2103.00020,2407.01449,2410.10594,2412.02592,2511.16654,2510.03663,2309.15217,2604.04936,2604.19047,2605.09611,2408.12076,2210.11934,2505.00263" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>21</opensearch:itemsPerPage>
+  <opensearch:totalResults>21</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2103.00020v1</id>
+    <title>Learning Transferable Visual Models From Natural Language Supervision</title>
+    <updated>2021-02-26T19:04:58Z</updated>
+    <link href="https://arxiv.org/abs/2103.00020v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.00020v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at https://github.com/OpenAI/CLIP.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-02-26T19:04:58Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Alec Radford</name>
+    </author>
+    <author>
+      <name>Jong Wook Kim</name>
+    </author>
+    <author>
+      <name>Chris Hallacy</name>
+    </author>
+    <author>
+      <name>Aditya Ramesh</name>
+    </author>
+    <author>
+      <name>Gabriel Goh</name>
+    </author>
+    <author>
+      <name>Sandhini Agarwal</name>
+    </author>
+    <author>
+      <name>Girish Sastry</name>
+    </author>
+    <author>
+      <name>Amanda Askell</name>
+    </author>
+    <author>
+      <name>Pamela Mishkin</name>
+    </author>
+    <author>
+      <name>Jack Clark</name>
+    </author>
+    <author>
+      <name>Gretchen Krueger</name>
+    </author>
+    <author>
+      <name>Ilya Sutskever</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.19047v2</id>
+    <title>RARE: Redundancy-Aware Retrieval Evaluation Framework for High-Similarity Corpora</title>
+    <updated>2026-06-30T06:53:18Z</updated>
+    <link href="https://arxiv.org/abs/2604.19047v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.19047v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing QA benchmarks typically assume distinct documents with minimal overlap, yet real-world retrieval-augmented generation (RAG) systems operate on corpora such as financial reports, legal codes, and patents, where information is highly redundant and documents exhibit strong inter-document similarity. This mismatch undermines evaluation validity: retrievers can be unfairly undervalued even when they retrieve documents that provide sufficient evidence, because redundancy across documents is not accounted for in evaluation. On the other hand, retrievers that perform well on standard benchmarks often generalize poorly to real-world corpora with highly similar and redundant documents. We present RARE (Redundancy-Aware Retrieval Evaluation), a framework for constructing realistic benchmarks by (i) decomposing documents into atomic facts to enable precise redundancy tracking and (ii) enhancing LLM-based data generation with CRRF. RAG benchmark data usually requires multiple quality criteria, but LLMs often yield trivial outputs. CRRF scores criteria separately and fuses decisions by rank, improving the reliability of generated data. Applying RARE to Finance, Legal, and Patent corpora, we introduce RedQA, where a strong retriever baseline drops from 66.4% PerfRecall@10 on 4-hop General-Wiki to 5.0-27.9% PerfRecall@10 at 4-hop depth, revealing robustness gaps that current benchmarks fail to capture. RARE enables practitioners to build domain-specific RAG evaluations that faithfully reflect real-world deployment conditions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-21T03:54:09Z</published>
+    <arxiv:comment>Accepted to ACL 2026 (Main Conference)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hanjun Cho</name>
+    </author>
+    <author>
+      <name>Jay-Yoon Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.01449v6</id>
+    <title>ColPali: Efficient Document Retrieval with Vision Language Models</title>
+    <updated>2025-02-28T08:51:57Z</updated>
+    <link href="https://arxiv.org/abs/2407.01449v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.01449v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Documents are visually rich structures that convey information through text, but also figures, page layouts, tables, or even fonts. Since modern retrieval systems mainly rely on the textual information they extract from document pages to index documents -often through lengthy and brittle processes-, they struggle to exploit key visual cues efficiently. This limits their capabilities in many practical document retrieval applications such as Retrieval Augmented Generation (RAG). To benchmark current systems on visually rich document retrieval, we introduce the Visual Document Retrieval Benchmark ViDoRe, composed of various page-level retrieval tasks spanning multiple domains, languages, and practical settings. The inherent complexity and performance shortcomings of modern systems motivate a new concept; doing document retrieval by directly embedding the images of the document pages. We release ColPali, a Vision Language Model trained to produce high-quality multi-vector embeddings from images of document pages. Combined with a late interaction matching mechanism, ColPali largely outperforms modern document retrieval pipelines while being drastically simpler, faster and end-to-end trainable. We release models, data, code and benchmarks under open licenses at https://hf.co/vidore.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-27T15:45:29Z</published>
+    <arxiv:comment>Published as a conference paper at ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Manuel Faysse</name>
+    </author>
+    <author>
+      <name>Hugues Sibille</name>
+    </author>
+    <author>
+      <name>Tony Wu</name>
+    </author>
+    <author>
+      <name>Bilel Omrani</name>
+    </author>
+    <author>
+      <name>Gautier Viaud</name>
+    </author>
+    <author>
+      <name>Céline Hudelot</name>
+    </author>
+    <author>
+      <name>Pierre Colombo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.13079v2</id>
+    <title>Retrieval-Augmented Generation with Conflicting Evidence</title>
+    <updated>2025-08-12T17:53:18Z</updated>
+    <link href="https://arxiv.org/abs/2504.13079v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.13079v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly employing retrieval-augmented generation (RAG) to improve the factuality of their responses. However, in practice, these systems often need to handle ambiguous user queries and potentially conflicting information from multiple sources while also suppressing inaccurate information from noisy or irrelevant documents. Prior work has generally studied and addressed these challenges in isolation, considering only one aspect at a time, such as handling ambiguity or robustness to noise and misinformation. We instead consider multiple factors simultaneously, proposing (i) RAMDocs (Retrieval with Ambiguity and Misinformation in Documents), a new dataset that simulates complex and realistic scenarios for conflicting evidence for a user query, including ambiguity, misinformation, and noise; and (ii) MADAM-RAG, a multi-agent approach in which LLM agents debate over the merits of an answer over multiple rounds, allowing an aggregator to collate responses corresponding to disambiguated entities while discarding misinformation and noise, thereby handling diverse sources of conflict jointly. We demonstrate the effectiveness of MADAM-RAG using both closed and open-source models on AmbigDocs -- which requires presenting all valid answers for ambiguous queries -- improving over strong RAG baselines by up to 11.40% and on FaithEval -- which requires suppressing misinformation -- where we improve by up to 15.80% (absolute) with Llama3.3-70B-Instruct. Furthermore, we find that RAMDocs poses a challenge for existing RAG baselines (Llama3.3-70B-Instruct only obtains 32.60 exact match score). While MADAM-RAG begins to address these conflicting factors, our analysis indicates that a substantial gap remains especially when increasing the level of imbalance in supporting evidence and misinformation.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-17T16:46:11Z</published>
+    <arxiv:comment>COLM 2025, Data and Code: https://github.com/HanNight/RAMDocs</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Han Wang</name>
+    </author>
+    <author>
+      <name>Archiki Prasad</name>
+    </author>
+    <author>
+      <name>Elias Stengel-Eskin</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.12425v1</id>
+    <title>Advancing Retrieval-Augmented Generation for Structured Enterprise and Internal Data</title>
+    <updated>2025-07-16T17:13:06Z</updated>
+    <link href="https://arxiv.org/abs/2507.12425v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.12425v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Organizations increasingly rely on proprietary enterprise data, including HR records, structured reports, and tabular documents, for critical decision-making. While Large Language Models (LLMs) have strong generative capabilities, they are limited by static pretraining, short context windows, and challenges in processing heterogeneous data formats. Conventional Retrieval-Augmented Generation (RAG) frameworks address some of these gaps but often struggle with structured and semi-structured data.
+  This work proposes an advanced RAG framework that combines hybrid retrieval strategies using dense embeddings (all-mpnet-base-v2) and BM25, enhanced by metadata-aware filtering with SpaCy NER and cross-encoder reranking. The framework applies semantic chunking to maintain textual coherence and retains tabular data structures to preserve row-column integrity. Quantized indexing optimizes retrieval efficiency, while human-in-the-loop feedback and conversation memory improve adaptability.
+  Experiments on enterprise datasets show notable improvements: Precision@5 increased by 15 percent (90 versus 75), Recall@5 by 13 percent (87 versus 74), and Mean Reciprocal Rank by 16 percent (0.85 versus 0.69). Qualitative evaluations show higher scores in Faithfulness (4.6 versus 3.0), Completeness (4.2 versus 2.5), and Relevance (4.5 versus 3.2) on a 5-point Likert scale. These results demonstrate the framework's effectiveness in delivering accurate, comprehensive, and contextually relevant responses for enterprise tasks. Future work includes extending to multimodal data and integrating agent-based retrieval. The source code will be released at https://github.com/CheerlaChandana/Enterprise-Chatbot</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-16T17:13:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Chandana Cheerla</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.04936v1</id>
+    <title>Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems</title>
+    <updated>2026-01-08T06:41:59Z</updated>
+    <link href="https://arxiv.org/abs/2604.04936v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.04936v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) systems critically depend on effective document chunking strategies to balance retrieval quality, latency, and operational cost. Traditional chunking approaches, such as fixed-size, rule-based, or fully agentic chunking, often suffer from high token consumption, redundant text generation, limited scalability, and poor debuggability, especially for large-scale web content ingestion. In this paper, we propose Web Retrieval-Aware Chunking (W-RAC), a novel, cost-efficient chunking framework designed specifically for web-based documents. W-RAC decouples text extraction from semantic chunk planning by representing parsed web content as structured, ID-addressable units and leveraging large language models (LLMs) only for retrieval-aware grouping decisions rather than text generation. This significantly reduces token usage, eliminates hallucination risks, and improves system observability.Experimental analysis and architectural comparison demonstrate that W-RAC achieves comparable or better retrieval performance than traditional chunking approaches while reducing chunking-related LLM costs by an order of magnitude.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-08T06:41:59Z</published>
+    <arxiv:comment>13 pages, 9 tables, 0 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Uday Allu</name>
+    </author>
+    <author>
+      <name>Sonu Kedia</name>
+    </author>
+    <author>
+      <name>Tanmay Odapally</name>
+    </author>
+    <author>
+      <name>Biddwan Ahmed</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.05253v2</id>
+    <title>EnterpriseRAG-Bench: A RAG Benchmark for Company Internal Knowledge</title>
+    <updated>2026-05-19T18:57:51Z</updated>
+    <link href="https://arxiv.org/abs/2605.05253v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.05253v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) has become the standard approach for grounding large language models in information that was not available during training. While existing datasets and benchmarks focus on web or other public sources, there is still no widely adopted dataset that realistically reflects the nature of company-internal knowledge. Meanwhile, startups, enterprises, and researchers are increasingly developing AI Agents designed to operate over exactly this kind of proprietary data. To close this gap, we release a synthetic enterprise corpus, its generation framework, and a leaderboard.
+  We present EnterpriseRAG-Bench, a dataset consisting of approximately 500,000 documents spanning nine enterprise source types (Slack, Gmail, Linear, Google Drive, HubSpot, Fireflies, GitHub, Jira, and Confluence) and 500 questions across ten categories that test distinct retrieval and reasoning capabilities. The corpus is generated with cross-document coherence (grounded in shared projects, people, and initiatives) and augmented with realistic noise such as misfiled documents, near-duplicates, and conflicting information. The question set ranges from simple single-document lookups to multi-document reasoning, constrained retrieval, conflict resolution, and recognizing when information is absent. The generation framework lets teams generate variants tailored to their own industry, scale, and source mix. The dataset, code, evaluation harness, and leaderboard are available at https://github.com/onyx-dot-app/EnterpriseRAG-Bench.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-05T20:23:38Z</published>
+    <arxiv:comment>Code and dataset available at https://github.com/onyx-dot-app/EnterpriseRAG-Bench or https://huggingface.co/datasets/onyx-dot-app/EnterpriseRAG-Bench</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Yuhong Sun</name>
+    </author>
+    <author>
+      <name>Joachim Rahmfeld</name>
+    </author>
+    <author>
+      <name>Chris Weaver</name>
+    </author>
+    <author>
+      <name>Weijia Chen</name>
+    </author>
+    <author>
+      <name>Roshan Desai</name>
+    </author>
+    <author>
+      <name>Wenxi Huang</name>
+    </author>
+    <author>
+      <name>Mark H. Butler</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03663v3</id>
+    <title>UNIDOC-BENCH: A Unified Benchmark for Document-Centric Multimodal RAG</title>
+    <updated>2026-01-05T04:16:18Z</updated>
+    <link href="https://arxiv.org/abs/2510.03663v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03663v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal retrieval-augmented Generation (MM-RAG) is a key approach for applying large language models (LLMs) and agents to real-world knowledge bases, yet current evaluations are fragmented -- focusing on either text or images in isolation, or simplified multimodal setup, failing to capture document-centric multimodal use cases. In this paper, we introduce UniDoc-Bench, the first large-scale, realistic benchmark for MM-RAG built from $k$ real-world PDF pages across domains. Our pipeline extracts and links evidence from text, tables, and figures, then generates multimodal QA pairs spanning factual retrieval, comparison, summarization, and logical reasoning queries. To ensure reliability, all of QA pairs are validated by multiple human annotators and expert adjudication. UniDoc-Bench supports apples-to-apples comparison across four paradigms: 1) text-only, 2) image-only, 3) \emph{multimodal} text-image fusion and 4) multimodal joint retrieval -- under a unified protocol with standardized candidate pools, prompts, and evaluation metrics. UniDoc-Bench can also be used to evaluate Visual Question Answering (VQA) tasks. Our experiments show that multimodal text-image fusion RAG systems consistently outperform both unimodal and jointly multimodal embedding-based retrieval, indicating that neither text nor images alone are sufficient and that current multimodal embeddings remain inadequate. Beyond benchmarking, our analysis reveals when and how visual context complements textual evidence, uncovers systematic failure modes, and offers actionable guidance for developing more robust MM-RAG pipelines.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-04T04:30:13Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiangyu Peng</name>
+    </author>
+    <author>
+      <name>Can Qin</name>
+    </author>
+    <author>
+      <name>Zeyuan Chen</name>
+    </author>
+    <author>
+      <name>Ran Xu</name>
+    </author>
+    <author>
+      <name>Caiming Xiong</name>
+    </author>
+    <author>
+      <name>Chien-Sheng Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.00263v1</id>
+    <title>EnronQA: Towards Personalized RAG over Private Documents</title>
+    <updated>2025-05-01T03:07:30Z</updated>
+    <link href="https://arxiv.org/abs/2505.00263v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.00263v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval Augmented Generation (RAG) has become one of the most popular methods for bringing knowledge-intensive context to large language models (LLM) because of its ability to bring local context at inference time without the cost or data leakage risks associated with fine-tuning. A clear separation of private information from the LLM training has made RAG the basis for many enterprise LLM workloads as it allows the company to augment LLM's understanding using customers' private documents. Despite its popularity for private documents in enterprise deployments, current RAG benchmarks for validating and optimizing RAG pipelines draw their corpora from public data such as Wikipedia or generic web pages and offer little to no personal context. Seeking to empower more personal and private RAG we release the EnronQA benchmark, a dataset of 103,638 emails with 528,304 question-answer pairs across 150 different user inboxes. EnronQA enables better benchmarking of RAG pipelines over private data and allows for experimentation on the introduction of personalized retrieval settings over realistic data. Finally, we use EnronQA to explore the tradeoff in memorization and retrieval when reasoning over private documents.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-01T03:07:30Z</published>
+    <arxiv:comment>26 pages, 4 figures, 6 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Michael J. Ryan</name>
+    </author>
+    <author>
+      <name>Danmei Xu</name>
+    </author>
+    <author>
+      <name>Chris Nivera</name>
+    </author>
+    <author>
+      <name>Daniel Campos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.11401v4</id>
+    <title>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</title>
+    <updated>2021-04-12T15:42:18Z</updated>
+    <link href="https://arxiv.org/abs/2005.11401v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.11401v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-22T21:34:34Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2020</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Patrick Lewis</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Aleksandra Piktus</name>
+    </author>
+    <author>
+      <name>Fabio Petroni</name>
+    </author>
+    <author>
+      <name>Vladimir Karpukhin</name>
+    </author>
+    <author>
+      <name>Naman Goyal</name>
+    </author>
+    <author>
+      <name>Heinrich Küttler</name>
+    </author>
+    <author>
+      <name>Mike Lewis</name>
+    </author>
+    <author>
+      <name>Wen-tau Yih</name>
+    </author>
+    <author>
+      <name>Tim Rocktäschel</name>
+    </author>
+    <author>
+      <name>Sebastian Riedel</name>
+    </author>
+    <author>
+      <name>Douwe Kiela</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.11934v2</id>
+    <title>An Analysis of Fusion Functions for Hybrid Retrieval</title>
+    <updated>2023-05-04T18:32:47Z</updated>
+    <link href="https://arxiv.org/abs/2210.11934v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.11934v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study hybrid search in text retrieval where lexical and semantic search are fused together with the intuition that the two are complementary in how they model relevance. In particular, we examine fusion by a convex combination (CC) of lexical and semantic scores, as well as the Reciprocal Rank Fusion (RRF) method, and identify their advantages and potential pitfalls. Contrary to existing studies, we find RRF to be sensitive to its parameters; that the learning of a CC fusion is generally agnostic to the choice of score normalization; that CC outperforms RRF in in-domain and out-of-domain settings; and finally, that CC is sample efficient, requiring only a small set of training examples to tune its only parameter to a target domain.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-21T13:10:28Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Sebastian Bruch</name>
+    </author>
+    <author>
+      <name>Siyu Gai</name>
+    </author>
+    <author>
+      <name>Amir Ingber</name>
+    </author>
+    <arxiv:doi>10.1145/3596512</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3596512" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.12076v1</id>
+    <title>ConflictBank: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLM</title>
+    <updated>2024-08-22T02:33:13Z</updated>
+    <link href="https://arxiv.org/abs/2408.12076v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.12076v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have achieved impressive advancements across numerous disciplines, yet the critical issue of knowledge conflicts, a major source of hallucinations, has rarely been studied. Only a few research explored the conflicts between the inherent knowledge of LLMs and the retrieved contextual knowledge. However, a thorough assessment of knowledge conflict in LLMs is still missing. Motivated by this research gap, we present ConflictBank, the first comprehensive benchmark developed to systematically evaluate knowledge conflicts from three aspects: (i) conflicts encountered in retrieved knowledge, (ii) conflicts within the models' encoded knowledge, and (iii) the interplay between these conflict forms. Our investigation delves into four model families and twelve LLM instances, meticulously analyzing conflicts stemming from misinformation, temporal discrepancies, and semantic divergences. Based on our proposed novel construction framework, we create 7,453,853 claim-evidence pairs and 553,117 QA pairs. We present numerous findings on model scale, conflict causes, and conflict types. We hope our ConflictBank benchmark will help the community better understand model behavior in conflicts and develop more reliable LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-22T02:33:13Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhaochen Su</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+    <author>
+      <name>Xiaoye Qu</name>
+    </author>
+    <author>
+      <name>Tong Zhu</name>
+    </author>
+    <author>
+      <name>Yanshu Li</name>
+    </author>
+    <author>
+      <name>Jiashuo Sun</name>
+    </author>
+    <author>
+      <name>Juntao Li</name>
+    </author>
+    <author>
+      <name>Min Zhang</name>
+    </author>
+    <author>
+      <name>Yu Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.16828v1</id>
+    <title>Ragnarök: A Reusable RAG Framework and Baselines for TREC 2024 Retrieval-Augmented Generation Track</title>
+    <updated>2024-06-24T17:37:52Z</updated>
+    <link href="https://arxiv.org/abs/2406.16828v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.16828v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Did you try out the new Bing Search? Or maybe you fiddled around with Google AI~Overviews? These might sound familiar because the modern-day search stack has recently evolved to include retrieval-augmented generation (RAG) systems. They allow searching and incorporating real-time data into large language models (LLMs) to provide a well-informed, attributed, concise summary in contrast to the traditional search paradigm that relies on displaying a ranked list of documents. Therefore, given these recent advancements, it is crucial to have an arena to build, test, visualize, and systematically evaluate RAG-based search systems. With this in mind, we propose the TREC 2024 RAG Track to foster innovation in evaluating RAG systems. In our work, we lay out the steps we've made towards making this track a reality -- we describe the details of our reusable framework, Ragnarök, explain the curation of the new MS MARCO V2.1 collection choice, release the development topics for the track, and standardize the I/O definitions which assist the end user. Next, using Ragnarök, we identify and provide key industrial baselines such as OpenAI's GPT-4o or Cohere's Command R+. Further, we introduce a web-based user interface for an interactive arena allowing benchmarking pairwise RAG systems by crowdsourcing. We open-source our Ragnarök framework and baselines to achieve a unified standard for future RAG systems.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-24T17:37:52Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Ronak Pradeep</name>
+    </author>
+    <author>
+      <name>Nandan Thakur</name>
+    </author>
+    <author>
+      <name>Sahel Sharifymoghaddam</name>
+    </author>
+    <author>
+      <name>Eric Zhang</name>
+    </author>
+    <author>
+      <name>Ryan Nguyen</name>
+    </author>
+    <author>
+      <name>Daniel Campos</name>
+    </author>
+    <author>
+      <name>Nick Craswell</name>
+    </author>
+    <author>
+      <name>Jimmy Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.10594v2</id>
+    <title>VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents</title>
+    <updated>2025-03-02T01:19:51Z</updated>
+    <link href="https://arxiv.org/abs/2410.10594v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.10594v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) is an effective technique that enables large language models (LLMs) to utilize external knowledge sources for generation. However, current RAG systems are solely based on text, rendering it impossible to utilize vision information like layout and images that play crucial roles in real-world multi-modality documents. In this paper, we introduce VisRAG, which tackles this issue by establishing a vision-language model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the document to obtain text, the document is directly embedded using a VLM as an image and then retrieved to enhance the generation of a VLM. Compared to traditional text-based RAG, VisRAG maximizes the retention and utilization of the data information in the original documents, eliminating the information loss introduced during the parsing process. We collect both open-source and synthetic data to train the retriever in VisRAG and explore a variety of generation methods. Experiments demonstrate that VisRAG outperforms traditional RAG in both the retrieval and generation stages, achieving a 20--40% end-to-end performance gain over traditional text-based RAG pipeline. Further analysis reveals that VisRAG is efficient in utilizing training data and demonstrates strong generalization capability, positioning it as a promising solution for RAG on multi-modality documents. Our code and data are available at https://github.com/openbmb/visrag.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-14T15:04:18Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Shi Yu</name>
+    </author>
+    <author>
+      <name>Chaoyue Tang</name>
+    </author>
+    <author>
+      <name>Bokai Xu</name>
+    </author>
+    <author>
+      <name>Junbo Cui</name>
+    </author>
+    <author>
+      <name>Junhao Ran</name>
+    </author>
+    <author>
+      <name>Yukun Yan</name>
+    </author>
+    <author>
+      <name>Zhenghao Liu</name>
+    </author>
+    <author>
+      <name>Shuo Wang</name>
+    </author>
+    <author>
+      <name>Xu Han</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Maosong Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.23139v1</id>
+    <title>Benchmarking Deep Search over Heterogeneous Enterprise Data</title>
+    <updated>2025-06-29T08:34:59Z</updated>
+    <link href="https://arxiv.org/abs/2506.23139v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.23139v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a new benchmark for evaluating Deep Search--a realistic and complex form of retrieval-augmented generation (RAG) that requires source-aware, multi-hop reasoning over diverse, sparsed, but related sources. These include documents, meeting transcripts, Slack messages, GitHub, and URLs, which vary in structure and often contain human-to-human interactions. We build it using a synthetic data pipeline that simulates business workflows across product planning, development, and support stages, generating interconnected content with realistic noise and multi-hop questions with guaranteed ground-truth answers. We release our benchmark with both answerable and unanswerable queries, and retrieval pool of 39,190 enterprise artifacts, enabling fine-grained evaluation of long-context LLM and RAG systems. Our experiments reveal that even the best-performing agentic RAG methods achieve an average performance score of 32.96 on our benchmark. With further analysis, we highlight retrieval as the main bottleneck: existing methods struggle to conduct deep searches and retrieve all necessary evidence. Consequently, they often reason over partial context, leading to significant performance degradation.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-29T08:34:59Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Prafulla Kumar Choubey</name>
+    </author>
+    <author>
+      <name>Xiangyu Peng</name>
+    </author>
+    <author>
+      <name>Shilpa Bhagavath</name>
+    </author>
+    <author>
+      <name>Kung-Hsiang Huang</name>
+    </author>
+    <author>
+      <name>Caiming Xiong</name>
+    </author>
+    <author>
+      <name>Chien-Sheng Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.02592v4</id>
+    <title>OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation</title>
+    <updated>2025-08-30T07:10:08Z</updated>
+    <link href="https://arxiv.org/abs/2412.02592v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.02592v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented Generation (RAG) enhances Large Language Models (LLMs) by integrating external knowledge to reduce hallucinations and incorporate up-to-date information without retraining. As an essential part of RAG, external knowledge bases are commonly built by extracting structured data from unstructured PDF documents using Optical Character Recognition (OCR). However, given the imperfect prediction of OCR and the inherent non-uniform representation of structured data, knowledge bases inevitably contain various OCR noises. In this paper, we introduce OHRBench, the first benchmark for understanding the cascading impact of OCR on RAG systems. OHRBench includes 8,561 carefully selected unstructured document images from seven real-world RAG application domains, along with 8,498 Q&amp;A pairs derived from multimodal elements in documents, challenging existing OCR solutions used for RAG. To better understand OCR's impact on RAG systems, we identify two primary types of OCR noise: Semantic Noise and Formatting Noise and apply perturbation to generate a set of structured data with varying degrees of each OCR noise. Using OHRBench, we first conduct a comprehensive evaluation of current OCR solutions and reveal that none is competent for constructing high-quality knowledge bases for RAG systems. We then systematically evaluate the impact of these two noise types and demonstrate the trend relationship between the degree of OCR noise and RAG performance. Our OHRBench, including PDF documents, Q&amp;As, and the ground truth structured data are released at: https://github.com/opendatalab/OHR-Bench</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-03T17:23:47Z</published>
+    <arxiv:comment>Accepted by ICCV 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Junyuan Zhang</name>
+    </author>
+    <author>
+      <name>Qintong Zhang</name>
+    </author>
+    <author>
+      <name>Bin Wang</name>
+    </author>
+    <author>
+      <name>Linke Ouyang</name>
+    </author>
+    <author>
+      <name>Zichen Wen</name>
+    </author>
+    <author>
+      <name>Ying Li</name>
+    </author>
+    <author>
+      <name>Ka-Ho Chow</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Wentao Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.16654v2</id>
+    <title>Comparison of Text-Based and Image-Based Retrieval in Multimodal Retrieval Augmented Generation Large Language Model Systems</title>
+    <updated>2025-11-23T00:38:47Z</updated>
+    <link href="https://arxiv.org/abs/2511.16654v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.16654v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in Retrieval-Augmented Generation (RAG) have enabled Large Language Models (LLMs) to access multimodal knowledge bases containing both text and visual information such as charts, diagrams, and tables in financial documents. However, existing multimodal RAG systems rely on LLM-based summarization to convert images into text during preprocessing, storing only text representations in vector databases, which causes loss of contextual information and visual details critical for downstream retrieval and question answering. To address this limitation, we present a comprehensive comparative analysis of two retrieval approaches for multimodal RAG systems, including text-based chunk retrieval (where images are summarized into text before embedding) and direct multimodal embedding retrieval (where images are stored natively in the vector space). We evaluate all three approaches across 6 LLM models and a two multi-modal embedding models on a newly created financial earnings call benchmark comprising 40 question-answer pairs, each paired with 2 documents (1 image and 1 text chunk). Experimental results demonstrate that direct multimodal embedding retrieval significantly outperforms LLM-summary-based approaches, achieving absolute improvements of 13% in mean average precision (mAP@5) and 11% in normalized discounted cumulative gain. These gains correspond to relative improvements of 32% in mAP@5 and 20% in nDCG@5, providing stronger evidence of their practical impact. We additionally find that direct multimodal retrieval produces more accurate and factually consistent answers as measured by LLM-as-a-judge pairwise comparisons. We demonstrate that LLM summarization introduces information loss during preprocessing, whereas direct multimodal embeddings preserve visual context for retrieval and inference.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-20T18:56:49Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Elias Lumer</name>
+    </author>
+    <author>
+      <name>Alex Cardenas</name>
+    </author>
+    <author>
+      <name>Matt Melich</name>
+    </author>
+    <author>
+      <name>Myles Mason</name>
+    </author>
+    <author>
+      <name>Sara Dieter</name>
+    </author>
+    <author>
+      <name>Vamse Kumar Subbiah</name>
+    </author>
+    <author>
+      <name>Pradeep Honaganahalli Basavaraju</name>
+    </author>
+    <author>
+      <name>Roberto Hernandez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2107.06499v2</id>
+    <title>Deduplicating Training Data Makes Language Models Better</title>
+    <updated>2022-03-24T19:29:45Z</updated>
+    <link href="https://arxiv.org/abs/2107.06499v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2107.06499v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We find that existing language modeling datasets contain many near-duplicate examples and long repetitive substrings. As a result, over 1% of the unprompted output of language models trained on these datasets is copied verbatim from the training data. We develop two tools that allow us to deduplicate training datasets -- for example removing from C4 a single 61 word English sentence that is repeated over 60,000 times. Deduplication allows us to train models that emit memorized text ten times less frequently and require fewer train steps to achieve the same or better accuracy. We can also reduce train-test overlap, which affects over 4% of the validation set of standard datasets, thus allowing for more accurate evaluation. We release code for reproducing our work and performing dataset deduplication at https://github.com/google-research/deduplicate-text-datasets.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-07-14T06:06:52Z</published>
+    <arxiv:comment>Accepted to ACL 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Katherine Lee</name>
+    </author>
+    <author>
+      <name>Daphne Ippolito</name>
+    </author>
+    <author>
+      <name>Andrew Nystrom</name>
+    </author>
+    <author>
+      <name>Chiyuan Zhang</name>
+    </author>
+    <author>
+      <name>Douglas Eck</name>
+    </author>
+    <author>
+      <name>Chris Callison-Burch</name>
+    </author>
+    <author>
+      <name>Nicholas Carlini</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.08826v3</id>
+    <title>Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation</title>
+    <updated>2025-06-02T17:15:08Z</updated>
+    <link href="https://arxiv.org/abs/2502.08826v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.08826v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) suffer from hallucinations and outdated knowledge due to their reliance on static training data. Retrieval-Augmented Generation (RAG) mitigates these issues by integrating external dynamic information for improved factual grounding. With advances in multimodal learning, Multimodal RAG extends this approach by incorporating multiple modalities such as text, images, audio, and video to enhance the generated outputs. However, cross-modal alignment and reasoning introduce unique challenges beyond those in unimodal RAG. This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We review training strategies, robustness enhancements, loss functions, and agent-based approaches, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field. This survey lays the foundation for developing more capable and reliable AI systems that effectively leverage multimodal dynamic external knowledge bases. All resources are publicly available at https://github.com/llm-lab-org/Multimodal-RAG-Survey.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-12T22:33:41Z</published>
+    <arxiv:comment>GitHub repository: https://github.com/llm-lab-org/Multimodal-RAG-Survey</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mohammad Mahdi Abootorabi</name>
+    </author>
+    <author>
+      <name>Amirhosein Zobeiri</name>
+    </author>
+    <author>
+      <name>Mahdi Dehghani</name>
+    </author>
+    <author>
+      <name>Mohammadali Mohammadkhani</name>
+    </author>
+    <author>
+      <name>Bardia Mohammadi</name>
+    </author>
+    <author>
+      <name>Omid Ghahroodi</name>
+    </author>
+    <author>
+      <name>Mahdieh Soleymani Baghshah</name>
+    </author>
+    <author>
+      <name>Ehsaneddin Asgari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.15217v2</id>
+    <title>Ragas: Automated Evaluation of Retrieval Augmented Generation</title>
+    <updated>2025-04-28T05:09:12Z</updated>
+    <link href="https://arxiv.org/abs/2309.15217v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.15217v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce Ragas (Retrieval Augmented Generation Assessment), a framework for reference-free evaluation of Retrieval Augmented Generation (RAG) pipelines. RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations. Evaluating RAG architectures is, however, challenging because there are several dimensions to consider: the ability of the retrieval system to identify relevant and focused context passages, the ability of the LLM to exploit such passages in a faithful way, or the quality of the generation itself. With Ragas, we put forward a suite of metrics which can be used to evaluate these different dimensions \textit{without having to rely on ground truth human annotations}. We posit that such a framework can crucially contribute to faster evaluation cycles of RAG architectures, which is especially important given the fast adoption of LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-26T19:23:54Z</published>
+    <arxiv:comment>Reference-free (not tied to having ground truth available) evaluation framework for retrieval agumented generation</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shahul Es</name>
+    </author>
+    <author>
+      <name>Jithin James</name>
+    </author>
+    <author>
+      <name>Luis Espinosa-Anke</name>
+    </author>
+    <author>
+      <name>Steven Schockaert</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.09611v1</id>
+    <title>Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks</title>
+    <updated>2026-05-10T15:48:38Z</updated>
+    <link href="https://arxiv.org/abs/2605.09611v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.09611v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This preprint presents an empirical analysis of byte-exact chunk-level deduplication in Retrieval-Augmented Generation (RAG) pipelines. We measure context reduction across three distinct operating regimes: clean academic retrieval (0.16% byte reduction on 22.2M BeIR passages), constructed enterprise patterns (24.03% reduction), and multi-turn conversational AI (80.34% reduction). To validate quality preservation, we conducted a cross-vendor 5-judge calibrated panel evaluation across four production APIs (Google Gemini 2.5 Flash, Anthropic Claude Sonnet 4.6, Meta Llama 3.3 70B, and OpenAI GPT-5.1). Applying a five-category human-in-the-loop noise-removal protocol to panel-majority materially different (MAT) pairs, we establish that byte-exact deduplication introduces zero measurable quality regression. Post-audit, all four vendors clear the strict &lt;5% Wilson 95% upper-bound MAT threshold in both the clean and high-redundancy RAG regimes. This work demonstrates that substantial inference compute savings can be achieved deterministically without compromising evaluation-grade model quality.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-10T15:48:38Z</published>
+    <arxiv:comment>Preprint. Implementation and open-source community version available at: https://github.com/corbenic/merlin-community - https://zenodo.org/records/20090712</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sietse Schelpe</name>
+    </author>
+  </entry>
+</feed>

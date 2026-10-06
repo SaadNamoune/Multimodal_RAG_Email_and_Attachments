@@ -1,0 +1,2 @@
+# search exports are kept byte for byte as received: no line-ending conversion
+literature-review/exports/** -text

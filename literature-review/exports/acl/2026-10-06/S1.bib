@@ -1,0 +1,929 @@
+@inproceedings{namboothiri-2026-authorization,
+    title = "Authorization-First Retrieval: Enforcing Least Privilege in Multi-Agent {RAG} Systems",
+    author = "Namboothiri, Rohith",
+    editor = "Chang, Kai-Wei  and
+      Mehrabi, Ninareh  and
+      Krishna, Satyapriya  and
+      Das, Anubrata  and
+      Dhamala, Jwala  and
+      Cao, Yang Trista  and
+      Kumarage, Tharindu  and
+      Ramakrishna, Anil  and
+      Christodoulopoulos, Christos  and
+      Wan, Yixin  and
+      Galystan, Aram  and
+      Kumar, Anoop  and
+      Gupta, Rahul",
+    booktitle = "Proceedings of the 6th Workshop on Trustworthy {NLP} ({T}rust{NLP} 2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.trustnlp-main.15/",
+    doi = "10.18653/v1/2026.trustnlp-main.15",
+    pages = "256--271",
+    ISBN = "979-8-89176-418-7",
+    abstract = "Retrieval-augmented generation systems serving multiple users under role-based access control face a trustworthiness gap: semantic retrieval operates on embedding similarity rather than authorization predicates and can introduce unauthorized content into a model{'}s context window before any filter intervenes. We formalize this as a pipeline ordering problem and introduce Authorization-First Retrieval (AFR), an architectural invariant requiring that authorization constrain the retrieval candidate set before any learned component consumes retrieved content. We reduce authorization correctness to the classical noninterference property and prove AFR is necessary whenever the processing model violates noninterference{---}a condition our experiments confirm empirically. Evaluation on a controlled corpus of 247 chunks across 232 documents with 431 base queries spanning 12 enterprise roles and 9 domains (584 total queries including negation exploitation and parametric probes) shows that retrieve-then-filter pipelines expose unauthorized context in 86.1{\%} of queries, while AFR eliminates structural leaks by construction. Cross-model experiments with Gemini 2.0 Flash and GPT-4o-mini reveal that structural exposure is an architectural property independent of the underlying model, whereas behavioral defenses fail at model-dependent rates, producing answer leakage of 41.3{\%} and 29.5{\%} respectively under retrieve-then-filter. A negation exploitation study demonstrates consistent disclosure vulnerabilities across framing types, while a metadata-tag freshness ablation shows that conditional authorization mechanisms degrade under realistic policy staleness. Stress tests across retrieval depths and chunking granularities confirm AFR{'}s robustness. Our results demonstrate that behavioral guardrails and metadata tagging cannot reliably enforce least privilege in RAG pipelines, while authorization-first architectures provide a verifiable and model-independent security guarantee."
+}
+@inproceedings{li-etal-2026-exploratory,
+    title = "Exploratory As-Analyzed No-Detection of Culturally-Marked Predicate-Triggered {PII} Amplification in a Synthetic-{E}nglish {RAG} Probe: A Predicate-Resource-Confounded Audit",
+    author = "Li, Yanhang  and
+      Fan, Zhichao  and
+      Zhuang, Zexin",
+    editor = "Ma, Weicheng  and
+      Vosoughi, Soroush  and
+      Gillani, Nabeel  and
+      Coto-Solano, Rolando",
+    booktitle = "Proceedings of the 1st Workshop on Stereotypes Across Cultures in Language Technologies ({S}tere{AC}u{LT} 2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.stereacult-1.3/",
+    doi = "10.18653/v1/2026.stereacult-1.3",
+    pages = "20--34",
+    ISBN = "979-8-89176-408-8",
+    abstract = "We ask whether stereotype-loaded queries about culturally marked people leak more personal information from a retrieval-augmented generation (RAG) system than otherwise equivalent neutral queries. We pre-register a four-culture audit covering en-Anglo, es-LATAM, Arabic, and Hindi probes on a synthetic English PII corpus, comparing five paired query arms via the Stereotype-Trigger Leakage Delta (STLD). The locked confirmatory estimator was not run, so all reported tests are exploratory or sensitivity analyses, with deviations documented. We also identify a prompt-echo confound in the name-leakage metric: the model often re-emits the queried name, inflating apparent leakage without retrieval extraction. On cleaner non-name channels{---}email, phone, SSN-like identifier, and address{---}we find no stereotype-driven amplification for any culture after multiple-comparison correction. One name-included es-LATAM cell is significant in the negative direction, but matched-arm decomposition and an expanded culture-neutral control sensitivity suggest a high-leak control-predicate sampling artifact rather than a stereotype-treatment effect. Because the study is powered only for mid-sized effects and the culturally marked probe bank mixes stereotype content with cultural markers and heritage practices, we interpret the results as no detection{---}not evidence of no effect{---}of culturally marked predicate-triggered PII amplification under this synthetic-English RAG setting. The paper contributes a preregistered stereotype-as-privacy-side-channel test, diagnoses prompt-echo and predicate-resource confounds, and outlines release of the synthetic corpus, predicate bank, query generator, audit scripts, and analysis code upon acceptance"
+}
+@inproceedings{santos-etal-2026-multi,
+    title = "Multi-Agent Architecture with {RAG} and Dynamic Context Windows for Text-to-{SQL} Optimization",
+    author = "Santos, Willgnner Ferreira  and
+      Santos, Paulo Victor dos  and
+      Martins, Marcella Scoczynski Ribeiro  and
+      Lekakis, Larissa Freire  and
+      Rosa, Frederico Lemes  and
+      Costa, Bruno Matheus  and
+      Filho, Miguel Alves Pereira  and
+      Montalv{\~a}o, Isabella Alves",
+    editor = "Souza, Marlo  and
+      de-Dios-Flores, Iria  and
+      Santos, Diana  and
+      Freitas, Larissa  and
+      Souza, Jackson Wilke da Cruz  and
+      Ribeiro, Eug{\'e}nio",
+    booktitle = "Proceedings of the 17th International Conference on Computational Processing of {P}ortuguese ({PROPOR} 2026) - Vol. 1",
+    month = apr,
+    year = "2026",
+    address = "Salvador, Brazil",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.propor-1.100/",
+    pages = "988--993",
+    ISBN = "979-8-89176-387-6",
+    abstract = "Natural language interfaces supported by LLMs have been used to translate user questions into SQL queries, but sending the complete database schema in each prompt entails high token consumption and computational cost, especially in corporate databases with hundreds of tables. This work presents a multi-agent Text-to-SQL architecture with dynamic context windows, which combines RAG and metadata dictionaries to select, at query time, only the relevant tables and columns. In a case study with Firebird enterprise databases, the approach reduces by an average of 84.4{\%} the number of processed tokens, resulting in more efficient queries without loss of quality, thereby contributing to the democratization of access to corporate databases."
+}
+@inproceedings{alali-etal-2026-llms,
+    title = "{LLM}s in the Enterprise: A Systematic Review of Security Architectures for {RAG}-Augmented Chatbots",
+    author = "Alali, Fatimah A.  and
+      Aldawsari, Haya  and
+      Ezzini, Saad  and
+      Mahmood, Sajjad",
+    editor = "Mitkov, Ruslan  and
+      Mu{\~n}oz, Rafael  and
+      Lloret, Elena  and
+      Ranasinghe, Tharindu  and
+      Estevanell-Valladares, Ernesto L.  and
+      Lamsiyah, Salima  and
+      Montoyo, Andr{\'e}s  and
+      Ezzini, Saad",
+    booktitle = "Proceedings of the Second International Conference on Natural Language Processing and Artificial Intelligence for Cyber Security",
+    month = jun,
+    year = "2026",
+    address = "Alicante, Spain",
+    publisher = "Department of Languages and Information Systems, University of Alicante",
+    url = "https://aclanthology.org/2026.nlpaics-1.25/",
+    pages = "232--243",
+    abstract = "Enterprise sectors increasingly require AI-driven solutions that handle large volumes of domain-specific documentation securely and efficiently. While Retrieval-Augmented Generation (RAG) extends the capabilities of Large Language Models (LLMs) by grounding responses in external knowledge bases, the security and adoption concerns that define industrial deployment remain largely unaddressed. A Systematic Literature Review (SLR) was conducted targeting empirical studies published between 2020 and 2025 across five academic databases, guided by research questions covering RAG performance, industrial applicability, and security requirements. While findings indicate RAG outperforms base LLM configurations, the analysis reveals that security coverage across the corpus is limited and inconsistent. A critical, recurring gap identified is that security architecture is not adequately covered by the current work, with studies failing to provide detailed security architecture guidance. The literature has not yet addressed the complete set of enterprise deployment requirements, particularly those relating to data privacy. We conclude that while RAG provides a strong foundation, establishing robust security architectures and privacy guidelines are the primary directions required for future research and safe enterprise adoption."
+}
+@inproceedings{diaz-morales-etal-2026-mcs,
+    title = "m{CS}-{LM}: Multimodal Customer Service and Incident Management Systems Based on Large Language Models",
+    author = "D{\'i}az-Morales, Carlos  and
+      Checa-Rubio, Marcos  and
+      Bernal-Beltr{\'a}n, Tom{\'a}s  and
+      Pan, Ronghao  and
+      Barb{\'a}chano, David  and
+      Salas-Z{\'a}rate, Mar{\'i}a del Pilar  and
+      Paredes-Valverde, Mario Andr{\'e}s  and
+      Valencia-Garcia, Rafael",
+    editor = "Claramunt, German Rigau  and
+      Gamallo, Pablo  and
+      Mu{\~n}oz Guillena, Rafael  and
+      Chiruzzo, Luis  and
+      Mart{\'i}nez C{\'a}mara, Eugenio",
+    booktitle = "Proceedings of {LANLP}: Bridging {I}bero and {L}atin {A}merican {NLP} Communities",
+    month = may,
+    year = "2026",
+    address = "Palma, Mallorca (Spain)",
+    publisher = "ELRA Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/2026.lanlp-1.6/",
+    doi = "10.63317/3tcxy4bkn76p",
+    pages = "38--45",
+    abstract = "Customer service and incident management increasingly rely on multimodal evidence, combining text, images and audio. However, general-purpose models lack domain grounding, structured output control and reliability guarantees required in regulated enterprise environments, often leading to hallucinated responses and limiting their practical deployment. This paper presents mCS-LM, a multilingual multimodal framework that integrates Large Language Models (LLMs), Visual Language Models (VLMs), Audio Language Models (ALMs) and Retrieval-Augmented Generation (RAG) within a modular and traceable architecture tailored to customer service and incident management. The system introduces complementary processing flows: (i) perception modules for visual and audio understanding aligned with LLM-based reasoning, and (ii) structured report generation from multimodal evidence through supervised fine-tuning using QLoRA and efficient adaptation techniques. To mitigate hallucinations and improve factual reliability, the framework incorporates vector databases and multimodal RAG pipelines that retrieve domain-specific knowledge from external corporate sources. Formal structural schemas and validation mechanisms enforce output consistency and syntactic correctness. The platform is deployed as a web-based system with REST API integration, enabling scalable multimodal interaction across channels such as instant messaging, email and web chat. Experimental results demonstrate that multimodal generative models can be specialized for structured, domain-constrained enterprise tasks while maintaining computational viability and robustness."
+}
+@inproceedings{ratnakar-etal-2026-one,
+    title = "One Retrieval to Cover Them All: Co-occurrence-Aware Knowledge Base Reorganization for Session-Level {RAG}",
+    author = "Ratnakar, Shivam  and
+      Zhu, Yixuan  and
+      Cheng, Cecilia  and
+      Vijayakumar, Chaya",
+    editor = "Chen, Canyu  and
+      Zhang, Yuji  and
+      Li, Zoey Sha  and
+      Wang, Zihan  and
+      Wang, Qineng  and
+      Su, Jinyan  and
+      Kargupta, Priyanka  and
+      Marjanovi{\'c}, Sara Vera  and
+      Pan, Jeff Z.  and
+      Bansal, Mohit  and
+      Augenstein, Isabelle  and
+      Han, Jiawei  and
+      Ji, Heng  and
+      Li, Manling",
+    booktitle = "Proceedings of the 4th Workshop on Towards Knowledgeable Foundation Models ({K}now{FM} 2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.knowfm-1.14/",
+    doi = "10.18653/v1/2026.knowfm-1.14",
+    pages = "173--182",
+    ISBN = "979-8-89176-403-3",
+    abstract = "RAG systems retrieve documents optimized for answering \textit{one query at a time}. Yet enterprise users arrive with \textit{sessions}, that is, coherent episodes of related questions that span semantically distant parts of the knowledge base. We show that a single retrieval call over a standard knowledge base covers only 41{\%} of a user{'}s session-level information need. To close this gap, we reorganize the KB offline using co-occurrence-aware clustering and expand retrieval candidates through cluster neighborhoods at query time. On WixQA (6,221 enterprise support articles), our method raises single-query session coverage to 58{\%} (+17{\%} absolute; 95{\%} CI: [14.1, 20.4]), reduces retrieval calls to 70{\%} coverage by 34{\%}, and compresses the KB to 20{\%} of its original size, all consistently across four embedding models and six functional domains. We argue that session-level coverage, not single-query recall, should be the primary metric for enterprise RAG evaluation."
+}
+@inproceedings{nathan-etal-2026-tool,
+    title = "Tool-Aware Planning for Contact-Center Analytics: Evaluating {LLM}s through Lineage-Guided Query Decomposition",
+    author = "Nathan, Varun  and
+      Guha, Shreyas  and
+      Kumar, Ayush",
+    editor = "Mille, Simon  and
+      Gehrmann, Sebastian  and
+      Schmidtov{\'a}, Patr{\'i}cia  and
+      Du{\v{s}}ek, Ond{\v{r}}ej  and
+      Fadaee, Marzieh  and
+      Lo, Kyle  and
+      Santus, Enrico  and
+      Stanovsky, Gabriel",
+    booktitle = "Proceedings of the Fifth Workshop on Generation, Evaluation and Metrics ({GEM})",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.gem-main.73/",
+    doi = "10.18653/v1/2026.gem-main.73",
+    pages = "893--943",
+    ISBN = "979-8-89176-423-1",
+    abstract = "We present a domain-grounded benchmark and evaluation framework for tool-aware plan generation in contact-center analytics, where answering a business-insights query requires decomposing it into executable steps over structured tools (Text2SQL over Snowflake), unstructured tools (RAG over transcripts), and LLM-based synthesis, with explicit depends{\_}on relations for safe parallel execution. Our contributions are threefold: (i) a reference-based plan evaluation framework with two complementary views{---}a metric-wise evaluator spanning seven dimensions (e.g., tool{--}prompt alignment, query adherence) and a one-shot evaluator that compares a candidate plan against a reference plan; (ii) a lineage-driven data curation methodology that uses an iterative evaluator{\textrightarrow}optimizer loop to refine initial plans into high-quality plan lineages while reducing manual effort; and (iii) a large-scale study of 14 LLMs across model families and sizes on their ability to generate step-by-step, executable, tool-assigned plans, evaluated with and without lineage in the prompt. Empirically, LLMs continue to struggle on compound queries and on plans longer than four steps; the highest aggregate metric-wise score is 84.8 (Claude-3-7-Sonnet), while the strongest one-shot A+ rate (Extremely Good or Very Good) is only 49.75{\%} (o3-mini). Lineage yields mixed overall gains but improves several strong models and often helps step executability. Overall, our results expose persistent weaknesses in tool understanding{---}especially tool{--}prompt alignment and tool-usage completeness{---}and show that shorter, simpler plans remain markedly easier. The benchmark, evaluation framework, and findings provide a practical path for assessing and improving agentic planning with tools in enterprise question-answering settings. An anonymized dataset with human-annotated reference plans, plan lineages, and per-planner outputs for all 14 planners is available at the anonymous repository linked in the paper."
+}
+@inproceedings{tian-etal-2026-domain,
+    title = "Domain-Specific Data Generation Framework for {RAG} Adaptation",
+    author = "Tian, Chris Xing  and
+      Xie, Weihao  and
+      Chen, Zhen  and
+      Liu, Hui  and
+      Yi, Zhengyuan  and
+      Li, Haoliang  and
+      Wang, Shiqi  and
+      Ma, Siwei",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.960/",
+    doi = "10.18653/v1/2026.findings-acl.960",
+    pages = "19236--19250",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Retrieval-Augmented Generation (RAG) combines the language understanding and reasoning capabilities of large language models (LLMs) with external retrieval to produce domain-grounded responses. Effectively adapting RAG systems to domain-specific settings requires specialized, context-rich training data beyond general-purpose question-answering datasets. Here, we propose RAGen, a scalable and modular data-centric framework for generating domain-grounded question{--}answer{--}context (QAC) triples tailored to diverse RAG adaptation strategies. These QAC triples serve as training signals for multiple RAG adaptation approaches; in this work, we demonstrate their use for contrastive fine-tuning of embedding models and supervised fine-tuning of LLMs under retrieved contexts. RAGen generates QAC triples by identifying key concepts within documents, producing diverse questions guided by Bloom{'}s Taxonomy{--}inspired principles, and pairing them with precise answers extracted from relevant contexts. Its modular pipeline incorporates semantic chunking, hierarchical concept extraction, multi-chunk retrieval, and curated distractor contexts to encourage robust reasoning. Designed for scalability, RAGen efficiently handles large and evolving document corpora without redundant processing, making it particularly suitable for dynamic domains like enterprise knowledge bases."
+}
+@inproceedings{corallo-etal-2026-cachenotes,
+    title = "{C}ache{N}otes: Task-Aware Key-Value Cache Compression for Reasoning-Intensive Knowledge Tasks",
+    author = "Corallo, Giulio  and
+      Weller, Orion  and
+      Petroni, Fabio  and
+      Papotti, Paolo",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.309/",
+    doi = "10.18653/v1/2026.eacl-long.309",
+    pages = "6571--6590",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Integrating external knowledge into Large Language Models (LLMs) iscrucial for many real-world applications, yet current methods like Retrieval-Augmented Generation (RAG) face limitations with broad, multi-source queries, while long-context models are computationally prohibitive.We introduce CacheNotes: Task-Aware Key-Value Cache Compression. Given a task description and a corpus, CacheNotes first generates a sequence of Compression-Planning-Tokens (CPTs), an offline task-focused distillation pass that identifies and organizes key information from the corpus. These CPTs are then used to guide a one-time compression of the corpus into a compact, reusable KV cache, which is then used alone at inference time to efficiently answer diverse, reasoning-intensive queries, eliminating repeated retrieval or context expansion.Experiments on LongBench show that, on Question-Answering tasks at a $20\times$ compression, CacheNotes outperforms RAG by over 8 F1 points and reduces latency by over $4\times$. On RULER, it surpasses previous query-agnostic compression methods by 55 points, narrowing the gap to query-aware compression approaches. Additional results on real-world enterprise and synthetic datasets demonstrate its strong performance on multi-hop and broad-coverage queries."
+}
+@inproceedings{shukla-etal-2026-adaptive,
+    title = "Adaptive Data Flywheel: Applying {MAPE} Control Loops to {AI} Agent Improvement",
+    author = "Shukla, Aaditya  and
+      Knowles, Sidney  and
+      Madugula, Meenakshi  and
+      Farris, David  and
+      Angilly, Ryan  and
+      Pombo, Santiago  and
+      An, Lu  and
+      Xu, Anbang  and
+      Balasubramanian, Abhinav  and
+      Yu, Tan  and
+      Ren, Jiaxiang  and
+      Akkiraju, Rama",
+    editor = {Matusevych, Yevgen  and
+      Eryi{\u{g}}it, G{\"u}l{\c{s}}en  and
+      Aletras, Nikolaos},
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 5: Industry Track)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-industry.33/",
+    doi = "10.18653/v1/2026.eacl-industry.33",
+    pages = "438--454",
+    ISBN = "979-8-89176-384-5",
+    abstract = "Enterprise AI agents must continuously adapt to maintain accuracy, reduce latency, and remain aligned with user needs. We present a practical implementation of a data flywheel in NVInfo AI, NVIDIA{'}s Mixture-of-Experts (MoE) Knowledge Assistant serving over 30,000 employees. By operationalizing a MAPE-driven data flywheel, we built a closed-loop system that systematically addresses failures in retrieval-augmented generation (RAG) pipelines and enables continuous learning.Over a 3-month post-deployment period, we monitored feedback and collected 495 negative samples. Analysis revealed two major failure modes: routing errors (5.25{\%}) and query rephrasal errors (3.2{\%}). Using NVIDIA NeMo Microservices, we implemented targeted improvements through fine-tuning. For routing, we replaced a Llama 3.1 70B model with a fine-tuned 8B variant, achieving 96{\%} accuracy, a 10{\texttimes} reduction in model size, and 70{\%} latency improvement. For query rephrasal, fine-tuning yielded a 3.7{\%} gain in accuracy and a 40{\%} latency reduction.Our approach demonstrates how human-in-the-loop (HITL) feedback, when structured within a data flywheel, transforms enterprise AI agents into self-improving systems. Key learnings include approaches to ensure agent robustness despite limited user feedback, navigating privacy constraints, and executing staged rollouts in production. This work offers a repeatable blueprint for building robust, adaptive enterprise AI agents capable of learning from real-world usage at scale."
+}
+@inproceedings{sutton-etal-2026-fast,
+    title = "Fast, Accurate, and Local Conversion of {MIMIC}-{IV} to {OMOP} with {DBT}",
+    author = "Sutton, Adam  and
+      Moller-Grell, Niko  and
+      Searle, Thomas  and
+      Dobson, Richard",
+    editor = "Demner-Fushman, Dina  and
+      Ananiadou, Sophia  and
+      Roberts, Kirk  and
+      Tsujii, Junichi",
+    booktitle = "{B}io{NLP} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.bionlp-1.80/",
+    doi = "10.18653/v1/2026.bionlp-1.80",
+    pages = "992--996",
+    ISBN = "979-8-89176-434-7",
+    abstract = "dbt mimic omop is a free, open-source resource that converts the MIMIC-IV dataset to the Observational Medical Outcomes Partnership (OMOP) common data model (CDM) format on consumer level hardware. CDM approaches are increasingly adopted in both industry and academia due to the need for interoperability and reproducibility, including in clinical NLP tasks such as cohort selection, information extraction, and retrieval-augmented generation. The MIMIC-IV database is among the most widely used critical care research datasets, yet existing pipelines to transform it to OMOP depend on enterprise database infrastructure and complex orchestration, limiting accessibility for practitioners and resource-constrained researchers. We further integrate free-text clinical notes (195.6M clinical annotations) and chest radiographs into the OMOP note nlp and imaging extension tables, making all MIMIC-IV modalities (structured data, free-text, and imaging) accessible through a common data model. This resource generates a more comprehensive dataset than existing alternatives and is intended to be used to aid in system development, testing, and evaluation."
+}
+@inproceedings{misra-etal-2026-gitchameleon,
+    title = "{G}it{C}hameleon 2.0: Evaluating {AI} Code Generation Against Python Library Version Incompatibilities",
+    author = "Misra, Diganta  and
+      Islah, Nizar  and
+      May, Victor  and
+      Rauby, Brice  and
+      Wang, Zihan  and
+      Gehring, Justine  and
+      Orvieto, Antonio  and
+      Chaudhary, Muawiz Sajjad  and
+      Muller, Eilif B.  and
+      Rish, Irina  and
+      Kahou, Samira Ebrahimi  and
+      Caccia, Massimo",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.2170/",
+    doi = "10.18653/v1/2026.acl-long.2170",
+    pages = "46792--46831",
+    ISBN = "979-8-89176-390-6",
+    abstract = "The rapid evolution of software libraries poses a considerable hurdle for code generation, necessitating continuous adaptation to frequent version updates while preserving backward compatibility. While existing code evolution benchmarks provide valuable insights, they typically lack execution-based evaluation for generating code compliant with specific library versions. To address this, we introduce GitChameleon 2.0, a novel, meticulously curated dataset comprising 328 Python code completion problems, each conditioned on specific library versions and accompanied by executable unit tests. GitChameleon 2.0 rigorously evaluates the capacity of contemporary large language models (LLMs), LLM-powered agents, code assistants, and RAG systems to perform version-conditioned code generation that demonstrates functional accuracy through execution. Our extensive evaluations indicate that state-of-the-art systems encounter significant challenges with this task; enterprise models achieving baseline success rates in the 48-51{\%} range, underscoring the intricacy of the problem. By offering an execution-based benchmark emphasizing the dynamic nature of code libraries, GitChameleon 2.0 enables a clearer understanding of this challenge and helps guide the development of more adaptable and dependable AI code generation methods."
+}
+@inproceedings{chaturvedi-etal-2026-scair,
+    title = "{SCAIR}: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs",
+    author = "Chaturvedi, Prateek  and
+      Zhu, Yuqicheng  and
+      Zhou, Hongkuan  and
+      Zhou, Dongzhuoran  and
+      He, Yunjie  and
+      Staab, Steffen  and
+      Du, Fei  and
+      Tang, Jie  and
+      Kharlamov, Evgeny",
+    editor = "Li, Yunyao  and
+      Rehm, Georg  and
+      Tu, Mei",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-industry.76/",
+    doi = "10.18653/v1/2026.acl-industry.76",
+    pages = "1089--1104",
+    ISBN = "979-8-89176-394-4",
+    abstract = "Knowledge Graph{--}based Retrieval-Augmented Generation (KG-RAG) enables natural language interaction with structured enterprise knowledge, yet existing agentic approaches that perform well on public benchmarks often fail to generalize to real-world enterprise Knowledge Graphs (KGs), which are dense, schema-driven, and operationally constrained. To address these limitations, we propose SCAIR (Schema-Conditioned Agentic Iterative Reasoning), a training-free framework that integrates structured planning with controlled iterative reasoning by injecting schema-conditioned structural priors and enforcing schema-aware traversal during multi-hop reasoning. Experiments on an enterprise-oriented benchmark constructed from a real-world Configuration Management DataBase (CMDB) demonstrate that SCAIR substantially improves performance over existing KG-RAG methods. Crucially, our study highlights that reliable enterprise graph reasoning cannot rely on generic agentic designs; instead, it must explicitly incorporate the target domain{'}s structural and operational constraints into the reasoning process. We demonstrate that by aligning agent design with business logic, substantial performance gains can be achieved without the need for costly model retraining."
+}
+@inproceedings{kapoor-etal-2026-dqa,
+    title = "{DQA}: Diagnostic Question Answering for {IT} Support",
+    author = "Kapoor, Vishaal  and
+      Dundua, Mariam  and
+      Yortucboylu, Evren  and
+      Ahuja, Sarthak  and
+      Kordjazi, Neda  and
+      Li, Yiming  and
+      padala, Vaibhavi  and
+      Ho, Derek  and
+      Whitted, Jennifer  and
+      Steinert, Rebecca",
+    editor = "Li, Yunyao  and
+      Rehm, Georg  and
+      Tu, Mei",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-industry.79/",
+    doi = "10.18653/v1/2026.acl-industry.79",
+    pages = "1128--1135",
+    ISBN = "979-8-89176-394-4",
+    abstract = "Enterprise IT support interactions are fundamentally diagnostic: effective resolution requires iterative evidence gathering from ambiguous user reports to identify an underlying root cause. While retrieval-augmented generation (RAG) provides grounding through historical cases, standard multi-turn RAG systems lack explicit diagnostic state and therefore struggle to accumulate evidence and resolve competing hypotheses across turns.We introduce DQA, a diagnostic question-answering framework that maintains persistent diagnostic state and aggregates retrieved cases at the level of root causes rather than individual documents. DQA combines conversational query rewriting, retrieval aggregation, and state-conditioned response generation to support systematic troubleshooting under enterprise latency and context constraints.We evaluate DQA on 150 anonymized enterprise IT support scenarios using a replay-based protocol. Averaged over three independent runs, DQA achieves a 78.7{\%} success rate under a trajectory-level success criterion, compared to 41.3{\%} for a multi-turn RAG baseline, while reducing average turns from 8.4 to 3.9. This improvement reflects the benefit of explicitly representing competing explanations and aggregating evidence across turns in unscripted troubleshooting."
+}
+@inproceedings{li-etal-2026-par2,
+    title = "{PAR}$^2$-{RAG}: Planned Active Retrieval and Reasoning for Multi-Hop Question Answering",
+    author = "Li, Xingyu  and
+      Wang, Rongguang  and
+      Wang, Yuying  and
+      Guo, Mengqing  and
+      Li, Chenyang  and
+      Sheng, Tao  and
+      Ravi, Sujith  and
+      Roth, Dan",
+    editor = "Li, Yunyao  and
+      Rehm, Georg  and
+      Tu, Mei",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-industry.118/",
+    doi = "10.18653/v1/2026.acl-industry.118",
+    pages = "1727--1737",
+    ISBN = "979-8-89176-394-4",
+    abstract = "Multi-hop question answering (MHQA) is a practical bottleneck in industry applications such as enterprise assistants, customer-support copilots, and compliance analysis, where systems must combine evidence across multiple documents before answering. Large language models (LLMs) remain brittle in this setting: iterative retrieval can commit too early to low-recall trajectories, while planning-only approaches can produce static query sets that fail to adapt when intermediate evidence changes. We propose \textbf{Planned Active Retrieval and Reasoning RAG (PAR$^2$-RAG)}, a training-free two-stage framework that separates \textit{coverage} from \textit{commitment}. PAR$^2$-RAG first performs breadth-first anchoring to build a high-recall evidence frontier, then applies depth-first refinement with evidence sufficiency control in an iterative loop. This design targets deployment constraints by avoiding retraining cycles, reducing maintenance overhead under changing corpora, and improving scalability across domains. Across four MHQA benchmarks, PAR$^2$-RAG consistently outperforms strong baselines: compared with IRCoT, it achieves up to \textbf{23.5{\%}} higher answer accuracy and up to \textbf{10.5{\%}} NDCG gains in retrieval quality."
+}
+@inproceedings{bhathena-etal-2026-mm,
+    title = "{MM}-{B}iz{RAG}: Rethinking Multimodal Retrieval-Augmented Generation for General Purpose Enterprise {Q}{\&}{A}",
+    author = "Bhathena, Hanoz  and
+      Jhaveri, Parin Rajesh  and
+      Mittal, Rohan  and
+      Singh, Prateek  and
+      Kallala, Aymen  and
+      Kaur, Rachneet  and
+      Jin, Yiqiao  and
+      Zeng, Zhen  and
+      Ratnaparkhi, Adwait  and
+      Kochedykov, Denis",
+    editor = "Li, Yunyao  and
+      Rehm, Georg  and
+      Tu, Mei",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-industry.134/",
+    doi = "10.18653/v1/2026.acl-industry.134",
+    pages = "1967--2000",
+    ISBN = "979-8-89176-394-4",
+    abstract = "Recent advances in multimodal retrieval-augmented generation (MM-RAG) have shifted toward minimal parsing, relying on page-level images for producing retriever embeddings and for answer generation. While efficient, this trend often neglects explicit handling of the rich, structured information in complex enterprise documents, instead depending on pre-trained embeddings or vision-language models to implicitly capture such structure. In this work, we take a more direct approach: MM-BizRAG proactively extracts and represents document structure via a document structure-aware split that dynamically routes documents through orientation-specific ingestion pipelines, applying explicit layout-aware parsing for vertically structured documents (e.g., reports) and holistic page-level representations for horizontally structured documents (e.g., slide decks). A unified LLM-driven artifact transformation pipeline with placeholder-based positional alignment preserves natural reading order, while inference-time multimodal assembly decouples retrieval representations from generation context, enabling richer, more grounded answers without any finetuning requirement. Through experiments on a large, heterogeneous enterprise dataset and two public benchmarks (SlideVQA and FinRAGBench-V), MM-BizRAG consistently outperforms state-of-the-art vision-centric baselines by up to 32{\%} points, with especially strong gains on report-style layouts. Furthermore, we introduce FastRAGEval, a single-call LLM Judge metric for fine-grained generative recall that halves RAGChecker{'}s cost while achieving stronger human alignment."
+}
+@inproceedings{yu-etal-2025-ekrag,
+    title = "{EKRAG}: Benchmark {RAG} for Enterprise Knowledge Question Answering",
+    author = "Yu, Tan  and
+      Zhou, Wenfei  and
+      Yang, Lei  and
+      Shukla, Aaditya  and
+      Madugula, Meenakshi  and
+      Gundecha, Pritam  and
+      Burnett, Nick  and
+      Xu, Anbang  and
+      Seth, Vishal  and
+      Bar, Tamar  and
+      Akkiraju, Rama  and
+      Zhang, Vivienne",
+    editor = "Shi, Weijia  and
+      Yu, Wenhao  and
+      Asai, Akari  and
+      Jiang, Meng  and
+      Durrett, Greg  and
+      Hajishirzi, Hannaneh  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the 4th International Workshop on Knowledge-Augmented Methods for Natural Language Processing",
+    month = may,
+    year = "2025",
+    address = "Albuquerque, New Mexico, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.knowledgenlp-1.13/",
+    doi = "10.18653/v1/2025.knowledgenlp-1.13",
+    pages = "152--159",
+    ISBN = "979-8-89176-229-9",
+    abstract = "Retrieval-augmented generation (RAG) offers a robust solution for developing enterprise internal virtual assistants by leveraging domain-specific knowledge and utilizing information from frequently updated corporate document repositories. In this work, we introduce the Enterprise-Knowledge RAG (EKRAG) dataset to benchmark RAG for enterprise knowledge question-answering (QA) across a diverse range of corporate documents, such as product releases, technical blogs, and financial reports. Using EKRAG, we systematically evaluate various retrieval models and strategies tailored for corporate content. We propose novel embedding-model (EM)-as-judge and ranking-model (RM)-as-judge approaches to assess answer quality in the context of enterprise information. Combining these with the existing LLM-as-judge method, we then comprehensively evaluate the correctness, relevance, and faithfulness of generated answers to corporate queries. Our extensive experiments shed light on optimizing RAG pipelines for enterprise knowledge QA, providing valuable guidance for practitioners. This work contributes to enhancing information retrieval and question-answering capabilities in corporate environments that demand high degrees of factuality and context-awareness."
+}
+@inproceedings{pattnayak-etal-2025-hybrid,
+    title = "Hybrid {AI} for Responsive Multi-Turn Online Conversations with Novel Dynamic Routing and Feedback Adaptation",
+    author = "Pattnayak, Priyaranjan  and
+      Agarwal, Amit  and
+      Meghwani, Hansa  and
+      Patel, Hitesh Laxmichand  and
+      Panda, Srikant",
+    editor = "Shi, Weijia  and
+      Yu, Wenhao  and
+      Asai, Akari  and
+      Jiang, Meng  and
+      Durrett, Greg  and
+      Hajishirzi, Hannaneh  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the 4th International Workshop on Knowledge-Augmented Methods for Natural Language Processing",
+    month = may,
+    year = "2025",
+    address = "Albuquerque, New Mexico, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.knowledgenlp-1.20/",
+    doi = "10.18653/v1/2025.knowledgenlp-1.20",
+    pages = "215--229",
+    ISBN = "979-8-89176-229-9",
+    abstract = "Retrieval-Augmented Generation (RAG) systems and large language model (LLM)-powered chatbots have significantly advanced conversational AI by combining generative capabilities with external knowledge retrieval. Despite their success, enterprise-scale deployments face critical challenges, including diverse user queries, high latency, hallucinations, and difficulty integrating frequently updated domain-specific knowledge. This paper introduces a novel hybrid framework that integrates RAG with intent-based canned responses, leveraging predefined high-confidence responses for efficiency while dynamically routing complex or ambiguous queries to the RAG pipeline. Our framework employs a dialogue context manager to ensure coherence in multi-turn interactions and incorporates a feedback loop to refine intents, dynamically adjust confidence thresholds, and expand response coverage over time. Experimental results demonstrate that the proposed framework achieves a balance of high accuracy (95{\%}) and low latency (180ms), outperforming RAG and intent-based systems across diverse query types, positioning it as a scalable and adaptive solution for enterprise conversational AI applications."
+}
+@inproceedings{hui-etal-2025-okralong,
+    title = "{O}kra{L}ong: A Flexible Retrieval-Augmented Framework for Long-Text Question Answering",
+    author = "Hui, Yulong  and
+      Liu, Yihao  and
+      Lu, Yao  and
+      Zhang, Huanchen",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.890/",
+    doi = "10.18653/v1/2025.findings-emnlp.890",
+    pages = "16395--16409",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Large Language Models (LLMs) encounter challenges in efficiently answering long-text questions, as seen in applications like enterprise document analysis and financial report comprehension. While conventional solutions employ long-context processing or Retrieval-Augmented Generation (RAG), they suffer from prohibitive input expenses or incomplete information. Recent advancements adopt context compression and dynamic retrieval loops, but still sacrifice critical details or incur iterative costs. To address these limitations, we propose OkraLong, a novel framework that flexibly optimizes the entire processing workflow. Unlike prior static or coarse-grained adaptive strategies, OkraLong adopts fine-grained orchestration through three synergistic components: analyzer, organizer and executor. The analyzer characterizes the task states, which guide the organizer in dynamically scheduling the workflow. The executor carries out the execution and generates the final answer. Experimental results demonstrate that OkraLong not only enhances answer accuracy by 5.7{\%}-41.2{\%}, but also achieves cost savings of 1.3x-4.7x."
+}
+@inproceedings{helali-etal-2025-reliable,
+    title = "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided {RAG}",
+    author = "Helali, Mossad  and
+      Luo, Yutai  and
+      Ham, Tae Jun  and
+      Plotts, Jim  and
+      Chaugule, Ashwin  and
+      Chang, Jichuan  and
+      Ranganathan, Parthasarathy  and
+      Mansour, Essam",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.836/",
+    doi = "10.18653/v1/2025.emnlp-main.836",
+    pages = "16536--16553",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Automating Exploratory Data Analysis (EDA) is critical for accelerating the workflow of data scientists. While Large Language Models (LLMs) offer a promising solution, current LLM-only approaches often exhibit limited accuracy and code reliability on less-studied or private datasets. Moreover, their effectiveness significantly diminishes with open-source LLMs compared to proprietary ones, limiting their usability in enterprises that prefer local models for privacy and cost. To address these limitations, we introduce RAGvis: a novel two-stage graph-guided Retrieval-Augmented Generation (RAG) framework. RAGvis first builds a base knowledge graph (KG) of EDA notebooks and enriches it with structured EDA operation semantics. These semantics are extracted by an LLM guided by our empirically-developed EDA operations taxonomy. Second, in the online generation stage for new datasets, RAGvis retrieves relevant operations from the KG, aligns them to the dataset{'}s structure, refines them with LLM reasoning, and then employs a self-correcting agent to generate executable Python code. Experiments on two benchmarks demonstrate that RAGvis significantly improves code executability (pass rate), semantic accuracy, and visual quality in generated operations. This enhanced performance is achieved with substantially lower token usage compared to LLM-only baselines. Notably, our approach enables smaller, open-source LLMs to match the performance of proprietary models, presenting a reliable and cost-effective pathway for automated EDA code generation."
+}
+@inproceedings{qiao-etal-2025-swiftkv,
+    title = "{S}wift{KV}: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+    author = "Qiao, Aurick  and
+      Yao, Zhewei  and
+      Rajbhandari, Samyam  and
+      He, Yuxiong",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1306/",
+    doi = "10.18653/v1/2025.emnlp-main.1306",
+    pages = "25734--25753",
+    ISBN = "979-8-89176-332-6",
+    abstract = "LLM inference for enterprise applications, such as summarization, RAG, and code-generation, typically observe much longer prompt than generations, leading to high prefill cost and response latency. We present SwiftKV, a novel model transformation and distillation procedure targeted at reducing the prefill compute (in FLOPs) of prompt tokens while preserving high generation quality. First, SwiftKV prefills later layers' KV cache using an earlier layer{'}s output, allowing prompt tokens to skip those later layers. Second, SwiftKV employs a lightweight knowledge-preserving distillation procedure that can adapt existing LLMs with minimal accuracy impact. Third, SwiftKV can naturally incorporate KV cache compression to improve inference performance in low-memory scenarios. Our comprehensive experiments show that SwiftKV can effectively reduce prefill computation by 25-50{\%} across several LLM families while incurring minimum quality degradation. In the end-to-end inference serving, SwiftKV realizes up to 2x higher aggregate throughput and 60{\%} lower time per output token. It can achieve a staggering 560 TFlops/GPU of normalized inference throughput, which translates to 16K tokens/s for Llama-3.1-70B. SwiftKV is open-sourced at \url{https://github.com/snowflakedb/arctictraining} and \url{https://github.com/snowflakedb/arcticinference}."
+}
+@inproceedings{agarwal-etal-2025-aligning-llms,
+    title = "Aligning {LLM}s for Multilingual Consistency in Enterprise Applications",
+    author = "Agarwal, Amit  and
+      Meghwani, Hansa  and
+      Patel, Hitesh Laxmichand  and
+      Sheng, Tao  and
+      Ravi, Sujith  and
+      Roth, Dan",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.9/",
+    doi = "10.18653/v1/2025.emnlp-industry.9",
+    pages = "117--137",
+    ISBN = "979-8-89176-333-3",
+    abstract = "Large language models (LLMs) remain unreliable for global enterprise applications due to substantial performance gaps between high-resource and mid/low-resource languages, driven by English-centric pretraining and internal reasoning biases. This inconsistency undermines customer experience and operational reliability in multilingual settings such as customer support, content moderation, and information retrieval. Even with advanced Retrieval-Augmented Generation (RAG) systems, we observe up to an 29{\%} accuracy drop in non-English languages compared to English.We propose a practical, batch-wise alignment strategy for fine-tuning LLMs, leveraging semantically equivalent multilingual data in each training batch to directly align model outputs across languages. This approach improves non-English accuracy by up to 23.9{\%} without compromising English performance, model reasoning, or retrieval quality. Our method is simple to implement, scalable, and integrates seamlessly with existing LLM training {\&} deployment pipelines, enabling more robust and equitable multilingual AI solutions in industry."
+}
+@inproceedings{ge-etal-2025-quackir,
+    title = "{Q}uack{IR}: Retrieval in {D}uck{DB} and Other Relational Database Management Systems",
+    author = "Ge, Yijun  and
+      Chen, Zijian  and
+      Lin, Jimmy",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.33/",
+    doi = "10.18653/v1/2025.emnlp-industry.33",
+    pages = "492--500",
+    ISBN = "979-8-89176-333-3",
+    abstract = "Enterprises today are increasingly compelled to adopt dedicated vector databases for retrieval-augmented generation (RAG) in applications based on large language models (LLMs).As a potential alternative for these vector databases, we propose that organizations leverage existing relational databases for retrieval, which many have already deployed in their enterprise data lakes, thus minimizing additional complexity in their software stacks.To demonstrate the simplicity and feasibility of this approach, we present QuackIR, an information retrieval (IR) toolkit built on relational database management systems (RDBMSes), with integrations in DuckDB, SQLite, and PostgreSQL. Using QuackIR, we benchmark the sparse and dense retrieval capabilities of these popular RDBMSes and demonstrate that their effectiveness is comparable to baselines from established IR toolkits. Our results highlight the potential of relational databases as a simple option for RAG scenarios due to their established widespread usage and the easy integration of retrieval abilities. Our implementation is available at quackir.io."
+}
+@inproceedings{choubey-etal-2025-benchmarking,
+    title = "Benchmarking Deep Search over Heterogeneous Enterprise Data",
+    author = "Choubey, Prafulla Kumar  and
+      Peng, Xiangyu  and
+      Bhagavath, Shilpa  and
+      Huang, Kung-Hsiang  and
+      Xiong, Caiming  and
+      Wu, Chien-Sheng",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.34/",
+    doi = "10.18653/v1/2025.emnlp-industry.34",
+    pages = "501--517",
+    ISBN = "979-8-89176-333-3",
+    abstract = "We present a new benchmark for evaluating Deep Search{---}a realistic and complex form of retrieval-augmented generation (RAG) that requires source-aware, multi-hop reasoning over diverse, sparsed, but related sources. These include documents, meeting transcripts, Slack messages, GitHub, and URLs, which vary in structure and often contain human-to-human interactions. We build it using a synthetic data pipeline that simulates business workflows across product planning, development, and support stages, generating interconnected content with realistic noise and multi-hop questions with guaranteed ground-truth answers. We release our benchmark with both answerable and unanswerable queries, and retrieval pool of 39,190 enterprise artifacts, enabling fine-grained evaluation of long-context LLM and RAG systems. Our experiments reveal that even the best-performing agentic RAG methods achieve an average performance score of 32.96 on our benchmark. With further analysis, we highlight retrieval as the main bottleneck: existing methods struggle to conduct deep searches and retrieve all necessary evidence. Consequently, they often reason over partial context, leading to significant performance degradation."
+}
+@inproceedings{poey-etal-2025-ragulator,
+    title = "{RAG}ulator: Lightweight Out-of-Context Detectors for Grounded Text Generation",
+    author = "Poey, Ian  and
+      Liu, Jiajun  and
+      Zhong, Qishuai",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.73/",
+    doi = "10.18653/v1/2025.emnlp-industry.73",
+    pages = "1057--1071",
+    ISBN = "979-8-89176-333-3",
+    abstract = "Real-time identification of out-of-context outputs from large language models (LLMs) is crucial for enterprises to safely adopt retrieval augmented generation (RAG) systems. In this work, we develop lightweight models capable of detecting when LLM-generated text deviates from retrieved source documents semantically. We compare their performance against open-source alternatives on data from credit policy and sustainability reports used in the banking industry. The fine-tuned DeBERTa model stands out for its superior performance, speed, and simplicity, as it requires no additional preprocessing or feature engineering. While recent research often prioritises state-of-the-art accuracy through fine-tuned generative LLMs and complex training pipelines, we demonstrate how detection models are deployed efficiently with high speed and minimal resource usage."
+}
+@inproceedings{tsao-etal-2025-mapping,
+    title = "Mapping Smarter, Not Harder: A Test-Time Reinforcement Learning Agent That Improve Without Labels or Model Updates",
+    author = "Tsao, Wen-Kwang  and
+      Yu, Yao-Ching  and
+      Huang, Chien-Ming",
+    editor = "Potdar, Saloni  and
+      Rojas-Barahona, Lina  and
+      Montella, Sebastien",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2025",
+    address = "Suzhou (China)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-industry.75/",
+    doi = "10.18653/v1/2025.emnlp-industry.75",
+    pages = "1081--1091",
+    ISBN = "979-8-89176-333-3",
+    abstract = "The Enterprise Intelligence Platform must integrate logs from numerous third-party vendors in order to perform various downstream tasks. However, vendor documentation is often unavailable at test time. It is either misplaced, mismatched, poorly formatted, or incomplete, which makes schema mapping challenging. We introduce a reinforcement learning agent that can self-improve without labeled examples or model weight updates. During inference, the agent first identifies ambiguous field-mapping attempts, then generates targeted web-search queries to gather external evidence, and finally applies a confidence-based reward to iteratively refine its mappings. To demonstrate this concept, we converted Microsoft Defender for Endpoint logs into a common schema. Our method increased mapping accuracy from 56.4{\%} (LLM-only) to 72.73{\%} (RAG) to 93.94{\%} over 100 iterations using GPT-4o. At the same time, it reduced the number of low-confidence mappings requiring expert review by 85{\%}. This new approach provides an evidence-driven, transparent method for solving future industry problems, paving the way for more robust, accountable, scalable, efficient, flexible, adaptable, and collaborative solutions."
+}
+@inproceedings{zhu-etal-2025-murar,
+    title = "{M}u{RAR}: A Simple and Effective Multimodal Retrieval and Answer Refinement Framework for Multimodal Question Answering",
+    author = "Zhu, Zhengyuan  and
+      Lee, Daniel  and
+      Zhang, Hong  and
+      Sree Harsha, Sai  and
+      Feujio, Loic  and
+      Maharaj, Akash  and
+      Li, Yunyao",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven  and
+      Mather, Brodie  and
+      Dras, Mark",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics: System Demonstrations",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-demos.13/",
+    pages = "126--135",
+    abstract = "Recent advancements in retrieval-augmented generation have demonstrated impressive performance on the question-answering task. However, most previous work predominantly focuses on text-based answers. Although some studies have explored multimodal data, they still fall short in generating comprehensive multimodal answers, especially step-by-step tutorials for accomplishing specific goals. This capability is especially valuable in application scenarios such as enterprise chatbots, customer service systems, and educational platforms. In this paper, we propose a simple and effective framework, MuRAR (Multimodal Retrieval and Answer Refinement). MuRAR starts by generating an initial text answer based on the user{'}s question. It then retrieves multimodal data relevant to the snippets of the initial text answer. By leveraging the retrieved multimodal data and contextual features, MuRAR refines the initial text answer to create a more comprehensive and informative response. This highly adaptable framework can be easily integrated into an enterprise chatbot to produce multimodal answers with minimal modifications. Human evaluations demonstrate that the multimodal answers generated by MuRAR are significantly more useful and readable than plain text responses. A video demo of MuRAR is available at \url{https://youtu.be/ykGRtyVVQpU}."
+}
+@inproceedings{shojaee-etal-2025-federated,
+    title = "Federated Retrieval Augmented Generation for Multi-Product Question Answering",
+    author = "Shojaee, Parshin  and
+      Harsha, Sai Sree  and
+      Luo, Dan  and
+      Maharaj, Akash  and
+      Yu, Tong  and
+      Li, Yunyao",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven  and
+      Darwish, Kareem  and
+      Agarwal, Apoorv",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics: Industry Track",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-industry.33/",
+    pages = "387--397",
+    abstract = "Recent advancements in Large Language Models and Retrieval-Augmented Generation have boosted interest in domain-specific question-answering for enterprise products. However, AI Assistants often face challenges in multi-product QA settings, requiring accurate responses across diverse domains. Existing multi-domain RAG-QA approaches either query all domains indiscriminately, increasing computational costs and LLM hallucinations, or rely on rigid resource selection, which can limit search results. We introduce MKP-QA, a novel multi-product knowledge-augmented QA framework with probabilistic federated search across domains and relevant knowledge. This method enhances multi-domain search quality by aggregating query-domain and query-passage probabilistic relevance. To address the lack of suitable benchmarks for multi-product QAs, we also present new datasets focused on three Adobe products: Adobe Experience Platform, Target, and Customer Journey Analytics. Our experiments show that MKP-QA significantly boosts multi-product RAG-QA performance in terms of both retrieval accuracy and response quality."
+}
+@inproceedings{alnumay-etal-2025-command,
+    title = "Command {R}7{B} {A}rabic: a small, enterprise-focused, multilingual, and culturally aware {A}rabic {LLM}",
+    author = "Alnumay, Yazeed  and
+      Barbet, Alexandre  and
+      Bialas, Anna  and
+      Darling, William  and
+      Desai, Shaan  and
+      Devassy, Joan  and
+      Duffy, Kyle  and
+      Howe, Stephanie  and
+      Lasche, Olivia  and
+      Lee, Justin  and
+      Shrinivason, Anirudh  and
+      Tracey, Jennifer",
+    editor = "Lignos, Constantine  and
+      Abdulmumin, Idris  and
+      Adelani, David",
+    booktitle = "Proceedings of the Sixth Workshop on African Natural Language Processing (AfricaNLP 2025)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.africanlp-1.17/",
+    doi = "10.18653/v1/2025.africanlp-1.17",
+    pages = "126--135",
+    ISBN = "979-8-89176-257-2",
+    abstract = "Building high-quality large language models (LLMs) for enterprise Arabic applications remains challenging due to the limited availability of digitized Arabic data. In this work, we present a data synthesis and refinement strategy to help address this problem, namely, by leveraging synthetic data generation and human-in-the-loop annotation to expand our Arabic training corpus. We further present our iterative post training recipe that is essential to achieving state-of-the-art performance in aligning the model with human preferences, a critical aspect to enterprise use cases. The culmination of this effort is the release of a small, 7B, open-weight model that outperforms similarly sized peers in head-to-head comparisons and on Arabic-focused benchmarks covering cultural knowledge, instruction following, RAG, and contextual faithfulness."
+}
+@inproceedings{filice-etal-2025-generating,
+    title = "Generating {Q}{\&}{A} Benchmarks for {RAG} Evaluation in Enterprise Settings",
+    author = "Filice, Simone  and
+      Horowitz, Guy  and
+      Carmel, David  and
+      Karnin, Zohar  and
+      Lewin-Eytan, Liane  and
+      Maarek, Yoelle",
+    editor = "Rehm, Georg  and
+      Li, Yunyao",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-industry.33/",
+    doi = "10.18653/v1/2025.acl-industry.33",
+    pages = "469--484",
+    ISBN = "979-8-89176-288-6",
+    abstract = "We introduce DataMorgana, a tool for generating synthetic Q{\&}A benchmarks tailored to RAG applications in enterprise settings. DataMorgana enables customization of the generated benchmark according to the expected diverse traffic of the RAG application. It allows for specifying question types and their associated distribution via a lightweight configuration mechanism. We demonstrate via a series of quantitative and qualitative experiments that DataMorgana surpasses existing tools in terms of lexical, syntactic, and semantic diversity of the generated benchmark while maintaining high quality. We run our experiments over domain-specific and general-knowledge public datasets, as well as two private datasets from governmental RAG applications: one for citizens and the other for government employees. The private datasets have been shared with us by AI71, an AI company, which has integrated DataMorgana into its offerings. In addition, DataMorgana has been offered to about 150 researchers worldwide as part of the SIGIR{'}2025 LiveRAG Challenge held in Spring 2025."
+}
+@inproceedings{meghwani-etal-2025-hard,
+    title = "Hard Negative Mining for Domain-Specific Retrieval in Enterprise Systems",
+    author = "Meghwani, Hansa  and
+      Agarwal, Amit  and
+      Pattnayak, Priyaranjan  and
+      Patel, Hitesh Laxmichand  and
+      Panda, Srikant",
+    editor = "Rehm, Georg  and
+      Li, Yunyao",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-industry.72/",
+    doi = "10.18653/v1/2025.acl-industry.72",
+    pages = "1013--1026",
+    ISBN = "979-8-89176-288-6",
+    abstract = "Enterprise search systems often struggle to retrieve accurate, domain-specific information due to semantic mismatches and overlapping terminologies. These issues can degrade the performance of downstream applications such as knowledge management, customer support, and retrieval-augmented generation agents. To address this challenge, we propose a scalable hard-negative mining framework tailored specifically for domain-specific enterprise data. Our approach dynamically selects semantically challenging but contextually irrelevant documents to enhance deployed re-ranking models.Our method integrates diverse embedding models, performs dimensionality reduction, and uniquely selects hard negatives, ensuring computational efficiency and semantic precision. Evaluation on our proprietary enterprise corpus (cloud services domain) demonstrates substantial improvements of 15{\%} in MRR@3 and 19{\%} in MRR@10 compared to state-of-the-art baselines and other negative sampling techniques. Further validation on public domain-specific datasets (FiQA, Climate Fever, TechQA) confirms our method{'}s generalizability and readiness for real-world applications."
+}
+@inproceedings{rajendran-etal-2025-ecodoc,
+    title = "{E}co{D}oc: A Cost-Efficient Multimodal Document Processing System for Enterprises Using {LLM}s",
+    author = "Rajendran, Ravi K.  and
+      Debnath, Biplob  and
+      Sankaradass, Murugan  and
+      Chakradhar, Srimat",
+    editor = "Rehm, Georg  and
+      Li, Yunyao",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-industry.109/",
+    doi = "10.18653/v1/2025.acl-industry.109",
+    pages = "1530--1537",
+    ISBN = "979-8-89176-288-6",
+    abstract = "Enterprises are increasingly adopting Generative AI applications to extract insights from large volumes of multimodal documents in domains such as finance, law, healthcare, and industry. These documents contain structured and unstructured data (images, charts, handwritten texts, etc.) requiring robust AI systems for effective retrieval and comprehension. Recent advancements in Retrieval-Augmented Generation (RAG) frameworks and Vision-Language Models (VLMs) have improved retrieval performance on multimodal documents by processing pages as images. However, large-scale deployment remains challenging due to the high cost of LLM API usage and the slower inference speed of image-based processing of pages compared to text-based processing. To address these challenges, we propose EcoDoc, a cost-effective multimodal document processing system that dynamically selects the processing modalities for each page as an image or text based on page characteristics and query intent. Our experimental evaluation on TAT-DQA and DocVQA benchmarks shows that EcoDoc reduces average query processing latency by up to 2.29$\times$ and cost by up to 10$\times$, without compromising accuracy."
+}
+@inproceedings{bechard-marquez-ayala-2024-reducing,
+    title = "Reducing hallucination in structured outputs via Retrieval-Augmented Generation",
+    author = "B{\'e}chard, Patrice  and
+      Marquez Ayala, Orlando",
+    editor = "Yang, Yi  and
+      Davani, Aida  and
+      Sil, Avi  and
+      Kumar, Anoop",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 6: Industry Track)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-industry.19/",
+    doi = "10.18653/v1/2024.naacl-industry.19",
+    pages = "228--238",
+    abstract = "A current limitation of Generative AI (GenAI) is its propensity to hallucinate. While Large Language Models (LLM) have taken the world by storm, without eliminating or at least reducing hallucination, real-world GenAI systems will likely continue to face challenges in user adoption. In the process of deploying an enterprise application that produces workflows from natural language requirements, we devised a system leveraging Retrieval-Augmented Generation (RAG) to improve the quality of the structured output that represents such workflows. Thanks to our implementation of RAG, our proposed system significantly reduces hallucination and allows the generalization of our LLM to out-of-domain settings. In addition, we show that using a small, well-trained retriever can reduce the size of the accompanying LLM at no loss in performance, thereby making deployments of LLM-based systems less resource-intensive."
+}
+@inproceedings{singhal-etal-2024-generating,
+    title = "Generating Clarification Questions for Disambiguating Contracts",
+    author = "Singhal, Anmol  and
+      Jain, Chirag  and
+      Anish, Preethu Rose  and
+      Chakraborty, Arkajyoti  and
+      Ghaisas, Smita",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.672/",
+    pages = "7611--7622",
+    abstract = "Enterprises frequently enter into commercial contracts that can serve as vital sources of project-specific requirements. Contractual clauses are obligatory, and the requirements derived from contracts can detail the downstream implementation activities that non-legal stakeholders, including requirement analysts, engineers, and delivery personnel, need to conduct. However, comprehending contracts is cognitively demanding and error-prone for such stakeholders due to the extensive use of Legalese and the inherent complexity of contract language. Furthermore, contracts often contain ambiguously worded clauses to ensure comprehensive coverage. In contrast, non-legal stakeholders require a detailed and unambiguous comprehension of contractual clauses to craft actionable requirements. In this work, we introduce a novel legal NLP task that involves generating clarification questions for contracts. These questions aim to identify contract ambiguities on a document level, thereby assisting non-legal stakeholders in obtaining the necessary details for eliciting requirements. This task is challenged by three core issues: (1) data availability, (2) the length and unstructured nature of contracts, and (3) the complexity of legal text. To address these issues, we propose ConRAP, a retrieval-augmented prompting framework for generating clarification questions to disambiguate contractual text. Experiments conducted on contracts sourced from the publicly available CUAD dataset show that ConRAP with ChatGPT can detect ambiguities with an F2 score of 0.87. 70{\%} of the generated clarification questions are deemed useful by human evaluators."
+}
+@inproceedings{raina-gales-2024-question,
+    title = "Question-Based Retrieval using Atomic Units for Enterprise {RAG}",
+    author = "Raina, Vatsal  and
+      Gales, Mark",
+    editor = "Schlichtkrull, Michael  and
+      Chen, Yulong  and
+      Whitehouse, Chenxi  and
+      Deng, Zhenyun  and
+      Akhtar, Mubashara  and
+      Aly, Rami  and
+      Guo, Zhijiang  and
+      Christodoulopoulos, Christos  and
+      Cocarascu, Oana  and
+      Mittal, Arpit  and
+      Thorne, James  and
+      Vlachos, Andreas",
+    booktitle = "Proceedings of the Seventh Fact Extraction and VERification Workshop (FEVER)",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.fever-1.25/",
+    doi = "10.18653/v1/2024.fever-1.25",
+    pages = "219--233",
+    abstract = "Enterprise retrieval augmented generation (RAG) offers a highly flexible framework for combining powerful large language models (LLMs) with internal, possibly temporally changing, documents. In RAG, documents are first chunked. Relevant chunks are then retrieved for a user query, which are passed as context to a synthesizer LLM to generate the query response. However, the retrieval step can limit performance, as incorrect chunks can lead the synthesizer LLM to generate a false response. This work applies a zero-shot adaptation of standard dense retrieval steps for more accurate chunk recall. Specifically, a chunk is first decomposed into atomic statements. A set of synthetic questions are then generated on these atoms (with the chunk as the context). Dense retrieval involves finding the closest set of synthetic questions, and associated chunks, to the user query. It is found that retrieval with the atoms leads to higher recall than retrieval with chunks. Further performance gain is observed with retrieval using the synthetic questions generated over the atoms. Higher recall at the retrieval step enables higher performance of the enterprise LLM using the RAG pipeline."
+}
+@inproceedings{laban-etal-2024-summary,
+    title = "Summary of a Haystack: A Challenge to Long-Context {LLM}s and {RAG} Systems",
+    author = "Laban, Philippe  and
+      Fabbri, Alexander  and
+      Xiong, Caiming  and
+      Wu, Chien-Sheng",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.552/",
+    doi = "10.18653/v1/2024.emnlp-main.552",
+    pages = "9885--9903",
+    abstract = "LLMs and RAG systems are now capable of handling millions of input tokens or more. However, evaluating the output quality of such systems on long-context tasks remains challenging, as tasks like Needle-in-a-Haystack lack complexity. In this work, we argue that summarization can play a central role in such evaluation. We design a procedure to synthesize Haystacks of documents, ensuring that specific insights repeat across documents. The ``Summary of a Haystack'' (SummHay) task then requires a system to process the Haystack and generate, given a query, a summary that identifies the relevant insights and precisely cites the source documents. Since we have precise knowledge of what insights should appear in a haystack summary and what documents should be cited, we implement a highly reproducible automatic evaluation that can score summaries on two aspects {--} Coverage and Citation. We generate Haystacks in two domains (conversation, news), and perform a large-scale evaluation of 10 LLMs and corresponding 50 RAG systems. Our findings indicate that SummHay is an open challenge for current systems, as even systems provided with an Oracle signal of document relevance lag our estimate of human performance (56{\%}) by 10+ points on a Joint Score. Without a retriever, long-context LLMs like GPT-4o and Claude 3 Opus score below 20{\%} on SummHay. We show SummHay can also be used to study enterprise RAG systems and position bias in long-context models. We hope future systems can equal and surpass human performance on SummHay."
+}
+@inproceedings{zimmerman-etal-2024-two,
+    title = "Two-tiered Encoder-based Hallucination Detection for Retrieval-Augmented Generation in the Wild",
+    author = "Zimmerman, Ilana  and
+      Tredup, Jadin  and
+      Selfridge, Ethan  and
+      Bradley, Joseph",
+    editor = "Dernoncourt, Franck  and
+      Preo{\c{t}}iuc-Pietro, Daniel  and
+      Shimorina, Anastasia",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, US",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-industry.2/",
+    doi = "10.18653/v1/2024.emnlp-industry.2",
+    pages = "8--22",
+    abstract = "Detecting hallucinations, where Large Language Models (LLMs) are not factually consistent with a Knowledge Base (KB), is a challenge for Retrieval-Augmented Generation (RAG) systems. Current solutions rely on public datasets to develop prompts or fine-tune a Natural Language Inference (NLI) model. However, these approaches are not focused on developing an enterprise RAG system; they do not consider latency, train or evaluate on production data, nor do they handle non-verifiable statements such as small talk or questions. To address this, we leverage the customer service conversation data of four large brands to evaluate existing solutions and propose a set of small encoder models trained on a new dataset. We find the proposed models to outperform existing methods and highlight the value of combining a small amount of in-domain data with public datasets."
+}
+@inproceedings{nandi-agrawal-2024-improving,
+    title = "Improving Few-Shot Cross-Domain Named Entity Recognition by Instruction Tuning a Word-Embedding based Retrieval Augmented Large Language Model",
+    author = "Nandi, Subhadip  and
+      Agrawal, Neeraj",
+    editor = "Dernoncourt, Franck  and
+      Preo{\c{t}}iuc-Pietro, Daniel  and
+      Shimorina, Anastasia",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, US",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-industry.51/",
+    doi = "10.18653/v1/2024.emnlp-industry.51",
+    pages = "686--696",
+    abstract = "Few-Shot Cross-Domain NER is the process of leveraging knowledge from data-rich source domains to perform entity recognition on data-scarce target domains. Most previous state-of-the-art (SOTA) approaches use pre-trained language models (PLMs) for cross-domain NER. However, these models are often domain specific. To successfully use these models for new target domains, we need to modify either the model architecture or perform model fine-tuning using data from the new domains. Both of these result in the creation of entirely new NER models for each target domain which is infeasible for practical scenarios. Recently, several works have attempted to use LLMs to solve Few-Shot Cross-Domain NER. However, most of these are either too expensive for practical purposes or struggle to follow LLM prompt instructions. In this paper, we propose IF-WRANER (Instruction Finetuned Word-embedding based Retrieval Augmented large language model for Named Entity Recognition), a retrieval augmented LLM, finetuned for the NER task. By virtue of the regularization techniques used during LLM finetuning and the adoption of word-level embedding over sentence-level embedding during the retrieval of in-prompt examples, IF-WRANER is able to outperform previous SOTA Few-Shot Cross-Domain NER approaches. We have demonstrated the effectiveness of our model by benchmarking its performance on the open source CrossNER dataset, on which it shows more than 2{\%} F1 score improvement over the previous SOTA model. We have deployed the model for multiple customer care domains of an enterprise. Accurate entity prediction through IF-WRANER helps direct customers to automated workflows for the domains, thereby reducing escalations to human agents by almost 15{\%} and leading to millions of dollars in yearly savings for the company."
+}
+@inproceedings{zhang-etal-2024-rag4itops,
+    title = "{RAG}4{ITO}ps: A Supervised Fine-Tunable and Comprehensive {RAG} Framework for {IT} Operations and Maintenance",
+    author = "Zhang, Tianyang  and
+      Jiang, Zhuoxuan  and
+      Bai, Shengguang  and
+      Zhang, Tianrui  and
+      Lin, Lin  and
+      Liu, Yang  and
+      Ren, Jiawei",
+    editor = "Dernoncourt, Franck  and
+      Preo{\c{t}}iuc-Pietro, Daniel  and
+      Shimorina, Anastasia",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, US",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-industry.56/",
+    doi = "10.18653/v1/2024.emnlp-industry.56",
+    pages = "738--754",
+    abstract = "With the ever-increasing demands on Question Answering (QA) systems for IT operations and maintenance, an efficient and supervised fine-tunable framework is necessary to ensure the data security, private deployment and continuous upgrading. Although Large Language Models (LLMs) have notably improved the open-domain QA{'}s performance, how to efficiently handle enterprise-exclusive corpora and build domain-specific QA systems are still less-studied for industrial applications. In this paper, we propose a general and comprehensive framework based on Retrieval Augmented Generation (RAG) and facilitate the whole business process of establishing QA systems for IT operations and maintenance. In accordance with the prevailing RAG method, our proposed framework, named with RAG4ITOps, composes of two major stages: (1) Models Fine-tuning {\&} Data Vectorization, and (2) Online QA System Process. At the Stage 1, we leverage a contrastive learning method with two negative sampling strategies to fine-tune the embedding model, and design the instruction templates to fine-tune the LLM with a Retrieval Augmented Fine-Tuning method. At the Stage 2, an efficient process of QA system is built for serving. We collect enterprise-exclusive corpora from the domain of cloud computing, and the extensive experiments show that our method achieves superior results than counterparts on two kinds of QA tasks. Our experiment also provide a case for applying the RAG4ITOps to real-world enterprise-level applications."
+}
+@inproceedings{chan-etal-2024-adapting,
+    title = "Adapting {LLM}s for Structured Natural Language {API} Integration",
+    author = "Chan, Robin  and
+      Mirylenka, Katsiaryna  and
+      Gschwind, Thomas  and
+      Miksovic, Christoph  and
+      Scotton, Paolo  and
+      Toniato, Enrico  and
+      Labbi, Abdel",
+    editor = "Dernoncourt, Franck  and
+      Preo{\c{t}}iuc-Pietro, Daniel  and
+      Shimorina, Anastasia",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, US",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-industry.74/",
+    doi = "10.18653/v1/2024.emnlp-industry.74",
+    pages = "991--1000",
+    abstract = "API integration is crucial for enterprise systems, as it enables seamless interaction between applications within workflows. However, the diversity and complexity of the API landscape present significant challenges in combining API calls based on user intent.Existing methods rely on named entity recognition (NER) and knowledge graphs, but struggle to generate more complex control flow structures, such as conditionals and loops.We propose a novel framework that leverages the success of large language models (LLMs) in code generation to integrate APIs based on natural language input. Our approach involves fine-tuning an LLM using automatically generated API flows derived from OpenAPI specifications.We further evaluate the effectiveness of enforcing the syntax and schema adherence through constrained decoding.To enable systematic comparison, we introduce targeted test suites to assess the generalization capabilities of these approaches and their ability to retain structured knowledge.Our findings show that LLMs fine-tuned on OpenAPI specifications can (a) learn structural API constraints implicitly during training, and (b) achieve significant improvements in both in-distribution and out-of-distribution performance over NER and retrieval-augmented generation (RAG)-based approaches."
+}

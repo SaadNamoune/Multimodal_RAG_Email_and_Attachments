@@ -1,0 +1,58 @@
+[
+  {"ref": 1, "arxiv": "2005.11401", "cited_as": "Advances in Neural Information Processing Systems, 33, 9459-9474 (2020)"},
+  {"ref": 2, "arxiv": "2502.08826", "cited_as": "Findings of the Association for Computational Linguistics: ACL 2025, 16776-16809"},
+  {"ref": 3, "arxiv": "2506.23139", "cited_as": "Proceedings of EMNLP 2025 (Industry Track), 501-517"},
+  {"ref": 4, "arxiv": "2605.05253", "cited_as": "arXiv preprint (2026)"},
+  {"ref": 5, "arxiv": "2507.12425", "cited_as": "arXiv preprint (2025)"},
+  {"ref": 6, "arxiv": "2406.16828", "cited_as": "arXiv preprint (2024)"},
+  {"ref": 7, "arxiv": "2107.06499", "cited_as": "Proceedings of ACL 2022, 8424-8445"},
+  {"ref": 8, "arxiv": "2504.13079", "cited_as": "Conference on Language Modeling (COLM) 2025"},
+  {"ref": 9, "arxiv": "2103.00020", "cited_as": "Proceedings of ICML 2021, 8748-8763"},
+  {"ref": 10, "arxiv": "2407.01449", "cited_as": "arXiv preprint (2024); ICLR 2025"},
+  {"ref": 11, "arxiv": "2410.10594", "cited_as": "arXiv preprint (2024); ICLR 2025"},
+  {"ref": 12, "arxiv": "2412.02592", "cited_as": "arXiv preprint (2024); ICCV 2025"},
+  {"ref": 13, "arxiv": "2511.16654", "cited_as": "arXiv preprint (2025)"},
+  {"ref": 14, "arxiv": "2510.03663", "cited_as": "arXiv preprint (2025)"},
+  {"ref": 15, "arxiv": "2309.15217", "cited_as": "Proceedings of EACL 2024 (System Demonstrations), 150-158"},
+  {"ref": 16, "item": {
+    "itemType": "webpage",
+    "title": "FrAInderl — Alliance for Generative AI in the Bavarian Forest",
+    "creators": [
+      {"lastName": "Deggendorf Institute of Technology (Technology Campus Grafenau)", "fieldMode": 1, "creatorType": "author"},
+      {"lastName": "University of Passau", "fieldMode": 1, "creatorType": "author"}
+    ],
+    "date": "2025",
+    "url": "https://frainderl.de",
+    "extra": "Project leads: F. Wahl & H. Kosch"
+  }},
+  {"ref": 17, "item": {
+    "itemType": "conferencePaper",
+    "title": "The Enron corpus: A new dataset for email classification research",
+    "creators": [
+      {"firstName": "B.", "lastName": "Klimt", "creatorType": "author"},
+      {"firstName": "Y.", "lastName": "Yang", "creatorType": "author"}
+    ],
+    "proceedingsTitle": "Proceedings of ECML 2004",
+    "pages": "217-226",
+    "date": "2004"
+  }},
+  {"ref": 18, "item": {
+    "itemType": "dataset",
+    "title": "Avocado research email collection",
+    "creators": [
+      {"firstName": "D.", "lastName": "Oard", "creatorType": "author"},
+      {"firstName": "W.", "lastName": "Webber", "creatorType": "author"},
+      {"firstName": "D.", "lastName": "Kirsch", "creatorType": "author"},
+      {"firstName": "S.", "lastName": "Golitsynskiy", "creatorType": "author"}
+    ],
+    "repository": "Linguistic Data Consortium",
+    "identifier": "LDC2015T03",
+    "date": "2015"
+  }},
+  {"ref": 19, "arxiv": "2604.04936", "cited_as": "arXiv preprint (2026)"},
+  {"ref": 20, "arxiv": "2604.19047", "cited_as": "Proceedings of ACL 2026"},
+  {"ref": 21, "arxiv": "2605.09611", "cited_as": "arXiv preprint (2026)"},
+  {"ref": 22, "arxiv": "2408.12076", "cited_as": "Advances in Neural Information Processing Systems 37 (Datasets and Benchmarks Track), 2024"},
+  {"ref": 23, "arxiv": "2210.11934", "cited_as": "arXiv preprint (2023)"},
+  {"ref": 24, "arxiv": "2505.00263", "cited_as": "arXiv preprint (2025)"}
+]

@@ -1,0 +1,1763 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NV0MP38yYBfFrjqGXVTP+A/dWKw</id>
+  <title>arXiv Query: search_query=(ti:"retrieval augmented" OR abs:"retrieval augmented" OR ti:RAG OR abs:RAG) AND (ti:email OR abs:email OR ti:emails OR abs:emails OR ti:"e-mail" OR abs:"e-mail" OR ti:"e-mails" OR abs:"e-mails" OR ti:mailbox OR abs:mailbox OR ti:inbox OR abs:inbox OR ti:enterprise OR abs:enterprise OR ti:"company-internal" OR abs:"company-internal" OR ti:workplace OR abs:workplace) AND submittedDate:"202001010000 TO 202610062359"&amp;id_list=&amp;start=200&amp;max_results=200</title>
+  <updated>2026-10-06T12:04:18Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(ti:%22retrieval+augmented%22+OR+(abs:%22retrieval+augmented%22+OR+(ti:RAG+OR+abs:RAG)))+AND+((ti:email+OR+(abs:email+OR+(ti:emails+OR+(abs:emails+OR+(ti:%22e-mail%22+OR+(abs:%22e-mail%22+OR+(ti:%22e-mails%22+OR+(abs:%22e-mails%22+OR+(ti:mailbox+OR+(abs:mailbox+OR+(ti:inbox+OR+(abs:inbox+OR+(ti:enterprise+OR+(abs:enterprise+OR+(ti:%22company-internal%22+OR+(abs:%22company-internal%22+OR+(ti:workplace+OR+abs:workplace)))))))))))))))))+AND+submittedDate:%22202001010000+TO+202610062359%22)&amp;start=200&amp;max_results=200&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>200</opensearch:itemsPerPage>
+  <opensearch:totalResults>270</opensearch:totalResults>
+  <opensearch:startIndex>200</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.20684v1</id>
+    <title>Beyond Semantic Similarity: A Two-Phase Non-Parametric Retrieval Workflow for Corporate Credit Underwriting</title>
+    <updated>2026-05-20T04:23:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.20684v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.20684v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Corporate credit underwriting requires analysts to extract actionable evidence from long, heterogeneous financial documents spanning hundreds of pages and multiple languages. Standard Retrieval-Augmented Generation (RAG) pipelines optimize for semantic similarity, which frequently surfaces passages that are topically related but lack decision utility, a problem we term the similarity-utility gap. We propose a two-phase non-parametric retrieval architecture that separates high-recall candidate retrieval from high-precision utility ranking. The first phase combines lexical and dense multilingual retrieval to construct a broad candidate pool. The second phase applies an adaptive retrieval controller that filters candidates using query intent and document structure signals, followed by an LLM-as-a-Judge utility scoring mechanism that ranks passages by analytical usefulness rather than semantic proximity.
+  A context-aware extraction module preserves structural fidelity across narrative text and complex financial tables. The system is deployed entirely on-premise to satisfy enterprise data governance requirements. Evaluated on a multilingual corpus of proprietary financial documents with analyst-curated relevance labels, the system significantly outperforms naive retrieval baselines. In production deployment across more than 800 credit analysts, document review time was reduced from several hours to approximately three minutes, demonstrating the practical value of utility-aware RAG architectures for document-intensive decision-support workflows.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-20T04:23:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Linus Ng Junjia</name>
+    </author>
+    <author>
+      <name>Ezekiel Tee Kongquan</name>
+    </author>
+    <author>
+      <name>Kelvin Heng</name>
+    </author>
+    <author>
+      <name>Kenneth Zhu Ke</name>
+    </author>
+    <author>
+      <name>Zhao Jing Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.23459v1</id>
+    <title>AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems</title>
+    <updated>2026-05-22T10:19:19Z</updated>
+    <link href="https://arxiv.org/abs/2605.23459v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.23459v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise AI systems, built on large language models, retrieval pipelines and autonomous agents, introduce a class of risks that traditional software quality assurance was never designed to address. These systems are probabilistic, context-sensitive and emergent: they cannot be verified to be correct in the classical sense, but only evaluated with increasing confidence. This paper presents a comprehensive assurance strategy for enterprise AI systems built around three key principles: first, that AI testing should focus on continuous risk reduction rather than strict correctness verification; second, that evaluation must be treated as a core engineering discipline alongside development; and third, that failures in AI assurance can lead to organizational impacts that are fundamentally different from those seen in traditional deterministic software systems. We introduce a structured AI Failure Taxonomy, propose a revised five-layer AI Assurance Pyramid and provide operational guidance on evaluation-driven development, RAG system testing, model lifecycle management and governance. The goal is to equip engineering leaders and practitioners with a strategy that is both philosophically grounded and operationally deployable.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-22T10:19:19Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Chitra Badagi</name>
+    </author>
+    <author>
+      <name>Divye Singh</name>
+    </author>
+    <author>
+      <name>Animesh Sen</name>
+    </author>
+    <author>
+      <name>Adinath Shirsath</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.24312v4</id>
+    <title>Five Queries Are Enough: Query-Efficient and Surrogate-Free Membership Inference Attacks on RAG via Entailment</title>
+    <updated>2026-08-16T13:19:37Z</updated>
+    <link href="https://arxiv.org/abs/2605.24312v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.24312v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) has become central to large language model (LLM) deployments, grounding responses in enterprise or proprietary data to reduce hallucinations. However, this design introduces a new privacy risk: model outputs may signal the presence of specific documents in the retrieval corpus, enabling membership inference attacks (MIAs) that leak sensitive information. Existing MIAs are feasible, but they often rely on easily detected templated queries or require many non-templated yet costly and repetitive queries, limiting practicality. We ask: Can an adversary launch a limited-budget, surrogate-free, stealthy, and defense-agnostic membership inference attack using non-templated queries? We present MEntA (Membership Entailment Attack), a query-efficient MIA that leverages natural-language entailment to maximize information gained per query. By asking low-cost, broad, information-seeking questions and measuring entailment between model responses and candidate documents, MEntA eliminates the need for costly shadow models and large query budgets. Across NFCorpus, SCIDOCS, and TREC-COVID, MEntA achieves up to 0.991 AUC with only 5 queries, outperforming prior methods by up to 0.42 AUC under equivalent conditions. It remains effective under state-of-the-art (SOTA) RAG defenses, while current detectors either miss MEntA or flag benign queries at high rates. Regarding cost, MEntA reduces total attack cost by up to 65$\times$ lower compared to SOTA attacks under the same attack setting. Our findings expose the feasibility of realistic, low-cost privacy leakage in RAG systems and highlight the urgent need for privacy-aware retrieval and defense mechanisms.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-23T00:38:59Z</published>
+    <arxiv:comment>Accepted by USENIX Security 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Nguyen Linh Bao Nguyen</name>
+    </author>
+    <author>
+      <name>Wanlun Ma</name>
+    </author>
+    <author>
+      <name>Viet Vo</name>
+    </author>
+    <author>
+      <name>Alsharif Abuadbba</name>
+    </author>
+    <author>
+      <name>Minghong Fang</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+    <author>
+      <name>Yang Xiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.30207v1</id>
+    <title>Persona Conditioning of Brand Recommendations in Retrieval-Augmented Commercial Chat: A Prominence-Stratified Cross-Provider Audit</title>
+    <updated>2026-05-28T16:43:38Z</updated>
+    <link href="https://arxiv.org/abs/2605.30207v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.30207v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The same prompt -- "best CRM software" -- reaches AI assistants from buyers in widely different contexts: a solo founder, an enterprise VP, a UK SMB owner. We audit how strongly that contextual variation reshapes which brands the model recommends. The audit samples 2,000 runs over a design space of 10 personas x 8 prompts x 3 model configurations x N=10 reps, with the two OpenAI cells at full 8-prompt coverage and the Anthropic sonnet-4.6 / low cell at 4-prompt coverage. Prefixing the user message with a persona drops the recommendation-set similarity (Jaccard) by Delta = -0.12 to -0.20 relative to a same-persona baseline (clustered 95% CIs exclude zero on all three measured cells; the sonnet cell's CI rests on only 4 prompt clusters and is correspondingly wider). The effect is sharply prominence-stratified: category leaders are persona-resistant (~80% same-brand consistency across personas), but mid-market brands swap up to 75% of the recommendation set as the persona changes. The Anthropic model shows a larger point-estimate effect than the OpenAI configurations, though clustered CIs overlap for the closer contrast (sonnet vs. OpenAI/high); the asymmetry is consistent with Anthropic's more retrieval-unattributed generation route (43-52% recommendations without observed retrieval-layer evidence, vs OpenAI's 8-29%, documented in Jack 2026). Any measurement of AI brand perception must condition on the buyer persona supplying the query: the same prompt produces materially different recommendation sets depending on who the model thinks is asking, and a measurement protocol that aggregates across personas systematically obscures that variation. The effect concentrates at mid-market and is largest on the most priors-reliant generation route in our audit, consistent with persona responsiveness growing as models lean more on training-data priors and richer context integration.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T16:43:38Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Will Jack</name>
+    </author>
+    <author>
+      <name>Noah Lehman</name>
+    </author>
+    <author>
+      <name>Keller Maloney</name>
+    </author>
+    <author>
+      <name>Sarah Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.31086v2</id>
+    <title>Beyond Static Dialogues: Benchmarking Realistic, Heterogeneous, and Evolving Long-Term Memory</title>
+    <updated>2026-06-01T09:00:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.31086v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.31086v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In existing memory benchmarks for Large Language Models (LLMs), the evaluated dialogue sessions often lack long-term semantic consistency, and the underlying personas tend to be flat and static. Furthermore, in real-world scenarios, interactions between users and assistants involve more diverse, heterogeneous data streams, such as documents and emails. These shortcomings significantly limit the realism and effectiveness of current evaluations. To address these limitations, we introduce RHELM (Realistic, Heterogeneous, and Evolving Long-term Memory). Driven by meticulously crafted user profiles and a novel LOOP (pLan-rOllout-evOlve-Prune) module, we construct realistic dialogues across diverse interaction scenarios that exhibit dynamic temporal evolution and long-term coherence. Crucially, these dialogues are deeply integrated with heterogeneous external sources synchronized with the user's temporal event trajectory. The resulting benchmark encompasses challenging question-answer pairs spanning seven inquiry types, with each question mapping to at least one of 27 critical memory characteristics that we identify as essential yet underexplored in current research. Comprehensive experiments across full-context models, retrieval-augmented generation (RAG) methods, and representative memory frameworks reveal that contemporary approaches still expose critical weaknesses in complex, real-world settings, particularly in resolving multi-source aggregation and real-world contextual reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-29T09:51:22Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Han Zhang</name>
+    </author>
+    <author>
+      <name>Zihao Tang</name>
+    </author>
+    <author>
+      <name>Xin Yu</name>
+    </author>
+    <author>
+      <name>Xiao Liu</name>
+    </author>
+    <author>
+      <name>Yeyun Gong</name>
+    </author>
+    <author>
+      <name>Haizhen Huang</name>
+    </author>
+    <author>
+      <name>Yan Lu</name>
+    </author>
+    <author>
+      <name>Weiwei Deng</name>
+    </author>
+    <author>
+      <name>Feng Sun</name>
+    </author>
+    <author>
+      <name>Qi Zhang</name>
+    </author>
+    <author>
+      <name>Hanfang Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04037v2</id>
+    <title>Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification</title>
+    <updated>2026-06-04T15:00:59Z</updated>
+    <link href="https://arxiv.org/abs/2606.04037v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04037v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pre-deployment verification of enterprise artificial intelligence (AI) agents remains a critical gap between large language model (LLM) capability benchmarking and production deployment. Post-deployment monitoring, human-in-the-loop controls, and prompt-level guardrails offer limited assurance once an agent is operating in production. We present an ontology-grounded verification framework -- to our knowledge the first to combine three components: an Agent Operational Envelope formalizing the certification space across permissions, domain constraints, safety properties, governance rules, and autonomy levels; an ontology-to-scenario generation pipeline that derives regulatory, operational, and adversarial test scenarios automatically; and a machine-verifiable Trust Certificate with graduated deployment verdicts. A controlled pilot across four regulated industries (Fintech, Banking, Insurance, Healthcare), instantiated as five industry-by-regulatory-regime cells across the United States and Vietnam (where Vietnam's 2025 AI Law makes such verification legally mandated for financial services), generated 1,800 scenarios evaluated against 125 primary-source regulatory requirements and 25 injected faults. Ontology-grounded generation significantly outperformed the dominant persona-based baseline on regulatory coverage (48.3% versus 33.1%; corrected p_c = .0006) and attained the highest domain specificity (4.77/5.0; p = 2e-6); transparently, its advantage over plain and retrieval-augmented prompting did not survive Bonferroni correction. Cross-validation across three LLM families (Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B; 5,400 total scenarios) replicated the persona-versus-ontology pattern. The framework offers a reproducible, regulation-grounded route to pre-deployment assurance for enterprise AI agents, complementing runtime governance with an auditable deployment gate.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T02:37:11Z</published>
+    <arxiv:comment>26 pages, 3 figures. Companion to arXiv:2604.00555. Code and data: https://github.com/frank-luongt/faos-research/tree/main/RA-6</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Thanh Luong Tuan</name>
+    </author>
+    <author>
+      <name>Abhijit Sanyal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22571v1</id>
+    <title>SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs</title>
+    <updated>2026-06-02T16:14:23Z</updated>
+    <link href="https://arxiv.org/abs/2607.22571v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22571v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Knowledge Graph-based Retrieval-Augmented Generation (KG-RAG) enables natural language interaction with structured enterprise knowledge, yet existing agentic approaches that perform well on public benchmarks often fail to generalize to real-world enterprise Knowledge Graphs (KGs), which are dense, schema-driven, and operationally constrained. To address these limitations, we propose SCAIR (Schema-Conditioned Agentic Iterative Reasoning), a training-free framework that integrates structured planning with controlled iterative reasoning by injecting schema-conditioned structural priors and enforcing schema-aware traversal during multi-hop reasoning. Experiments on an enterprise-oriented benchmark constructed from a real-world Configuration Management DataBase (CMDB) demonstrate that SCAIR substantially improves performance over existing KG-RAG methods. Crucially, our study highlights that reliable enterprise graph reasoning cannot rely on generic agentic designs; instead, it must explicitly incorporate the target domain's structural and operational constraints into the reasoning process. We demonstrate that by aligning agent design with business logic, substantial performance gains can be achieved without the need for costly model retraining.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T16:14:23Z</published>
+    <arxiv:comment>Accepted at ACL 2026 Industry Track</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Prateek Chaturvedi</name>
+    </author>
+    <author>
+      <name>Yuqicheng Zhu</name>
+    </author>
+    <author>
+      <name>Hongkuan Zhou</name>
+    </author>
+    <author>
+      <name>Dongzhuoran Zhou</name>
+    </author>
+    <author>
+      <name>Yunjie He</name>
+    </author>
+    <author>
+      <name>Steffen Staab</name>
+    </author>
+    <author>
+      <name>Fei Du</name>
+    </author>
+    <author>
+      <name>Jie Tang</name>
+    </author>
+    <author>
+      <name>Evgeny Kharlamov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04231v1</id>
+    <title>MM-BizRAG: Rethinking Multimodal Retrieval-Augmented Generation for General Purpose Enterprise Q&amp;A</title>
+    <updated>2026-06-02T21:31:47Z</updated>
+    <link href="https://arxiv.org/abs/2606.04231v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04231v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in multimodal retrieval-augmented generation (MM-RAG) have shifted toward minimal parsing, relying on page-level images for producing retriever embeddings and for answer generation. While efficient, this trend often neglects explicit handling of the rich, structured information in complex enterprise documents, instead depending on pre-trained embeddings or vision-language models to implicitly capture such structure. In this work, we take a more direct approach: MM-BizRAG proactively extracts and represents document structure via a document structure-aware split that dynamically routes documents through orientation-specific ingestion pipelines, applying explicit layout-aware parsing for vertically structured documents (e.g., reports) and holistic page-level representations for horizontally structured documents (e.g., slide decks). A unified LLM-driven artifact transformation pipeline with placeholder-based positional alignment preserves natural reading order, while inference-time multimodal assembly decouples retrieval representations from generation context, enabling richer, more grounded answers without any finetuning requirement. Through experiments on a large, heterogeneous enterprise dataset and two public benchmarks (SlideVQA and FinRAGBench-V), MM-BizRAG consistently outperforms state-of-the-art vision-centric baselines by up to 32% points, with especially strong gains on report-style layouts. Furthermore, we introduce FastRAGEval, a single-call LLM Judge metric for fine-grained generative recall that halves RAGChecker's cost while achieving stronger human alignment.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T21:31:47Z</published>
+    <arxiv:comment>Accepted at ACL 2026 (Industry Track)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hanoz Bhathena</name>
+    </author>
+    <author>
+      <name>Parin Rajesh Jhaveri</name>
+    </author>
+    <author>
+      <name>Rohan Mittal</name>
+    </author>
+    <author>
+      <name>Prateek Singh</name>
+    </author>
+    <author>
+      <name>Aymen Kallala</name>
+    </author>
+    <author>
+      <name>Rachneet Kaur</name>
+    </author>
+    <author>
+      <name>Yiqiao Jin</name>
+    </author>
+    <author>
+      <name>Zhen Zeng</name>
+    </author>
+    <author>
+      <name>Adwait Ratnaparkhi</name>
+    </author>
+    <author>
+      <name>Denis Kochedykov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08317v1</id>
+    <title>Architectural Evolution and Selection Framework for Database Systems in AI-Ready Data Platforms</title>
+    <updated>2026-06-06T20:01:52Z</updated>
+    <link href="https://arxiv.org/abs/2606.08317v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08317v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rise of polyglot data management and AI-ready database architectures has created a complex design space across diverse database paradigms. However, architecture selection in modern enterprise environments continues to rely heavily on ad-hoc engineering intuition, with limited systematic frameworks to guide decision-making across heterogeneous database systems. This paper introduces a unified cross-paradigm evaluation and selection framework for database architecture design in AI-ready data platforms. The framework is based on nine architectural dimensions and incorporates a structured multi-stage selection process involving workload characterization, constraint filtering, and compatibility scoring to enable systematic comparison and decision-making. To ground the framework, we conduct a structured comparative analysis across thirteen major database paradigms spanning transactional, analytical, and AI-oriented systems. This analysis reveals three recurring patterns in database evolution: decoupling of storage and compute, workload-driven specialization, and convergence toward integrated AI-ready platforms. The proposed framework is demonstrated through a representative enterprise case study in financial fraud detection, illustrating how hybrid, polyglot architectures emerge as optimal solutions for multidimensional workload requirements. The cross-paradigm analysis culminates in an AI-ready reference architecture that integrates lakehouse storage, feature processing, and semantic retrieval layers as the unified substrate for modern analytics, machine learning, and Retrieval-Augmented Generation applications.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T20:01:52Z</published>
+    <arxiv:comment>18 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Mohit Srivastava</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00006v1</id>
+    <title>Enhancing LLMs with Context-Specific Knowledge for Mitigating Misinformation in SMEs: A RAG-based Modeling and Analysis</title>
+    <updated>2026-06-08T15:34:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.00006v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00006v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs), a part of artificial intelligence (AI), are increasingly being adopted by Small and Medium Enterprises (SMEs) to enhance question-answering capabilities and support business decision-making processes. However, hallucinations in LLM-generated outputs can serve as a source of misinformation, reducing user confidence in their reliability and trustworthiness within SMEs. Retrieval-Augmented Generation (RAG) has emerged as a promising approach to address this challenge by incorporating external knowledge sources into the modeling process. In this paper, we present VectorRAG and GraphRAG modeling approaches to mitigate hallucinations and misinformation risks and evaluate their effectiveness in SME environments. Our experimental evaluation is conducted on multiple state-of-the-art LLMs, including LLaMA, Mistral, and Qwen, to assess performance in terms of useful response generation, risk of hallucination, contextual relevance, as well as human-interpretation. The results demonstrate that RAG-enhanced LLMs can significantly improve response quality by reducing hallucinations and misinformation, thereby supporting more reliable, trustworthy, and context-aware decision-making in SME environments.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T15:34:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Md. Samiul Islam</name>
+    </author>
+    <author>
+      <name>Iqbal H. Sarker</name>
+    </author>
+    <author>
+      <name>Chadni Islam</name>
+    </author>
+    <author>
+      <name>Ahmad Mohsin</name>
+    </author>
+    <author>
+      <name>Ahmed Ibrahim</name>
+    </author>
+    <author>
+      <name>Helge Janicke</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12703v1</id>
+    <title>SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems</title>
+    <updated>2026-06-10T21:45:52Z</updated>
+    <link href="https://arxiv.org/abs/2606.12703v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12703v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) agents increasingly run with persistent memory that accumulates across user sessions. This creates a new attack surface: an adversary interacting only through normal channels can inject crafted memories that, once retrieved, steer the agent's responses for future users, without touching model weights or code. We call this Multi-Session Memory Poisoning (MSMP) and show that no existing defence certifies against it; static-corpus defences (RobustRAG, ReliabilityRAG) assume a fixed knowledge base, and heuristic filters are bypassed by fluent enterprise-style text. We present Signed Memory with Smoothed Retrieval (SMSR), the first defence with a certified robustness bound for this setting. Component 1 adds HMAC-SHA256 provenance at write time, blocking unsigned injection. Component 2 applies randomised memory ablation with verdict-based majority voting at query time, bounding the influence of authenticated adversaries. We prove that no provenance-free retrieval-time filter can certify against adaptive injection, derive a hypergeometric certificate for Component 2, and formalise the Consistent Minority Effect, whereby a consistent adversarial answer wins string-based voting as a numerical minority while verdict-based voting removes it. Across 15 enterprise scenarios (3,150 repeated trials), Component 1 cuts attack success from 93-100% to 0% for all unsigned variants. For an authenticated adversary with a single injection, Component 2 holds success to 8.0% (95% CI [5.8, 10.9], n=450), below the certified worst case. In an end-to-end query-only attack where the agent itself writes the poison rather than it being pre-seeded, SMSR reduces success from 65.3% to 5.3% (n=150, non-overlapping CIs) on a live agent stack. Clean-query utility is 90% (Component 1) and 85% (combined).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T21:45:52Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Tarun Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.28370v1</id>
+    <title>Conversational Query Engine for Mixed-Modality Heterogeneous Enterprise Data Sources</title>
+    <updated>2026-06-15T17:02:22Z</updated>
+    <link href="https://arxiv.org/abs/2606.28370v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.28370v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise business intelligence queries span structured warehouses and unstructured document repositories -- modalities with fundamentally different access methods, cost profiles, and correctness semantics. Existing AI-enabled interfaces force users to select the right tool: NL2SQL systems cannot reason over slide decks, and RAG pipelines lack access to live warehouse tables.
+  We present COGNI, a production conversational BI system that treats natural-language analytics as a heterogeneous query processing problem, organized as four architectural layers. First, an indexing layer implements slide-adaptive chunking -- recursive chunking for plain-text slides, hierarchical chunking for structured content such as tables, charts, and key-value blocks - achieving $88.3\%$ on our internal enterprise benchmark. Second, a routing layer built on a LoRA fine-tuned Qwen-2.5-1.5B-Instruct model that produces a dual output - modality decision and complexity assessment at $93.8\%$ accuracy and approximately $7\times$ lower cost than frontier-model. Third, a retrieval layer executes complexity-adaptive pipelines: a self-correcting NL2SQL agent at $93.9\%$ G-Eval, and Recursive Language Models reaching $91.0\%$ on multi-hop synthesis queries. Finally, a caching layer validates query equivalence across multiple dimensions beyond embedding similarity, achieving zero false cache hits and $8.4\times$ latency reduction.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-15T17:02:22Z</published>
+    <arxiv:comment>Accepted at Agent4IR @ KDD2026</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Darshita Rathore</name>
+    </author>
+    <author>
+      <name>Vineet Kumar</name>
+    </author>
+    <author>
+      <name>Vaibhav Singal</name>
+    </author>
+    <author>
+      <name>Ankur Vivek Singh</name>
+    </author>
+    <author>
+      <name>Anindya Moitra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.17468v1</id>
+    <title>RSRank: Learning Relevance from Representational Shifts</title>
+    <updated>2026-06-16T03:29:23Z</updated>
+    <link href="https://arxiv.org/abs/2606.17468v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.17468v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As enterprises deploy RAG-based systems to provide grounded responses to user queries, reranking has become a critical component for the final filtering step that separates relevant from distracting or irrelevant documents. Existing rerankers often rely on heuristic thresholds to achieve optimal filtering. Moreover, for relevance scoring, state-of-the-art methods use a language model's logit signals, which are designed for next-token prediction, not for assessing relevance. To address these limitations, we identify a principled signal for relevance: the representational shift (RS) induced in a query's internal state when conditioned on a document. We observe that the alignment between (a) RS induced by a candidate document and (b) RS induced by an oracle document-set provides a robust indicator of relevance. Building on this insight, we introduce a lightweight training framework that learns projections mapping RS to calibrated relevance scores. Our training objectives naturally filter irrelevant content at a zero threshold, reducing dependence on heuristic tuning. Across diverse retrieval datasets, our method delivers gains over SOTA rerankers.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-16T03:29:23Z</published>
+    <arxiv:comment>Under Peer Review</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Archit Gupta</name>
+    </author>
+    <author>
+      <name>Sai Sundaresan</name>
+    </author>
+    <author>
+      <name>Debabrata Mahapatra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20351v1</id>
+    <title>Exploratory As-Analyzed No-Detection of Culturally-Marked Predicate-Triggered PII Amplification in a Synthetic-English RAG Probe: A Predicate-Resource-Confounded Audit</title>
+    <updated>2026-06-16T06:03:48Z</updated>
+    <link href="https://arxiv.org/abs/2608.20351v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20351v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We ask whether stereotype-loaded queries about culturally marked people leak more personal information from a retrieval-augmented generation (RAG) system than otherwise-equivalent neutral queries. We pre-register a four-culture audit (en-Anglo, es-LATAM, Arabic, Hindi) on a synthetic English PII corpus, comparing five query arms we call the Stereotype-Trigger Leakage Delta (STLD). Two caveats up front. Our locked confirmatory estimator was never run, so every test in the paper is exploratory or sensitivity, with all plan deviations listed in the appendix. And the name-leakage metric is contaminated by a prompt-echo artifact: the model often just re-emits the name we asked about, which inflates apparent leakage without any retrieval at all. On the cleaner channels (email, phone, ssn-like, address), we find no stereotype-driven amplification on any of the four cultures after multiple-comparison correction. Because our sample is only powered for mid-sized effects, and because the culturally marked probes mix stereotype content with cultural markers and heritage practices, we present this as no detection, not evidence of no effect, of culturally marked predicate leakage that is confounded with the underlying resource.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-16T06:03:48Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yanhang Li</name>
+    </author>
+    <author>
+      <name>Zhichao Fan</name>
+    </author>
+    <author>
+      <name>Zexin Zhuang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.24781v1</id>
+    <title>Three Sides of Retrieval: Factorial Evidence for Document-Side, Query-Side, and Answer-Side Complementarity in RAG</title>
+    <updated>2026-06-19T14:33:01Z</updated>
+    <link href="https://arxiv.org/abs/2607.24781v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.24781v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>RAG systems rely on chunking, which destroys structural information in documents. Existing heading-based retrieval (Jeong et al., 2025) requires multiple LLM calls per document and returns sub-chunks within matched sections. We introduce ToC-guided page retrieval, which infers headings from visual formatting without LLM calls, embeds them as a parallel index, and loads full page sections. Across 1,280 conditions on 8 enterprise documents (5 to 195 pages), we find: (1) ToC is a significant main effect on answer quality (d = +0.41, p = 0.031), with the largest gains in completeness (+0.40) and usefulness (+0.40); (2) combined with answer-side verification, it outperforms query-side decomposition + verification (d = +0.32, p = 0.036); (3) ToC contributes 20% of citations despite adding only 2.9 pages per query; (4) gains are directionally larger on longer documents (up to +1.50 on 118 pages), though the trend does not reach significance with 8 documents; and (5) a 480-condition sensitivity analysis finds no significant parameter effects (all p &gt; 0.38), confirming defaults are near-optimal. The contribution is both methodological (a new zero-LLM-cost retrieval algorithm) and empirical: factorial evidence that document-side, query-side, and answer-side enhancements are complementary, a three-way interaction not previously studied.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-19T14:33:01Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Ng S. T. Chong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.25343v3</id>
+    <title>Invoice Haystack: Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity</title>
+    <updated>2026-09-03T00:24:29Z</updated>
+    <link href="https://arxiv.org/abs/2606.25343v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.25343v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision Language Models have achieved near-human performance on single-document Visual Question Answering, yet their effectiveness degrades significantly when retrieving information from large collections of visually homogeneous documents. Existing multi-document benchmarks aggregate diverse document types, creating artificial separation in embedding space that does not reflect enterprise document repositories where thousands of records share identical visual templates. We identify this as embedding collapse and introduce Invoice Haystack, a benchmark with 1,500 anonymized invoice images paired with 200 discriminative question-answer pairs, specifically designed to stress-test retrieval under strong visual homogeneity. Invoice Haystack exhibits a mean pairwise cosine similarity of 0.73, compared to 0.38 (DocHaystack) and 0.31 (InfoHaystack) in existing benchmarks, posing a fundamentally more challenging retrieval problem. Addressing the identified challenge, we propose VL-RAG, a hybrid retrieval-augmented generation framework that jointly leverages text and visual embeddings to harness the complementary strengths of both modalities, followed by a VLM-based verification filter for precise document identification. VL-RAG achieves 60.0\% Recall@1 on Invoice Haystack-500, outperforming existing state-of-the-art method by up to an absolute 13.5 percentage points. It further improves retrieval considerably on DocHaystack-1000 (77.1\% vs.\ 75.2\%) and InfoHaystack-1000 (84.5\% vs.\ 80.0\%), establishing the proposed dual-stream fusion as a consistently superior retrieval strategy across both homogeneous and heterogeneous document collections.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-24T03:17:30Z</published>
+    <arxiv:comment>Benchmark</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Heethanjan Kanagalingam</name>
+    </author>
+    <author>
+      <name>Thenukan Pathmanathan</name>
+    </author>
+    <author>
+      <name>Mokeeshan Vathanakumar</name>
+    </author>
+    <author>
+      <name>Basim Azam</name>
+    </author>
+    <author>
+      <name>Sarah Monazam Erfani</name>
+    </author>
+    <author>
+      <name>Naveed Akhtar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.25622v1</id>
+    <title>Probabilistic Agents in Deterministic Audits: Evaluating Multi-Agent Systems for Automated Audits Based on the German IT-Grundschutz</title>
+    <updated>2026-06-24T09:31:06Z</updated>
+    <link href="https://arxiv.org/abs/2606.25622v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.25622v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The NIS-2 Directive mandates robust Risk Management from thousands of small and medium enterprises. To ensure compliance, companies rely on established standards such as the German IT-Grundschutz (IT-GS) of the Federal Office for Information Security. However, IT-GS certification is resource-intensive and requires a high level of manual effort for documentation, validation, and revision, making scalable implementation difficult and expensive.
+  Building upon our previous conceptual framework, this paper presents the technical implementation and empirical evaluation of a Multi-Agent System (MAS) architecture combined with Hybrid Retrieval Augmented Generation (HybridRAG) for the partial automation of IT-GS certification. We introduce two novel technical contributions to the MAS architecture to enforce the compliance rigor. The Hypothesis-Verification Loop in the Structural Analysis (SA) phase that cross-references agent-inferred dependencies against the Knowledge Graph to reduce hallucinations, and a Decoupled Reasoning Pipeline that separates agent-driven semantic extraction from the deterministic protection need inheritance. We utilize the BSI's "RecPlast GmbH" case study as a human expert-generated reference data set for end-to-end evaluation of the architecture and to quantify Precision, Recall, and F1-scores. The performance of the system is investigated across the phases of SA, Protection Needs Assessment (PNA), Modeling, and IT-GS Check.
+  The empirical results reveal noticeable differences throughout the different steps of IT-GS. While the MAS demonstrates high efficacy in semantic tasks (SA and Modeling), significantly reducing manual effort through automated information extraction, quantitative results reveal limitations in logical reasoning phases (PNA and IT-GS Check) as the probabilistic nature of current LLMs struggles to meet the deterministic rigor required by IT-GS.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-24T09:31:06Z</published>
+    <arxiv:comment>Accepted for publication at the 2026 IEEE International Systems Conference (SysCon), Halifax, NS, Canada, April 6-9, 2026. 8 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Lea Roxanne Muth</name>
+    </author>
+    <author>
+      <name>Marian Margraf</name>
+    </author>
+    <arxiv:doi>10.1109/SysCon66367.2026.11503560</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/SysCon66367.2026.11503560" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.24791v1</id>
+    <title>From Naive RAG to Deep Agentic Retrieval: An Evolving Context Engineering Pipeline for Regulatory Compliance</title>
+    <updated>2026-06-28T14:11:03Z</updated>
+    <link href="https://arxiv.org/abs/2607.24791v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.24791v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) is the dominant paradigm for applying large language models (LLMs) to enterprise document corpora, yet naive implementations encounter hard limits as corpus scale and query complexity grow. This paper traces the evolution of a production retrieval pipeline at Ontario Power Generation (OPG) for regulatory compliance and rate case analysis under Ontario Energy Board (OEB) reporting requirements. We examine successive stages: naive RAG, hybrid retrieval with re-ranking, agentic function-calling retrieval, and a deep multi-agent architecture with code-based tool synthesis and explicit planning, and identify the failure modes and tradeoffs that motivated each transition. We formalize the mature architecture as Progressive Evidence Acquisition with Cost-Aware Escalation (PEA-CAE): begin with low-cost, high-precision retrieval and escalate to full-document reads only when the expected evidence gain justifies latency and cost. Our findings show that context engineering is a more tractable and economically viable path than domain-specific fine-tuning for large, evolving regulatory corpora. More broadly, the progression toward deep agentic retrieval mirrors classical information retrieval ideas, introducing adaptive query reformulation, progressive document discovery, and hierarchical subagent summarization as practical system primitives. Operational traces further support the search-based nature of modern retrieval systems, where iterative evidence acquisition and adaptive planning increasingly replace single-pass retrieval as the foundation for enterprise-scale question answering.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-28T14:11:03Z</published>
+    <arxiv:comment>Accepted at the 2026 IEEE the 14th International Conference on Smart Energy Grid Engineering (SEGE 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Mishca de Costa</name>
+    </author>
+    <author>
+      <name>Muhammad Saleh Anwar</name>
+    </author>
+    <author>
+      <name>Dave Mercier</name>
+    </author>
+    <author>
+      <name>Issam Hammad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.31156v1</id>
+    <title>One Retrieval to Cover Them All: Co-occurrence-Aware Knowledge Base Reorganization for Session-Level RAG</title>
+    <updated>2026-06-30T05:35:10Z</updated>
+    <link href="https://arxiv.org/abs/2606.31156v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.31156v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>RAG systems retrieve documents optimized for answering one query at a time. Yet enterprise users arrive with sessions, that is, coherent episodes of related questions that span semantically distant parts of the knowledge base. We show that a single retrieval call over a standard knowledge base covers only 41% of a user's session-level information need. To close this gap, we reorganize the KB offline using co-occurrence-aware clustering and expand retrieval candidates through cluster neighborhoods at query time. On WixQA (6,221 enterprise support articles), our method raises single-query session coverage to 58% (+17% absolute; 95% CI: [14.1, 20.4]), reduces retrieval calls to 70% coverage by 34%, and compresses the KB to 20% of its original size, all consistently across four embedding models and six functional domains. We argue that session-level coverage, not single-query recall, should be the primary metric for enterprise RAG evaluation.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T05:35:10Z</published>
+    <arxiv:comment>Accepted to the Towards Knowledgeable Foundation Models (KnowFM) Workshop at ACL 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Shivam Ratnakar</name>
+    </author>
+    <author>
+      <name>Yixuan Zhu</name>
+    </author>
+    <author>
+      <name>Cecilia Cheng</name>
+    </author>
+    <author>
+      <name>Chaya Vijayakumar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.01617v1</id>
+    <title>Hybrid Retrieval-Augmented Generation with Knowledge Graph Expansion, RRF Fusion, and Per-Chunk Grounded Evaluation for Enterprise Document Search</title>
+    <updated>2026-06-30T06:33:20Z</updated>
+    <link href="https://arxiv.org/abs/2609.01617v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.01617v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Getting accurate, grounded answers out of large enterprise document repositories is a difficult problem. Dense vector retrieval alone frequently performs poorly on queries that mix technical terminology, vendor-specific acronyms, or require reasoning across several non-adjacent sections. DocuSearch was built to address exactly this gap - an offline, multi-agent document intelligence system developed and evaluated in a production telecom network operations environment. Rather than relying on a single retrieval signal, DocuSearch pulls together three complementary sources of evidence: semantic search over a Qdrant vector store using BGE-Large embeddings, BM25 full text search over an SQLite FTS5 index, and Knowledge Graph neighbour expansion from a structured edge table. These three ranked lists are merged through Reciprocal Rank Fusion with signal weights of 0.50 for vector search, 0.35 for BM25, and 0.15 for the knowledge graph, using a smoothing constant of 60 to stabilize scores. A cross-encoder then reranks the fused list, and Maximal Marginal Relevance with a balance factor of 0.65 prunes results for relevance and diversity. What makes DocuSearch distinctive is a per-chunk evaluation loop treating each chunk as its own mini-retrieval problem: an LLM decides whether the chunk needs more context, whether it fully answers the query, and whether the answer is grounded in retrieved text. Ungrounded answers are not returned; the system falls back to a multi-chunk merge instead. On a telecom corpus, DocuSearch reaches Precision@10 of 0.69, Recall@10 of 0.79, and a grounding rate of 89.6% - gains of 15, 16, and 18.4 percentage points over a dense-only RAG baseline. Index Terms: retrieval-augmented generation, knowledge graph, reciprocal rank fusion, enterprise document search, agentic evaluation, BM25, cross-encoder reranking, on-premise deployment, LangGraph, telecom AI.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T06:33:20Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Harish Saragadam</name>
+    </author>
+    <author>
+      <name>Sudhanshu Sharma</name>
+    </author>
+    <author>
+      <name>Meghana Pujari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.01618v1</id>
+    <title>Multi-Agent Retrieval-Augmented Generation for Efficient Cloud Knowledge Base Search in Telecom SNOC Environment</title>
+    <updated>2026-06-30T06:33:32Z</updated>
+    <link href="https://arxiv.org/abs/2609.01618v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.01618v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Telecom Service and Network Operations Centers (SNOCs) rely on large collections of cloud documents, including Standard Operating Procedures (SOPs), vendor technical manuals, incident reports, and configuration guides, to maintain uninterrupted network operations. During critical incidents, engineers must quickly retrieve accurate information, yet traditional keyword based and single stage retrieval approaches often struggle to provide precise results.
+  This paper presents Athena for Cloud Knowledge Base, a fully offline, multi agent Retrieval Augmented Generation (RAG) framework designed for enterprise cloud document search in Vodafone Idea's SNOC environment. The system integrates dense retrieval using E5 Large V2 embeddings, BM25 sparse retrieval, and Knowledge Graph expansion within a LangGraph based orchestration framework. Retrieved candidates are fused using Weighted CombSUM, followed by cross encoder reranking and Maximal Marginal Relevance (MMR) to obtain a diverse and relevant evidence set.
+  To improve answer reliability, the framework performs per chunk LLM evaluation with explicit attribution verification, assessing each MMR selected chunk independently before generating a response. Unsupported or weak evidence is discarded, and if no chunk satisfies the verification criteria, the system automatically evaluates multiple chunks together as a fallback. Experiments on a corpus of 4200 SNOC cloud documents containing 312000 indexed chunks show that the proposed approach achieves an MRR at 10 of 0.910 and an Exact Match (EM) score of 78.4 percent, outperforming single stage dense retrieval by 14.6 percentage points. The entire pipeline operates in a fully offline environment, satisfying enterprise data sovereignty requirements while delivering accurate and grounded responses for cloud document search.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T06:33:32Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Harish Saragadam</name>
+    </author>
+    <author>
+      <name>Sudhanshu Sharma</name>
+    </author>
+    <author>
+      <name>Ipsha Routray</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00570v1</id>
+    <title>Dual-Confidence Contrastive Decoding for Retrieval-Augmented Generation</title>
+    <updated>2026-07-01T07:55:21Z</updated>
+    <link href="https://arxiv.org/abs/2607.00570v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.00570v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) increasingly requires models to answer questions from multiple retrieved documents, where only some sources are relevant and the retrieved bundle may contain stale, noisy, or conflicting evidence. Existing contrastive decoding methods primarily focus on resolving conflicts between the model's internal memory and the retrieved context. In contrast, we study the complementary problem of intra-context conflict in multi-document RAG. To evaluate this setting, we introduce DRQA, a factual-conflict question answering benchmark derived from enterprise deep-research scenarios, where answers are grounded in synthetic enterprise-specific facts that are designed not to be recoverable from the model's internal memory. We further propose Dual-Confidence Contrastive Decoding (DCCD), a training-free decoding method that combines document-level confidence, which estimates whether a document appears sufficient for answering the question, with token-level confidence, which estimates whether that document supports a confident next-token prediction. DCCD selects positive and negative document-conditioned streams using these dual-confidence signals and scales a document-level contrast by their confidence margin. Across DRQA and standard multi-document QA benchmarks, DCCD achieves the best average performance among full-context and contrastive decoding baselines, with the largest gains on DRQA. These results highlight the importance of source-aware, confidence-gated decoding when retrieved evidence is internally conflicting.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T07:55:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Raymond Li</name>
+    </author>
+    <author>
+      <name>Md Tawkat Islam Khondaker</name>
+    </author>
+    <author>
+      <name>Amirhossein Abaskohi</name>
+    </author>
+    <author>
+      <name>Gabriel Murray</name>
+    </author>
+    <author>
+      <name>Giuseppe Carenini</name>
+    </author>
+    <author>
+      <name>Issam H. Laradji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03510v1</id>
+    <title>CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI</title>
+    <updated>2026-07-03T17:37:10Z</updated>
+    <link href="https://arxiv.org/abs/2607.03510v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03510v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise artificial intelligence is moving from experimentation into operational workflows. Early programs focused on model access and retrieval-augmented generation, but enterprises are now beginning to deploy agents that plan, retrieve, remember, call tools, update systems, and coordinate work across applications.
+  This changes the evaluation problem. Leaders are no longer asking only whether an answer is accurate or fluent. They need to know who authorized an action, which policy applied, whether evidence was current, whether memory was valid, whether a tool call was permitted, whether the decision can be replayed, and whether the agent can be stopped before it creates business impact.
+  This paper introduces CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI. CAGE-1 is an evaluation framework for deciding whether enterprise agents are ready for deployment. It evaluates authority, policy enforcement, retrieval quality, memory integrity, tool safety, auditability, human oversight, conflict handling, safe failure, Prebind Assurance, operational readiness, and business fitness.
+  CAGE-1 introduces Prebind Assurance to describe the evaluated ability to prove that an agentic action is controlled before it becomes binding, effective, or operationally consequential. The framework tests whether a proposed action is admitted, held, narrowed, refused, escalated, quarantined, or made non-effective before protected consequence forms.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-03T17:37:10Z</published>
+    <arxiv:comment>17 pages, 3 figures; independent technical report</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Roopam W. Sure</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03516v1</id>
+    <title>AGL-1: The Enterprise AI Governance Layer as a Control Plane for Trusted Enterprise Intelligence</title>
+    <updated>2026-07-03T17:42:08Z</updated>
+    <link href="https://arxiv.org/abs/2607.03516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise artificial intelligence is moving from isolated experimentation toward operational dependency across copilots, retrieval-augmented generation systems, autonomous agents, and AI-enabled business workflows. As this transition accelerates, the primary enterprise challenge is no longer only model access or inference scale. It is governed intelligence operations: the ability to enforce authorization, preserve contextual lineage, control persistent memory, detect stale or conflicting knowledge, constrain agentic execution, and produce audit-ready evidence across distributed AI estates.
+  This paper introduces AGL-1, the Enterprise AI Governance Layer, as a vendor-neutral reference model for the control plane that should operate across foundation models, retrieval systems, orchestration frameworks, enterprise memory, policy engines, observability systems, tools, APIs, and business applications.
+  Building on governed knowledge-system principles introduced in GKS-5, AGL-1 generalizes the governance problem from retrieval-specific controls to full AI execution-path governance. It identifies recurring failure modes such as unauthorized retrieval, stale grounding, unmanaged memory, weak provenance, policy drift, fragmented observability, and uncontrolled autonomous execution. It then defines seven governance domains: identity-aware retrieval, policy enforcement, provenance management, memory governance, knowledge integrity monitoring, agentic execution control, and trust observability.
+  The central claim is that durable enterprise value from AI will increasingly depend on the ability to govern intelligence at scale. In complex enterprises, trust is not a property of the model alone. It is a property of the system around the model: identity, knowledge, policy, memory, tools, human oversight, and evidence working together as a managed control plane.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-03T17:42:08Z</published>
+    <arxiv:comment>16 pages, 1 figure; independent technical report</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Roopam W. Sure</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.07721v1</id>
+    <title>Context Graphs for Proactive Enterprise Agents</title>
+    <updated>2026-07-04T14:37:23Z</updated>
+    <link href="https://arxiv.org/abs/2607.07721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.07721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detection Engine that continuously monitors state changes, a Proactivity Scorer that ranks candidate insights by urgency, relevance, and persona-fit, and a Surfacing Layer powered by an LLM that delivers ranked notifications with grounded explanations. We formalize each component, derive a unified Proactivity Score function, and provide a complete end-to-end Python implementation using NetworkX and the Anthropic Claude API. Evaluation across three generic enterprise case studies (contract lifecycle management, engineering incident response, and sales pipeline hygiene) demonstrates that context-graph-driven proactivity achieves Precision@5 of 0.83, a false positive rate of 0.11, and reduces mean time to surface from 47 minutes (reactive baseline) to under 30 second.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-04T14:37:23Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Avinash Kumar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26157v1</id>
+    <title>GROUND: Reducing Hallucinations in LLM-Based Enterprise Analytics Through Governed Semantic Definitions</title>
+    <updated>2026-07-06T20:04:32Z</updated>
+    <link href="https://arxiv.org/abs/2608.26157v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26157v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Natural-language analytics over enterprise data warehouses is increasingly important, but production use is limited by hallucinated metrics, invalid joins, wrong grain, unsafe data access, and unsupported explanations. Existing text-to-SQL systems often ground generation in database schemas or retrieved documentation, while enterprise reporting also requires governed business semantics: approved metrics, dimensions, join paths, filters, and row-level security. This paper introduces GROUND, Governed Retrieval Over Unified Normalized Definitions, a framework that constrains LLM-generated analytics to a governed semantic layer. GROUND supplies approved definitions, binds user intent to governed metrics and dimensions, and validates generated SQL against schema, metric, join, grain, filter, security, and cost rules before execution. On violations, it retries or abstains.
+  In a 100-question synthetic enterprise-reporting benchmark, GROUND is compared with direct schema-only text-to-SQL, schema-RAG, and semantic-only grounding under one shared model. GROUND is the only system free of measured hallucinations across all six evaluated categories, while ungoverned systems violate row-level security on many questions. A semantic-only condition with exact metric definitions but no access policy still leaks data, showing that governance cannot be replaced by metric fidelity alone. The findings are replicated on real U.S. NHTSA vehicle-safety data with independent hand-authored gold and tested on an adversarial set across four models from three providers. GROUND's enforced guarantees, especially filters and row-level security, hold with zero violations on every model, while judgment-dependent behaviors such as refusing undefined metrics remain fallible.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-06T20:04:32Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Aravind Sasidharan Pillai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26075v2</id>
+    <title>IDP AutoOpt: Agent-Driven Optimization of Document Processing Pipeline Configurations</title>
+    <updated>2026-08-22T05:04:27Z</updated>
+    <link href="https://arxiv.org/abs/2607.26075v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26075v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present IDP AutoOpt, an autonomous LLM agent that discovers high-performing configurations for intelligent document processing (IDP) pipelines. Tuning IDP prompts, models, OCR settings, and schemas jointly currently costs domain specialists 20 to 80+ person-hours per document type and does not scale as enterprises add document classes. IDP AutoOpt runs a closed loop: it scores a configuration on a small labeled set, diagnoses field-level errors, generates targeted edits, and re-evaluates, guided by human-authored domain skills that encode production expertise. Across extraction, classification, and packet-splitting tasks deployed in healthcare, marketing-intelligence, and financial-services settings, IDP AutoOpt matches or exceeds human-expert accuracy at equal or lower cost (on an extraction benchmark, 90.2% vs 81.6% at 4.6 x lower per-page cost), cutting configuration time from weeks to under two hours. We further show that agent LLM capability has a hard threshold below which optimization fails, and that curated domain skills outperform raw source-code access, which can degrade performance when provided without structure. We also share practical lessons on context management and variance mitigation. Requiring only a configurable pipeline, a scoring function, and a small labeled set, the approach extends beyond IDP to other enterprise AI systems, such as RAG and multi-agent workflows, where configuration bottlenecks deployment.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T20:14:14Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>David Kaleko</name>
+    </author>
+    <author>
+      <name>Sergey Ivanov</name>
+    </author>
+    <author>
+      <name>Md Mofijul Islam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.12188v1</id>
+    <title>Cost-Governed RAG: Unified Per-Tenant Cost Attribution Across Retrieval and Generation in Multi-Tenant LLM Systems</title>
+    <updated>2026-07-13T22:16:58Z</updated>
+    <link href="https://arxiv.org/abs/2607.12188v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.12188v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise Retrieval-Augmented Generation (RAG) deployments face a critical governance gap: while LLM generation cost is metered per token, the retrieval layer - vector memory, similarity compute, and embedding API calls - remains an unattributed shared cost, enabling invisible cross-subsidization among tenants. We present Cost-Governed RAG, an architecture that integrates a codebook-oblivious vector index (TurboVec) with a multi-tenant LLM governance gateway, creating a unified observability stack where embedding, retrieval, and generation costs are jointly attributable per tenant. The architecture exploits TurboVec's deterministic, closed-form memory formula to enable near-exact per-tenant retrieval cost calculation - a property unavailable in graph-based indexes with non-linear memory overhead. Deployed on Snowpark Container Services within a cloud data platform's governance boundary, the system achieves 99.96% end-to-end cost attribution accuracy across 100 simulated tenants (10M vectors, log-normal size distribution) with telemetry overhead below 0.04% of query latency. The architecture reduces retrieval infrastructure cost by 3.1-9.0x compared to managed vector database services under the pricing assumptions detailed in Section IV. We formalize a three-layer cost model and demonstrate that codebook-oblivious quantization enables deterministic per-tenant cost attribution while also removing the shared-codebook leakage surface present in trained quantizers - the latter observation being exploratory and subject to the limitations described in Section VII.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T22:16:58Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Navnit Shukla</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26076v1</id>
+    <title>FinCacheServe: Dependency-Consistent Answer Reuse for Cost-Efficient RAG Serving over Mutable Enterprise Documents</title>
+    <updated>2026-07-14T02:58:16Z</updated>
+    <link href="https://arxiv.org/abs/2607.26076v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26076v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation services over mutable enterprise documents repeatedly execute semantically equivalent analysis requests. Answer reuse can remove GPU-bound generation work, yet response caches require dependency consistency when filings, evidence chunks, and tool outputs change. FinCacheServe treats each generated answer as a serving object indexed by enterprise intent and guarded by document versions, evidence fingerprints, tool fingerprints, model identity, and decoding configuration. A vLLM implementation evaluates SEC-derived financial-document workloads with Qwen2.5 models. On a 2,230-request hosted 7B trace, FinCacheServe skips 53.27% of LLM calls with zero observed dependency-stale outputs. Across three hosted 32B operator-suite seeds, it skips 53.31% of 544 requests, compared with 38.97% for versioned semantic caching and 22.43% for grounded-style reuse. Capacity, backend, and SLO replays show oracle-bounded cache management, 100k-entry transactional metadata behavior, and 44.30% lower estimated Wh per dependency-fresh 2s-SLO success than versioned semantic caching.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T02:58:16Z</published>
+    <arxiv:comment>16 pages, 11 figures, 12 tables; preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Lingteng Zeng</name>
+    </author>
+    <author>
+      <name>Yifan Jin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.12310v3</id>
+    <title>LakeQuest: A Three-Domain Benchmark for Grounded Question Answering across Data Lakes</title>
+    <updated>2026-08-11T18:46:12Z</updated>
+    <link href="https://arxiv.org/abs/2607.12310v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.12310v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While modern question answering (QA) systems excel on clean, schema-aligned corpora, real-world knowledge is rarely so neatly packaged. Answering questions over enterprise and scientific data lakes requires systems to navigate heterogeneous, weakly structured collections of tables, passages, and linked metadata. Current benchmarks abstract away this noisy discovery process, failing to evaluate end-to-end performance. To bridge this gap, we introduce LakeQuest, a human-validated benchmark of 9,846 QA pairs designed to evaluate the end-to-end retrieve-and-synthesize pipeline over realistic data lakes. LakeQuest spans three diverse domains (AI/ML metadata, retail banking, and multimodal biomedical drug information) and pairs every question with exact, modality-aware evidence pointers. By isolating source discovery from cross-modal synthesis, LakeQuest exposes critical failure modes in modern QA systems. Our baseline evaluations, including standard Retrieval-Augmented Generation (RAG) and agentic tool-use methods, reveal that high-quality retrieval does not guarantee correct reasoning. Systems consistently struggle with relation chaining in metadata graphs, policy grounding in bank ledgers, and joint tabular QA in biomedical contexts, highlighting the need for robust discovery and faithful cross-file composition mechanisms in future agentic QA systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T03:33:00Z</published>
+    <arxiv:comment>24 pages, 4 figures, 18 tables. Accepted at the Conference on Language Modeling (COLM) 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Michael Solodko</name>
+    </author>
+    <author>
+      <name>Steven Gong</name>
+    </author>
+    <author>
+      <name>Guangwei Yu</name>
+    </author>
+    <author>
+      <name>Satya Krishna Gorti</name>
+    </author>
+    <author>
+      <name>Jesse C. Cresswell</name>
+    </author>
+    <author>
+      <name>Victor Zhong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15516v1</id>
+    <title>Cache-Aware Prompt Compression:A Two-Tier Cost Model for LLM API Caching</title>
+    <updated>2026-07-17T00:03:47Z</updated>
+    <link href="https://arxiv.org/abs/2607.15516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Production LLM deployments combine two cost-reduction primitives: prompt caching (a discounted rate for re-used token prefixes) and prompt compression (fewer tokens sent). The compression literature has standardized on query-aware methods that produce a different compressed prefix per query, mechanically invalidating the prefix-strict cache on every call. We characterize this cost empirically on Anthropic's Sonnet 4.6 API and find caching is far from the rho=1.0 ideal the literature assumes: Sonnet's cache has a two-tier architecture with a sharp threshold near 3,500 tokens, below which the hit rate plateaus at rho~0.83 across 30-call sessions. Our cost model predicts, and experiments confirm, that under realistic rho, query-aware compression beats naive caching at high compression ratios (r&gt;=6). We propose Cache-Aware Prompt Compression (CAPC), pairing query-agnostic compression with explicit cache_control plus a tier-preserving ratio bound that prevents over-compression from pushing the cached prefix into the hot tier. CAPC is the cheapest strategy in 16/16 configurations on LongBench-v2, with mean savings of 49% over cache-only, 64% over query-aware compression, and 90% over vanilla, at quality within 0.05 of the uncompressed baseline. We validate CAPC on three production workloads: an enterprise tool-using assistant with a 94k-token schema prefix (51.7% cost reduction at r=3); a graphify knowledge-graph RAG pipeline across two codebases (9.3x vs cache-all on FastAPI, 2.4x on httpx); and the public tau-bench retail benchmark (50 tasks), where CAPC is the cheapest of four strategies with reward exactly equal to vanilla (both 36/50, p=1.00) while query-aware compression is the most expensive at +40.1% over vanilla -- the first production confirmation of the crossover model's negative-ROI prediction on a public benchmark.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T00:03:47Z</published>
+    <arxiv:comment>28</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yan Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.16973v1</id>
+    <title>TurboVec: A Case Study in Cost-Efficient Private Retrieval for Enterprise RAG via Codebook-Oblivious Quantization</title>
+    <updated>2026-07-18T21:43:40Z</updated>
+    <link href="https://arxiv.org/abs/2607.16973v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.16973v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) systems increasingly power enterprise LLM applications, yet the vector retrieval layer introduces two underexplored challenges: (1) trained codebook quantizers may expose corpus statistics during index construction, creating a leakage channel in multi-tenant deployments, and (2) post-hoc filtering for tenant isolation degrades recall on selective queries. We study TurboVec, an open-source vector index built on TurboQuant - a codebook-oblivious scalar quantizer requiring no corpus-dependent training. On the DBpedia OpenAI embeddings benchmark (d=1536, 100K-999K vectors), TurboQuant 4-bit outperforms trained FAISS Product Quantization at the same memory budget by 8.5-8.9 percentage points in Recall@5 across all scales. Compared to HNSW (R@5=0.991) and IVF-PQ (R@5=0.840), TurboQuant occupies a distinct design point: higher recall than IVF-PQ without training, at 4-8x less memory than HNSW. Deployed on Snowpark Container Services, TurboVec achieves 11ms median query latency at 100K vectors versus 707ms for warehouse brute-force scan. Kernel-level allowlist filtering maintains 0.86-0.93 Recall@10 across 10-1000 tenant workloads versus 0.09-0.19 for post-filter baselines. Codebook-oblivious design reduces membership inference accuracy to near-random (50.0%) versus 57.3% for PQ codebooks. Limitations include single dataset evaluation, uncompressed HNSW comparison, and privacy evaluation on synthetic data only.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-18T21:43:40Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Navnit Shukla</name>
+    </author>
+    <author>
+      <name>Kamal Pandey</name>
+    </author>
+    <author>
+      <name>Omsankar Tiwari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22319v1</id>
+    <title>Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG</title>
+    <updated>2026-07-24T13:58:44Z</updated>
+    <link href="https://arxiv.org/abs/2607.22319v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22319v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) and AI agents have demonstrated strong potential for data integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworthy, scalable, and cost-efficient integration through knowledge-grounded LLMs and agents operating within a retrieval-augmented generation (RAG) workflow. Here, trustworthiness refers to evidence-grounded, verifiable reasoning, where integration decisions are transparently supported by retrieved knowledge, robust against hallucination, and consistent across tasks. We trace the evolution from classic RAG to GraphRAG and KG-RAG (knowledge graph-based RAG), highlighting how these paradigms bridge parametric and contextual knowledge. Building on this trajectory, we explore the shift toward Agentic RAG, where autonomous multi-agent systems adaptively plan, retrieve, refine, and reason for complex integration tasks. We examine optimization strategies for cost-efficient integration, addressing computational bottlenecks in large-scale enterprise settings. Finally, we outline open challenges and future directions toward building reliable, explainable, and scalable knowledge-grounded integration systems.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-24T13:58:44Z</published>
+    <arxiv:comment>To Appear in the IEEE Data Engineering Bulletin</arxiv:comment>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Chuangtao Ma</name>
+    </author>
+    <author>
+      <name>Arijit Khan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27353v1</id>
+    <title>LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</title>
+    <updated>2026-07-29T18:09:17Z</updated>
+    <link href="https://arxiv.org/abs/2607.27353v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27353v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic retrieval-augmented generation systems can produce answers that appear grounded while failing at the evidence, tool-contract, authorization, or session-state layer. We introduce LayerRAG-Bench, a controlled cross-layer reliability benchmark with 8 enterprise domains, 240 tasks, 9 fault scenarios, 2 contract modes, and 38,880 live task-level records across nine models from OpenAI, Anthropic, and Gemini. Schema normalization raises schema-drift success from 0.000 to 0.913, but stale evidence, missing tool output, denied permissions, and wrong-session context are not recovered by schema normalization. Groundedness-only evaluation also produces substantial false positives under stale and wrong-session evidence. These results support a layer-specific evaluation principle: a reliability intervention should be credited for repairing its target layer without being mistaken for a universal fix.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T18:09:17Z</published>
+    <arxiv:comment>10 pages, 9 tables. Code and data: https://github.com/MusaShams/layerrag-bench</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Musa Shams</name>
+      <arxiv:affiliation>Independent Researcher</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27374v2</id>
+    <title>From Backlog Items to Security Guidance: Towards Continuous Security Compliance</title>
+    <updated>2026-09-20T10:14:59Z</updated>
+    <link href="https://arxiv.org/abs/2607.27374v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27374v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continuous software engineering in regulated domains requires engineering teams to address security throughout the development lifecycle. Yet making security requirements explicit in backlog items is still problematic. Engineers must instead infer security relevance of backlog items from brief, free-form descriptions and often lack timely guidance on applicable requirements. We present an NLP-based backlog enrichment system that detects security-relevant backlog items and links them to relevant security requirements. The approach combines a security-relevance classifier with a retrieval-augmented generation (RAG) pipeline over security requirements documents. The approach was developed and evaluated in the context of a large enterprise in highly regulated domains. We present three contributions. First, we release a dataset of 288 backlog items labeled for security relevance by nine security practitioners, with substantial agreement (Fleiss' $κ=0.787$). Second, a recall-oriented classifier achieving $F2=0.774$ in-distribution and mean zero-shot G-measure $\approx 0.65$ across five established benchmarks, matching or outperforming most published classical-ML and open-source GPT baselines. Third, we preliminarily evaluated a four-stage security requirements document-grounded RAG pipeline with two practitioners on industrial backlogs using company-internal security policies and CIS Benchmarks. Of the retrieved 24 clauses, 12 were rated at least 4/5 for relevance. Our findings provide first indicators that NLP-based product backlog enrichment can support engineers in identifying security requirements early in the development process. With this work we aim to facilitate continuous security compliance through proactive introduction of security requirements in continuous software engineering.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T18:31:01Z</published>
+    <arxiv:comment>11 pages, 3 figures, 3 tables. Camera-ready version, accepted at the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026), Industry Showcase track, Munich, Germany, October 2026. v2 replaces the originally submitted version with the camera-ready: corrected bibliography entries and added figure descriptions; no changes to results or claims</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Ignacio García Núñez</name>
+    </author>
+    <author>
+      <name>Florian Angermeir</name>
+    </author>
+    <author>
+      <name>Fabiola Moyón Constante</name>
+    </author>
+    <arxiv:doi>10.1145/3832783.3834527</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3832783.3834527" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27748v1</id>
+    <title>A Structured Knowledge Infrastructure for Domain-Specific Data Asset Discovery</title>
+    <updated>2026-07-30T06:40:05Z</updated>
+    <link href="https://arxiv.org/abs/2607.27748v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27748v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise data analytics agents face two structural failures: generic RAG retrieves the wrong asset (Hit@10=19.1%) and delivers no usage knowledge to prevent metric misinterpretation---stemming from four root causes (C1--C4) ranging from semantic gap and entity ambiguity to schema drift and asset-usage gap. We present a two-layer solution deployed in the commercial advertising data warehouse at Xiaohongshu (5,300+ Hive tables, 14 domains). A three-tier dual-purpose knowledge base (179 documents, eight-section annotation template) serves both retrieval and generation, with a closed-loop refresh pipeline maintaining day-level freshness (one yes/no approval, 30s hot-reload). The Graph-Guided Retriever (GGR) uses a 2,859-node knowledge graph as a candidate gate with intent routing to deliver 71.6x token reduction. The Scene-Aware Ranker (SAR) applies 19-class entity recognition and explicit scenario annotations; negative knowledge alone contributes 25 percentage points of Hit@10 gain. On two 100-question benchmarks, Hit@10 rises from 19.1% to 96.6% (+77.5pp) and knowledge coverage from 56% to 77%, at 4.84--5.33s end-to-end latency.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T06:40:05Z</published>
+    <arxiv:comment>6 pages, 2 figures, 2 tables. Submitted to DAI 2026 Industry Track</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Mengdi Chen</name>
+    </author>
+    <author>
+      <name>Yuanxin Huang</name>
+    </author>
+    <author>
+      <name>Yulin Jiang</name>
+    </author>
+    <author>
+      <name>Wei Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00419v1</id>
+    <title>Unleashing the Potential of Large Language Models: A Blueprint for Real-Time, Enterprise-Ready Deployments</title>
+    <updated>2026-08-01T03:40:22Z</updated>
+    <link href="https://arxiv.org/abs/2608.00419v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00419v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models deployed in real-time, regulated settings face knowledge staleness, catastrophic forgetting, hallucination, and weak feedback loops. We present a unified, pattern-driven LLMOps architecture integrating real-time data ingestion, continual learning, retrieval-augmented generation (RAG), and human-in-the-loop feedback into a single operational pipeline. Four contributions map to established software design patterns: an adaptive ingestion pattern orchestrator (AIPO) evaluated with FreshStreamBench; STAR+FAR continual learning with sparse temporal adapter routing and freshness-aware replay; SAGE, an SLO-aware adaptive retrieval policy predicting a per-query passage budget to meet tail-latency targets; and an automated feedback-driven convergence stage with RLHF triggers. The result reduces latency-cost-accuracy trade-offs while supporting auditability and rollback for high-risk sectors such as health care and finance.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-01T03:40:22Z</published>
+    <arxiv:comment>6 pages, 1 figure. Authors' accepted version of an article published in IEEE Computer. The version of record is available at the DOI below</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Computer, vol. 59, no. 4, pp. 195-199, April 2026</arxiv:journal_ref>
+    <author>
+      <name>Muhammad Faizan Raza</name>
+      <arxiv:affiliation>Luna</arxiv:affiliation>
+    </author>
+    <author>
+      <name> Shuo</name>
+      <arxiv:affiliation>Luna</arxiv:affiliation>
+    </author>
+    <author>
+      <name> Yang</name>
+    </author>
+    <author>
+      <name>Satish Mahadevan Srinivasan</name>
+    </author>
+    <author>
+      <name>Joanna F. DeFranco</name>
+    </author>
+    <arxiv:doi>10.1109/MC.2026.3664470</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/MC.2026.3664470" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21393v1</id>
+    <title>Spyre-Accelerated Retrieval-Augmented Generation on IBM LinuxONE: A Cloud-Native Architecture for Secure, High-Throughput Enterprise AI Inference</title>
+    <updated>2026-08-02T09:00:24Z</updated>
+    <link href="https://arxiv.org/abs/2608.21393v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21393v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Running large language models inside enterprise environments has always bumped up against a practical wall: the data lives in one place, the AI horsepower sits somewhere else, and moving sensitive records between the two creates real headaches around latency, security, and regulatory exposure. IBM's Spyre accelerator PCIe inference card built for LinuxONE and the broader IBM Z family changes that equation.
+  In this paper we lay out a six-subsystem RAG architecture that runs entirely on IBM LinuxONE, using Spyre for generative inference, the Telum II on-chip accelerator for lightweight classification tasks, and Red Hat OpenShift for container orchestration. Every piece of the pipeline from query intake through vector retrieval, prompt assembly, LLM inference, compliance filtering, and response delivery stays within a single LinuxONE system, so sensitive data never has to leave the hardware perimeter.
+  We walk through the design choices behind each subsystem, dig into the Spyre compilation and serving stack, explain how LinuxONE's Secure Execution technology extends confidential-computing guarantees to AI workloads, and benchmark the architecture against cloud-GPU and on-premises alternatives. Early analysis points to end-to-end RAG latencies under two seconds and up to a 20x reduction compared to off-platform inference, all while keeping the strong encryption and auditability posture that regulated industries actually need.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T09:00:24Z</published>
+    <arxiv:comment>8 pages, 1 figure, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sandeep Bokkasam</name>
+    </author>
+    <author>
+      <name>Pankaj D</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.01211v1</id>
+    <title>VaRS-Doc: Interpretation-Aware Variant Representations via Latent Self-Probing for Visual Document Retrieval</title>
+    <updated>2026-08-02T12:55:57Z</updated>
+    <link href="https://arxiv.org/abs/2608.01211v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.01211v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual document retrieval has recently become increasingly important in applications such as enterprise search, scientific literature discovery, and retrieval-augmented generation. These applications depend on efficiently identifying query-relevant pages across large collections of visually rich documents. Existing methods commonly adopt late-interaction architectures that encode and index documents offline to enable scalable and low-latency online retrieval. Despite its efficiency, this paradigm requires each document to be encoded into a fixed representation before the query is known. However, the same content in a visual document may induce different interpretations depending on the query intent, which a fixed representation struggles to capture. Yet postponing document encoding until the query arrives would incur prohibitive online retrieval latency. To address this gap, we propose VaRS-Doc, a visual document retrieval framework that diversifies document representations by enabling the model to actively explore variant latent interpretations during document encoding, while preserving efficient late-interaction retrieval in which each query adaptively selects the best-fit representation. We further introduce a two-stage training strategy that encourages the model to capture complementary semantic interpretations and prevents it from falling back to train a single dominant representation. Experiments on visual document retrieval benchmarks show that VaRS-Doc achieves state-of-the-art retrieval performance, offering a practical solution to the mismatch between query-agnostic document encoding and query-specific retrieval needs. Code is available at https://github.com/bokufa/VaRS-Doc.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T12:55:57Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Haocheng Wang</name>
+    </author>
+    <author>
+      <name>Tongkun Guan</name>
+    </author>
+    <author>
+      <name>Wei Shen</name>
+    </author>
+    <author>
+      <name>Xiaokang Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.19235v1</id>
+    <title>Beyond Document Retrieval: Architectural Challenges When LLM Agents Query Structured Enterprise Data</title>
+    <updated>2026-08-04T23:02:48Z</updated>
+    <link href="https://arxiv.org/abs/2608.19235v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.19235v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) has become a common architecture for connecting large language models to enterprise knowledge. Most RAG systems retrieve unstructured documents (PDFs, wiki pages, support tickets) and feed them to an LLM for summarization or question answering. A growing class of enterprise agents, however, must query structured data: relational databases, data warehouses, and analytics APIs where the answer is a computed result, not a retrieved passage. Structured-data querying forces decisions that a document-RAG pipeline never has to make. We group them into seven dimensions: retrieval semantics, authorization, intent recognition, entity resolution, evaluation, failure modes, and latency. For each dimension, we characterize the baseline assumption, explain its limitation for structured data, and describe a generic architectural pattern. As supporting evidence, a controlled synthetic study shows that a staged agent built on this framework eliminates the authorization violations of a direct translate-and-execute baseline under controlled conditions. The primary result is a design-oriented framework, an evaluation protocol, and a set of open problems for governed structured-data agents.</summary>
+    <category term="cs.DL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T23:02:48Z</published>
+    <arxiv:comment>9 pages, 4 tables, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.DL"/>
+    <author>
+      <name>Sheikh Nazib Ahmed</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.07446v1</id>
+    <title>Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools</title>
+    <updated>2026-08-07T17:33:09Z</updated>
+    <link href="https://arxiv.org/abs/2608.07446v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.07446v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Rapid adoption of large language models (LLMs) in enterprise settings has introduced operational, security, and governance risks. As generative AI applications move from pilot to production, manual harm identification and mitigation are becoming difficult to scale. Although many tools support model evaluation, adversarial testing, runtime guardrails, and observability, the tooling landscape remains fragmented. Tools are typically designed for specific engineering tasks and described in technical terms that do not align with governance frameworks or risk taxonomies, making it difficult to determine which tools address which risks and where critical gaps remain. This paper proposes a structured protocol to automate AI risk mitigation through a taxonomy-driven analysis of open-source LLM evaluation and security tools. We map the capabilities of 21 prominent open-source tools to the 32 subcategories of the extended MIT AI Risk Mitigation and Response Taxonomy. An LLM-assisted retrieval-augmented generation pipeline analyzes source code and documentation to extract capabilities for each taxonomy category. Reliability assessment yielded moderate agreement (Fleiss' Kappa = 0.509) among three independent reviewers. The analysis reveals a highly skewed landscape in which tools cluster around technical and operational controls, while governance, legal and regulatory, and financial and market controls remain largely unaddressed. This motivates a layered risk-mitigation architecture combining tool-based controls with organizational and regulatory processes. The mapping protocol achieved an F1 score of 75.5% after majority voting. Overall, the study provides a practical mapping between enterprise AI risk categories and open-source mitigation capabilities, identifies where human oversight remains necessary, and presents a taxonomy-driven framework applicable to open-source and proprietary solutions.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-07T17:33:09Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Afreen Alam</name>
+    </author>
+    <author>
+      <name>Evgenija Popchanovska</name>
+    </author>
+    <author>
+      <name>Ana Gjorgjevikj</name>
+    </author>
+    <author>
+      <name>Maryan Rizinski</name>
+    </author>
+    <author>
+      <name>Lubomir T. Chitkushev</name>
+    </author>
+    <author>
+      <name>Irena Vodenska</name>
+    </author>
+    <author>
+      <name>Dimitar Trajanov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.07994v2</id>
+    <title>VDGR-RAG: Vectors, Directories, Graphs, and Reflection Are All You Need for Unified Reasoning over Hierarchical Enterprise Knowledge</title>
+    <updated>2026-08-18T03:58:21Z</updated>
+    <link href="https://arxiv.org/abs/2608.07994v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.07994v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) is essential for enterprise knowledge question answering (QA), particularly in domains with complex product documentation like telecommunications. However, existing RAG approaches largely overlook the holistic integration of diverse retrieval strengths, leading to inaccurate domain routing, poor utilization of hierarchical document structures, and consequently limited reasoning capabilities over enterprise knowledge. To address these limitations, we present VDGR-RAG, which integrates vector retrieval, directory-driven reasoning, graph traversal, and iterative reflection in a unified framework for accurate enterprise knowledge QA. Specifically, VDGR-RAG is an agentic GraphRAG system that first constructs a Hierarchical Heterogeneous Knowledge Graph ($\text{H}^2$KG) from document chunks to preserve both hierarchical directory structures and semantic relationships, and then employs a set of atomic tools for knowledge retrieval that can be freely composed to navigate the $\text{H}^2$KG: (1) a directory-enhanced routing tool that uses table-of-contents (TOC) structures to route user queries to appropriate domain-specific $\text{H}^2$KGs; (2) a multi-route retrieval tool that combines vector search, TOC-based agentic search, and graph search for comprehensive knowledge retrieval; (3) a directory backtracking tool that corrects knowledge localization biases; and (4) a dynamic reflection tool that iteratively plans the next retrieval phase. We conduct extensive experiments on our enterprise product documents across four wireless domains (e.g., energy saving and fault management). Experimental results demonstrate that our method significantly outperforms a variety of RAG baselines in terms of both knowledge retrieval recall and QA accuracy.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-08T08:03:34Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Wenqi Chen</name>
+    </author>
+    <author>
+      <name>Haofei Yang</name>
+    </author>
+    <author>
+      <name>Rui Yang</name>
+    </author>
+    <author>
+      <name>Fangming Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.09001v1</id>
+    <title>Mind the Hook: Source-Level Auditing of Privacy Defenses in Retrieval-Augmented Generation</title>
+    <updated>2026-08-10T01:40:25Z</updated>
+    <link href="https://arxiv.org/abs/2608.09001v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.09001v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Black-box privacy scores for retrieval-augmented generation (RAG) are difficult to interpret unless the audited defense's active pipeline hook is known. We propose an active-path audit: inventory source-level hooks over retrieval, retrieved content, and generation; map each metric to the leakage channel it observes; and validate generated-text effects with exact-match canaries. In our benchmark reimplementations, the DP-style defenses modify retrieval scores only: their generation hooks are TODO-flagged stubs that return responses unchanged. This active path explains why they affect membership-inference behavior but track No-Defense on generated-text named-entity leakage, measured by NEL_strict. By contrast, the end-to-end LPRAG path is canary-validated on the email channel, recovering 53/150 canaries under No-Defense and 0/150 under LPRAG. These findings concern our reimplementations on our stack, not released defenses or defense families; the contribution is a methodology and case study, not a universal ranking</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-10T01:40:25Z</published>
+    <arxiv:comment>6 pages, 1 figure. Accepted as a regular paper at the 25th IEEE International Conference on Machine Learning and Applications (ICMLA 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yanhang Li</name>
+    </author>
+    <author>
+      <name>Zhichao Fan</name>
+    </author>
+    <author>
+      <name>Zexin Zhuang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.10224v1</id>
+    <title>Self-evolving Agentic Customer Support System at LinkedIn</title>
+    <updated>2026-08-10T20:51:18Z</updated>
+    <link href="https://arxiv.org/abs/2608.10224v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.10224v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise support agents operate in rapidly changing environments where policies, product capabilities, and knowledge bases evolve continuously, making static assistants brittle and costly to maintain. We present LinkedIn's self-evolving agentic support system, which integrates retrieval-augmented generation with evolutionary auto-prompting and a modular, production-aligned evaluation framework to enable safe, continuous improvement without retraining foundation models. The system treats prompts, retrieval, and evaluation as a closed-loop, versioned workflow with operational guardrails. Offline simulations and ablations show clear quality gains over vanilla RAG and baseline agents, including reduced hallucinations and improved response completeness. In a two-week user-randomized A/B test on LinkedIn's production support traffic, the integrated self-evolved workflow increased QA self-serve by 9.0 percentage points, cancellation self-serve by 4.8 points, and routing accuracy by 30.6 points. These results demonstrate a practical path to scalable, self-evolving AI agents in real-world enterprise settings.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-10T20:51:18Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chih Hui Wang</name>
+    </author>
+    <author>
+      <name>Mengdie Tu</name>
+    </author>
+    <author>
+      <name>Qianyun Zhang</name>
+    </author>
+    <author>
+      <name>Wei Wu</name>
+    </author>
+    <author>
+      <name>Lili Zhou</name>
+    </author>
+    <author>
+      <name>Mingqi Shen</name>
+    </author>
+    <author>
+      <name>Changshuai Wei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.11584v1</id>
+    <title>EnterpriseRAG: Benchmarking LLM Instruction Adherence and Robustness under Non-Ideal Enterprise Retrieval</title>
+    <updated>2026-08-12T02:51:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.11584v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.11584v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise RAG deployments face a critical reliability gap: while LLMs satisfy 80% of individual constraints, only 26.8% of responses meet all requirements simultaneously, revealing a 57-point orchestration gap. Existing benchmarks assume clean retrieval with simple queries, failing to capture production conditions where noisy documents and multi-dimensional constraints coexist. We introduce EnterpriseRAG, a benchmark of 983 expert-validated samples across six domains that systematically simulates three failure modes absent from prior work: retrieval noise, knowledge gaps, and factual conflicts, coupled with complex instructions. Evaluation of 13 state-of-the-art LLMs reveals a severe instruction adherence collapse, where high per-constraint satisfaction masks low holistic compliance. Critical findings expose deep barriers under knowledge gaps and factual conflicts, even with reasoning-enhanced inference, indicating production RAG requires explicit context-aware protocols and calibrated judgment. EnterpriseRAG provides a reproducible foundation for measuring and closing these gaps, directly informing deployment decisions for enterprise-scale RAG systems. We will release the benchmark and evaluation framework upon publication.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-12T02:51:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Huiqi Miao</name>
+    </author>
+    <author>
+      <name>Xinbao Sun</name>
+    </author>
+    <author>
+      <name>Bo Wang</name>
+    </author>
+    <author>
+      <name>Fanyu Meng</name>
+    </author>
+    <author>
+      <name>Lijun Mei</name>
+    </author>
+    <author>
+      <name>Na Wu</name>
+    </author>
+    <author>
+      <name>Di Jin</name>
+    </author>
+    <author>
+      <name>Chao Deng</name>
+    </author>
+    <author>
+      <name>Junlan Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.16096v1</id>
+    <title>The Commercial Tax: Rent-vs-Own Blind Spots in Multi-Hop Retrieval Benchmarks</title>
+    <updated>2026-08-17T04:37:01Z</updated>
+    <link href="https://arxiv.org/abs/2608.16096v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.16096v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprises connect language models to their own data through retrieval. The benchmarks that rank multi-hop retrieval systems leave out two facts a buyer needs before a published number can be used: whether the retrieval backbone may be deployed commercially, and what it costs to build. On licensing: the field's dense-retrieval anchor, NV-Embed-v2, is licensed cc-by-nc-4.0. Of the four leading MuSiQue systems we audit (HippoRAG-2, PropRAG, SAG, KET-RAG), three depend on it for their best numbers and none says so. On performance: we measure thirteen embedders from eight makers on one identical MuSiQue harness with bootstrap confidence intervals throughout. Until mid-2026 there was a real commercial tax: the best commercially-licensed embedder trailed the anchor by 2.31 Recall@5 points (95% CI [0.91, 3.71], p=0.001). NVIDIA's Nemotron-3-Embed-8B, released 2026-07-16, has closed it: +0.24 at Recall@5 (95% CI [-0.94, +1.43], p=0.69), -0.58 at Recall@10 (p=0.28). It matches the anchor, does not beat it, and is the only entrant that is commercially licensed, free to self-host, and indistinguishable from the anchor; every other entrant meeting the first two conditions sits 5.2 to 14.6 points below. The durable finding is the paid-versus-free divide: API embedders charge per token on every re-index, self-hosted ones charge nothing. On cost: three of five audited systems (adding Microsoft's GraphRAG) do not disclose indexing cost, and the only published GraphRAG dollar figures span 11x inside one third-party paper (USD 2.30 vs USD 24.94 to index a 5.64 MB corpus once); extrapolated to 1 TB that undisclosed choice separates roughly USD 428K from $4.6M. Our cost model keeps one-time embedding apart from recurring answering: at 1 TB, embedding sits 7.5x-900x below graph construction, and a year of answering at 10,000 queries/day sits 350x or more below it.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-17T04:37:01Z</published>
+    <arxiv:comment>23 pages, 4 figures. Replication artifacts (harness, per-question recall vectors, cost model, bootstrap code): https://doi.org/10.5281/zenodo.21972866 ; embedding matrices: https://huggingface.co/datasets/toryx-ai/commercial-tax-musique-embeddings</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Luis M. Sanchez</name>
+    </author>
+    <author>
+      <name>Kosrow Dehnad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20661v1</id>
+    <title>Auditable by Construction: An Ontology-Driven Framework for Trustworthy LLM Analytics in Enterprise Finance</title>
+    <updated>2026-08-21T01:35:34Z</updated>
+    <link href="https://arxiv.org/abs/2608.20661v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20661v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise adoption of large language models in finance is constrained less by fluency than by trust: in Financial Planning and Analysis (FP&amp;A) and other regulated workflows, an answer is usable only if it is traceable to authoritative sources and auditable after the fact. This paper argues that retrieval-augmented generation for enterprise finance should be evaluated on auditability alongside accuracy, and presents the Knowledge-Driven Analytics Framework (KDAF), which builds ontology-driven knowledge systems through six iterative stages and retrieves evidence via Context-Aware Relevance Propagation (CARP), so that every retrieved fact carries its relationship type, confidence, and source lineage.
+  An evaluation on FinanceBench (145 questions) compares KDAF against zero-context inference, BM25, concept-weighted lexical retrieval, and ungrounded graph traversal. First, retrieval is necessary: zero-context inference reaches 4.1% correctness against 10-12% for retrieval-augmented conditions. Second, on answer correctness the retrieval conditions are statistically indistinguishable (KDAF vs BM25: -0.007, 95% CI [-0.021, 0.000]), so accuracy alone does not justify structured retrieval here -- a negative result we report explicitly. Third, on auditability the ordering reverses: KDAF attains the highest citation traceability F1 (0.515), exceeding ungrounded traversal by +0.027 (CI [0.006, 0.050]) and BM25 by +0.052 (CI [0.024, 0.083]), intervals excluding zero. Graph-structured retrieval also admits no evidence from outside the question subject entity (0 of 426 items, against 16.8% and 20.2% for lexical baselines), and every selected item resolves to a complete provenance chain. We argue that auditability, not accuracy, is the axis on which ontology-grounded retrieval earns its cost.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T01:35:34Z</published>
+    <arxiv:comment>20 pages, 1 figure, 4 tables, 1 algorithm. Artifact deposit with configurations, ontology schema, prompts, audit reports and reconstruction scripts: https://doi.org/10.5281/zenodo.22022068</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sergiy Lunyakin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21203v1</id>
+    <title>SENTRY: Deterministic, Intelligent Risk Assessment for IT Change Management</title>
+    <updated>2026-08-21T15:18:21Z</updated>
+    <link href="https://arxiv.org/abs/2608.21203v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21203v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Technology change management in large financial institutions depends on risk assessments that are accurate, consistent, and auditable. In practice, many institutions still rely on self-reported questionnaires. Those questionnaires are subjective, easy to game, and poor at separating routine changes from the ones that later trigger major incidents. This paper presents SENTRY, a risk assessment platform that replaces questionnaire-based scoring with a deterministic machine learning pipeline built from gradient-boosted decision trees (XGBoost) and hybrid retrieval-augmented generation (RAG). The system combines structured operational metadata, application dependency graphs, and historical incident records with a hybrid semantic and lexical search over historical change requests. The retrieval step captures the risk signal in unstructured change request text, then compresses that signal into a single scalar feature before model inference. That design keeps the model deterministic and preserves per-prediction explainability via SHAP values. Evaluated on enterprise-scale change data, SENTRY achieves a ROC AUC of 0.87 and 85% overall accuracy, and it detects high-risk changes at roughly 3.25 times the rate of the existing process. We close by examining the architectural trade-offs behind this design and what they imply for the use of machine learning in regulated change management.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T15:18:21Z</published>
+    <arxiv:comment>10 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Daniel Arulpragasam</name>
+    </author>
+    <author>
+      <name>Christer Henrysson</name>
+    </author>
+    <author>
+      <name>Ella Ly</name>
+    </author>
+    <author>
+      <name>Deepika Anbalagan</name>
+    </author>
+    <author>
+      <name>Leo Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21702v1</id>
+    <title>From Association to Causation: Improving Retrieval Precision of Retrieval-Augmented Generation via Causal Relations and an Attention Mechanism</title>
+    <updated>2026-08-22T00:31:06Z</updated>
+    <link href="https://arxiv.org/abs/2608.21702v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21702v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) grounds LLM generation on retrieved documents, but the standard terminal retrieval stage--dense-vector similarity, optionally followed by reranking--often returns documents that share keywords with the query without containing the needed information, a failure mode that grows with the knowledge base. We trace it to a conceptual gap: similarity captures only associational relations, whereas the documents that matter are linked to the query causally. We model the terminal retrieval stage with a causal graph grounded in Reichenbach's common cause principle: the keywords shared by the query and a retrieved document form a latent common cause A, and the document's residual keywords form a latent set B linking the document to the ideal output. Since a retrieved document is a collider (A -&gt; d &lt;- B), retrieval itself opens an associational path between the query and B, which licenses a training-free, attention-style re-scoring rule: the cosine similarity between the query embedding and the weighted centroid embedding of B. Unlike causality-enhanced RAG variants that model causal relations inside the knowledge content, our graph models the causal structure of the retrieval process itself. On a real 471-document enterprise knowledge base, the method promotes a relevant guideline from rank 6 to the top 3; on a controlled diagnostic corpus reproducing the keyword-stuffing regime, it improves the mean target rank from 2.88 to 1.25, while a trained cross-encoder reranker barely helps (2.63). Conversely, on three BEIR benchmarks the score underperforms the similarity baseline, delineating the applicability boundary: the method guards the keyword-stuffing regime of growing proprietary knowledge bases and complements neural rerankers; a corpus-level calibration gate selects the correct regime with &gt;= 95% reliability. A fully local testbed demonstrates deployability.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-22T00:31:06Z</published>
+    <arxiv:comment>16 pages, 2 figures, 4 tables, 1 algorithm. Code available at https://github.com/Silk-Road/causal-rag-rerank</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jing Liu</name>
+    </author>
+    <author>
+      <name>Yongxing Qi</name>
+    </author>
+    <author>
+      <name>Muchen Jiang</name>
+    </author>
+    <author>
+      <name>Chengnan Hu</name>
+    </author>
+    <author>
+      <name>Qingqing Peng</name>
+    </author>
+    <author>
+      <name>Haoming Wang</name>
+    </author>
+    <author>
+      <name>Yuqing Wang</name>
+    </author>
+    <author>
+      <name>Yang Yu</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Ting Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.22081v1</id>
+    <title>W-RAG: Source-Aware Retrieval for Enterprise Document Generation from Heterogeneous Knowledge Bases</title>
+    <updated>2026-08-22T19:01:59Z</updated>
+    <link href="https://arxiv.org/abs/2608.22081v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.22081v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) enables large language models to incorporate external knowledge during generation, improving factual grounding and domain adaptability. However, existing RAG pipelines assume that evidence retrieved from multiple repositories can be ranked globally using a single similarity function. While suitable for open-domain retrieval, this assumption breaks down in enterprise document generation, where heterogeneous knowledge bases (such as policies, regulations, technical documentation, and departmental guidelines) serve distinct roles and must be jointly represented in the generated document. As a result, global ranking often produces unbalanced context dominated by a subset of sources, leading to incomplete enterprise drafts. To address this limitation, we propose W-RAG, a source-aware retrieval framework that performs ontology-guided retrieval, local ranking within each knowledge base, and source-level weighting to regulate evidence composition. We further introduce a new dataset for retrieval-grounded enterprise document generation spanning multiple document types and industry domains. Experiments show that standard RAG pipelines struggle on this task, while W-RAG significantly improves document coverage and generation quality.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-22T19:01:59Z</published>
+    <arxiv:comment>18 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Hridya Dhulipala</name>
+    </author>
+    <author>
+      <name>Rajesh Ombase</name>
+    </author>
+    <author>
+      <name>Michael Wang</name>
+    </author>
+    <author>
+      <name>Tien N. Nguyen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.22251v1</id>
+    <title>CAIA in Practice: Field Evaluation of an AI-Assisted Support System for Text-Based Online Counselling</title>
+    <updated>2026-08-23T07:22:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.22251v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.22251v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Rising global demand for mental health support creates significant service delivery challenges, with asynchronous email counselling serving as a crucial low-threshold channel for accessing care. This paper presents CAIA, a co-designed AI-based tool suite that demonstrates responsible AI integration into counselling practice through seven LLM-driven functions enhanced by retrieval-augmented generation. A field evaluation involved 34 professional counsellors conducting authentic sessions with trained student counsellees (36 threads, 321 messages, 1,257 AI outputs). User behaviour analysis confirms substantial adoption, revealing that professional autonomy and information accuracy are decisive for sustained acceptance, with counsellors particularly valuing interpretive functionalities that provide new perspectives and stimulate professional reflection.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-23T07:22:05Z</published>
+    <arxiv:comment>Accepted at IEEE ICTAI 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <arxiv:journal_ref>2025 IEEE 37th International Conference on Tools with Artificial Intelligence (ICTAI), pp. 1476-1483</arxiv:journal_ref>
+    <author>
+      <name>Philipp Steigerwald</name>
+    </author>
+    <author>
+      <name>Nico Bienlein</name>
+    </author>
+    <author>
+      <name>Jennifer Burghardt</name>
+    </author>
+    <author>
+      <name>Mara Stieler</name>
+    </author>
+    <author>
+      <name>Robert Lehmann</name>
+    </author>
+    <author>
+      <name>Jens Albrecht</name>
+    </author>
+    <arxiv:doi>10.1109/ICTAI66417.2025.00214</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICTAI66417.2025.00214" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.28572v1</id>
+    <title>PULSAR: Pooled Unified Late-Interaction Search and Retrieval for Enterprise Visual Document RAG</title>
+    <updated>2026-08-28T17:49:22Z</updated>
+    <link href="https://arxiv.org/abs/2608.28572v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.28572v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Institutional investors search visually dense pitch decks, board packs, and diligence materials that change hourly near deal closing. OCR followed by figure verbalisation is costly to refresh at this scale and can lose chart detail. We present PULSAR, a production vision-first retrieval system deployed at Mubadala Investment Company. PULSAR indexes page images with a frozen ColPali-style backbone and uses a pooled two-stage late-interaction index: compact page summaries support initial retrieval, followed by exact MaxSim rescoring over a finer pooled representation. On ViDoRe V3, this design reduces median vector-search latency by 15.1 times against an unpooled configuration with less than 0.01 absolute NDCG@10 and Recall@10 loss; production median vector-search latency is 156 ms. Under concurrent load, the pooled index sustains approximately 88 times higher QPS than an unpooled index. The event-driven ingestion path is estimated to be approximately 20 times cheaper per page than the OCR+verbalisation baseline it replaced. Since March 2026, PULSAR has served 78 thousand documents and approximately 2.4 million pages across more than 3,000 deals. At the production top K, it more than doubles answer-fact recall over the OCR+verbalisation baseline.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-28T17:49:22Z</published>
+    <arxiv:comment>Accepted at EMNLP 2026 (Industry Track)</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Benjamin Constable</name>
+    </author>
+    <author>
+      <name>Anup Roy</name>
+    </author>
+    <author>
+      <name>Vishal Sharma</name>
+    </author>
+    <author>
+      <name>Rishabh Upadhyay</name>
+    </author>
+    <author>
+      <name>Robin Mills</name>
+    </author>
+    <author>
+      <name>Aidan Millar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.29307v1</id>
+    <title>Detecting and Repairing Hallucinations in Retrieval-Augmented Generation</title>
+    <updated>2026-08-29T14:46:58Z</updated>
+    <link href="https://arxiv.org/abs/2608.29307v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.29307v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models increasingly answer questions by consulting retrieved documents rather than memory alone, a design now common in search assistants and enterprise knowledge tools. Grounding a model in retrieved text reduces unsupported statements but does not eliminate them, and a reader cannot tell a grounded sentence from an invented one. Most research on this problem stops at detection, yet flagging a faulty answer changes nothing for the person reading it, and little is known about which action should follow. Using RAGTruth, a benchmark whose unsupported passages are annotated by hand, we split each flagged answer into individual factual claims, check each against the retrieved source, and compare leaving the answer untouched with three repair strategies of increasing richness: deleting an unsupported claim, replacing it with source text, and rewriting it. Three language models from different families judge the 916 repaired answers. Every strategy reduces the proportion of answers judged to contain unsupported content, and all three judges agree on the ordering. Deletion achieves the largest reduction while retaining least of the original answer, at 64.3% of the text, whereas rewriting retains 80.1% and reduces least. Repair is not confined to faulty answers: 83.5% of answers annotated clean are edited too. The strategies occupy different points on a grounding preservation trade-off rather than forming a quality ranking, and choosing between them needs evidence about answer usefulness that automatic metrics cannot supply.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-29T14:46:58Z</published>
+    <arxiv:comment>15 pages, 3 figures, 7 tables. Submitted to BNAIC/BeNeLearn 2026 as a Type A paper</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sai Krishna Reddy Mulakkayala</name>
+    </author>
+    <author>
+      <name>Niki van Stein</name>
+    </author>
+    <author>
+      <name>Aske Plaat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.31082v2</id>
+    <title>Agentic Context Cracking: Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data</title>
+    <updated>2026-09-04T07:11:29Z</updated>
+    <link href="https://arxiv.org/abs/2608.31082v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.31082v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. Whenever the agent opens a document to answer, a cracking sub-agent forks from the already-loaded context at marginal cost and extracts grounded structure likely to serve related future queries. Over time, an increasing share of queries is fully covered by structured data and answered without opening a document, keeping agentic accuracy at close to RAG cost. On FanOutQA, extended with merely one related question per test question, cracking cuts cost by 53% while preserving accuracy. Agentic data cracking is a first step toward next-generation data infrastructure for agentic reasoning over unstructured data: a shared substrate beneath the model where knowledge that reasoning already paid to uncover accumulates.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-31T16:53:45Z</published>
+    <arxiv:comment>7 Pages, 3 Figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Milad Rezaei Hajidehi</name>
+    </author>
+    <author>
+      <name>Qitong Wang</name>
+    </author>
+    <author>
+      <name>Stratos Idreos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.04377v1</id>
+    <title>Corporate Language Model (CLM): Transforming Tacit and Fragmented Enterprise Knowledge into a Sovereign, Auditable, and Executable Corporate Intelligence Layer</title>
+    <updated>2026-09-03T18:39:07Z</updated>
+    <link href="https://arxiv.org/abs/2609.04377v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.04377v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise AI deployments fail not from model inadequacy, but because organizations lack a structured substrate encoding how they decide, negotiate, and execute. Generic LLMs carry no firm-specific ontological priors; RAG remains brittle, with no path to executable action; static playbooks encode logic but cannot reason or adapt. This demands an architecture treating tacit-knowledge capture, ontological grounding, sovereign deployment, and auditable actuation as co-designed from the start. This paper introduces the Corporate Language Model (CLM), a framework transforming a firm's structured, unstructured, multimodal, and tacit knowledge into an ontology-grounded enterprise foundation upon which reasoning and governed execution are composed. CLM has five capability planes and four architectural pillars: a Neurosymbolic Mesh coupling generative models with a knowledge graph; a Skill Graph where reusable tactics, personas, objections, and goals are typed and composed; Living Digital Twins modeling functional areas as reasoning surrogates; and a Deep Security Layer enforcing sovereignty, traceability, and human oversight. A Spec-as-Code paradigm bridges grounded intent and executable artifact. CLM is one instantiation of this foundation-centric class. Four contributions follow: CLM is defined as a distinct object of study; the Skill Graph is introduced for compositional explainability by construction; the Wisdom Listener effect is proposed, whereby tacit-capable foundations compound in value with use, connecting to dynamic capabilities and organizational learning; and evidence from a JCI-accredited tertiary hospital in Brazil instantiates three of the six maturity stages under LGPD.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-03T18:39:07Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Fabricio C. Avini</name>
+    </author>
+    <author>
+      <name>Guilherme Trez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.05637v2</id>
+    <title>Better Together: Complementary Query Rewriting Under a Strong RAG Baseline</title>
+    <updated>2026-09-09T15:44:58Z</updated>
+    <link href="https://arxiv.org/abs/2609.05637v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.05637v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A popular way to improve Retrieval-Augmented Generation (RAG) is to rewrite the user's question into several variants and search with all of them. We test whether this actually helps once the underlying search is already strong. Under one fixed, competitive pipeline (BGE dense retrieval, cross-encoder reranking, and MMR diversification), we compare four query-rewriting strategies (S1-S4) against two strong LLM baselines (HyDE, Query2Doc) on three datasets (HotpotQA, AmbigNQ, and the 512K-document EnterpriseRAG-Bench) over three seeds with paired-bootstrap significance tests. Our headline result is that rewriting alone is at best competitive with a strong baseline, but combining methods yields outsized gains because different strategies fail on different questions. A post-hoc union of four methods (S1+S3+S4+HyDE) improves HIT@10 over the baseline by +12.5 points on enterprise data (51.70 vs 39.22), and a five-method union reaches 52.98 (+13.8). Budget-matched controls capture only ~40% of this gain, confirming that complementarity, not retrieval budget, is the primary driver. On HotpotQA the union adds +1.6 to +1.8 points (p&lt;0.001), saturating the all-method oracle; on AmbigNQ the same fusion hurts (-2.4 below the best solo, p&lt;0.001), and we analyze when and why. Because rewriting is expensive, we evaluate in simulation a confidence-gated router that runs rewriting only when the baseline's own top-1 score is low. It captures about half of the enterprise full-merge gain (+4.3 HIT@10) while paying rewriting cost on &lt;40% of queries, and automatically declines to rewrite on AmbigNQ. A downstream answer-quality evaluation confirms the router improves F1 by +1.92 (p&lt;0.01) at roughly 40% of the expansion cost. In short: treat query rewriting as a complementary coverage source, applied through cost-aware routing, not as a standalone replacement for a strong baseline.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T18:15:57Z</published>
+    <arxiv:comment>10 pages. Accepted at EMNLP 2026 (Industry Track)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sara Shanian</name>
+    </author>
+    <author>
+      <name>Xiaoqin Yi</name>
+    </author>
+    <author>
+      <name>Pavlo Ruban</name>
+    </author>
+    <author>
+      <name>Kurt MacDonald</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.10430v1</id>
+    <title>Glyph: A Multi-Strategy Agentic System for Column Description and Sensitivity-Ontology Tagging of Enterprise Data Catalogs</title>
+    <updated>2026-09-09T16:43:26Z</updated>
+    <link href="https://arxiv.org/abs/2609.10430v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.10430v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise data lakes accumulate tables faster than human stewards can document or classify them, leaving columns with missing descriptions and unassigned governance labels. This documentation debt undermines data discovery, access control, and regulatory compliance. We present Glyph, a production system that frames two coupled problems, column description generation and column type annotation for data classification, as cooperating LLM agents orchestrated as stateful graphs. The Descriptor grounds generation in the pipeline source code that produces each column, retrieved on demand from an enterprise GitHub via a reasoning--acting tool loop (active Retrieval-Augmented Generation). The Tagger assigns labels from a governed 275-leaf Data Classification Ontology by running three complementary strategies in parallel (a description tagger, a line-of-business regex tagger, and a metadata tagger backed by a fine-tuned contrastive encoder over a vector database), then fuses their ranked outputs with Reciprocal Rank Fusion (RRF). We fine-tune a 6-layer MiniLM metadata encoder with an in-batch contrastive objective, lifting same-tag retrieval on an in-distribution held-out split from NDCG@10 0.55 to 0.92 (MAP@100 $0.19 \rightarrow 0.90$) relative to the stock base encoder. We report end-to-end multi-label tagging quality under a recall-weighted F2 objective across three evaluation groups, an ablation isolating each strategy and the RRF fusion, and the engineering decisions that distinguish Glyph from prior column-type-annotation work and from commercial value/regex sensitivity scanners: value-free and code-grounded design, per-tag provenance, and graceful degradation. Together these make multi-agent LLM cataloging auditable and operable as a production service.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-09T16:43:26Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Kostia Kudriavtsev</name>
+    </author>
+    <author>
+      <name>Parvez Rafi</name>
+    </author>
+    <author>
+      <name>Sha Sundaram</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.11023v1</id>
+    <title>RCL: A Retrieval-Confidence Layer for Detecting Insufficient Context in Enterprise Retrieval-Augmented Code Generation</title>
+    <updated>2026-09-10T03:02:23Z</updated>
+    <link href="https://arxiv.org/abs/2609.11023v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.11023v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) for code generation has been studied extensively on public repositories, where a model's parametric knowledge often compensates for imperfect retrieval. This breaks down in enterprise codebases, where private APIs, internal frameworks, and undocumented team conventions fall entirely outside any model's pretraining distribution. Recent work on private-library code generation shows that even oracle (perfect) retrieval does not eliminate errors, but locates failures downstream in API usage; separately, confidence-gated retrieval has been studied for open-domain question answering using model-internal confidence. Neither addresses whether retrieval itself was structurally sufficient for a private-code query before generation begins. We introduce RCL (Retrieval-Confidence Layer), a lightweight module inserted between retrieval and generation that combines a call-graph-derived structural coverage score with a novelty score estimating a query's dependence on knowledge outside the model's prior, to detect insufficient retrieval before generation occurs. When confidence falls below a calibrated threshold, RCL triggers a targeted follow-up retrieval or labels the output for human review, rather than generating silently against incomplete context. We describe RCL's architecture, formalize its scoring functions, and propose an evaluation methodology using a private-code benchmark built by injecting synthetic internal APIs into open-source Java repositories, simulating the enterprise condition without proprietary code. We report results (Section 7) comparing RCL against similarity-only retrieval on generation correctness. Our position is that retrieval sufficiency, assessed structurally rather than from model-internal confidence, is a distinct and currently underaddressed signal for building safer code-generation systems in private, enterprise settings.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-10T03:02:23Z</published>
+    <arxiv:comment>7 pages, 1 figure, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Chandra Mohan Ravuri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.12171v1</id>
+    <title>WinSyn: An Automated Pipeline for Realistic Enterprise Question-Answering Evaluation</title>
+    <updated>2026-09-10T19:59:22Z</updated>
+    <link href="https://arxiv.org/abs/2609.12171v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.12171v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise settings provide a challenging environment for question-answering agents, which often rely on Retrieval-Augmented Generation, Deep Research (DR), and related techniques. Much of this challenge comes from the complexity of enterprise data: information is often spread across evolving and potentially conflict- ing emails, chat messages, documents, and other artifacts. Existing benchmarks typically have limited real-world complexity, short-form responses, and unnatural queries, so they often fail to capture the challenges of enterprise settings. In this work, we introduce an automated pipeline for generating synthetic datasets of emails reflecting realistic workplace scenarios, along with long- and short-form questions and gold answers grounded in the data. Our method simulates long-running enterprise projects spanning several months and involving up to 25 interacting employees across multiple roles. The data emphasizes ambiguity, distributed information, and naturally occurring queries. To validate the pipeline, we evaluate few standard agentic baselines on our datasets using the latest frontier models. We find that aggregate scores averaged over all queries remain below 80% for each dataset, indicating significant room for improvement. These findings suggest that more work remains to be done for enterprise deployment and underscore the importance of realistic, high-complexity evaluation data for developing stronger real-world enterprise DR systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-10T19:59:22Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Amey Varhade</name>
+    </author>
+    <author>
+      <name>Ananya Sutradhar</name>
+    </author>
+    <author>
+      <name>Ravishankar Krishnaswamy</name>
+    </author>
+    <author>
+      <name>Navin Goyal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.12464v1</id>
+    <title>Beyond Vector Similarity: Hierarchical Context-Aware Graph RAG vs Standard RAG in Enterprise Code Migration</title>
+    <updated>2026-09-11T05:54:41Z</updated>
+    <link href="https://arxiv.org/abs/2609.12464v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.12464v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As enterprises modernize legacy monolithic systems to microservices, Large Language Models (LLMs) are heavily utilized for automated code translation. However, traditional vector-based Retrieval-Augmented Generation (Standard RAG) struggles to capture topological relationships. It fetches isolated chunks that sever inheritance chains, leading to high compilation failure rates. This paper introduces a Hierarchical Context-Resident Graph (HCRG) methodology to resolve these limitations. Our pipeline uses tree-sitter for Abstract Syntax Tree (AST) extraction, maps architectural edges into a Google Cloud Spanner Property Graph, and serializes this structure into a Gemini Context Cache for topological, parent-first code translation. We shift evaluation from naive text-overlap to a custom 7-metric Software Engineering framework. Traditional metrics like CodeBLEU (which scored 91% for both methods) effectively masked Standard RAG's structural failures behind syntactically plausible but broken code. Empirically, Graph RAG decisively mitigates dependency loss: API hallucination rates dropped from 56.4% to 16.2%, Dependency Resolution Quality improved from 34.8% to 65.9%, and Parent-Child Consistency rose from 26.7% to 45.5%. However, Graph RAG introduces specific trade-offs. The dense global context causes defensive over-engineering by the LLM, reducing Cyclomatic Complexity Consistency from 71.6% to 46.7%, and slightly degrades Docstring Preservation (67.0% to 61.0%). Ultimately, while trading code complexity for reduced hallucinations, Graph RAG provides a substantially more viable, architecturally sound path for automated enterprise codebase modernization.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-11T05:54:41Z</published>
+    <arxiv:comment>11 pages, 2 images, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Nilesh Jaiswal</name>
+    </author>
+    <author>
+      <name>Aniket Agrawal</name>
+    </author>
+    <author>
+      <name>Arjit Shukla</name>
+    </author>
+    <author>
+      <name>Divya Malhotra</name>
+    </author>
+    <author>
+      <name>Saurabh Garg</name>
+    </author>
+    <author>
+      <name>Suchit Puri</name>
+    </author>
+    <author>
+      <name>Suddhasatwa Bhaumik</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13489v2</id>
+    <title>Pre-retrieval Query Clustering for Adaptive Top-k Document Retrieval in RAG Systems</title>
+    <updated>2026-09-15T01:11:04Z</updated>
+    <link href="https://arxiv.org/abs/2609.13489v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13489v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>RAG systems commonly retrieve a fixed number of documents (top-k) to ground generation, but this static approach is brittle: simple queries suffer over-retrieval (adding noise and cost) while complex queries are under-retrieved, causing recall failures that cascade into incorrect answers. Motivated by the question of how many documents must be retrieved to answer an arbitrary query reliably, we propose a practical, general framework for query-adaptive retrieval depth. Offline, we estimate per-query retrieval difficulty by measuring NDCG under the default retriever and deriving a query-specific saturation point k* from the NDCG-k curve. Because computing these signals online is expensive, we cluster a large set of queries in embedding space and summarize each cluster with a recommended retrieval depth that targets high coverage (e.g., ~95%) using a mean-plus-variance rule. At runtime, the system assigns an incoming query to a cluster and selects the corresponding top-k in constant time. Compared with post-retrieval confidence methods that rely on clustering retrieved documents, our approach is pre-retrieval and query-centric, making it robust in heterogeneous, case-like corpora and applicable across domains such as legal, healthcare, finance, and enterprise search. Finally, this framework has been tested in full-traffic queries that improved $F_1$ by over 36% while reducing token usage by 14% on low-complexity clusters without accuracy loss.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-11T19:57:12Z</published>
+    <arxiv:comment>Accepted to the Applied Research Track of CIKM 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Ye Xia</name>
+    </author>
+    <author>
+      <name>Emre Yamangil</name>
+    </author>
+    <author>
+      <name>Haixun Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13856v1</id>
+    <title>ShopEase: A Generative AI-Based Multi-Agent Framework for Intelligent Enterprise Customer Support Using Hybrid Retrieval-Augmented Generation</title>
+    <updated>2026-09-12T10:18:34Z</updated>
+    <link href="https://arxiv.org/abs/2609.13856v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13856v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise customer support systems must answer customer questions correctly, retrieve the right policy information, use customer context, and pass difficult cases to human agents when needed. This paper presents ShopEase, a Generative AI-based multi-agent framework for enterprise customer support. The system combines six components: Intent, CRM, Memory, Hybrid RAG, Escalation, and Supervisor, and uses LLaMA 3.2 running locally through Ollama for response generation. The retrieval module combines FAISS (dense retrieval) and BM25 (sparse retrieval), and six configurations are evaluated: BM25-only, FAISS-only, Fair RRF, Weighted RRF, RRF with Cross-Encoder, and Top-10 Hybrid with Cross-Encoder. Instead of using a fixed mapping between intent and policy, the policy category is decided directly from the retrieved documents. The system was evaluated on 2632 held-out customer queries across six categories: Refund, Return, Shipping, Cancellation, Damaged Product, and Unknown. FAISS-only achieved the highest accuracy of 85.37\% (2247 correct predictions), closely followed by Weighted RRF at 85.07\%. BM25-only achieved only 55.74\% accuracy. Adding cross-encoder reranking did not improve results: RRF with Cross-Encoder reached 83.24\%, and Top-10 Hybrid with Cross-Encoder reached 81.88\%, while also increasing response latency. Category-level analysis shows strong performance on Shipping, Cancellation, and Return, while Unknown queries remain the main source of errors. Statistical testing using McNemar's test shows no significant difference between FAISS-only and Weighted RRF, though both perform significantly better than Fair RRF and the cross-encoder configurations. Overall, dense retrieval gives the best accuracy on this dataset, and additional reranking adds processing time without improving classification performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-12T10:18:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aakash Kumar Tiwari</name>
+    </author>
+    <author>
+      <name>Somesh Kumar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.20754v1</id>
+    <title>RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents</title>
+    <updated>2026-09-17T17:41:31Z</updated>
+    <link href="https://arxiv.org/abs/2609.20754v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.20754v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Effective troubleshooting agents in enterprise customer support depend on retrieving actionable guidance from similar historical cases, yet existing retrieval-augmented generation (RAG) systems treat support cases as static documents and overlook their multi-stage, stateful nature. We introduce RAFT (Retrieval-Augmented Framework for Troubleshooting Agents), a stateful RAG framework that abstracts each closed historical case into a directed chain of timeline entries and retrieves at the entry level, surfacing cases whose intermediate states match the active case and returning the parent-case trajectory anchored at the matched state; an optional case-level graph links cases through a configurable similarity representation. We evaluate this retrieval layer directly, which, unlike evaluating a full agent system, requires no production deployment. Because public multi-stage troubleshooting data is extremely rare, we pair a synthetic benchmark built from Microsoft Learn Windows Server documentation with real Apache Jira issues carrying human-created duplicate labels. RAFT improves Case Hit over vanilla RAG and GraphRAG baselines at every stage of case progress, with statistically significant gains over the strongest baseline; the Jira results provide directional evidence that the advantage transfers to real case histories. We release our benchmark, implementation, and the Apache Jira evaluation set.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-17T17:41:31Z</published>
+    <arxiv:comment>Accepted to the EMNLP 2026 Industry Track</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mingxuan Zhang</name>
+    </author>
+    <author>
+      <name>Xiaowen Wang</name>
+    </author>
+    <author>
+      <name>Anupma Sharan</name>
+    </author>
+    <author>
+      <name>Zhengyi Chen</name>
+    </author>
+    <author>
+      <name>Chenyu Diana Zhang</name>
+    </author>
+    <author>
+      <name>Shanshan Yang</name>
+    </author>
+    <author>
+      <name>Chittibabu Pacharu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22537v1</id>
+    <title>EvidenT: Building Trustworthy Enterprise Assistants through Evidence Groundedness and Traceability</title>
+    <updated>2026-09-18T19:49:06Z</updated>
+    <link href="https://arxiv.org/abs/2609.22537v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22537v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise AI assistants must produce responses that are verifiable and traceable to source evidence. However, retrieval augmented generation (RAG) over heterogeneous enterprise data can suffer from citation drift, unsupported content, and weak source traceability. We present EvidenT (T = Trust + Transparency + Traceability), a lightweight pipeline that verifies extracted evidence against retrieved documents before answer generation, without model retraining. EvidenT combines structured passage extraction with deterministic lexical alignment to filter unsupported content, correct citation drift, and preserve source-span traceability. On approximately 500 real enterprise queries, EvidenT improves gold-source hit rate by an average of 29% over prompting baselines, produces no citations to nonretrieved urls, and achieves near-saturated answer-to-source lexical coverage.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-18T19:49:06Z</published>
+    <arxiv:comment>Accepted in EMNLP Industry Track 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Anubha Kabra</name>
+    </author>
+    <author>
+      <name>Katie Jooyoung Kim</name>
+    </author>
+    <author>
+      <name>Colin Zhiwei Kou</name>
+    </author>
+    <author>
+      <name>Helene Sajer</name>
+    </author>
+    <author>
+      <name>Yimei Fan</name>
+    </author>
+    <author>
+      <name>Radomir Cisar</name>
+    </author>
+    <author>
+      <name>Heather Greenhalgh</name>
+    </author>
+    <author>
+      <name>Gabriel Martinez Vidiri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.23971v1</id>
+    <title>UniK: Universal Knowledge Perception for Digital and Physical AI</title>
+    <updated>2026-09-21T00:56:36Z</updated>
+    <link href="https://arxiv.org/abs/2609.23971v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.23971v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Two transformative classes of AI systems are reshaping how organizations operate: \textit{digital AI}, which reasons over enterprise knowledge to power chatbots and agent workflows; and \textit{physical AI}, which learns to control robots and autonomous systems from video, gameplay, and sensor telemetry. Both face the same foundational bottleneck: raw knowledge at scale, spanning heterogeneous modalities, locked in private corpora that existing AI infrastructure cannot access reliably or efficiently. We propose \textit{Universal Knowledge Perception (UniK)} as a common platform for both classes, covering the full knowledge lifecycle (ingestion, enrichment, indexing, retrieval, and continuous evaluation) across modalities from rich text and video to molecular data and sensor telemetry. We present UniK, built on Polymath Retrieval (multi-index fusion over automatically enriched indices) with no task-specific fine-tuning. Across five digital AI domains (medical literature, open-domain QA, chemistry, legal video proceedings, and government open data) UniK combined with an open-source 70-billion-parameter model consistently matches or outperforms frontier proprietary LLMs that are orders of magnitude larger: 76\% RAG accuracy on government data versus 47\% for GPT-5; 77.9\% on medical QA without fine-tuning; topping all open-source chemistry pipelines. We show that the same infrastructure directly addresses the data curation, indexing, and retrieval challenges facing physical AI world model training, where the knowledge problem is harder but structurally identical.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-21T00:56:36Z</published>
+    <arxiv:comment>17 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Nirmit Desai</name>
+    </author>
+    <author>
+      <name>Kunal Sawarkar</name>
+    </author>
+    <author>
+      <name>Aditya Mahakali</name>
+    </author>
+    <author>
+      <name>Dongkon Lee</name>
+    </author>
+    <author>
+      <name>Kevin Park</name>
+    </author>
+    <author>
+      <name>Eric Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.24220v1</id>
+    <title>Document Retrieval-Aware Chunking (D-RAC): Universal Retrieval-Aware Ingestion of Enterprise Documents via PDF Normalization and Multimodal Markdown Conversion</title>
+    <updated>2026-09-21T07:38:12Z</updated>
+    <link href="https://arxiv.org/abs/2609.24220v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.24220v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) systems over enterprise knowledge bases must ingest heterogeneous document formats -- PDFs, Word documents, presentations, and scans -- whose content is locked inside complex visual layouts, multi-column pages, and dense tables. Rule-based extraction and OCR destroy reading order, flatten tables, and lose heading hierarchy, while fully agentic chunking over extracted text incurs high token costs and hallucination risk. We present Document Retrieval-Aware Chunking (D-RAC), an extension of our Web Retrieval-Aware Chunking (W-RAC) framework to arbitrary document formats. D-RAC first normalizes any input document into PDF, exploiting the fact that virtually every format has a faithful, deterministic PDF rendering. A single multimodal LLM pass then converts rendered pages into retrieval-optimized Markdown -- rewriting tables as self-contained prose statements and preserving heading hierarchy -- after which chunking proceeds exactly as in W-RAC: deterministic parsing into ID-addressable units followed by lightweight LLM-based chunk planning over identifiers rather than text. Source text is never regenerated during chunking, preserving W-RAC's cost, determinism, and observability benefits while unlocking every renderable format as a first-class input. On the 236-document, 795-page PDF subset of the RAG-Multi-Corpus benchmark spanning five enterprise domains, D-RAC converts and chunks the entire corpus in 72 minutes with zero errors, producing 1,748 retrieval-ready chunks. Compared to agentic chunking with frontier LLMs, D-RAC reduces chunking-stage output tokens by 95.7%, cutting chunking cost by 77.8% (GPT-4.1 pricing) to 85.6% (Gemini 2.5 Pro pricing) and chunking time by 75%. D-RAC scales linearly to documents of 500+ pages.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-21T07:38:12Z</published>
+    <arxiv:comment>14 pages, 2 figures, 10 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Uday Allu</name>
+      <arxiv:affiliation>AI Research Team Yellow.ai</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Abhivanth Sivaprakash</name>
+      <arxiv:affiliation>AI Research Team Yellow.ai</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Pratik Singh</name>
+      <arxiv:affiliation>AI Research Team Yellow.ai</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Aman Manocha</name>
+      <arxiv:affiliation>AI Research Team Yellow.ai</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.25991v1</id>
+    <title>Knowledge-as-Skill: A Structural Design for Autonomous Knowledge-Base Use by LLM Agents</title>
+    <updated>2026-09-22T10:44:10Z</updated>
+    <link href="https://arxiv.org/abs/2609.25991v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.25991v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) gives large language models (LLMs) access to external knowledge, but its conventional retrieve-concatenate-generate pipeline makes retrieval decisions on behalf of the model. As tool use and agent loops become more reliable, an agent can decide whether to retrieve, what to inspect, and when to stop. This shift exposes a new bottleneck: the agent may not know what a knowledge base contains. Traditional knowledge bases expose documents as anonymous text chunks with limited information about scope, purpose, provenance, or relations.
+  We propose Knowledge-as-Skill, an organization scheme that makes a knowledge base discoverable, navigable, and self-descriptive. It has three layers: a discovery layer centered on SKILL.md; a navigation layer with one index.md per directory; and a knowledge layer containing documents with YAML frontmatter for topic, type, provenance, and lifecycle. The design follows the Open Knowledge Format (OKF) and the Skill protocol without modifying the agent framework. We also provide knowledge-as-skill, a pipeline for converting heterogeneous collections of PDFs, Word files, web exports, and notes into this structure.
+  In a preliminary evaluation on the WixQA enterprise customer-support benchmark, our setup obtains 0.889 Factuality and 0.816 Context Recall, compared with reported Corpus2Skill values of 0.767 and 0.708. It obtains slightly lower Faithfulness, lower Context Precision, and more interaction turns. Because the models, prompts, and knowledge-package construction differ, these results are directional cross-work evidence rather than a controlled comparison.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-22T10:44:10Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Jiangxu Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.27257v1</id>
+    <title>UniDataAgent: An Ontology-Grounded Agent for Enterprise Question-to-Report Automation</title>
+    <updated>2026-09-23T02:42:34Z</updated>
+    <link href="https://arxiv.org/abs/2609.27257v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.27257v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise data agents must preserve organization specific semantics, not just translate questions into queries. We present ChinaUnicom DataAgent (UniDataAgent), an ontology grounded system for reusable question-to-report analysis that separates semantic acquisition from online execution. Ontology Acquisition and Validation stage (OAV) builds versioned enterprise ontologies from metadata, business knowledge, and supporting materials through expert authored business skills, constrained generation, question verification, and selected expert review. Question-to-Report Execution (QRE) stage retrieves semantic contracts for each question, coordinates skills and data tools, validates results, and produces evidence linked reports. Across 27 enterprise tables and roughly thousands of metric types, ontology construction took a few hours instead of about one week manually. It took just a few minutes to generate the reports, instead of several working days. Ontology grounding achieved 95.0\% strict accuracy on real business questions, versus 72.5\% for document RAG, especially on structured and compositional tasks. The system has already been deployed to generate cost savings and has the potential to be replicated in other enterprises.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T02:42:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yutai Duan</name>
+    </author>
+    <author>
+      <name>Yahui Zhao</name>
+    </author>
+    <author>
+      <name>Zhangti Li</name>
+    </author>
+    <author>
+      <name>Yu Ma</name>
+    </author>
+    <author>
+      <name>Zhenfeng Qi</name>
+    </author>
+    <author>
+      <name>Shaoyang Yuan</name>
+    </author>
+    <author>
+      <name>Jing Fan</name>
+    </author>
+    <author>
+      <name>Jie Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.01218v1</id>
+    <title>AGO AI Quality Gate: Evidence-First Release Decisions for Retrieval-Augmented Generation</title>
+    <updated>2026-10-01T07:24:04Z</updated>
+    <link href="https://arxiv.org/abs/2610.01218v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.01218v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprises adopting retrieval-augmented generation (RAG) face a recurring operational decision: promote, revise, or block a system version. The evidence is incomplete and the metrics come from fallible LLM judges. We report on AGO AI Quality Gate (AGO), an evidence-first quality-gate framework deployed in industrial RAG assessment engagements. AGO integrates four key components: a four-state decision model that treats missing data and judge errors as explicit outcomes; layered scoring combining deterministic checks, local guardrails, and structured LLM evaluation; a stratified beta-binomial gate that quantifies regression risk probabilistically; and a mandatory meta-evaluation protocol to validate the LLM judge before it influences decisions. Since engagement data is proprietary, we evaluate the judge layer on RAGBench, a public benchmark of 100k annotated RAG traces across 12 datasets. On identical stratified test samples (N=1200 per judge), a low-cost judge (gpt-4.1-nano) detects non-adherent answers barely above chance (AUROC 0.603 [0.570, 0.634]), despite producing flawless protocol output, while gpt-4o reaches 0.783 [0.756, 0.807] -- yet its per-domain performance still ranges from 0.62 to 0.88. A fixed-seed gate study spanning regression, no change, and improvement quantifies unsafe promotion, false-alarm cost, and improvement throughput. Under regression, the decision-grade profile reduces unsafe promotion to 22.2%-35.1%, against 29.3%-41.8% for a naive gate. These results support the design choices that judge quality must be measured per engagement and that point estimates alone are not a release decision.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-01T07:24:04Z</published>
+    <arxiv:comment>14 pages, 1 figure, 4 tables. Submitted version (pre-review). Accepted at NFMCP 2026, ECML PKDD 2026 Workshops</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Giulio Zeloni</name>
+    </author>
+    <author>
+      <name>Enrico Lo Conte</name>
+    </author>
+    <author>
+      <name>Salvatore Rionero</name>
+    </author>
+    <author>
+      <name>Giuseppe Santoro</name>
+    </author>
+    <author>
+      <name>Alessandro Rastelli</name>
+    </author>
+    <author>
+      <name>Fabio Sorrentino</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.02627v1</id>
+    <title>Lost in the Request: How Communication Variation Disrupts Retrieval and Action in Email Agents</title>
+    <updated>2026-10-02T00:35:05Z</updated>
+    <link href="https://arxiv.org/abs/2610.02627v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.02627v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An email assistant should not complete less work simply because a user phrases the same request differently. Yet most benchmarks test each task with only one canonical request, leaving this form of robustness largely unmeasured. We test whether email assistants remain reliable when the requested information, available evidence, and expected outcome stay fixed, but the communication style or English variety changes. We construct validated variants along five communication-style axes and four rule-based dialect conditions, and evaluate them on three benchmarks: a retrieval-augmented generation (RAG) pipeline and two tool-using agents. Indirect requests reduce performance on all three benchmarks, while formal requests reduce performance on both agentic benchmarks. Examining the systems more closely shows that these failures have different causes. Verbose requests mainly hurt a lexical retriever by making the relevant email harder to find. By contrast, indirect and dialect variants remain harmful even when the relevant email is retrieved. In the agentic setting, indirect and formal requests mainly cause the agents to omit required actions, not to take more unsupported actions. These results show that a successful response is not enough to establish robustness: evaluations should vary how requests are expressed and separately measure whether agents complete the requested work.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-02T00:35:05Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2026 Workshop on Evaluation of Interactive Agents</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Feng Chen</name>
+    </author>
+    <author>
+      <name>Ritam Dutt</name>
+    </author>
+    <author>
+      <name>Atnaz Taheri</name>
+    </author>
+    <author>
+      <name>Alex Williams</name>
+    </author>
+  </entry>
+</feed>

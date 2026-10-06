@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ptsU2SocFvKsmoqUlbEJNFTuimY</id>
+  <title>arXiv Query: search_query=(ti:"retrieval augmented" OR abs:"retrieval augmented" OR ti:RAG OR abs:RAG) AND (ti:email OR abs:email OR ti:emails OR abs:emails OR ti:"e-mail" OR abs:"e-mail" OR ti:"e-mails" OR abs:"e-mails") AND (ti:attachment OR abs:attachment OR ti:attachments OR abs:attachments OR ti:multimodal OR abs:multimodal OR ti:"multi-modal" OR abs:"multi-modal") AND submittedDate:"202001010000 TO 202610062359"&amp;id_list=&amp;start=0&amp;max_results=200</title>
+  <updated>2026-10-06T12:04:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(ti:%22retrieval+augmented%22+OR+(abs:%22retrieval+augmented%22+OR+(ti:RAG+OR+abs:RAG)))+AND+((ti:email+OR+(abs:email+OR+(ti:emails+OR+(abs:emails+OR+(ti:%22e-mail%22+OR+(abs:%22e-mail%22+OR+(ti:%22e-mails%22+OR+abs:%22e-mails%22)))))))+AND+((ti:attachment+OR+(abs:attachment+OR+(ti:attachments+OR+(abs:attachments+OR+(ti:multimodal+OR+(abs:multimodal+OR+(ti:%22multi-modal%22+OR+abs:%22multi-modal%22)))))))+AND+submittedDate:%22202001010000+TO+202610062359%22))&amp;start=0&amp;max_results=200&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>200</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2504.13209v1</id>
+    <title>On the Feasibility of Using MultiModal LLMs to Execute AR Social Engineering Attacks</title>
+    <updated>2025-04-16T05:18:36Z</updated>
+    <link href="https://arxiv.org/abs/2504.13209v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.13209v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Augmented Reality (AR) and Multimodal Large Language Models (LLMs) are rapidly evolving, providing unprecedented capabilities for human-computer interaction. However, their integration introduces a new attack surface for social engineering. In this paper, we systematically investigate the feasibility of orchestrating AR-driven Social Engineering attacks using Multimodal LLM for the first time, via our proposed SEAR framework, which operates through three key phases: (1) AR-based social context synthesis, which fuses Multimodal inputs (visual, auditory and environmental cues); (2) role-based Multimodal RAG (Retrieval-Augmented Generation), which dynamically retrieves and integrates contextual data while preserving character differentiation; and (3) ReInteract social engineering agents, which execute adaptive multiphase attack strategies through inference interaction loops. To verify SEAR, we conducted an IRB-approved study with 60 participants in three experimental configurations (unassisted, AR+LLM, and full SEAR pipeline) compiling a new dataset of 180 annotated conversations in simulated social scenarios. Our results show that SEAR is highly effective at eliciting high-risk behaviors (e.g., 93.3% of participants susceptible to email phishing). The framework was particularly effective in building trust, with 85% of targets willing to accept an attacker's call after an interaction. Also, we identified notable limitations such as ``occasionally artificial'' due to perceived authenticity gaps. This work provides proof-of-concept for AR-LLM driven social engineering attacks and insights for developing defensive countermeasures against next-generation augmented reality threats.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-16T05:18:36Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ting Bi</name>
+    </author>
+    <author>
+      <name>Chenghang Ye</name>
+    </author>
+    <author>
+      <name>Zheyu Yang</name>
+    </author>
+    <author>
+      <name>Ziyi Zhou</name>
+    </author>
+    <author>
+      <name>Cui Tang</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+    <author>
+      <name>Zui Tao</name>
+    </author>
+    <author>
+      <name>Kailong Wang</name>
+    </author>
+    <author>
+      <name>Liting Zhou</name>
+    </author>
+    <author>
+      <name>Yang Yang</name>
+    </author>
+    <author>
+      <name>Tianlong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.11937v1</id>
+    <title>MMORE: Massive Multimodal Open RAG &amp; Extraction</title>
+    <updated>2025-09-15T13:56:06Z</updated>
+    <link href="https://arxiv.org/abs/2509.11937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.11937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce MMORE, an open-source pipeline for Massive Multimodal Open RetrievalAugmented Generation and Extraction, designed to ingest, transform, and retrieve knowledge from heterogeneous document formats at scale. MMORE supports more than fifteen file types, including text, tables, images, emails, audio, and video, and processes them into a unified format to enable downstream applications for LLMs. The architecture offers modular, distributed processing, enabling scalable parallelization across CPUs and GPUs. On processing benchmarks, MMORE demonstrates a 3.8-fold speedup over single-node baselines and 40% higher accuracy than Docling on scanned PDFs. The pipeline integrates hybrid dense-sparse retrieval and supports both interactive APIs and batch RAG endpoints. Evaluated on PubMedQA, MMORE-augmented medical LLMs improve biomedical QA accuracy with increasing retrieval depth. MMORE provides a robust, extensible foundation for deploying task-agnostic RAG systems on diverse, real-world multimodal data. The codebase is available at https://github.com/swiss-ai/mmore.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-15T13:56:06Z</published>
+    <arxiv:comment>This paper was originally submitted to the CODEML workshop for ICML 2025. 9 pages (including references and appendices)</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Alexandre Sallinen</name>
+    </author>
+    <author>
+      <name>Stefan Krsteski</name>
+    </author>
+    <author>
+      <name>Paul Teiletche</name>
+    </author>
+    <author>
+      <name>Marc-Antoine Allard</name>
+    </author>
+    <author>
+      <name>Baptiste Lecoeur</name>
+    </author>
+    <author>
+      <name>Michael Zhang</name>
+    </author>
+    <author>
+      <name>Fabrice Nemo</name>
+    </author>
+    <author>
+      <name>David Kalajdzic</name>
+    </author>
+    <author>
+      <name>Matthias Meyer</name>
+    </author>
+    <author>
+      <name>Mary-Anne Hartley</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.01990v1</id>
+    <title>According to Me: Long-Term Personalized Referential Memory QA</title>
+    <updated>2026-03-02T15:42:29Z</updated>
+    <link href="https://arxiv.org/abs/2603.01990v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.01990v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Personalized AI assistants must recall and reason over long-term user memory, which naturally spans multiple modalities and sources such as images, videos, and emails. However, existing Long-term Memory benchmarks focus primarily on dialogue history, failing to capture realistic personalized references grounded in lived experience. We introduce ATM-Bench, the first benchmark for multimodal, multi-source personalized referential Memory QA. ATM-Bench contains approximately four years of privacy-preserving personal memory data and human-annotated question-answer pairs with ground-truth memory evidence, including queries that require resolving personal references, multi-evidence reasoning from multi-source and handling conflicting evidence. We propose Schema-Guided Memory (SGM) to structurally represent memory items originated from different sources. In experiments, we implement 5 state-of-the-art memory systems along with a standard RAG baseline and evaluate variants with different memory ingestion, retrieval, and answer generation techniques. We find poor performance (under 20\% accuracy) on the ATM-Bench-Hard set, and that SGM improves performance over Descriptive Memory commonly adopted in prior works. Code available at: https://github.com/JingbiaoMei/ATM-Bench</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-02T15:42:29Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jingbiao Mei</name>
+    </author>
+    <author>
+      <name>Jinghong Chen</name>
+    </author>
+    <author>
+      <name>Guangyu Yang</name>
+    </author>
+    <author>
+      <name>Xinyu Hou</name>
+    </author>
+    <author>
+      <name>Margaret Li</name>
+    </author>
+    <author>
+      <name>Bill Byrne</name>
+    </author>
+  </entry>
+</feed>

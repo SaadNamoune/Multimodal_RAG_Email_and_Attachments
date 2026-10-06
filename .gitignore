@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.tmp.html
+
+# personal editor and assistant settings
+.vscode/
+.claude/settings.local.json
+
+# 42 MB source file of the ACL Anthology run; its URL, date and SHA-256 are in run.json
+literature-review/exports/acl/*/anthology+abstracts.bib.gz

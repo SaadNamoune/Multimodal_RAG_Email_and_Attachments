@@ -1,0 +1,1041 @@
+{
+  "database": "OpenAlex",
+  "interface": "https://api.openalex.org/works",
+  "run_date": "2026-10-06",
+  "fields": "title, abstract (title_and_abstract.search)",
+  "limits": "from_publication_date 2020-01-01; DOI prefix 10.1109 (IEEE) or 10.1145 (ACM)",
+  "searches": {
+    "S0/ieee": {
+      "blocks": [
+        "RAG",
+        "EMAIL",
+        "ATTACHMENT"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (email OR emails OR \"e-mail\" OR \"e-mails\") AND (attachment OR attachments OR multimodal OR \"multi-modal\"),from_publication_date:2020-01-01,doi_starts_with:10.1109",
+      "hits_reported": 1,
+      "records_retrieved": 1
+    },
+    "S0/acm": {
+      "blocks": [
+        "RAG",
+        "EMAIL",
+        "ATTACHMENT"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (email OR emails OR \"e-mail\" OR \"e-mails\") AND (attachment OR attachments OR multimodal OR \"multi-modal\"),from_publication_date:2020-01-01,doi_starts_with:10.1145",
+      "hits_reported": 1,
+      "records_retrieved": 1
+    },
+    "S1/ieee": {
+      "blocks": [
+        "RAG",
+        "CONTEXT"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (email OR emails OR \"e-mail\" OR \"e-mails\" OR mailbox OR inbox OR enterprise OR \"company-internal\" OR workplace),from_publication_date:2020-01-01,doi_starts_with:10.1109",
+      "hits_reported": 176,
+      "records_retrieved": 176
+    },
+    "S1/acm": {
+      "blocks": [
+        "RAG",
+        "CONTEXT"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (email OR emails OR \"e-mail\" OR \"e-mails\" OR mailbox OR inbox OR enterprise OR \"company-internal\" OR workplace),from_publication_date:2020-01-01,doi_starts_with:10.1145",
+      "hits_reported": 54,
+      "records_retrieved": 54
+    },
+    "S2/ieee": {
+      "blocks": [
+        "RAG",
+        "HYGIENE"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (\"knowledge conflict\" OR \"knowledge conflicts\" OR \"conflicting evidence\" OR deduplication OR \"near-duplicate\" OR redundancy OR outdated OR superseded),from_publication_date:2020-01-01,doi_starts_with:10.1109",
+      "hits_reported": 91,
+      "records_retrieved": 91
+    },
+    "S2/acm": {
+      "blocks": [
+        "RAG",
+        "HYGIENE"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (\"knowledge conflict\" OR \"knowledge conflicts\" OR \"conflicting evidence\" OR deduplication OR \"near-duplicate\" OR redundancy OR outdated OR superseded),from_publication_date:2020-01-01,doi_starts_with:10.1145",
+      "hits_reported": 51,
+      "records_retrieved": 51
+    },
+    "S3/ieee": {
+      "blocks": [
+        "RAG",
+        "MODALITY"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (multimodal OR \"multi-modal\" OR \"visual document\" OR OCR),from_publication_date:2020-01-01,doi_starts_with:10.1109",
+      "hits_reported": 508,
+      "records_retrieved": 508
+    },
+    "S3/acm": {
+      "blocks": [
+        "RAG",
+        "MODALITY"
+      ],
+      "filter": "title_and_abstract.search:(\"retrieval augmented\" OR RAG) AND (multimodal OR \"multi-modal\" OR \"visual document\" OR OCR),from_publication_date:2020-01-01,doi_starts_with:10.1145",
+      "hits_reported": 195,
+      "records_retrieved": 194
+    }
+  },
+  "unique_records": 1034,
+  "without_abstract": 64,
+  "compared_with": [
+    "exports/arxiv/2026-10-06/records.json",
+    "exports/acl/2026-10-06/records.json"
+  ],
+  "duplicates_of_other_databases": [
+    {
+      "record": "doi:10.1109/fllm67465.2025.11391155",
+      "duplicate_of": "arxiv:2510.25518",
+      "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation"
+    },
+    {
+      "record": "doi:10.1109/icsa-c68850.2026.00026",
+      "duplicate_of": "arxiv:2604.01395",
+      "title": "AI Engineering Blueprint for On-Premises Retrieval-Augmented Generation Systems"
+    },
+    {
+      "record": "doi:10.1109/aiware69974.2025.00036",
+      "duplicate_of": "arxiv:2509.21324",
+      "title": "From Search to Reasoning: a Five-Level Rag Capability Framework for Enterprise Data"
+    },
+    {
+      "record": "doi:10.1109/indicon63790.2024.10958508",
+      "duplicate_of": "arxiv:2406.11424",
+      "title": "Evaluating the Efficacy of Open-Source LLMs in Enterprise-Specific RAG Systems: A Comparative Study of Performance and Scalability"
+    },
+    {
+      "record": "doi:10.1109/cai68641.2026.11536510",
+      "duplicate_of": "arxiv:2512.05411",
+      "title": "A Systematic Framework for Enterprise Knowledge Retrieval: Leveraging LLM-Generated Metadata to Enhance RAG Systems"
+    },
+    {
+      "record": "doi:10.1109/icce67443.2026.11449651",
+      "duplicate_of": "arxiv:2601.21261",
+      "title": "User-Centric Phishing Detection: A RAG and LLM-Based Approach"
+    },
+    {
+      "record": "doi:10.1109/icodse68111.2025.11351757",
+      "duplicate_of": "arxiv:2510.10824",
+      "title": "Agentic RAG for Software Testing with Hybrid Vector-Graph and Multi-Agent Orchestration"
+    },
+    {
+      "record": "doi:10.1109/compsac61105.2024.00371",
+      "duplicate_of": "arxiv:2408.05911",
+      "title": "A New Pipeline for Generating Instruction Dataset via RAG and Self Fine-Tuning"
+    },
+    {
+      "record": "doi:10.1109/icsc67292.2026.00033",
+      "duplicate_of": "arxiv:2505.18247",
+      "title": "MetaGen Blended RAG: Unlocking Zero-Shot Precision for Specialized Domain Question-Answering"
+    },
+    {
+      "record": "doi:10.1109/icaic67076.2026.11395683",
+      "duplicate_of": "arxiv:2512.06060",
+      "title": "Reinforcement Learning Integrated Agentic RAG for Software Test Cases Authoring"
+    },
+    {
+      "record": "doi:10.1109/ictai66417.2025.00214",
+      "duplicate_of": "arxiv:2608.22251",
+      "title": "CAIA in Practice: Field Evaluation of an AI-Assisted Support System for Text-Based Online Counselling"
+    },
+    {
+      "record": "doi:10.1109/cars67163.2025.11337241",
+      "duplicate_of": "arxiv:2601.09715",
+      "title": "Introducing Axlerod: An LLM-Based Chatbot for Assisting Independent Insurance Agents"
+    },
+    {
+      "record": "doi:10.1109/icde65706.2026.00289",
+      "duplicate_of": "arxiv:2604.22758",
+      "title": "REDPARROT: Accelerating NL-to-DSL for Business Analytics via Query Semantic Caching"
+    },
+    {
+      "record": "doi:10.1109/satml64287.2025.00011",
+      "duplicate_of": "arxiv:2406.00799",
+      "title": "Get My Drift? Catching LLM Task Drift with Activation Deltas"
+    },
+    {
+      "record": "doi:10.1109/milcom64451.2025.11310651",
+      "duplicate_of": "arxiv:2509.21634",
+      "title": "MobiLLM: An Agentic AI Framework for Closed-Loop Threat Mitigation in 6G Open RANs"
+    },
+    {
+      "record": "doi:10.1109/syscon66367.2026.11503560",
+      "duplicate_of": "arxiv:2606.25622",
+      "title": "Probabilistic Agents in Deterministic Audits: Evaluating Multi-Agent Systems for Automated Audits Based on the German IT-Grundschutz"
+    },
+    {
+      "record": "doi:10.1145/3704137.3704181",
+      "duplicate_of": "arxiv:2410.12812",
+      "title": "Optimizing and Evaluating Enterprise Retrieval-Augmented Generation (RAG): A Content Design Perspective"
+    },
+    {
+      "record": "doi:10.1145/3626772.3657834",
+      "duplicate_of": "arxiv:2401.14887",
+      "title": "The Power of Noise: Redefining Retrieval for RAG Systems"
+    },
+    {
+      "record": "doi:10.1145/3746252.3761566",
+      "duplicate_of": "arxiv:2502.19596",
+      "title": "Reference-Aligned Retrieval-Augmented Question Answering over Heterogeneous Proprietary Documents"
+    },
+    {
+      "record": "doi:10.1145/3770855.3817962",
+      "duplicate_of": "arxiv:2601.08741",
+      "title": "From Rows to Reasoning: A Retrieval-Augmented Multimodal Framework for Spreadsheet Understanding"
+    },
+    {
+      "record": "doi:10.1145/3805712.3808493",
+      "duplicate_of": "arxiv:2603.23508",
+      "title": "Fast and Faithful: Real-Time Verification for Long-Document Retrieval-Augmented Generation Systems"
+    },
+    {
+      "record": "doi:10.1145/3746252.3761587",
+      "duplicate_of": "arxiv:2504.14493",
+      "title": "FinSage: A Multi-aspect RAG System for Financial Filings Question Answering"
+    },
+    {
+      "record": "doi:10.1145/3701551.3704126",
+      "duplicate_of": "arxiv:2412.10571",
+      "title": "Evidence Contextualization and Counterfactual Attribution for Conversational QA over Heterogeneous Data with RAG Systems"
+    },
+    {
+      "record": "doi:10.1145/3786335.3813145",
+      "duplicate_of": "arxiv:2605.05287",
+      "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use"
+    },
+    {
+      "record": "doi:10.1145/3832783.3834527",
+      "duplicate_of": "arxiv:2607.27374",
+      "title": "From Backlog Items to Security Guidance: Towards Continuous Security Compliance"
+    },
+    {
+      "record": "doi:10.1145/3773287",
+      "duplicate_of": "arxiv:2505.16590",
+      "title": "Larger Is Not Always Better: Exploring Small Open-Source Language Models in Logging Statement Generation"
+    },
+    {
+      "record": "doi:10.1145/3706599.3720226",
+      "duplicate_of": "arxiv:2503.22283",
+      "title": "BanglAssist: A Bengali-English Generative AI Chatbot for Code-Switching and Dialect-Handling in Customer Service"
+    },
+    {
+      "record": "doi:10.1145/3725337",
+      "duplicate_of": "arxiv:2504.09207",
+      "title": "Pneuma : Leveraging LLMs for Tabular Data Representation and Retrieval in an End-to-End System"
+    },
+    {
+      "record": "doi:10.1145/3793638.3793648",
+      "duplicate_of": "arxiv:2601.15528",
+      "title": "Securing LLM-as-a-Service for Small Businesses: An Industry Case Study of a Distributed Chatbot Deployment Platform"
+    },
+    {
+      "record": "doi:10.1145/3803546",
+      "duplicate_of": "arxiv:2407.04472",
+      "title": "EventChat: Implementation and user-centric evaluation of a large language model-driven conversational recommender system for exploring leisure events in an SME context"
+    },
+    {
+      "record": "doi:10.1145/3786632",
+      "duplicate_of": "arxiv:2511.20940",
+      "title": "Chatty-KG: A Multi-Agent AI System for On-Demand Conversational Question Answering over Knowledge Graphs"
+    },
+    {
+      "record": "doi:10.1145/3786181.3788726",
+      "duplicate_of": "arxiv:2512.05908",
+      "title": "Natural Language Summarization Enables Multi-Repository Bug Localization by LLMs in Microservice Architectures"
+    },
+    {
+      "record": "doi:10.1109/tifs.2026.3705326",
+      "duplicate_of": "arxiv:2510.02964",
+      "title": "External Data Extraction Attacks Against Retrieval-Augmented Large Language Models"
+    },
+    {
+      "record": "doi:10.1109/icmla66185.2025.00218",
+      "duplicate_of": "arxiv:2508.07569",
+      "title": "Retrieval-Augmented Multi-Agent System for Rapid Statement of Work Generation"
+    },
+    {
+      "record": "doi:10.1109/tmm.2025.3599070",
+      "duplicate_of": "arxiv:2410.14154",
+      "title": "RA-BLIP: Multimodal Adaptive Retrieval-Augmented Bootstrapping Language-Image Pre-Training"
+    },
+    {
+      "record": "doi:10.1109/icmla66185.2025.00011",
+      "duplicate_of": "arxiv:2602.07297",
+      "title": "Progressive Searching for Retrieval in RAG"
+    },
+    {
+      "record": "doi:10.1109/icmla61862.2024.00156",
+      "duplicate_of": "arxiv:2501.10534",
+      "title": "4bit-Quantization in Vector-Embedding for RAG"
+    },
+    {
+      "record": "doi:10.1109/icde65706.2026.00162",
+      "duplicate_of": "arxiv:2411.00744",
+      "title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG"
+    },
+    {
+      "record": "doi:10.1109/icaace69793.2026.11508939",
+      "duplicate_of": "arxiv:2603.00846",
+      "title": "Tiny-Critic RAG: Empowering Agentic Fallback with Parameter-Efficient Small Language Models"
+    },
+    {
+      "record": "doi:10.1109/cei66465.2025.11398480",
+      "duplicate_of": "arxiv:2511.19481",
+      "title": "Quality Analysis and Evaluation Prediction of RAG Retrieval Based on Machine Learning Algorithms"
+    },
+    {
+      "record": "doi:10.1109/cloud67622.2025.00052",
+      "duplicate_of": "arxiv:2505.21919",
+      "title": "Towards Efficient Key-Value Cache Management for Prefix Prefilling in LLM Inference"
+    },
+    {
+      "record": "doi:10.1109/bibm66473.2025.11356025",
+      "duplicate_of": "arxiv:2502.13233",
+      "title": "SearchRAG: Can Search Engines Be Helpful for LLM-Based Medical Question Answering?"
+    },
+    {
+      "record": "doi:10.1109/icde65706.2026.00221",
+      "duplicate_of": "arxiv:2510.27243",
+      "title": "Approximate Diverse k-Nearest Neighbor Search in Vector Database"
+    },
+    {
+      "record": "doi:10.1109/itw62417.2025.11240323",
+      "duplicate_of": "arxiv:2507.11894",
+      "title": "Context-Aware Search and Retrieval Over Erasure Channels"
+    },
+    {
+      "record": "doi:10.1109/ijcnn64981.2025.11227197",
+      "duplicate_of": "arxiv:2502.06921",
+      "title": "GraNNite: Enabling High-Performance Execution of Graph Neural Networks on Resource-Constrained Neural Processing Units"
+    },
+    {
+      "record": "doi:10.1109/iccvw69036.2025.00437",
+      "duplicate_of": "arxiv:2509.11054",
+      "title": "Rate-Distortion Limits for Multimodal Retrieval: Theory, Optimal Codes, and Finite-Sample Guarantees"
+    },
+    {
+      "record": "doi:10.1109/asew67777.2025.00021",
+      "duplicate_of": "arxiv:2510.06343",
+      "title": "Leveraging Large Language Models for Cybersecurity Risk Assessment - A Case from Forestry Cyber-Physical Systems"
+    },
+    {
+      "record": "doi:10.1145/3701228",
+      "duplicate_of": "arxiv:2401.17043",
+      "title": "CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented Generation of Large Language Models"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809650",
+      "duplicate_of": "arxiv:2604.11209",
+      "title": "Exploring Knowledge Conflicts for Faithful LLM Reasoning: Benchmark and Method"
+    },
+    {
+      "record": "doi:10.1145/3777378",
+      "duplicate_of": "arxiv:2408.08921",
+      "title": "Graph Retrieval-Augmented Generation: A Survey"
+    },
+    {
+      "record": "doi:10.1145/3726302.3730058",
+      "duplicate_of": "arxiv:2504.07717",
+      "title": "PR-Attack: Coordinated Prompt-RAG Attacks on Retrieval-Augmented Generation in Large Language Models via Bilevel Optimization"
+    },
+    {
+      "record": "doi:10.1145/3750555.3811900",
+      "duplicate_of": "arxiv:2504.03957",
+      "title": "Practical Poisoning Attacks against Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3611643.3616256",
+      "duplicate_of": "arxiv:2309.06057",
+      "title": "RAP-Gen: Retrieval-Augmented Patch Generation with CodeT5 for Automatic Program Repair"
+    },
+    {
+      "record": "doi:10.1145/3832208",
+      "duplicate_of": "arxiv:2607.18155",
+      "title": "Testing Retrieval-Augmented Generation Systems with Chunk Coverage"
+    },
+    {
+      "record": "doi:10.1145/3770855.3817813",
+      "duplicate_of": "arxiv:2606.04135",
+      "title": "Stationarity-Aware Retrieval-Augmented Time Series Forecasting"
+    },
+    {
+      "record": "doi:10.1145/3691620.3694987",
+      "duplicate_of": "arxiv:2409.15895",
+      "title": "Preference-Guided Refactored Tuning for Retrieval Augmented Code Generation"
+    },
+    {
+      "record": "doi:10.1145/3770855.3817630",
+      "duplicate_of": "arxiv:2605.28175",
+      "title": "Mixture-of-Experts Knowledge Graph Retrieval-Augmented Generation for Multi-Agent LLM-based Recommendation"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809947",
+      "duplicate_of": "arxiv:2604.24564",
+      "title": "MEG-RAG: Quantifying Multi-modal Evidence Grounding for Evidence Selection in RAG"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809687",
+      "duplicate_of": "arxiv:2604.27306",
+      "title": "NuggetIndex: Governed Atomic Retrieval for Maintainable RAG"
+    },
+    {
+      "record": "doi:10.1145/3696630.3728611",
+      "duplicate_of": "arxiv:2503.23421",
+      "title": "A Multi-agent Onboarding Assistant based on Large Language Models, Retrieval Augmented Generation, and Chain-of-Thought"
+    },
+    {
+      "record": "doi:10.1145/3786164.3788448",
+      "duplicate_of": "arxiv:2601.05721",
+      "title": "From Issues to Insights: RAG-based Explanation Generation from Software Engineering Artifacts"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755873",
+      "duplicate_of": "arxiv:2512.23483",
+      "title": "TV-RAG: A Temporal-aware and Semantic Entropy-Weighted Framework for Long Video Retrieval and Understanding"
+    },
+    {
+      "record": "doi:10.1145/3774905.3793140",
+      "duplicate_of": "arxiv:2601.17824",
+      "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants"
+    },
+    {
+      "record": "doi:10.1145/3627673.3680094",
+      "duplicate_of": "arxiv:2501.00223",
+      "title": "CancerKG.ORG - A Web-scale, Interactive, Verifiable Knowledge Graph-LLM Hybrid for Assisting with Optimal Cancer Treatment and Care"
+    },
+    {
+      "record": "doi:10.1145/3832136",
+      "duplicate_of": "arxiv:2601.23254",
+      "title": "Better Call Grep: Evaluating and Improving Grep-Like Lexical Retrieval for Repository-Level Code Completion"
+    },
+    {
+      "record": "doi:10.1145/3627673.3679722",
+      "duplicate_of": "arxiv:2403.19631",
+      "title": "Retrieval-enhanced Knowledge Editing in Language Models for Multi-Hop Question Answering"
+    },
+    {
+      "record": "doi:10.1109/iccv51701.2025.01620",
+      "duplicate_of": "arxiv:2412.02592",
+      "title": "OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1109/ijcnn64981.2025.11229186",
+      "duplicate_of": "arxiv:2504.14011",
+      "title": "Fashion-RAG: Multimodal Fashion Image Editing via Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1109/iccworkshops67674.2025.11162457",
+      "duplicate_of": "arxiv:2503.07670",
+      "title": "Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless Environments"
+    },
+    {
+      "record": "doi:10.1109/embc58623.2025.11254056",
+      "duplicate_of": "arxiv:2511.01892",
+      "title": "Retrieval-Augmented Multimodal Depression Detection"
+    },
+    {
+      "record": "doi:10.1109/icstw72326.2026.00055",
+      "duplicate_of": "arxiv:2510.08945",
+      "title": "FATHOMS-RAG: A Framework for the Assessment of Thinking and Observation in Multimodal Systems that use Retrieval Augmented Generation"
+    },
+    {
+      "record": "doi:10.1109/ijcnn64981.2025.11228391",
+      "duplicate_of": "arxiv:2312.01714",
+      "title": "Retrieval-Augmented Multi-Modal Chain-of-Thoughts Reasoning for Large Language Models"
+    },
+    {
+      "record": "doi:10.1109/cvprw63382.2024.00188",
+      "duplicate_of": "arxiv:2404.15406",
+      "title": "Wiki-LLaVA: Hierarchical Retrieval-Augmented Generation for Multimodal LLMs"
+    },
+    {
+      "record": "doi:10.1109/mcom.001.2500111",
+      "duplicate_of": "arxiv:2502.18763",
+      "title": "CommGPT: A Graph and Retrieval-Augmented Multimodal Communication Foundation Model"
+    },
+    {
+      "record": "doi:10.1109/icassp55912.2026.11462642",
+      "duplicate_of": "arxiv:2509.07538",
+      "title": "TextlessRAG: End-to-End Visual Document RAG by Speech without Text"
+    },
+    {
+      "record": "doi:10.1109/mcom.001.2500293",
+      "duplicate_of": "arxiv:2505.23275",
+      "title": "Wireless Agentic AI with Retrieval-Augmented Multimodal Semantic Perception"
+    },
+    {
+      "record": "doi:10.1109/cvpr52729.2023.02238",
+      "duplicate_of": "arxiv:2212.05221",
+      "title": "Reveal: Retrieval-Augmented Visual-Language Pre-Training with Multi-Source Multimodal Knowledge Memory"
+    },
+    {
+      "record": "doi:10.1109/cvpr52734.2025.01355",
+      "duplicate_of": "arxiv:2410.13360",
+      "title": "RAP: Retrieval-Augmented Personalization for Multimodal Large Language Models"
+    },
+    {
+      "record": "doi:10.1109/mgrs.2025.3645852",
+      "duplicate_of": "arxiv:2504.04988",
+      "title": "Remote Sensing Retrieval-Augmented Generation: Bridging remote sensing imagery and comprehensive knowledge with a multimodal dataset and retrieval-augmented generation model"
+    },
+    {
+      "record": "doi:10.1109/tdsc.2025.3620832",
+      "duplicate_of": "arxiv:2410.15267",
+      "title": "When Machine Unlearning Meets Retrieval-Augmented Generation (RAG): Keep Secret or Forget Knowledge?"
+    },
+    {
+      "record": "doi:10.1109/iros60139.2025.11246449",
+      "duplicate_of": "arxiv:2506.18856",
+      "title": "RAG-6DPose: Retrieval-Augmented 6D Pose Estimation via Leveraging CAD as Knowledge Base"
+    },
+    {
+      "record": "doi:10.1109/mcom.001.2500261",
+      "duplicate_of": "arxiv:2410.18104",
+      "title": "ENWAR: A RAG-Empowered Multi-Modal LLM Framework for Wireless Environment Perception"
+    },
+    {
+      "record": "doi:10.1109/wacv61041.2025.00244",
+      "duplicate_of": "arxiv:2411.08715",
+      "title": "Retrieval Augmented Recipe Generation"
+    },
+    {
+      "record": "doi:10.1109/cvpr52733.2024.01703",
+      "duplicate_of": "arxiv:2404.11699",
+      "title": "Retrieval-Augmented Embodied Agents"
+    },
+    {
+      "record": "doi:10.1109/bigdata66926.2025.11401037",
+      "duplicate_of": "arxiv:2512.16802",
+      "title": "Exploration of Augmentation Strategies in Multi-Modal Retrieval-Augmented Generation for the Biomedical Domain*: *A Case Study Evaluating Question Answering in Glycobiology"
+    },
+    {
+      "record": "doi:10.1109/cvpr52733.2024.01284",
+      "duplicate_of": "arxiv:2401.00789",
+      "title": "Retrieval-Augmented Egocentric Video Captioning"
+    },
+    {
+      "record": "doi:10.1109/asp-dac66049.2026.11420505",
+      "duplicate_of": "arxiv:2508.08137",
+      "title": "MuaLLM: A Multimodal Large Language Model Agent for Circuit Design Assistance with Hybrid Contextual Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1109/cscwd68734.2026.11582454",
+      "duplicate_of": "arxiv:2608.11030",
+      "title": "Self-Knowledge Retrieval Augmented Generation Framework for Patent Matching"
+    },
+    {
+      "record": "doi:10.1109/iccit68739.2025.11490128",
+      "duplicate_of": "arxiv:2607.01115",
+      "title": "Towards Developing a Multimodal Chat Assistant for University Stakeholders: RAG-Based Approach"
+    },
+    {
+      "record": "doi:10.1109/icspc68261.2025.11326535",
+      "duplicate_of": "arxiv:2510.15418",
+      "title": "Fine-Tuning MedGemma for Clinical Captioning to Enhance Multimodal RAG over Malaysia CPGs"
+    },
+    {
+      "record": "doi:10.1109/cvpr52733.2024.00455",
+      "duplicate_of": "arxiv:2401.01952",
+      "title": "Instruct-Imagen: Image Generation with Multi-modal Instruction"
+    },
+    {
+      "record": "doi:10.1109/jiot.2024.3521425",
+      "duplicate_of": "arxiv:2407.00978",
+      "title": "Hybrid RAG-Empowered Multimodal LLM for Secure Data Management in Internet of Medical Things: A Diffusion-Based Contract Approach"
+    },
+    {
+      "record": "doi:10.1109/icra55743.2025.11128818",
+      "duplicate_of": "arxiv:2503.12663",
+      "title": "Logic-RAG: Augmenting Large Multimodal Models with Visual-Spatial Knowledge for Road Scene Understanding"
+    },
+    {
+      "record": "doi:10.1109/lra.2026.3653281",
+      "duplicate_of": "arxiv:2512.18987",
+      "title": "Affordance RAG: Hierarchical Multimodal Retrieval With Affordance-Aware Embodied Memory for Mobile Manipulation"
+    },
+    {
+      "record": "doi:10.1109/wacv61042.2026.00281",
+      "duplicate_of": "arxiv:2505.03173",
+      "title": "RAVU: Retrieval Augmented Video Understanding with Compositional Reasoning over Graph"
+    },
+    {
+      "record": "doi:10.1109/qpain69676.2026.11546653",
+      "duplicate_of": "arxiv:2510.18355",
+      "title": "KrishokBondhu: A Retrieval-Augmented Voice-Based Agricultural Advisory Call Center for Bengali Farmers"
+    },
+    {
+      "record": "doi:10.1109/mipr62202.2024.00042",
+      "duplicate_of": "arxiv:2405.20245",
+      "title": "Retrieval Augmented Structured Generation: Business Document Information Extraction as Tool Use"
+    },
+    {
+      "record": "doi:10.1109/icassp49660.2025.10890325",
+      "duplicate_of": "arxiv:2410.09472",
+      "title": "DRCap: Decoding CLAP Latents with Retrieval-Augmented Generation for Zero-shot Audio Captioning"
+    },
+    {
+      "record": "doi:10.1109/mnet.2024.3427313",
+      "duplicate_of": "arxiv:2402.01748",
+      "title": "Large Multi-Modal Models (LMMs) as Universal Foundation Models for AI-Native Wireless Systems"
+    },
+    {
+      "record": "doi:10.1109/tcss.2026.3669799",
+      "duplicate_of": "arxiv:2504.10166",
+      "title": "Fact-Checking With Contextual Narratives: Leveraging Retrieval-Augmented LLMs for Social Media Analysis"
+    },
+    {
+      "record": "doi:10.1109/iccvw69036.2025.00430",
+      "duplicate_of": "arxiv:2508.06496",
+      "title": "Med-GRIM: Enhanced Zero-Shot Medical VQA Using Prompt-Embedded Multimodal Graph RAG"
+    },
+    {
+      "record": "doi:10.1109/tmm.2026.3673470",
+      "duplicate_of": "arxiv:2412.11050",
+      "title": "RAC3: Retrieval-Augmented Corner Case Comprehension for Autonomous Driving With Vision-Language Models"
+    },
+    {
+      "record": "doi:10.1109/icassp55912.2026.11462104",
+      "duplicate_of": "arxiv:2601.18356",
+      "title": "Making Medical Vision-Language Models Think Causally Across Modalities with Retrieval-Augmented Cross-Modal Reasoning"
+    },
+    {
+      "record": "doi:10.1109/ieeeconf67917.2025.11443677",
+      "duplicate_of": "arxiv:2512.10098",
+      "title": "MedXAI: A Retrieval-Augmented and Self-Verifying Framework for Knowledge-Guided Medical Image Analysis"
+    },
+    {
+      "record": "doi:10.1109/kst65016.2025.11003289",
+      "duplicate_of": "arxiv:2505.04175",
+      "title": "DOTA: Deformable Optimized Transformer Architecture for End-to-End Text Recognition with Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1109/ase63991.2025.00275",
+      "duplicate_of": "arxiv:2508.06888",
+      "title": "Multi-Modal Requirements Data-based Acceptance Criteria Generation using LLMs"
+    },
+    {
+      "record": "doi:10.1109/ase63991.2025.00373",
+      "duplicate_of": "arxiv:2508.03298",
+      "title": "GUI-ReRank: Enhancing GUI Retrieval with Multi-Modal LLM-based Reranking"
+    },
+    {
+      "record": "doi:10.1109/tsg.2026.3656697",
+      "duplicate_of": "arxiv:2601.13476",
+      "title": "A Unified Variational Imputation Framework for Electric Vehicle Charging Data Using Retrieval-Augmented Language Model"
+    },
+    {
+      "record": "doi:10.1109/cbmi62980.2024.10859209",
+      "duplicate_of": "arxiv:2406.01273",
+      "title": "SoccerRAG: Multimodal Soccer Information Retrieval via Natural Queries"
+    },
+    {
+      "record": "doi:10.1109/cvpr52734.2025.00381",
+      "duplicate_of": "arxiv:2507.14675",
+      "title": "Docopilot: Improving Multimodal Models for Document-Level Understanding"
+    },
+    {
+      "record": "doi:10.1109/ro-man63969.2025.11217707",
+      "duplicate_of": "arxiv:2504.01700",
+      "title": "Reasoning LLMs for User-Aware Multimodal Conversational Agents"
+    },
+    {
+      "record": "doi:10.1109/bigdata62323.2024.10825668",
+      "duplicate_of": "arxiv:2412.16412",
+      "title": "InfoTech Assistant: A Multimodal Conversational Agent for InfoTechnology Web Portal Queries"
+    },
+    {
+      "record": "doi:10.1109/tpami.2026.3729293",
+      "duplicate_of": "arxiv:2509.08897",
+      "title": "Recurrence Meets Transformers for Universal Multimodal Retrieval"
+    },
+    {
+      "record": "doi:10.1109/gaclm67198.2025.11232357",
+      "duplicate_of": "arxiv:2506.21596",
+      "title": "Evaluating Multimodal Large Language Models on Educational Textbook Question Answering"
+    },
+    {
+      "record": "doi:10.1109/icme59968.2025.11210229",
+      "duplicate_of": "arxiv:2412.20725",
+      "title": "Dialogue Director: Bridging the Gap in Dialogue Visualization for Multimodal Storytelling"
+    },
+    {
+      "record": "doi:10.1109/girst67753.2025.11382141",
+      "duplicate_of": "arxiv:2509.17544",
+      "title": "A Multimodal Conversational Assistant for the Characterization of Agricultural Plots from Geospatial Open Data"
+    },
+    {
+      "record": "doi:10.1109/icmi65310.2025.11139833",
+      "duplicate_of": "arxiv:2506.12232",
+      "title": "Zero-Shot Scene Understanding with Multimodal Large Language Models for Automated Vehicles"
+    },
+    {
+      "record": "doi:10.1109/jiot.2026.3697404",
+      "duplicate_of": "arxiv:2510.21093",
+      "title": "MedAlign: A Synergistic Framework of Multimodal Preference Optimization and Federated Metacognitive Reasoning"
+    },
+    {
+      "record": "doi:10.1109/icdmw69685.2025.00178",
+      "duplicate_of": "arxiv:2601.02365",
+      "title": "FUSE: Failure-aware Usage of Subagent Evidence for MultiModal Search and Recommendation"
+    },
+    {
+      "record": "doi:10.1109/tlt.2026.3693864",
+      "duplicate_of": "arxiv:2605.17468",
+      "title": "An Interpretable Closed-Loop Intelligent Tutoring System for Multimodal Affective Feedback in Asynchronous Presentation Training"
+    },
+    {
+      "record": "doi:10.1109/cvpr52734.2025.02311",
+      "duplicate_of": "arxiv:2411.16740",
+      "title": "Document Haystacks: Vision-Language Reasoning Over Piles of 1000+ Documents"
+    },
+    {
+      "record": "doi:10.1109/cbmi62980.2024.10859233",
+      "duplicate_of": "arxiv:2406.01280",
+      "title": "Demo: Soccer Information Retrieval Via Natural Queries using SoccerRAG"
+    },
+    {
+      "record": "doi:10.1109/wacvw65960.2025.00111",
+      "duplicate_of": "arxiv:2501.03535",
+      "title": "SenseRAG: Constructing Environmental Knowledge Bases with Proactive Querying for LLM-Based Autonomous Driving"
+    },
+    {
+      "record": "doi:10.1109/southeastcon63549.2026.11476130",
+      "duplicate_of": "arxiv:2604.13101",
+      "title": "Building Trust in the Skies: A Knowledge-Grounded LLM-Based Framework for Aviation Safety"
+    },
+    {
+      "record": "doi:10.1109/icdmw69685.2025.00308",
+      "duplicate_of": "arxiv:2510.16980",
+      "title": "Towards Interpretable and Trustworthy Time Series Reasoning: A BlueSky Vision"
+    },
+    {
+      "record": "doi:10.1109/icassp55912.2026.11464208",
+      "duplicate_of": "arxiv:2510.01553",
+      "title": "IODRESEARCH: Deep Research on Private Heterogeneous Data via the Internet of Data"
+    },
+    {
+      "record": "doi:10.1109/iccvw69036.2025.00398",
+      "duplicate_of": "arxiv:2508.08508",
+      "title": "Re: Verse - Can Your VLM Read a Manga?"
+    },
+    {
+      "record": "doi:10.1109/comst.2026.3660844",
+      "duplicate_of": "arxiv:2505.03556",
+      "title": "A Comprehensive Survey of Large AI Models for Future Communications: Foundations, Applications, and Challenges"
+    },
+    {
+      "record": "doi:10.1109/mcomstd.2025.3605634",
+      "duplicate_of": "arxiv:2503.22064",
+      "title": "Multi-Task Semantic Communications via Large Models"
+    },
+    {
+      "record": "doi:10.1109/jbhi.2026.3710754",
+      "duplicate_of": "arxiv:2511.06752",
+      "title": "Med-SORA: Symptom to Organ Reasoning in Abdomen CT Images"
+    },
+    {
+      "record": "doi:10.1109/icassp49660.2025.10889814",
+      "duplicate_of": "arxiv:2412.20619",
+      "title": "Audiopedia: Audio QA with Knowledge"
+    },
+    {
+      "record": "doi:10.1109/fie63693.2025.11328158",
+      "duplicate_of": "arxiv:2509.13326",
+      "title": "LLM Chatbot-Creation Approaches"
+    },
+    {
+      "record": "doi:10.1145/3746027.3754761",
+      "duplicate_of": "arxiv:2504.12330",
+      "title": "HM-RAG: Hierarchical Multi-Agent Multimodal Retrieval Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755625",
+      "duplicate_of": "arxiv:2502.17297",
+      "title": "Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809680",
+      "duplicate_of": "arxiv:2508.05318",
+      "title": "mKG-RAG: Leveraging Multimodal Knowledge Graphs in Retrieval-Augmented Generation for Knowledge-intensive VQA"
+    },
+    {
+      "record": "doi:10.1145/3581783.3611830",
+      "duplicate_of": "arxiv:2303.00534",
+      "title": "RAMM: Retrieval-augmented Biomedical Visual Question Answering with Multi-modal Pre-training"
+    },
+    {
+      "record": "doi:10.1145/3805713.3820431",
+      "duplicate_of": "arxiv:2605.29956",
+      "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3805622.3810568",
+      "duplicate_of": "arxiv:2604.23584",
+      "title": "Identity-Decoupled Anonymization for Visual Evidence in Multi-modal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3726302.3730288",
+      "duplicate_of": "arxiv:2502.04176",
+      "title": "MRAMG-Bench: A Comprehensive Benchmark for Advancing Multimodal Retrieval-Augmented Multimodal Generation"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809605",
+      "duplicate_of": "arxiv:2604.18112",
+      "title": "Retrieval-Augmented Multimodal Model for Fake News Detection"
+    },
+    {
+      "record": "doi:10.1145/3626772.3657673",
+      "duplicate_of": "arxiv:2403.19584",
+      "title": "Img2Loc: Revisiting Image Geolocalization using Multi-modality Foundation Models and Image-based Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3627673.3679582",
+      "duplicate_of": "arxiv:2406.00036",
+      "title": "EMERGE: Enhancing Multimodal Electronic Health Records Predictive Modeling with Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3818681",
+      "duplicate_of": "arxiv:2506.20817",
+      "title": "RAG-VisualRec: An Open Resource for Vision- and Text-Enhanced Retrieval-Augmented Generation in Recommendation"
+    },
+    {
+      "record": "doi:10.1145/3770855.3817544",
+      "duplicate_of": "arxiv:2510.26160",
+      "title": "CRAG-MM: Multi-modal Multi-turn Comprehensive RAG Benchmark"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755390",
+      "duplicate_of": "arxiv:2604.16313",
+      "title": "MARA: A Multimodal Adaptive Retrieval-Augmented Framework for Document Question Answering"
+    },
+    {
+      "record": "doi:10.1145/3805712.3808615",
+      "duplicate_of": "arxiv:2502.16636",
+      "title": "Visual-RAG: Benchmarking Text-to-Image Retrieval Augmented Generation for Visual Knowledge Intensive Queries"
+    },
+    {
+      "record": "doi:10.1145/3767695.3769486",
+      "duplicate_of": "arxiv:2501.15470",
+      "title": "CogPlanner: Unveiling the Potential of Agentic Multimodal Retrieval Augmented Generation with Planning"
+    },
+    {
+      "record": "doi:10.1145/3721146.3721958",
+      "duplicate_of": "arxiv:2505.21419",
+      "title": "Diagnosing and Resolving Cloud Platform Instability with Multi-modal RAG LLMs"
+    },
+    {
+      "record": "doi:10.1145/3549555.3549585",
+      "duplicate_of": "arxiv:2207.13162",
+      "title": "Retrieval-Augmented Transformer for Image Captioning"
+    },
+    {
+      "record": "doi:10.1145/3746252.3760826",
+      "duplicate_of": "arxiv:2508.09170",
+      "title": "Multimodal RAG Enhanced Visual Description"
+    },
+    {
+      "record": "doi:10.1145/3770854.3780277",
+      "duplicate_of": "arxiv:2511.19257",
+      "title": "Medusa: Cross-Modal Transferable Adversarial Attacks on Multimodal Medical Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3774904.3792795",
+      "duplicate_of": "arxiv:2510.10828",
+      "title": "VeritasFi : An Adaptable, Multi-tiered RAG Framework for Multi-modal Financial Question Answering"
+    },
+    {
+      "record": "doi:10.1145/3770855.3818997",
+      "duplicate_of": "arxiv:2604.24029",
+      "title": "DeepTaxon: An Interpretable Retrieval-Augmented Multimodal Framework for Unified Species Identification and Discovery"
+    },
+    {
+      "record": "doi:10.1145/3774904.3792726",
+      "duplicate_of": "arxiv:2510.09266",
+      "title": "CFVBench: A Comprehensive Video Benchmark for Fine-grained Multimodal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3774905.3796483",
+      "duplicate_of": "arxiv:2507.09174",
+      "title": "RAMA: Retrieval-Augmented Multi-Agent Framework for Misinformation Detection in Multimodal Fact-Checking"
+    },
+    {
+      "record": "doi:10.1145/3701716.3715313",
+      "duplicate_of": "arxiv:2405.13576",
+      "title": "FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research"
+    },
+    {
+      "record": "doi:10.1145/3663667",
+      "duplicate_of": "arxiv:2405.13127",
+      "title": "Towards Retrieval-Augmented Architectures for Image Captioning"
+    },
+    {
+      "record": "doi:10.1145/3770854.3783944",
+      "duplicate_of": "arxiv:2502.01549",
+      "title": "VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809692",
+      "duplicate_of": "arxiv:2604.27600",
+      "title": "Purifying Multimodal Retrieval: Fragment-Level Evidence Selection for RAG"
+    },
+    {
+      "record": "doi:10.1145/3732775.3733586",
+      "duplicate_of": "arxiv:2505.04846",
+      "title": "HiPerRAG: High-Performance Retrieval Augmented Generation for Scientific Insights"
+    },
+    {
+      "record": "doi:10.1145/3770855.3817570",
+      "duplicate_of": "arxiv:2606.26458",
+      "title": "MKG-RAG-Bench: Benchmarking Retrieval in Multimodal Knowledge Graph–Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3811238.3811871",
+      "duplicate_of": "arxiv:2603.21925",
+      "title": "Guideline-grounded retrieval-augmented generation for ophthalmic clinical decision support"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755673",
+      "duplicate_of": "arxiv:2505.06020",
+      "title": "ArtRAG: Retrieval-Augmented Generation with Structured Context for Visual Art Understanding"
+    },
+    {
+      "record": "doi:10.1145/3786304.3787920",
+      "duplicate_of": "arxiv:2510.25718",
+      "title": "Retrieval-Augmented Search for Large-Scale Map Collections with ColPali"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755444",
+      "duplicate_of": "arxiv:2507.04377",
+      "title": "Multi-Modal Semantic Parsing for the Interpretation of Tombstone Inscriptions"
+    },
+    {
+      "record": "doi:10.1145/3765416.3765463",
+      "duplicate_of": "arxiv:2509.09721",
+      "title": "A Multimodal RAG Framework for Housing Damage Assessment: Collaborative Optimization of Image Encoding and Policy Vector Retrieval"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755868",
+      "duplicate_of": "arxiv:2507.21585",
+      "title": "SafeDriveRAG: Towards Safe Autonomous Driving with Knowledge Graph-based Retrieval-Augmented Generation"
+    },
+    {
+      "record": "doi:10.1145/3704268.3742698",
+      "duplicate_of": "arxiv:2505.05666",
+      "title": "Lost in OCR Translation? Vision-Based Approaches to Robust Document Retrieval"
+    },
+    {
+      "record": "doi:10.1145/3805713.3820424",
+      "duplicate_of": "arxiv:2603.08819",
+      "title": "Beyond Relevance: On the Relationship Between Retrieval and RAG Information Coverage"
+    },
+    {
+      "record": "doi:10.1145/3805622.3810723",
+      "duplicate_of": "arxiv:2509.22378",
+      "title": "Zero-Effort Image-to-Music Generation: An Interpretable RAG-based VLM Approach"
+    },
+    {
+      "record": "doi:10.1145/3744916.3773232",
+      "duplicate_of": "arxiv:2502.02025",
+      "title": "SAFE: Harnessing LLM for Scenario-Driven ADS Testing from Multimodal Crash Data"
+    },
+    {
+      "record": "doi:10.1145/3774905.3793110",
+      "duplicate_of": "arxiv:2511.10902",
+      "title": "Multimodal Peer Review Simulation with Actionable To-Do Recommendations for Community-Aware Manuscript Revisions"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809588",
+      "duplicate_of": "arxiv:2505.22095",
+      "title": "Mixture-of-Retrieval Experts for Reasoning-Guided Multimodal Knowledge Exploitation"
+    },
+    {
+      "record": "doi:10.1145/3776591.3837060",
+      "duplicate_of": "arxiv:2608.27121",
+      "title": "How AI Experiences Art: Emergent Aesthetic Structure in a Self-Supervised Multimodal Embedding Space"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809648",
+      "duplicate_of": "arxiv:2601.15820",
+      "title": "ExDR: Explanation-driven Dynamic Retrieval Enhancement for Multimodal Fake News Detection"
+    },
+    {
+      "record": "doi:10.1145/3746027.3758225",
+      "duplicate_of": "arxiv:2507.18932",
+      "title": "MMESGBench: Pioneering Multimodal Understanding and Complex Reasoning Benchmark for ESG Tasks"
+    },
+    {
+      "record": "doi:10.1145/3746027.3754951",
+      "duplicate_of": "arxiv:2509.12653",
+      "title": "Beyond Artificial Misalignment: Detecting and Grounding Semantic-Coordinated Multimodal Manipulations"
+    },
+    {
+      "record": "doi:10.1145/3774904.3792229",
+      "duplicate_of": "arxiv:2601.18203",
+      "title": "DMAP: Human-Aligned Structural Document Map for Multimodal Document Understanding"
+    },
+    {
+      "record": "doi:10.1145/3746252.3761576",
+      "duplicate_of": "arxiv:2509.19952",
+      "title": "When Words Can't Capture It All: Towards Video-Based User Complaint Text Generation with Multimodal Video Complaint Dataset"
+    },
+    {
+      "record": "doi:10.1145/3805712.3809936",
+      "duplicate_of": "arxiv:2604.25390",
+      "title": "GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching"
+    },
+    {
+      "record": "doi:10.1145/3805712.3808544",
+      "duplicate_of": "arxiv:2605.00505",
+      "title": "LLM-Oriented Information Retrieval: A Denoising-First Perspective"
+    },
+    {
+      "record": "doi:10.1145/3749474",
+      "duplicate_of": "arxiv:2507.05461",
+      "title": "GLOSS: Group of LLMs for Open-ended Sensemaking of Passive Sensing Data for Health and Wellbeing"
+    },
+    {
+      "record": "doi:10.1145/3746027.3755189",
+      "duplicate_of": "arxiv:2509.03536",
+      "title": "PG-Agent: An Agent Powered by Page Graph"
+    },
+    {
+      "record": "doi:10.1145/3786304.3787948",
+      "duplicate_of": "arxiv:2601.09937",
+      "title": "From SERPs to Agents: A Platform for Comparative Studies of Information Interaction"
+    },
+    {
+      "record": "doi:10.1145/3639856.3639895",
+      "duplicate_of": "arxiv:2310.10760",
+      "title": "Towards reducing hallucination in extracting information from financial reports using Large Language Models"
+    },
+    {
+      "record": "doi:10.1145/3802008",
+      "duplicate_of": "arxiv:2603.13774",
+      "title": "AgenticScholar: Agentic Data Management with Pipeline Orchestration for Scholarly Corpora"
+    },
+    {
+      "record": "doi:10.1145/3701716.3715518",
+      "duplicate_of": "arxiv:2409.12739",
+      "title": "Edu-Values: Towards Evaluating the Chinese Education Values of Large Language Models"
+    },
+    {
+      "record": "doi:10.1145/3797883",
+      "duplicate_of": "arxiv:2502.01317",
+      "title": "DietGlance : Dietary Monitoring and Personalized Analysis at a Glance with Knowledge-Empowered AI Assistant"
+    },
+    {
+      "record": "doi:10.1145/3742413.3789154",
+      "duplicate_of": "arxiv:2601.18759",
+      "title": "UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing"
+    },
+    {
+      "record": "doi:10.1145/3776734.3794571",
+      "duplicate_of": "arxiv:2601.13801",
+      "title": "HoverAI: An Embodied Aerial Agent for Natural Human-Drone Interaction"
+    }
+  ]
+}

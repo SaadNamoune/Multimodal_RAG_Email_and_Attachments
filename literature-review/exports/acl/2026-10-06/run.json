@@ -1,0 +1,919 @@
+{
+  "database": "ACL Anthology",
+  "interface": "local filter of anthology+abstracts.bib.gz (scripts/acl_filter.py)",
+  "run_date": "2026-10-06",
+  "source_file": "anthology+abstracts.bib.gz",
+  "source_sha256": "d9620aa9651f86bfb5177b3825adda20b18621239a696062d15c8befb1c7573e",
+  "fields": "title, abstract",
+  "limits": "year >= 2020; entry types inproceedings, article",
+  "matching": "case-insensitive, whole words, hyphen and space alike, optional plural s",
+  "entries_considered": 68810,
+  "searches": {
+    "S0": {
+      "blocks": [
+        "RAG",
+        "EMAIL",
+        "ATTACHMENT"
+      ],
+      "hits": 1
+    },
+    "S1": {
+      "blocks": [
+        "RAG",
+        "CONTEXT"
+      ],
+      "hits": 40
+    },
+    "S2": {
+      "blocks": [
+        "RAG",
+        "HYGIENE"
+      ],
+      "hits": 90
+    },
+    "S3": {
+      "blocks": [
+        "RAG",
+        "MODALITY"
+      ],
+      "hits": 151
+    }
+  },
+  "unique_records": 273,
+  "matched_on_title_only": 2,
+  "compared_with": [
+    "exports/arxiv/2026-10-06/records.json"
+  ],
+  "duplicates_of_other_databases": [
+    {
+      "record": "acl:2026.stereacult-1.3",
+      "duplicate_of": "arxiv:2608.20351",
+      "title": "Exploratory As-Analyzed No-Detection of Culturally-Marked Predicate-Triggered PII Amplification in a Synthetic-English RAG Probe: A Predicate-Resource-Confounded Audit"
+    },
+    {
+      "record": "acl:2026.sigturk-1.16",
+      "duplicate_of": "arxiv:2602.03693",
+      "title": "OCRTurk: A Comprehensive OCR Benchmark for Turkish"
+    },
+    {
+      "record": "acl:2026.nslp-1.16",
+      "duplicate_of": "arxiv:2510.22272",
+      "title": "From Slides to Chatbots: Enhancing Large Language Models with University Course Materials"
+    },
+    {
+      "record": "acl:2026.magmar-main.6",
+      "duplicate_of": "arxiv:2606.17449",
+      "title": "MODE-RAG: Manifold Outlier Diagnosis and Energy-based Retrieval-Augmented Generation Evaluation"
+    },
+    {
+      "record": "acl:2026.magmar-main.12",
+      "duplicate_of": "arxiv:2606.07924",
+      "title": "Decoupling Semantics and Logic: A Training-Free Coarse-to-Fine Pipeline for Video Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.lrec-1.333",
+      "duplicate_of": "arxiv:2512.05430",
+      "title": "ArtistMus: A Globally Diverse, Artist-Centric Benchmark for Retrieval-Augmented Music Question Answering"
+    },
+    {
+      "record": "acl:2026.llms4ssh-1.6",
+      "duplicate_of": "arxiv:2603.28108",
+      "title": "Quid est VERITAS? A Modular Framework for Archival Document Analysis"
+    },
+    {
+      "record": "acl:2026.knowfm-1.14",
+      "duplicate_of": "arxiv:2606.31156",
+      "title": "One Retrieval to Cover Them All: Co-occurrence-Aware Knowledge Base Reorganization for Session-Level RAG"
+    },
+    {
+      "record": "acl:2026.findings-eacl.167",
+      "duplicate_of": "arxiv:2508.03110",
+      "title": "Token-Level Precise Attack on RAG: Searching for the Best Alternatives to Mislead Generation"
+    },
+    {
+      "record": "acl:2026.findings-eacl.295",
+      "duplicate_of": "arxiv:2507.19666",
+      "title": "RoD-TAL: A Benchmark for Answering Questions in Romanian Driving License Exams"
+    },
+    {
+      "record": "acl:2026.findings-acl.3",
+      "duplicate_of": "arxiv:2504.00939",
+      "title": "WikiVideo: Article Generation from Multiple Videos"
+    },
+    {
+      "record": "acl:2026.findings-acl.176",
+      "duplicate_of": "arxiv:2508.12778",
+      "title": "HeteroRAG: A Heterogeneous Retrieval-Augmented Generation Framework for Medical Vision Language Tasks"
+    },
+    {
+      "record": "acl:2026.findings-acl.223",
+      "duplicate_of": "arxiv:2505.12884",
+      "title": "TinyAlign: Boosting Lightweight Vision-Language Models by Mitigating Modal Alignment Bottlenecks"
+    },
+    {
+      "record": "acl:2026.findings-acl.247",
+      "duplicate_of": "arxiv:2504.07415",
+      "title": "RA-RRG: Multimodal Retrieval-Augmented Radiology Report Generation with Key Phrase Extraction"
+    },
+    {
+      "record": "acl:2026.findings-acl.268",
+      "duplicate_of": "arxiv:2604.05818",
+      "title": "WikiSeeker: Rethinking the Role of Vision-Language Models in Knowledge-Based Visual Question Answering"
+    },
+    {
+      "record": "acl:2026.findings-acl.409",
+      "duplicate_of": "arxiv:2602.13235",
+      "title": "Lang2Act: Fine-Grained Visual Reasoning through Self-Emergent Linguistic Toolchains"
+    },
+    {
+      "record": "acl:2026.findings-acl.444",
+      "duplicate_of": "arxiv:2601.17644",
+      "title": "Do Multimodal RAG Systems Leak Data? A Comprehensive Evaluation of Membership Inference and Image Caption Retrieval Attacks"
+    },
+    {
+      "record": "acl:2026.findings-acl.509",
+      "duplicate_of": "arxiv:2605.15019",
+      "title": "From Scenes to Elements: Multi-Granularity Evidence Retrieval for Verifiable Multimodal RAG"
+    },
+    {
+      "record": "acl:2026.findings-acl.510",
+      "duplicate_of": "arxiv:2604.05268",
+      "title": "Region-R1: Reinforcing Query-Side Region Cropping for Multi-Modal Re-Ranking"
+    },
+    {
+      "record": "acl:2026.findings-acl.512",
+      "duplicate_of": "arxiv:2508.17394",
+      "title": "LVLM-Aware Multimodal Retrieval for RAG-Based Medical Diagnosis with General-Purpose Models"
+    },
+    {
+      "record": "acl:2026.findings-acl.546",
+      "duplicate_of": "arxiv:2604.05096",
+      "title": "RAG or Learning? Understanding the Limits of LLM Adaptation under Continuous Knowledge Drift in the Real World"
+    },
+    {
+      "record": "acl:2026.findings-acl.563",
+      "duplicate_of": "arxiv:2606.23881",
+      "title": "Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification"
+    },
+    {
+      "record": "acl:2026.findings-acl.652",
+      "duplicate_of": "arxiv:2507.09861",
+      "title": "A Survey on MLLM-based Visually Rich Document Understanding: Methods, Challenges, and Emerging Trends"
+    },
+    {
+      "record": "acl:2026.findings-acl.700",
+      "duplicate_of": "arxiv:2601.14896",
+      "title": "Language-Coupled Reinforcement Learning for Multilingual Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.findings-acl.775",
+      "duplicate_of": "arxiv:2605.14581",
+      "title": "A Picture is Worth a Thousand Words? An Empirical Study of Aggregation Strategies for Visual Financial Document Retrieval"
+    },
+    {
+      "record": "acl:2026.findings-acl.807",
+      "duplicate_of": "arxiv:2604.05424",
+      "title": "PRISM-MCTS: Learning from Reasoning Trajectories with Metacognitive Reflection"
+    },
+    {
+      "record": "acl:2026.findings-acl.960",
+      "duplicate_of": "arxiv:2510.11217",
+      "title": "Domain-Specific Data Generation Framework for RAG Adaptation"
+    },
+    {
+      "record": "acl:2026.findings-acl.1052",
+      "duplicate_of": "arxiv:2604.10734",
+      "title": "Self-Correcting RAG: Enhancing Faithfulness via MMKP Context Selection and NLI-Guided MCTS"
+    },
+    {
+      "record": "acl:2026.findings-acl.1128",
+      "duplicate_of": "arxiv:2604.09150",
+      "title": "Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning"
+    },
+    {
+      "record": "acl:2026.findings-acl.1267",
+      "duplicate_of": "arxiv:2604.22193",
+      "title": "How Large Language Models Balance Internal Knowledge with User and Document Assertions"
+    },
+    {
+      "record": "acl:2026.findings-acl.1310",
+      "duplicate_of": "arxiv:2508.02435",
+      "title": "Beyond Chunks and Graphs: Retrieval-Augmented Generation through Triplet-Driven Thinking"
+    },
+    {
+      "record": "acl:2026.findings-acl.1477",
+      "duplicate_of": "arxiv:2609.08267",
+      "title": "Evidence-Aligned Entity Verification for Hallucination Detection in Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.fever-1.11",
+      "duplicate_of": "arxiv:2602.15190",
+      "title": "AIC CTU@AVerImaTeC: dual-retriever RAG for image-text fact checking"
+    },
+    {
+      "record": "acl:2026.eacl-srw.32",
+      "duplicate_of": "arxiv:2505.07637",
+      "title": "Chronocept: Instilling a Sense of Time in Machines"
+    },
+    {
+      "record": "acl:2026.eacl-industry.33",
+      "duplicate_of": "arxiv:2510.27051",
+      "title": "Adaptive Data Flywheel: Applying MAPE Control Loops to AI Agent Improvement"
+    },
+    {
+      "record": "acl:2026.bionlp-1.50",
+      "duplicate_of": "arxiv:2605.14115",
+      "title": "When Evidence Conflicts: Uncertainty and Order Effects in Retrieval-Augmented Biomedical Question Answering"
+    },
+    {
+      "record": "acl:2026.bea-1.57",
+      "duplicate_of": "arxiv:2605.12988",
+      "title": "Retrieval-Augmented Tutoring for Algorithm Tracing and Problem-Solving in AI Education"
+    },
+    {
+      "record": "acl:2026.acl-long.38",
+      "duplicate_of": "arxiv:2601.01513",
+      "title": "FastV-RAG: Towards Fast and Fine-Grained Video QA with Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.acl-long.114",
+      "duplicate_of": "arxiv:2506.20670",
+      "title": "MMSearch-R1: Incentivizing LMMs to Search"
+    },
+    {
+      "record": "acl:2026.acl-long.204",
+      "duplicate_of": "arxiv:2510.15253",
+      "title": "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding"
+    },
+    {
+      "record": "acl:2026.acl-long.755",
+      "duplicate_of": "arxiv:2601.08620",
+      "title": "ViDoRe V3: A Comprehensive Evaluation of Retrieval Augmented Generation in Complex Real-World Scenarios"
+    },
+    {
+      "record": "acl:2026.acl-long.763",
+      "duplicate_of": "arxiv:2603.27335",
+      "title": "PubMed Reasoner: Dynamic Reasoning-based Retrieval for Evidence-Grounded Biomedical Question Answering"
+    },
+    {
+      "record": "acl:2026.acl-long.818",
+      "duplicate_of": "arxiv:2605.29606",
+      "title": "HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering"
+    },
+    {
+      "record": "acl:2026.acl-long.881",
+      "duplicate_of": "arxiv:2509.00798",
+      "title": "Progressive Multimodal Search and Reasoning for Knowledge-Intensive Visual Question Answering"
+    },
+    {
+      "record": "acl:2026.acl-long.892",
+      "duplicate_of": "arxiv:2605.10253",
+      "title": "Knowledge Poisoning Attacks on Medical Multi-Modal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.acl-long.923",
+      "duplicate_of": "arxiv:2604.19047",
+      "title": "RARE: Redundancy-Aware Retrieval Evaluation Framework for High-Similarity Corpora"
+    },
+    {
+      "record": "acl:2026.acl-long.1053",
+      "duplicate_of": "arxiv:2604.08952",
+      "title": "MAB-DQA: Addressing Query Aspect Importance in Document Question Answering with Multi-Armed Bandits"
+    },
+    {
+      "record": "acl:2026.acl-long.1133",
+      "duplicate_of": "arxiv:2604.05540",
+      "title": "Learning to Edit Knowledge via Instruction-based Chain-of-Thought Prompting"
+    },
+    {
+      "record": "acl:2026.acl-long.1151",
+      "duplicate_of": "arxiv:2505.16518",
+      "title": "CUB: Benchmarking Context Utilisation Techniques for Language Models"
+    },
+    {
+      "record": "acl:2026.acl-long.1357",
+      "duplicate_of": "arxiv:2601.03746",
+      "title": "Whose Facts Win? LLM Source Preferences under Knowledge Conflicts"
+    },
+    {
+      "record": "acl:2026.acl-long.1450",
+      "duplicate_of": "arxiv:2604.27934",
+      "title": "MM-StanceDet: Retrieval-Augmented Multi-modal Multi-agent Stance Detection"
+    },
+    {
+      "record": "acl:2026.acl-long.1467",
+      "duplicate_of": "arxiv:2601.12078",
+      "title": "Optimizing User Profiles via Contextual Bandits for Retrieval-Augmented LLM Personalization"
+    },
+    {
+      "record": "acl:2026.acl-long.1620",
+      "duplicate_of": "arxiv:2605.13277",
+      "title": "Utility-Oriented Visual Evidence Selection for Multimodal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.acl-long.1656",
+      "duplicate_of": "arxiv:2604.05418",
+      "title": "VideoStir: Understanding Long Videos via Spatio-Temporally Structured and Intent-Aware RAG"
+    },
+    {
+      "record": "acl:2026.acl-long.1888",
+      "duplicate_of": "arxiv:2604.25122",
+      "title": "M^3-VQA: A Benchmark for Multimodal, Multi-Entity, Multi-Hop Visual Question Answering"
+    },
+    {
+      "record": "acl:2026.acl-long.2129",
+      "duplicate_of": "arxiv:2604.13731",
+      "title": "Doc-V^*: Coarse-to-Fine Interactive Visual Reasoning for Multi-Page Document VQA"
+    },
+    {
+      "record": "acl:2026.acl-long.2170",
+      "duplicate_of": "arxiv:2507.12367",
+      "title": "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities"
+    },
+    {
+      "record": "acl:2026.acl-long.2218",
+      "duplicate_of": "arxiv:2512.20626",
+      "title": "MegaRAG: Multimodal Knowledge Graph-Based Retrieval Augmented Generation"
+    },
+    {
+      "record": "acl:2026.acl-industry.60",
+      "duplicate_of": "arxiv:2605.00911",
+      "title": "When Good OCR Is Not Enough: Benchmarking OCR Robustness for Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2026.acl-industry.76",
+      "duplicate_of": "arxiv:2607.22571",
+      "title": "SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs"
+    },
+    {
+      "record": "acl:2026.acl-industry.79",
+      "duplicate_of": "arxiv:2604.05350",
+      "title": "DQA: Diagnostic Question Answering for IT Support"
+    },
+    {
+      "record": "acl:2026.acl-industry.134",
+      "duplicate_of": "arxiv:2606.04231",
+      "title": "MM-BizRAG: Rethinking Multimodal Retrieval-Augmented Generation for General Purpose Enterprise Q&A"
+    },
+    {
+      "record": "acl:2025.naacl-long.28",
+      "duplicate_of": "arxiv:2407.15268",
+      "title": "Fact-Aware Multimodal Retrieval Augmentation for Accurate Medical Radiology Report Generation"
+    },
+    {
+      "record": "acl:2025.naacl-long.210",
+      "duplicate_of": "arxiv:2503.21315",
+      "title": "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+    },
+    {
+      "record": "acl:2025.naacl-long.310",
+      "duplicate_of": "arxiv:2412.10704",
+      "title": "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.naacl-long.411",
+      "duplicate_of": "arxiv:2407.05502",
+      "title": "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models"
+    },
+    {
+      "record": "acl:2025.naacl-long.459",
+      "duplicate_of": "arxiv:2412.14510",
+      "title": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization"
+    },
+    {
+      "record": "acl:2025.naacl-long.635",
+      "duplicate_of": "arxiv:2411.00300",
+      "title": "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering"
+    },
+    {
+      "record": "acl:2025.naacl-industry.45",
+      "duplicate_of": "arxiv:2503.04790",
+      "title": "SuperRAG: Beyond RAG with Layout-Aware Graph Modeling"
+    },
+    {
+      "record": "acl:2025.naacl-industry.79",
+      "duplicate_of": "arxiv:2409.09046",
+      "title": "HyPA-RAG: A Hybrid Parameter Adaptive Retrieval-Augmented Generation System for AI Legal and Policy Applications"
+    },
+    {
+      "record": "acl:2025.magmar-1.2",
+      "duplicate_of": "arxiv:2504.07643",
+      "title": "CollEX – A Multimodal Agentic RAG System Enabling Interactive Exploration of Scientific Collections"
+    },
+    {
+      "record": "acl:2025.l2m2-1.10",
+      "duplicate_of": "arxiv:2502.13836",
+      "title": "Quantifying Memorization and Parametric Response Rates in Retrieval-Augmented Vision-Language Models"
+    },
+    {
+      "record": "acl:2025.knowledgenlp-1.20",
+      "duplicate_of": "arxiv:2506.02097",
+      "title": "Hybrid AI for Responsive Multi-Turn Online Conversations with Novel Dynamic Routing and Feedback Adaptation"
+    },
+    {
+      "record": "acl:2025.ijcnlp-long.2",
+      "duplicate_of": "arxiv:2601.03262",
+      "title": "Roles of MLLMs in Visually Rich Document Retrieval for RAG: A Survey"
+    },
+    {
+      "record": "acl:2025.findings-naacl.60",
+      "duplicate_of": "arxiv:2501.13297",
+      "title": "RAMQA: A Unified Framework for Retrieval-Augmented Multi-Modal Question Answering"
+    },
+    {
+      "record": "acl:2025.findings-naacl.241",
+      "duplicate_of": "arxiv:2503.13563",
+      "title": "MES-RAG: Bringing Multi-modal, Entity-Storage, and Secure Enhancements to RAG"
+    },
+    {
+      "record": "acl:2025.findings-naacl.410",
+      "duplicate_of": "arxiv:2410.13510",
+      "title": "GeoCoder: Solving Geometry Problems by Generating Modular Code through Vision-Language Models"
+    },
+    {
+      "record": "acl:2025.findings-acl.133",
+      "duplicate_of": "arxiv:2502.10362",
+      "title": "CLaMP 3: Universal Music Information Retrieval Across Unaligned Modalities and Unseen Languages"
+    },
+    {
+      "record": "acl:2025.findings-acl.536",
+      "duplicate_of": "arxiv:2412.15280",
+      "title": "Context-DPO: Aligning Language Models for Context-Faithfulness"
+    },
+    {
+      "record": "acl:2025.findings-acl.628",
+      "duplicate_of": "arxiv:2505.11932",
+      "title": "Neuro-Symbolic Query Compiler"
+    },
+    {
+      "record": "acl:2025.findings-acl.855",
+      "duplicate_of": "arxiv:2505.20368",
+      "title": "Hierarchical Retrieval with Evidence Curation for Open-Domain Financial Question Answering on Standardized Documents"
+    },
+    {
+      "record": "acl:2025.findings-acl.861",
+      "duplicate_of": "arxiv:2502.08826",
+      "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.findings-acl.878",
+      "duplicate_of": "arxiv:2503.01695",
+      "title": "Generate, Discriminate, Evolve: Enhancing Context Faithfulness via Fine-Grained Sentence-Level Self-Evolution"
+    },
+    {
+      "record": "acl:2025.findings-acl.1096",
+      "duplicate_of": "arxiv:2501.05874",
+      "title": "VideoRAG: Retrieval-Augmented Generation over Video Corpus"
+    },
+    {
+      "record": "acl:2025.findings-acl.1135",
+      "duplicate_of": "arxiv:2502.14949",
+      "title": "KITAB-Bench: A Comprehensive Multi-Domain Benchmark for Arabic OCR and Document Understanding"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.38",
+      "duplicate_of": "arxiv:2505.07968",
+      "title": "Assessing and Mitigating Medical Knowledge Drift and Conflicts in Large Language Models"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.365",
+      "duplicate_of": "arxiv:2508.18772",
+      "title": "Beyond the Textual: Generating Coherent Visual Options for MCQs"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.466",
+      "duplicate_of": "arxiv:2507.21544",
+      "title": "MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.522",
+      "duplicate_of": "arxiv:2504.03165",
+      "title": "Efficient Dynamic Clustering-Based Document Compression for Retrieval-Augmented-Generation"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.701",
+      "duplicate_of": "arxiv:2511.02415",
+      "title": "ChartM^3: A Multi-Stage Code-Driven Pipeline for Constructing Multi-Dimensional and Multi-Step Visual Reasoning Data in Chart Comprehension"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.740",
+      "duplicate_of": "arxiv:2503.04812",
+      "title": "LLaVE: Large Language and Vision Embedding Models with Hardness-Weighted Contrastive Learning"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.883",
+      "duplicate_of": "arxiv:2509.07555",
+      "title": "Avoiding Knowledge Edit Skipping in Multi-hop Question Answering with Guided Decomposition"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.1128",
+      "duplicate_of": "arxiv:2501.18724",
+      "title": "Large Language Models with Temporal Reasoning for Longitudinal Clinical Summarization and Prediction"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.1196",
+      "duplicate_of": "arxiv:2510.00919",
+      "title": "Benchmarking Foundation Models with Retrieval-Augmented Generation in Olympic-Level Physics Problem Solving"
+    },
+    {
+      "record": "acl:2025.findings-emnlp.1211",
+      "duplicate_of": "arxiv:2505.18450",
+      "title": "BRIT: Bidirectional Retrieval over Unified Image-Text Graph"
+    },
+    {
+      "record": "acl:2025.findings-ijcnlp.80",
+      "duplicate_of": "arxiv:2601.16984",
+      "title": "TelcoAI: Advancing 3GPP Technical Specification Search through Agentic Multi-Modal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.findings-ijcnlp.122",
+      "duplicate_of": "arxiv:2506.10408",
+      "title": "Reasoning RAG via System 1 or System 2: A Survey on Reasoning Agentic Retrieval-Augmented Generation for Industry Challenges"
+    },
+    {
+      "record": "acl:2025.emnlp-main.50",
+      "duplicate_of": "arxiv:2501.09751",
+      "title": "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking"
+    },
+    {
+      "record": "acl:2025.emnlp-main.121",
+      "duplicate_of": "arxiv:2502.13146",
+      "title": "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization"
+    },
+    {
+      "record": "acl:2025.emnlp-main.153",
+      "duplicate_of": "arxiv:2506.06355",
+      "title": "LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact Assessment"
+    },
+    {
+      "record": "acl:2025.emnlp-main.211",
+      "duplicate_of": "arxiv:2505.17471",
+      "title": "FinRAGBench-V: A Benchmark for Multimodal RAG with Visual Citation in the Financial Domain"
+    },
+    {
+      "record": "acl:2025.emnlp-main.436",
+      "duplicate_of": "arxiv:2505.22584",
+      "title": "DocReRank: Single-Page Hard Negative Query Generation for Training Multi-Modal RAG Rerankers"
+    },
+    {
+      "record": "acl:2025.emnlp-main.464",
+      "duplicate_of": "arxiv:2502.18017",
+      "title": "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents"
+    },
+    {
+      "record": "acl:2025.emnlp-main.708",
+      "duplicate_of": "arxiv:2509.07666",
+      "title": "MoLoRAG: Bootstrapping Document Understanding via Multi-modal Logic-aware Retrieval"
+    },
+    {
+      "record": "acl:2025.emnlp-main.768",
+      "duplicate_of": "arxiv:2506.11063",
+      "title": "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.emnlp-main.771",
+      "duplicate_of": "arxiv:2510.06888",
+      "title": "M3Retrieve: Benchmarking Multimodal Retrieval for Medicine"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1062",
+      "duplicate_of": "arxiv:2604.12352",
+      "title": "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1215",
+      "duplicate_of": "arxiv:2502.13061",
+      "title": "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1259",
+      "duplicate_of": "arxiv:2505.13957",
+      "title": "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1288",
+      "duplicate_of": "arxiv:2506.01275",
+      "title": "Contra4: Evaluating Contrastive Cross-Modal Reasoning in Audio, Video, Image, and 3D"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1306",
+      "duplicate_of": "arxiv:2410.03960",
+      "title": "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation"
+    },
+    {
+      "record": "acl:2025.emnlp-main.1443",
+      "duplicate_of": "arxiv:2506.14035",
+      "title": "SimpleDoc: Multi-Modal Document Understanding with Dual-Cue Page Retrieval and Iterative Refinement"
+    },
+    {
+      "record": "acl:2025.emnlp-industry.9",
+      "duplicate_of": "arxiv:2509.23659",
+      "title": "Aligning LLMs for Multilingual Consistency in Enterprise Applications"
+    },
+    {
+      "record": "acl:2025.emnlp-industry.34",
+      "duplicate_of": "arxiv:2506.23139",
+      "title": "Benchmarking Deep Search over Heterogeneous Enterprise Data"
+    },
+    {
+      "record": "acl:2025.emnlp-industry.73",
+      "duplicate_of": "arxiv:2411.03920",
+      "title": "RAGulator: Lightweight Out-of-Context Detectors for Grounded Text Generation"
+    },
+    {
+      "record": "acl:2025.emnlp-industry.145",
+      "duplicate_of": "arxiv:2511.00903",
+      "title": "ColMate: Contrastive Late Interaction and Masked Text for Multimodal Document Retrieval"
+    },
+    {
+      "record": "acl:2025.emnlp-industry.176",
+      "duplicate_of": "arxiv:2410.10584",
+      "title": "STACKFEED: Structured Textual Actor-Critic Knowledge base editing with FEEDback"
+    },
+    {
+      "record": "acl:2025.coling-main.163",
+      "duplicate_of": "arxiv:2404.14043",
+      "title": "LLMs Know What They Need: Leveraging a Missing Information Guided Framework to Empower Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.coling-demos.13",
+      "duplicate_of": "arxiv:2408.08521",
+      "title": "MuRAR: A Simple and Effective Multimodal Retrieval and Answer Refinement Framework for Multimodal Question Answering"
+    },
+    {
+      "record": "acl:2025.coling-industry.33",
+      "duplicate_of": "arxiv:2501.14998",
+      "title": "Federated Retrieval Augmented Generation for Multi-Product Question Answering"
+    },
+    {
+      "record": "acl:2025.africanlp-1.17",
+      "duplicate_of": "arxiv:2503.14603",
+      "title": "Command R7B Arabic: a small, enterprise-focused, multilingual, and culturally aware Arabic LLM"
+    },
+    {
+      "record": "acl:2025.acl-long.47",
+      "duplicate_of": "arxiv:2412.13582",
+      "title": "EvoWiki: Evaluating LLMs on Evolving Knowledge"
+    },
+    {
+      "record": "acl:2025.acl-long.131",
+      "duplicate_of": "arxiv:2501.00332",
+      "title": "MAIN-RAG: Multi-Agent Filtering Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.acl-long.261",
+      "duplicate_of": "arxiv:2501.13726",
+      "title": "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.acl-long.301",
+      "duplicate_of": "arxiv:2503.04800",
+      "title": "HoH: A Dynamic Benchmark for Evaluating the Impact of Outdated Information on Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.acl-long.386",
+      "duplicate_of": "arxiv:2506.05725",
+      "title": "Large Language Models are Good Relational Learners"
+    },
+    {
+      "record": "acl:2025.acl-long.420",
+      "duplicate_of": "arxiv:2506.15569",
+      "title": "SciVer: Evaluating Foundation Models for Multimodal Scientific Claim Verification"
+    },
+    {
+      "record": "acl:2025.acl-long.558",
+      "duplicate_of": "arxiv:2408.09199",
+      "title": "TC–RAG: Turing–Complete RAG's Case study on Medical LLM Systems"
+    },
+    {
+      "record": "acl:2025.acl-long.1062",
+      "duplicate_of": "arxiv:2506.08938",
+      "title": "FaithfulRAG: Fact-Level Conflict Modeling for Context-Faithful Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.acl-long.1198",
+      "duplicate_of": "arxiv:2505.07879",
+      "title": "OMGM: Orchestrate Multiple Granularities and Modalities for Efficient Multimodal Retrieval"
+    },
+    {
+      "record": "acl:2025.acl-long.1359",
+      "duplicate_of": "arxiv:2505.06186",
+      "title": "Query-driven Document-level Scientific Evidence Extraction from Biomedical Studies"
+    },
+    {
+      "record": "acl:2025.acl-long.1476",
+      "duplicate_of": "arxiv:2410.07176",
+      "title": "Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models"
+    },
+    {
+      "record": "acl:2025.acl-long.1528",
+      "duplicate_of": "arxiv:2502.12342",
+      "title": "REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark"
+    },
+    {
+      "record": "acl:2025.acl-long.1583",
+      "duplicate_of": "arxiv:2506.02544",
+      "title": "CoRe-MMRAG: Cross-Source Knowledge Reconciliation for Multimodal RAG"
+    },
+    {
+      "record": "acl:2025.acl-demo.60",
+      "duplicate_of": "arxiv:2506.12494",
+      "title": "FlexRAG: A Flexible and Comprehensive Framework for Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2025.acl-industry.72",
+      "duplicate_of": "arxiv:2505.18366",
+      "title": "Hard Negative Mining for Domain-Specific Retrieval in Enterprise Systems"
+    },
+    {
+      "record": "acl:2024.naacl-industry.19",
+      "duplicate_of": "arxiv:2404.08189",
+      "title": "Reducing hallucination in structured outputs via Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2024.lrec-main.672",
+      "duplicate_of": "arxiv:2403.08053",
+      "title": "Generating Clarification Questions for Disambiguating Contracts"
+    },
+    {
+      "record": "acl:2024.lrec-main.1466",
+      "duplicate_of": "arxiv:2402.14409",
+      "title": "Tug-of-War between Knowledge: Exploring and Resolving Knowledge Conflicts in Retrieval-Augmented Language Models"
+    },
+    {
+      "record": "acl:2024.findings-naacl.159",
+      "duplicate_of": "arxiv:2305.01579",
+      "title": "Why So Gullible? Enhancing the Robustness of Retrieval-Augmented Models against Counterfactual Noise"
+    },
+    {
+      "record": "acl:2024.findings-acl.69",
+      "duplicate_of": "arxiv:2402.13625",
+      "title": "MORE: Multi-mOdal REtrieval Augmented Generative Commonsense Reasoning"
+    },
+    {
+      "record": "acl:2024.findings-acl.372",
+      "duplicate_of": "arxiv:2402.13178",
+      "title": "Benchmarking Retrieval-Augmented Generation for Medicine"
+    },
+    {
+      "record": "acl:2024.findings-acl.777",
+      "duplicate_of": "arxiv:2402.11034",
+      "title": "PAT-Questions: A Self-Updating Benchmark for Present-Anchored Temporal Question-Answering"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.14",
+      "duplicate_of": "arxiv:2403.04735",
+      "title": "SnapNTell: Enhancing Entity-Centric Visual Question Answering with Retrieval Augmented Multimodal LLM"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.83",
+      "duplicate_of": "arxiv:2407.12735",
+      "title": "EchoSight: Advancing Visual-Language Models with Wiki Knowledge"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.243",
+      "duplicate_of": "arxiv:2407.03937",
+      "title": "TongGu: Mastering Classical Chinese Understanding with Knowledge-Grounded Large Language Models"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.593",
+      "duplicate_of": "arxiv:2410.15737",
+      "title": "Who's Who: Large Language Models Meet Knowledge Conflicts in Practice"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.759",
+      "duplicate_of": "arxiv:2407.02233",
+      "title": "Synthetic Multimodal Question Generation"
+    },
+    {
+      "record": "acl:2024.findings-emnlp.838",
+      "duplicate_of": "arxiv:2407.17023",
+      "title": "DYNAMICQA: Tracing Internal Knowledge Conflicts in Language Models"
+    },
+    {
+      "record": "acl:2024.fever-1.25",
+      "duplicate_of": "arxiv:2405.12363",
+      "title": "Question-Based Retrieval using Atomic Units for Enterprise RAG"
+    },
+    {
+      "record": "acl:2024.fever-1.29",
+      "duplicate_of": "arxiv:2404.12065",
+      "title": "RAGAR, Your Falsehood Radar: RAG-Augmented Reasoning for Political Fact-Checking using Multimodal Large Language Models"
+    },
+    {
+      "record": "acl:2024.emnlp-main.62",
+      "duplicate_of": "arxiv:2407.05131",
+      "title": "RULE: Reliable Multimodal RAG for Factuality in Medical Vision Language Models"
+    },
+    {
+      "record": "acl:2024.emnlp-main.434",
+      "duplicate_of": "arxiv:2409.14083",
+      "title": "SURf: Teaching Large Vision-Language Models to Selectively Utilize Retrieved Information"
+    },
+    {
+      "record": "acl:2024.emnlp-main.552",
+      "duplicate_of": "arxiv:2407.01370",
+      "title": "Summary of a Haystack: A Challenge to Long-Context LLMs and RAG Systems"
+    },
+    {
+      "record": "acl:2024.emnlp-main.751",
+      "duplicate_of": "arxiv:2405.03279",
+      "title": "Lifelong Knowledge Editing for LLMs with Retrieval-Augmented Continuous Prompt Learning"
+    },
+    {
+      "record": "acl:2024.emnlp-main.981",
+      "duplicate_of": "arxiv:2407.01219",
+      "title": "Searching for Best Practices in Retrieval-Augmented Generation"
+    },
+    {
+      "record": "acl:2024.emnlp-demo.5",
+      "duplicate_of": "arxiv:2408.03047",
+      "title": "OpenOmni: A Collaborative Open Source Tool for Building Future-Ready Multimodal Conversational Agents"
+    },
+    {
+      "record": "acl:2024.emnlp-industry.51",
+      "duplicate_of": "arxiv:2411.00451",
+      "title": "Improving Few-Shot Cross-Domain Named Entity Recognition by Instruction Tuning a Word-Embedding based Retrieval Augmented Large Language Model"
+    },
+    {
+      "record": "acl:2024.emnlp-industry.52",
+      "duplicate_of": "arxiv:2410.16977",
+      "title": "IPL: Leveraging Multimodal Large Language Models for Intelligent Product Listing"
+    },
+    {
+      "record": "acl:2024.emnlp-industry.56",
+      "duplicate_of": "arxiv:2410.15805",
+      "title": "RAG4ITOps: A Supervised Fine-Tunable and Comprehensive RAG Framework for IT Operations and Maintenance"
+    },
+    {
+      "record": "acl:2024.customnlp4u-1.18",
+      "duplicate_of": "arxiv:2409.09046",
+      "title": "HyPA-RAG: A Hybrid Parameter Adaptive Retrieval-Augmented Generation System for AI Legal and Policy Applications"
+    },
+    {
+      "record": "acl:2024.acl-long.181",
+      "duplicate_of": "arxiv:2406.05606",
+      "title": "GrowOVER: How Can LLMs Adapt to Growing Real-World Knowledge?"
+    },
+    {
+      "record": "acl:2024.acl-long.337",
+      "duplicate_of": "arxiv:2401.11911",
+      "title": "Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts When Knowledge Conflicts?"
+    },
+    {
+      "record": "acl:2024.acl-long.369",
+      "duplicate_of": "arxiv:2312.02073",
+      "title": "A Glitch in the Matrix? Locating and Detecting Language Model Grounding with Fakepedia"
+    },
+    {
+      "record": "acl:2024.acl-long.540",
+      "duplicate_of": "arxiv:2405.20978",
+      "title": "Enhancing Noise Robustness of Retrieval-Augmented Language Models with Adaptive Adversarial Training"
+    },
+    {
+      "record": "acl:2024.acl-long.747",
+      "duplicate_of": "arxiv:2402.17753",
+      "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents"
+    },
+    {
+      "record": "acl:2023.findings-emnlp.164",
+      "duplicate_of": "arxiv:2310.10567",
+      "title": "RegaVAE: A Retrieval-Augmented Gaussian Mixture Variational Auto-Encoder for Language Modeling"
+    },
+    {
+      "record": "acl:2023.findings-emnlp.620",
+      "duplicate_of": "arxiv:2305.15294",
+      "title": "Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy"
+    },
+    {
+      "record": "acl:2023.eacl-main.266",
+      "duplicate_of": "arxiv:2302.08268",
+      "title": "Retrieval-augmented Image Captioning"
+    },
+    {
+      "record": "acl:2023.acl-short.27",
+      "duplicate_of": "arxiv:2305.16166",
+      "title": "Multimodal Relation Extraction with Cross-Modal Retrieval and Synthesis"
+    },
+    {
+      "record": "acl:2022.emnlp-main.235",
+      "duplicate_of": "arxiv:2212.03140",
+      "title": "Neural Machine Translation with Contrastive Translation Memories"
+    },
+    {
+      "record": "acl:2022.emnlp-main.375",
+      "duplicate_of": "arxiv:2210.02928",
+      "title": "MuRAG: Multimodal Retrieval-Augmented Generator for Open Question Answering over Images and Text"
+    },
+    {
+      "record": "acl:2022.aacl-main.87",
+      "duplicate_of": "arxiv:2210.08554",
+      "title": "COFAR: Commonsense and Factual Reasoning in Image Search"
+    },
+    {
+      "record": "acl:2021.findings-emnlp.11",
+      "duplicate_of": "arxiv:2104.08108",
+      "title": "Cross-Modal Retrieval Augmentation for Multi-Modal Classification"
+    }
+  ]
+}

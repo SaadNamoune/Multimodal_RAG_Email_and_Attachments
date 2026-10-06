@@ -1,0 +1,207 @@
+{
+  "database": "arXiv",
+  "interface": "https://export.arxiv.org/api/query",
+  "run_date": "2026-10-06",
+  "fields": "title, abstract",
+  "limits": "submittedDate 202001010000 to 202610062359 (GMT)",
+  "searches": {
+    "S0": {
+      "blocks": [
+        "RAG",
+        "EMAIL",
+        "ATTACHMENT"
+      ],
+      "query": "(ti:\"retrieval augmented\" OR abs:\"retrieval augmented\" OR ti:RAG OR abs:RAG) AND (ti:email OR abs:email OR ti:emails OR abs:emails OR ti:\"e-mail\" OR abs:\"e-mail\" OR ti:\"e-mails\" OR abs:\"e-mails\") AND (ti:attachment OR abs:attachment OR ti:attachments OR abs:attachments OR ti:multimodal OR abs:multimodal OR ti:\"multi-modal\" OR abs:\"multi-modal\") AND submittedDate:[202001010000 TO 202610062359]",
+      "hits_reported": 3,
+      "records_retrieved": 3
+    },
+    "S1": {
+      "blocks": [
+        "RAG",
+        "CONTEXT"
+      ],
+      "query": "(ti:\"retrieval augmented\" OR abs:\"retrieval augmented\" OR ti:RAG OR abs:RAG) AND (ti:email OR abs:email OR ti:emails OR abs:emails OR ti:\"e-mail\" OR abs:\"e-mail\" OR ti:\"e-mails\" OR abs:\"e-mails\" OR ti:mailbox OR abs:mailbox OR ti:inbox OR abs:inbox OR ti:enterprise OR abs:enterprise OR ti:\"company-internal\" OR abs:\"company-internal\" OR ti:workplace OR abs:workplace) AND submittedDate:[202001010000 TO 202610062359]",
+      "hits_reported": 270,
+      "records_retrieved": 270
+    },
+    "S2": {
+      "blocks": [
+        "RAG",
+        "HYGIENE"
+      ],
+      "query": "(ti:\"retrieval augmented\" OR abs:\"retrieval augmented\" OR ti:RAG OR abs:RAG) AND (ti:\"knowledge conflict\" OR abs:\"knowledge conflict\" OR ti:\"knowledge conflicts\" OR abs:\"knowledge conflicts\" OR ti:\"conflicting evidence\" OR abs:\"conflicting evidence\" OR ti:deduplication OR abs:deduplication OR ti:\"near-duplicate\" OR abs:\"near-duplicate\" OR ti:redundancy OR abs:redundancy OR ti:outdated OR abs:outdated OR ti:superseded OR abs:superseded) AND submittedDate:[202001010000 TO 202610062359]",
+      "hits_reported": 474,
+      "records_retrieved": 474
+    },
+    "S3": {
+      "blocks": [
+        "RAG",
+        "MODALITY"
+      ],
+      "query": "(ti:\"retrieval augmented\" OR abs:\"retrieval augmented\" OR ti:RAG OR abs:RAG) AND (ti:multimodal OR abs:multimodal OR ti:\"multi-modal\" OR abs:\"multi-modal\" OR ti:\"visual document\" OR abs:\"visual document\" OR ti:OCR OR abs:OCR) AND submittedDate:[202001010000 TO 202610062359]",
+      "hits_reported": 945,
+      "records_retrieved": 945
+    }
+  },
+  "unique_records": 1612,
+  "seed_check": [
+    {
+      "ref": 1,
+      "arxiv_id": "2005.11401",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "found_by": []
+    },
+    {
+      "ref": 2,
+      "arxiv_id": "2502.08826",
+      "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+      "found_by": [
+        "search:S2",
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 3,
+      "arxiv_id": "2506.23139",
+      "title": "Benchmarking Deep Search over Heterogeneous Enterprise Data",
+      "found_by": [
+        "search:S1"
+      ]
+    },
+    {
+      "ref": 4,
+      "arxiv_id": "2605.05253",
+      "title": "EnterpriseRAG-Bench: A RAG Benchmark for Company Internal Knowledge",
+      "found_by": [
+        "search:S1",
+        "search:S2"
+      ]
+    },
+    {
+      "ref": 5,
+      "arxiv_id": "2507.12425",
+      "title": "Advancing Retrieval-Augmented Generation for Structured Enterprise and Internal Data",
+      "found_by": [
+        "search:S1",
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 6,
+      "arxiv_id": "2406.16828",
+      "title": "Ragnarök: A Reusable RAG Framework and Baselines for TREC 2024 Retrieval-Augmented Generation Track",
+      "found_by": []
+    },
+    {
+      "ref": 7,
+      "arxiv_id": "2107.06499",
+      "title": "Deduplicating Training Data Makes Language Models Better",
+      "found_by": []
+    },
+    {
+      "ref": 8,
+      "arxiv_id": "2504.13079",
+      "title": "Retrieval-Augmented Generation with Conflicting Evidence",
+      "found_by": [
+        "search:S2"
+      ]
+    },
+    {
+      "ref": 9,
+      "arxiv_id": "2103.00020",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "found_by": []
+    },
+    {
+      "ref": 10,
+      "arxiv_id": "2407.01449",
+      "title": "ColPali: Efficient Document Retrieval with Vision Language Models",
+      "found_by": [
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 11,
+      "arxiv_id": "2410.10594",
+      "title": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "found_by": [
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 12,
+      "arxiv_id": "2412.02592",
+      "title": "OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation",
+      "found_by": [
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 13,
+      "arxiv_id": "2511.16654",
+      "title": "Comparison of Text-Based and Image-Based Retrieval in Multimodal Retrieval Augmented Generation Large Language Model Systems",
+      "found_by": [
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 14,
+      "arxiv_id": "2510.03663",
+      "title": "UNIDOC-BENCH: A Unified Benchmark for Document-Centric Multimodal RAG",
+      "found_by": [
+        "search:S3"
+      ]
+    },
+    {
+      "ref": 15,
+      "arxiv_id": "2309.15217",
+      "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+      "found_by": []
+    },
+    {
+      "ref": 19,
+      "arxiv_id": "2604.04936",
+      "title": "Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems",
+      "found_by": [
+        "search:S2"
+      ]
+    },
+    {
+      "ref": 20,
+      "arxiv_id": "2604.19047",
+      "title": "RARE: Redundancy-Aware Retrieval Evaluation Framework for High-Similarity Corpora",
+      "found_by": [
+        "search:S2"
+      ]
+    },
+    {
+      "ref": 21,
+      "arxiv_id": "2605.09611",
+      "title": "Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks",
+      "found_by": [
+        "search:S1",
+        "search:S2"
+      ]
+    },
+    {
+      "ref": 22,
+      "arxiv_id": "2408.12076",
+      "title": "ConflictBank: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLM",
+      "found_by": []
+    },
+    {
+      "ref": 23,
+      "arxiv_id": "2210.11934",
+      "title": "An Analysis of Fusion Functions for Hybrid Retrieval",
+      "found_by": []
+    },
+    {
+      "ref": 24,
+      "arxiv_id": "2505.00263",
+      "title": "EnronQA: Towards Personalized RAG over Private Documents",
+      "found_by": [
+        "search:S1"
+      ]
+    }
+  ]
+}
